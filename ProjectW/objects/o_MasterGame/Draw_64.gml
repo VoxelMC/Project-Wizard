@@ -1,4 +1,4 @@
-///@description Draw the UI and Healthbars
+///@description Draw the UI
 var middle = (room_width/2)
 
 //Health Bar

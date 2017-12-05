@@ -151,14 +151,6 @@
             }
         },
         {
-            "Key": "51d7ca7c-8b04-47a4-9d6e-f449d5eba45d",
-            "Value": {
-                "id": "2e6608f3-a25c-407a-a6cc-6f32baae0095",
-                "resourcePath": "sprites\\s_HealthBar\\s_HealthBar.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "5354ee67-2272-4d77-8183-159df6e380eb",
             "Value": {
                 "id": "f21d8dbf-3406-4884-ac88-4566f0fb9951",
@@ -263,6 +255,14 @@
             }
         },
         {
+            "Key": "c02a62d6-b08a-4328-adf0-1e46e1074200",
+            "Value": {
+                "id": "2344bb54-81ed-4fdc-9c99-6081aa754195",
+                "resourcePath": "sprites\\s_ManaBar\\s_ManaBar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "e5beedc0-4697-4d3b-a54d-ee5e96594352",
@@ -295,10 +295,10 @@
             }
         },
         {
-            "Key": "ec788672-bae5-42bb-ba0e-84d1b879a430",
+            "Key": "ec87028f-11cd-44b4-860a-3992e0d3197d",
             "Value": {
-                "id": "03e50f85-bcba-4fd8-8c46-6595e07920e8",
-                "resourcePath": "sprites\\s_ManaBar\\s_ManaBar.yy",
+                "id": "a5ea4fa9-e1ed-4f3e-a8b3-59db9db97bcc",
+                "resourcePath": "sprites\\s_BarBackground\\s_BarBackground.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -316,6 +316,14 @@
                 "id": "4d7e7820-62d4-4fdb-a3e4-73372f30e276",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "fa62a173-33c1-473d-b4ff-84ad47ac5bbb",
+            "Value": {
+                "id": "d17da59a-72c9-4fb0-a4a2-494d8cd45cd7",
+                "resourcePath": "sprites\\s_HealthBar\\s_HealthBar.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
