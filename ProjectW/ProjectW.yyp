@@ -106,7 +106,7 @@
             "Key": "2509496b-d02b-473d-b094-13647e8017f9",
             "Value": {
                 "id": "4ac7ac46-55ad-4c39-befa-ceb79d8eb5df",
-                "resourcePath": "sprites\\s_itemtest\\s_itemtest.yy",
+                "resourcePath": "sprites\\s_item1\\s_item1.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -282,7 +282,7 @@
             "Key": "d3130f98-aa38-4231-b0a5-59088cf45fba",
             "Value": {
                 "id": "4f6c29a0-1e35-4fc5-b016-142afd6f6d67",
-                "resourcePath": "objects\\o_itemtest\\o_itemtest.yy",
+                "resourcePath": "objects\\o_item1\\o_item1.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -349,11 +349,20 @@
                 "resourcePath": "sprites\\s_WeaponSlot\\s_WeaponSlot.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "fd1c4f74-f719-4215-af13-e1123eb7b74c",
+            "Value": {
+                "id": "c4764299-03ce-4516-8958-c62b7d516889",
+                "resourcePath": "scripts\\MasterItem_Create\\MasterItem_Create.yy",
+                "resourceType": "GMScript"
+            }
         }
     ],
     "script_order": [
         "1f4632ff-7cd0-480d-b227-712182627566",
-        "3a47138e-ca33-4c9d-b226-5c6897e1a7c4"
+        "3a47138e-ca33-4c9d-b226-5c6897e1a7c4",
+        "fd1c4f74-f719-4215-af13-e1123eb7b74c"
     ],
     "tutorial": ""
 }

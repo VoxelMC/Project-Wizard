@@ -9,7 +9,6 @@ if argument0 == 0 {
 }
 
 //Glowy [Passive]
-if Equip_Check == true {
 if Item_ID == 1 {
 	o_watchertest.max_speed += 3
 } else {
@@ -26,5 +25,4 @@ if Item_ID == 3 {
 	instance_create_layer( middle, 435, "Instances", o_itemtest);
 } else {
 	instance_destroy(o_itemtest);
-}
 }

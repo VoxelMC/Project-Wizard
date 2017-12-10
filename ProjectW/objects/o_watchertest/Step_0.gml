@@ -34,3 +34,8 @@ if keyboard_check(ord("H")) {
 	}
 }
 
+//Create Item
+if keyboard_check_pressed(ord("J")) {
+	MasterItem_Create(1,500,400)
+}
+
