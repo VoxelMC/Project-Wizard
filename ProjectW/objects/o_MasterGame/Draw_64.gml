@@ -21,3 +21,8 @@ draw_sprite(s_SpellSlot,image_index,middle+100,610)
 draw_sprite(s_WeaponSlot,image_index,middle,600)
 draw_sprite(s_SpellSlot,image_index,middle-100,610)
 draw_sprite(s_SpellSlot,image_index,middle-190,610)
+
+if global.ItemEquipped = true {
+	var sprite = object_get_sprite(o_MasterItem)
+	draw_sprite(sprite,image_index,middle-30,570)
+}
