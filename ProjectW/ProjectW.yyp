@@ -127,6 +127,14 @@
             }
         },
         {
+            "Key": "2d181dac-eef5-4a45-9c8a-0f75882540af",
+            "Value": {
+                "id": "96b982fe-cf35-4789-a64d-d15f9942ce98",
+                "resourcePath": "objects\\o_WeaponSlot\\o_WeaponSlot.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "336497a9-eb8e-439a-8194-fa79890f38d5",
             "Value": {
                 "id": "4ed62672-923d-4bf8-a66e-3ff4447c6317",
@@ -164,6 +172,14 @@
                 "id": "4830ff5a-7d0b-4ca1-9593-a4c925b5740b",
                 "resourcePath": "sprites\\s_item3test\\s_item3test.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5fad242e-0db8-4f83-92ee-df01084b8776",
+            "Value": {
+                "id": "6be0311b-91fe-45c5-83c5-109d2567deae",
+                "resourcePath": "objects\\o_SpellSlot\\o_SpellSlot.yy",
+                "resourceType": "GMObject"
             }
         },
         {

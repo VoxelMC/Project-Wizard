@@ -11,7 +11,7 @@ animation_state = "Idle"
 flipped = 1
 
 //Item Variables
-item_equipped = 1
+global.ItemEquipped = false;
 
 //Health/Mana Variables
 CurrentHP = 100

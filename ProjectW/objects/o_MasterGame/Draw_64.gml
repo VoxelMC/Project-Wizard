@@ -15,7 +15,7 @@ var manaPercent = o_watchertest.CurrentMana/o_watchertest.MaxMana;
 draw_sprite(s_BarBackground,image_index,middle+240,590)
 draw_sprite_part(s_ManaBar, 0, 0, 0, mspriteWidth*manaPercent, mspriteHeight, middle+240, 590);
 
-//Spell/Weapon Slots
+//UI
 draw_sprite(s_SpellSlot,image_index,middle+190,610)
 draw_sprite(s_SpellSlot,image_index,middle+100,610)
 draw_sprite(s_WeaponSlot,image_index,middle,600)
