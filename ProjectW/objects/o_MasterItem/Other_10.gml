@@ -1,7 +1,9 @@
 /// @description Item in use
-var sprite = object_get_sprite(o_MasterItem)
+var sprite = image_index
 switch (sprite) {
-	case s_item1: o_watchertest.max_speed += 1 break; 
+	case 1: o_watchertest.max_speed += 1 break; 
+	case 2: o_watchertest.max_speed += 2 break;
+	case 3: o_watchertest.max_speed += 3 break;
 }
 instance_destroy();
 
