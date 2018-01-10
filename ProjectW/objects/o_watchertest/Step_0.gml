@@ -37,10 +37,10 @@ if keyboard_check(ord("H")) {
 //Create Item
 if global.ItemEquipped = false {
 	if keyboard_check_pressed(ord("J")) {
-		MasterItem_Create(1,500,225)
+		MasterItem_Create(2,400,225)
 	}
 	if keyboard_check_pressed(ord("K")) {
-		MasterItem_Create(2,550,225)
+		MasterItem_Create(1,500,225)
 	}
 	if keyboard_check_pressed(ord("L")) {
 		MasterItem_Create(3,600,225)
