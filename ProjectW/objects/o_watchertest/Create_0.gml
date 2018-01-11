@@ -5,7 +5,7 @@ speed_h = 0
 speed_v = 0
 grav = 0.4
 jumpspeed = 10;
-max_speed = 3		
+max_speed = 2.5		
 
 //Animation Variables
 animation_state = "Idle"

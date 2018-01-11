@@ -76,16 +76,16 @@ if keyboard_check_pressed(vk_shift) {
 //Create Item
 if global.PassiveEquipped = false {
 	if keyboard_check_pressed(ord("J")) {
-		MasterItem_Create("Passive",1.1,300,225)
+		MasterItem_Create("Passive",1.1,300,y)
 	}
 	if keyboard_check_pressed(ord("K")) {
-		MasterItem_Create("Active",2.1,400,225)
+		MasterItem_Create("Active",2.1,400,y)
 	}
 	if keyboard_check_pressed(ord("L")) {
-		MasterItem_Create("Spell",3.1,500,225)
+		MasterItem_Create("Spell",3.1,500,y)
 	}
 	if keyboard_check_pressed(ord("H")) {
-		MasterItem_Create("Weapon",4.1,600,225)
+		MasterItem_Create("Weapon",4.1,600,y)
 	}
 }
 
