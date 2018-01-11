@@ -1,17 +1,15 @@
 ///@description Initialize variables
 
 //Movement Variables
-speed_ = 1.5
-acceleration = 0.5
-max_speed = 2.5
-friction_ = 0.3
+speed_h = 0
+speed_v = 0
+grav = 0.4
+jumpspeed = 10;
+max_speed = 3		
 
 //Animation Variables
 animation_state = "Idle"
 flipped = 1
-
-//Item Variables
-global.ItemEquipped = false;
 
 //Health/Mana Variables
 CurrentHP = 100
