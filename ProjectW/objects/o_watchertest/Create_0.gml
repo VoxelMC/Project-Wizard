@@ -3,7 +3,7 @@
 //Movement Variables
 speed_h = 0
 speed_v = 0
-grav = 0.4
+grav = 0
 jumpspeed = 10;
 max_speed = 2.5		
 
@@ -16,6 +16,9 @@ CurrentHP = 100
 MaxHP = 100
 CurrentMana = 50
 MaxMana = 50
+
+//Inventory Variables
+global.inv = ds_list_create();
 
 
 //Key Mappings

@@ -2,7 +2,7 @@
 var middle = camera_get_view_x(0)+camera_get_view_width(0)/2 //Middle = 640
 
 //Health Bar
-/*
+
 var hspriteWidth = sprite_get_width(s_HealthBar);
 var hspriteHeight = sprite_get_height(s_HealthBar);
 var hpPercent = o_watchertest.CurrentHP/o_watchertest.MaxHP;
@@ -22,7 +22,7 @@ draw_sprite(s_SpellSlot,image_index,middle+100,650)
 draw_sprite(s_WeaponSlot,image_index,middle,640)
 draw_sprite(s_SpellSlot,image_index,middle-100,650)
 draw_sprite(s_SpellSlot,image_index,middle-190,650)
-*/
+
 
 if global.PassiveEquipped = true {
 	var sprite = object_get_sprite(o_MasterPassive)
@@ -51,3 +51,13 @@ if global.WeaponEquipped = true {
 
 //Debug
 draw_text(50,50,o_watchertest.max_speed)
+
+
+//WEAPON CHECK
+if (wep_check) {
+	for (var i=0; i<ds_list_size(inv); i++) {
+		var sprite = object_get_sprite(o_MasterWeapon)
+		var index = global.WeaponEquippedID
+		draw_sprite(sprite,index,middle+3,640)
+	}
+}

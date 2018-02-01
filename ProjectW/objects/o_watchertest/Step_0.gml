@@ -87,5 +87,8 @@ if global.PassiveEquipped = false {
 	if keyboard_check_pressed(ord("H")) {
 		MasterItem_Create("Weapon",4.1,600,y)
 	}
+	if keyboard_check_pressed(ord("G")) {
+		MasterItem_Create("Weapon",4.2,700,y)
+	}
 }
 

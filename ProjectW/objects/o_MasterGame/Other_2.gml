@@ -8,3 +8,5 @@ global.PassiveEquippedID = 0
 global.SpellEquippedID = 0
 global.ActiveEquippedID = 0
 global.WeaponEquippedID = 0
+
+wep_check = false;
