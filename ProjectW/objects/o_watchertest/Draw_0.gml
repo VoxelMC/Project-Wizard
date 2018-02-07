@@ -2,13 +2,13 @@
 
 //Draw the player
 draw_sprite_ext(s_watchertest, image_index, x, y, 1*flipped, 1, 0, image_blend, image_alpha)
-if place_meeting(x,y,o_MasterPassive) or place_meeting(x,y,o_MasterActives) or place_meeting(x,y,o_MasterSpell) or place_meeting(x,y,o_MasterWeapon) {
+if place_meeting(x,y,o_MasterPassive) or place_meeting(x,y,o_MasterActives) or place_meeting(x,y,o_MasterSpell) or place_meeting(x,y,o_MasterWeapon) or place_meeting(x,y,o_door) {
 	if flipped < 0 { //Left
 		draw_sprite(s_ItemPopup,image_index,x-8,y-52)
 	}
 	if flipped > 0 { //Right
 		draw_sprite(s_ItemPopup,image_index,x+8.1,y-52)
-	}
+	} 
 	
 	//Item Descriptions
 	if place_meeting(x,y,o_MasterPassive) {

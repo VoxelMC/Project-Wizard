@@ -52,12 +52,3 @@ if global.WeaponEquipped = true {
 //Debug
 draw_text(50,50,o_watchertest.max_speed)
 
-
-//WEAPON CHECK
-if (wep_check) {
-	for (var i=0; i<ds_list_size(inv); i++) {
-		var sprite = object_get_sprite(o_MasterWeapon)
-		var index = global.WeaponEquippedID
-		draw_sprite(sprite,index,middle+3,640)
-	}
-}

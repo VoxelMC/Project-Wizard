@@ -1,28 +1,18 @@
 {
-    "id": "1ca9f325-1ffa-4b5c-998b-0654cc477254",
+    "id": "a897794f-18d3-4af9-a7e9-ec709c08b99f",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_MasterGame",
+    "name": "o_door",
     "eventList": [
         {
-            "id": "69166db5-26d3-48d2-a4c7-38b465d6ad32",
+            "id": "47fb9c49-de85-4186-ab96-9a6fe7789853",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 64,
-            "eventtype": 8,
-            "m_owner": "1ca9f325-1ffa-4b5c-998b-0654cc477254"
-        },
-        {
-            "id": "427e8b51-6299-4d29-a618-39a5f029210c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 2,
-            "eventtype": 7,
-            "m_owner": "1ca9f325-1ffa-4b5c-998b-0654cc477254"
+            "collisionObjectId": "43635e08-b323-4e6a-93e7-5a124112e4ea",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "a897794f-18d3-4af9-a7e9-ec709c08b99f"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -43,6 +33,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "spriteId": "b66295b0-97ac-4538-86d3-9dab7ef4bc27",
     "visible": true
 }
