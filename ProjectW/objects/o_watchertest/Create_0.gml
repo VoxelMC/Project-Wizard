@@ -19,6 +19,7 @@ MaxMana = 50
 
 //Inventory Variables
 global.inv = ds_list_create();
+weapon = "N/A"
 
 
 //Key Mappings
