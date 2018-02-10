@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "1f150c84-b00b-483e-ba8e-4ed06af950ea",
+            "Value": {
+                "id": "e35321bd-f63a-448e-9c6d-f29e906be42b",
+                "resourcePath": "sprites\\s_healingaoe\\s_healingaoe.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2509496b-d02b-473d-b094-13647e8017f9",
             "Value": {
                 "id": "4ac7ac46-55ad-4c39-befa-ceb79d8eb5df",
@@ -196,6 +204,14 @@
                 "id": "5b8ce078-10ff-40ab-ae16-480f22cd9a9d",
                 "resourcePath": "views\\68e68bd9-aaa0-4855-8094-31207aac7e28.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6f25b4e6-e2a9-486d-9b5d-11081eb14a11",
+            "Value": {
+                "id": "e1e10abd-18e0-4b5e-88e0-e80d20c5166d",
+                "resourcePath": "objects\\o_healingaoe\\o_healingaoe.yy",
+                "resourceType": "GMObject"
             }
         },
         {

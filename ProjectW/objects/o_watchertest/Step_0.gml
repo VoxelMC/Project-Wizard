@@ -92,3 +92,12 @@ if global.PassiveEquipped = false {
 	}
 }
 
+if keyboard_check(ord("U")) {
+	CurrentHP -= 1
+}
+
+if !instance_exists(o_healingaoe) {
+	if keyboard_check_pressed(ord("Q")) {
+		instance_create_depth(x,y,-10000,o_healingaoe)
+	}
+}
