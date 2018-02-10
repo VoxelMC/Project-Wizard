@@ -51,4 +51,4 @@ if global.WeaponEquipped = true {
 
 //Debug
 draw_text(50,50,o_watchertest.max_speed)
-
+draw_text(50,100,global.WeaponEquippedID)
