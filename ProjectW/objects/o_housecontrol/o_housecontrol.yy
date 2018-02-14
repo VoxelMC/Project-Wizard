@@ -1,38 +1,28 @@
 {
-    "id": "1ca9f325-1ffa-4b5c-998b-0654cc477254",
+    "id": "fdc7f112-456f-40d7-ae15-5918b24bd506",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_MasterGame",
+    "name": "o_housecontrol",
     "eventList": [
         {
-            "id": "69166db5-26d3-48d2-a4c7-38b465d6ad32",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 64,
-            "eventtype": 8,
-            "m_owner": "1ca9f325-1ffa-4b5c-998b-0654cc477254"
-        },
-        {
-            "id": "427e8b51-6299-4d29-a618-39a5f029210c",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 2,
-            "eventtype": 7,
-            "m_owner": "1ca9f325-1ffa-4b5c-998b-0654cc477254"
-        },
-        {
-            "id": "e9a8f054-8cf8-4390-a5b4-3497d118a0f0",
+            "id": "3bb311b5-37ab-4dad-9029-f28a33893abd",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "1ca9f325-1ffa-4b5c-998b-0654cc477254"
+            "eventtype": 8,
+            "m_owner": "fdc7f112-456f-40d7-ae15-5918b24bd506"
+        },
+        {
+            "id": "8c870c2f-acd8-4da3-b714-68c0fc3d7b6e",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 82,
+            "eventtype": 9,
+            "m_owner": "fdc7f112-456f-40d7-ae15-5918b24bd506"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

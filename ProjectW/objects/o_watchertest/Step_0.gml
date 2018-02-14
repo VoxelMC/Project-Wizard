@@ -14,18 +14,18 @@ if animation_state = "Idle" {
 //Get the player's input
 key_right = keyboard_check(vk_right);
 key_left = -keyboard_check(vk_left);
-key_jump = keyboard_check_pressed(vk_space);
-key_jump_held = keyboard_check(vk_space);
+/*key_jump = keyboard_check_pressed(vk_space);
+key_jump_held = keyboard_check(vk_space);*/
 
 //React to inputs
 move = key_left + key_right;
 speed_h = move * max_speed;
-if (speed_v < 10) speed_v += grav;
+/*if (speed_v < 10) speed_v += grav;
  
 if (place_meeting(x,y+1,o_floortest))
 {
     speed_v = key_jump * -jumpspeed
-}
+}*/
 
 //Horizontal Collision
 if (place_meeting(x+speed_h,y,o_floortest))
@@ -49,7 +49,7 @@ if (place_meeting(x,y+speed_v,o_floortest))
 }
 y += speed_v;
 
-if (speed_v < 0) && (!key_jump_held) speed_v = max(speed_v,-jumpspeed/4)
+//if (speed_v < 0) && (!key_jump_held) speed_v = max(speed_v,-jumpspeed/4)
 
 //Animation
 if move = -1 {
@@ -71,35 +71,4 @@ if keyboard_check_pressed(vk_shift) {
 } else if keyboard_check_released(vk_shift) {
 	max_speed -= 3;
 	image_speed = 0.8
-}
-
-//Create Item
-if global.PassiveEquipped = false {
-	if keyboard_check_pressed(ord("J")) {
-		MasterItem_Create("Passive",1.1,300,y)
-	}
-	if keyboard_check_pressed(ord("K")) {
-		MasterItem_Create("Active",2.1,400,y)
-	}
-	if keyboard_check_pressed(ord("L")) {
-		MasterItem_Create("Spell",3.1,500,y)
-	}
-	if keyboard_check_pressed(ord("H")) {
-		MasterItem_Create("Weapon",4.1,600,y)
-	}
-	if keyboard_check_pressed(ord("G")) {
-		MasterItem_Create("Weapon",4.2,700,y)
-	}
-}
-
-if CurrentHP != 0 {
-	if keyboard_check(ord("U")) {
-		CurrentHP -= 1
-	}
-}
-
-if !instance_exists(o_healingaoe) {
-	if keyboard_check_pressed(ord("Q")) {
-		instance_create_depth(x,y,-10000,o_healingaoe)
-	}
 }
