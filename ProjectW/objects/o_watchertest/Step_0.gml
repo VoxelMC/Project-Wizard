@@ -92,8 +92,10 @@ if global.PassiveEquipped = false {
 	}
 }
 
-if keyboard_check(ord("U")) {
-	CurrentHP -= 1
+if CurrentHP != 0 {
+	if keyboard_check(ord("U")) {
+		CurrentHP -= 1
+	}
 }
 
 if !instance_exists(o_healingaoe) {

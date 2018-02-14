@@ -1,5 +1,4 @@
 /// @description
 global.WeaponEquipped = true;
+MasterItem_Create("Weapon",global.WeaponEquippedID,x,y)
 global.WeaponEquippedID = image_index
-MasterItem_Create("Weapon",global.WeaponEquippedID + 0.1,x,y)
-

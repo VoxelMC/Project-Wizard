@@ -28,6 +28,3 @@ if place_meeting(x,y,o_MasterPassive) or place_meeting(x,y,o_MasterActives) or p
 		draw_text_transformed(x,y-90,"Item Type: Weapon",0.80,0.80,0)
 	}
 }
-
-//Debug
-draw_text(x,y+100,weapon)
