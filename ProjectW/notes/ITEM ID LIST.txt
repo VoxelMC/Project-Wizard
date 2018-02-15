@@ -3,5 +3,5 @@ ID LIST FOR ITEMS
 Key:
 IT = Item Type
 
-1: Ice Wand (IT: Wand) (Use:)
-2: Glowy (IT: Passive) (Use: Increases player speed by 3.)
+WEAPONS
+1: Ice Wand (IT: Weapon) (Use: Increases player speed by 1.)
