@@ -1,9 +1,9 @@
 ///@description Initialize variables
 
 //Movement Variables
-speed_h = 0
-speed_v = 0
-grav = 0
+speed_x = 0
+speed_y = 0
+grav = 0.5
 jumpspeed = 10;
 max_speed = 2.5		
 
