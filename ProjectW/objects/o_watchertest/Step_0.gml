@@ -5,6 +5,7 @@ if animation_state = "Idle" {
 		image_index = 9
 	}
 } else if animation_state = "Walking" {
+	image_speed = 0.8
 	if image_index >= 9 {
 		image_index = 1
 	}
@@ -13,37 +14,6 @@ if animation_state = "Idle" {
 var k_left = keyboard_check(vk_left);
 var k_right = keyboard_check(vk_right);
 var k_jump  = keyboard_check_pressed(vk_space);
-
-/*var spd_wanted = 0; //The wanted horizontal speed for this step
-
-if(k_left)
-{
-    spd_wanted -= 3;
-}
-if(k_right)
-{
-    spd_wanted += 3;
-}
-
-speed_x = spd_wanted; //Set the horizontal speed based on the wanted speed
-
-speed_y += grav; //Apply gravity
-
-if(k_jump && place_meeting(x, y + 1, o_floortest))
-{
-    speed_y = -6;
-}
-
-//Horizontal collision
-if(place_meeting(x + speed_x, y, o_floortest))
-{
-    while(!place_meeting(x + sign(speed_x), y, o_floortest))
-    {
-        x += sign(speed_x);
-    }
-    speed_x = 0;
-}
-x += speed_x;*/
 
 var spd_wanted = 0; //The wanted horizontal speed for this step
 
@@ -69,19 +39,17 @@ if(place_meeting(x + xsp, y, o_floortest))
     }
     xsp     = 0;
     speed_x = 0; //We still have to set the theoretical value to 0 here
+	spd_inc = 0;
 }
-x += xsp;
-
-/*//Vertical collision
-if(place_meeting(x, y + speed_y, o_floortest))
-{
-    while(!place_meeting(x, y + sign(speed_y), o_floortest))
-    {
-        y += sign(speed_y);
-    }
-    speed_y = 0;
+if spd_wanted > 0 {
+	x += (spd_inc+xsp);
 }
-y += speed_y;*/
+if spd_wanted < 0 {
+	x += (-spd_inc+xsp);
+}
+if spd_wanted = 0 {
+	x += 0;
+}
 
 speed_y += grav; //Apply gravity
 
@@ -122,9 +90,9 @@ if spd_wanted > 0 or spd_wanted < 0 {
 
 //Sprinting
 if keyboard_check_pressed(vk_shift) {
-	spd_wanted += 3;
+	spd_inc += 3
 	image_speed = 1.1
 } else if keyboard_check_released(vk_shift) {
-	spd_wanted -= 3;
+	spd_inc -= 3
 	image_speed = 0.8
 }

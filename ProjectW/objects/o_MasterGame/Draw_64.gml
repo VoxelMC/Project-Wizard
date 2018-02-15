@@ -58,5 +58,8 @@ if show_help = true {
 
 //Debug
 draw_text(x+5,y,"FPS:" + string(fps))
-draw_text(x+5,y+20,"Move Speed:" + string(o_watchertest.max_speed))
-
+if o_watchertest.spd_inc > 0 {
+	draw_text(x+5,y+20,"Move Speed:+" + string(o_watchertest.spd_inc))
+} else if o_watchertest.spd_inc <= 0 {
+	draw_text(x+5,y+20,"Move Speed:" + string(o_watchertest.spd_inc))
+}
