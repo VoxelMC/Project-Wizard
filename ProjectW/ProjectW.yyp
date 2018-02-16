@@ -90,7 +90,7 @@
             "Key": "225df481-2b6a-4240-9db2-789f8a1aa7ed",
             "Value": {
                 "id": "e9be3a4e-ea50-4281-9c4c-e0cba265174f",
-                "resourcePath": "scripts\\weapon\\weapon.yy",
+                "resourcePath": "scripts\\Weapon_Use\\Weapon_Use.yy",
                 "resourceType": "GMScript"
             }
         },

@@ -37,7 +37,7 @@ if(place_meeting(x + xsp, y, o_floortest))
     {
         x += sign(xsp);
     }
-    xsp     = 0;
+    xsp = 0;
     speed_x = 0; //We still have to set the theoretical value to 0 here
 	spd_inc = 0;
 }

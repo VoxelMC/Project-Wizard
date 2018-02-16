@@ -51,8 +51,8 @@ if global.WeaponEquipped = true {
 //Test environment tutorial
 if show_help = true {
 	draw_set_halign(fa_right)
-	draw_text(x+1273,y,string_hash_to_newline("Welcome to the Project W Test Environment Pre-Alpha 1.0!#Here are some controls."))
-	draw_text(x+1273,y+50,string_hash_to_newline("WASD: Movement.#G: Spawn a random passive item.#H: Spawn a random active item.#J: Spawn a random spell.#K: Spawn a random weapon.#L: Spawn a healing aura.#E: Interact.#L. Shift: Sprint.#-: Lower health.#+: Increase health.#R: Restart the game.#F1: Hide/Show this text."))
+	draw_text(x+1273,y,string_hash_to_newline("Welcome to the Project W Test Environment Pre-Alpha v1.0.1!#Here are some controls."))
+	draw_text(x+1273,y+50,string_hash_to_newline("WASD: Movement.#Space: Jump.#G: Spawn a random passive item.#H: Spawn a random active item.#J: Spawn a random spell.#L: Spawn a healing aura.#E: Interact.#L. Shift: Sprint.#-: Lower health.#+: Increase health.#R: Restart the game.#F1: Hide/Show this text."))
 	draw_set_halign(fa_left)
 }
 

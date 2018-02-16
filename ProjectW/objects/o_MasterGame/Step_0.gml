@@ -10,9 +10,11 @@ playery = o_watchertest.y
 	if keyboard_check_pressed(ord("J")) {
 		MasterItem_Create("Spell",3.1,playerx,playery)
 	}
+	/*
 	if keyboard_check_pressed(ord("K")) {
 		MasterItem_Create("Weapon",4.1,playerx,playery)
 	}
+	*/
 
 if o_watchertest.CurrentHP != 0 {
 	if keyboard_check(vk_subtract) {
