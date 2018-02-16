@@ -27,7 +27,7 @@ if o_watchertest.CurrentHP != 100 {
 	}
 }
 
-if keyboard_check_pressed(ord("L")) {
+if keyboard_check(ord("L")) {
 	instance_create_depth(playerx,playery,-10000,o_healingaoe)
 }
 
