@@ -5,70 +5,94 @@ if animation_state = "Idle" {
 		image_index = 9
 	}
 } else if animation_state = "Walking" {
+	image_speed = 0.8
 	if image_index >= 9 {
 		image_index = 1
 	}
 }
 
-//Movement
-//Get the player's input
-key_right = keyboard_check(vk_right);
-key_left = -keyboard_check(vk_left);
-/*key_jump = keyboard_check_pressed(vk_space);
-key_jump_held = keyboard_check(vk_space);*/
+var k_left = keyboard_check(vk_left);
+var k_right = keyboard_check(vk_right);
+var k_jump  = keyboard_check_pressed(vk_space);
 
-//React to inputs
-move = key_left + key_right;
-speed_h = move * max_speed;
-/*if (speed_v < 10) speed_v += grav;
- 
-if (place_meeting(x,y+1,o_floortest))
-{
-    speed_v = key_jump * -jumpspeed
-}*/
+var spd_wanted = 0; //The wanted horizontal speed for this step
 
-//Horizontal Collision
-if (place_meeting(x+speed_h,y,o_floortest))
+if(k_left)
 {
-    while(!place_meeting(x+sign(speed_h),y,o_floortest))
-    {
-        x += sign(speed_h);
-    }
-    speed_h = 0;
+    spd_wanted -= 6;
 }
-x += speed_h;
-
-//Vertical Collision
-if (place_meeting(x,y+speed_v,o_floortest))
+if(k_right)
 {
-    while(!place_meeting(x,y+sign(speed_v),o_floortest))
-    {
-        y += sign(speed_v);
-    }
-    speed_v = 0;
+    spd_wanted += 6;
 }
-y += speed_v;
 
-//if (speed_v < 0) && (!key_jump_held) speed_v = max(speed_v,-jumpspeed/4)
+speed_x += (spd_wanted - speed_x) * 0.2; //Smoothly accelerate / decelerate to the wanted speed.
+
+var xsp = round(speed_x); //Turn the theoretical value into an integer for collision and movement
+
+//Horizontal collision
+if(place_meeting(x + xsp, y, o_floortest))
+{
+    while(!place_meeting(x + sign(xsp), y, o_floortest))
+    {
+        x += sign(xsp);
+    }
+    xsp     = 0;
+    speed_x = 0; //We still have to set the theoretical value to 0 here
+	spd_inc = 0;
+}
+if spd_wanted > 0 {
+	x += (spd_inc+xsp);
+}
+if spd_wanted < 0 {
+	x += (-spd_inc+xsp);
+}
+if spd_wanted = 0 {
+	x += 0;
+}
+
+speed_y += grav; //Apply gravity
+
+if(k_jump && place_meeting(x, y + 1, o_floortest))
+{
+    speed_y = -9;
+}
+
+var ysp = round(speed_y); //Turn the theoretical value into an integer for collision and movement
+
+//Vertical collision
+if(place_meeting(x, y + ysp, o_floortest))
+{
+    while(!place_meeting(x, y + sign(ysp), o_floortest))
+    {
+        y += sign(ysp);
+    }
+    ysp     = 0
+    speed_y = 0; //We still have to set the theoretical value to 0 here
+}
+y += ysp;
+
+
+
 
 //Animation
-if move = -1 {
-	flipped = -1
-} else if move = 1 {
+if spd_wanted > 0 {
 	flipped = 1
+} else if spd_wanted < 0 {
+	flipped = -1
 }
 
-if speed_h > 0 or speed_h < 0 {
+if spd_wanted > 0 or spd_wanted < 0 {
 	animation_state = "Walking"
-} else if speed_h = 0 {
+} else if spd_wanted = 0 {
 	animation_state = "Idle"
 }
 
 //Sprinting
 if keyboard_check_pressed(vk_shift) {
-	max_speed += 3;
+	spd_inc += 3
 	image_speed = 1.1
 } else if keyboard_check_released(vk_shift) {
-	max_speed -= 3;
+	spd_inc -= 3
 	image_speed = 0.8
 }
