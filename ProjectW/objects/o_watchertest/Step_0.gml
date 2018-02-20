@@ -56,6 +56,7 @@ speed_y += grav; //Apply gravity
 if(k_jump && place_meeting(x, y + 1, o_floortest))
 {
     speed_y = -9;
+	is_jumping = true;
 }
 
 var ysp = round(speed_y); //Turn the theoretical value into an integer for collision and movement
@@ -69,6 +70,7 @@ if(place_meeting(x, y + ysp, o_floortest))
     }
     ysp     = 0
     speed_y = 0; //We still have to set the theoretical value to 0 here
+	is_jumping = false;
 }
 y += ysp;
 

@@ -6,6 +6,7 @@ speed_y = 0
 grav = 0.5	
 sprinting = false;
 spd_inc = 0; //How much the speed has been increased by.
+is_jumping = false;
 
 //Animation Variables
 animation_state = "Idle"
