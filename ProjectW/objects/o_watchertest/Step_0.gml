@@ -34,7 +34,7 @@ var xsp = round(speed_x); //Turn the theoretical value into an integer for colli
 if(place_meeting(x + xsp, y, o_floortest))
 {
     while(!place_meeting(x + sign(xsp), y, o_floortest))
-    {
+    { 
         x += sign(xsp);
     }
     xsp = 0;
@@ -72,6 +72,10 @@ if(place_meeting(x, y + ysp, o_floortest))
 }
 y += ysp;
 
+//Attacking
+if mouse_check_button_pressed(mb_left) {
+	Weapon_Use(weapon)
+}
 
 
 

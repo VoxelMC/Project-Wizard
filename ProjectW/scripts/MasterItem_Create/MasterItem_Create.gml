@@ -11,9 +11,8 @@ if Item_Type = "Passive" {
 	var ItemID = argument1
 	with ItemCreate {
 		switch (ItemID) {
-			case 1.1: image_index = 1 break;
-			case 1.2: image_index = 2 break;
-			case 1.3: image_index = 3 break;
+			case 1.1: object_set_sprite(o_MasterPassive,s_PGlowy) break;
+			case 1.2: object_set_sprite(o_MasterPassive,s_PMaze) break;
 		}
 	}
 }
@@ -23,9 +22,8 @@ if Item_Type = "Active" {
 	var ItemID = argument1
 	with ItemCreate {
 		switch (ItemID) {
-			case 2.1: image_index = 1 break;
-			case 2.2: image_index = 2 break;
-			case 2.3: image_index = 3 break;
+			case 2.1: object_set_sprite(o_MasterActives,s_ATriangle) break
+			case 2.2: object_set_sprite(o_MasterActives,s_ASquare) break;
 		}
 	}
 }
@@ -35,9 +33,8 @@ if Item_Type = "Spell" {
 	var ItemID = argument1
 	with ItemCreate {
 		switch (ItemID) {
-			case 3.1: image_index = 1 break;
-			case 3.2: image_index = 2 break;
-			case 3.3: image_index = 3 break;
+			case 3.1: object_set_sprite(o_MasterSpell,s_SGlyph) break;
+			case 3.2: object_set_sprite(o_MasterSpell,s_SHeiro) break;
 		}
 	}
 }
@@ -47,9 +44,8 @@ if Item_Type = "Weapon" {
 	var ItemID = argument1
 	with ItemCreate {
 		switch (ItemID) {
-			case 4.1: image_index = 1 break;
-			case 4.2: image_index = 2 break;
-			case 4.3: image_index = 3 break;
+			case 4.1: object_set_sprite(o_MasterWeapon,s_IceWand) break;
+			case 4.2: object_set_sprite(o_MasterWeapon,s_FireWand) break;
 		}
 	}
 }

@@ -2,19 +2,17 @@
 playerx = o_watchertest.x
 playery = o_watchertest.y
 	if keyboard_check_pressed(ord("G")) {
-		MasterItem_Create("Passive",1.1,playerx,playery)
+		instance_create_layer(playerx,playery,"Items",choose(o_PGlowy,o_PMaze))
 	}
 	if keyboard_check_pressed(ord("H")) {
-		MasterItem_Create("Active",2.1,playerx,playery)
+		instance_create_layer(playerx,playery,"Items",choose(o_ASquare,o_ATriangle))
 	}
 	if keyboard_check_pressed(ord("J")) {
-		MasterItem_Create("Spell",3.1,playerx,playery)
+		instance_create_layer(playerx,playery,"Items",choose(o_SGlyph,o_SHeiro))
 	}
-	/*
 	if keyboard_check_pressed(ord("K")) {
-		MasterItem_Create("Weapon",4.1,playerx,playery)
+		instance_create_layer(playerx,playery,"Items",choose(o_FireWand,o_IceWand))
 	}
-	*/
 
 if o_watchertest.CurrentHP != 0 {
 	if keyboard_check(vk_subtract) {

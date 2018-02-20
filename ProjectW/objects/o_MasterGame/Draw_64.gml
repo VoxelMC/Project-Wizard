@@ -2,7 +2,6 @@
 var middle = camera_get_view_x(0)+camera_get_view_width(0)/2 //Middle = 640
 
 //Health Bar
-
 var hspriteWidth = sprite_get_width(s_HealthBar);
 var hspriteHeight = sprite_get_height(s_HealthBar);
 var hpPercent = o_watchertest.CurrentHP/o_watchertest.MaxHP;
@@ -16,12 +15,20 @@ var manaPercent = o_watchertest.CurrentMana/o_watchertest.MaxMana;
 draw_sprite(s_BarBackground,image_index,middle+240,630)
 draw_sprite_part(s_ManaBar, 0, 0, 0, mspriteWidth*manaPercent, mspriteHeight, middle+240, 630);
 
+//Health/Mana Text
+draw_set_color(c_black)
+draw_text(middle-340,633,string(o_watchertest.CurrentHP) + "/" + string(o_watchertest.MaxHP));
+draw_text(middle+340,633,string(o_watchertest.CurrentMana) + "/" + string(o_watchertest.MaxMana));
+draw_set_color(c_white)
+
+
 //UI
 draw_sprite(s_SpellSlot,image_index,middle+190,650)
 draw_sprite(s_SpellSlot,image_index,middle+100,650)
 draw_sprite(s_WeaponSlot,image_index,middle,640)
 draw_sprite(s_SpellSlot,image_index,middle-100,650)
 draw_sprite(s_SpellSlot,image_index,middle-190,650)
+draw_sprite(s_ActiveSlot,image_index,middle-550,640)
 
 
 if global.PassiveEquipped = true {
@@ -63,3 +70,10 @@ if o_watchertest.spd_inc > 0 {
 } else if o_watchertest.spd_inc <= 0 {
 	draw_text(x+5,y+20,"Move Speed:" + string(o_watchertest.spd_inc))
 }
+draw_text(x+5,y+40,"Weapon:" + string(o_watchertest.weapon))
+draw_set_halign(fa_left)
+draw_text(x+130,y,"Passive Equipped:" + string(global.PassiveEquipped))
+draw_text(x+130,y+20,"Active Equipped:" + string(global.ActiveEquipped))
+draw_text(x+130,y+40,"Spell Equipped:" + string(global.SpellEquipped))
+draw_text(x+130,y+60,"Weapon Equipped:" + string(global.WeaponEquipped))
+draw_set_halign(fa_center)
