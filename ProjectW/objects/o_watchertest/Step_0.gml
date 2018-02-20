@@ -76,15 +76,15 @@ y += ysp;
 
 //Attacking
 if mouse_check_button_pressed(mb_left) {
-	Weapon_Use(global.weapon)
+	Weapon_Use(weapon)
 }
 
 
 
 //Animation
-if spd_wanted > 0 or mouse_x > x {
+if spd_wanted > 0 {
 	flipped = 1
-} else if spd_wanted < 0 or mouse_x < x {
+} else if spd_wanted < 0 {
 	flipped = -1
 }
 
