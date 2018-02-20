@@ -1,7 +1,7 @@
 //Create Item
 playerx = o_watchertest.x
 playery = o_watchertest.y
-	if keyboard_check_pressed(ord("G")) {
+	/*if keyboard_check_pressed(ord("G")) {
 		instance_create_layer(playerx,playery,"Items",choose(o_PGlowy,o_PMaze))
 	}
 	if keyboard_check_pressed(ord("H")) {
@@ -12,16 +12,16 @@ playery = o_watchertest.y
 	}
 	if keyboard_check_pressed(ord("K")) {
 		instance_create_layer(playerx,playery,"Items",choose(o_FireWand,o_IceWand))
-	}
+	}*/
 
-if o_watchertest.CurrentHP != 0 {
+if global.CurrentHP != 0 {
 	if keyboard_check(vk_subtract) {
-		o_watchertest.CurrentHP -= 1
+		global.CurrentHP -= 1
 	}
 }
-if o_watchertest.CurrentHP != 100 {
+if global.CurrentHP != 100 {
 	if keyboard_check(vk_add) {
-		o_watchertest.CurrentHP += 1
+		global.CurrentHP += 1
 	}
 }
 
@@ -42,4 +42,11 @@ if keyboard_check_pressed(vk_f1) {
 
 if keyboard_check_pressed(ord("R")) {
 	game_restart();
+}
+
+if room = testarena {
+	if !instance_exists(o_enemy) {
+		instance_create_layer(x,y,"Enemies",o_enemy)
+		exit;
+	}
 }
