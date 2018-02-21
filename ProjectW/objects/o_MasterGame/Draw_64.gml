@@ -50,7 +50,7 @@ if global.SpellEquipped = true {
 }
 
 if global.WeaponEquipped = true {
-	var sprite = object_get_sprite(o_MasterWeapon)
+	var sprite = object_get_sprite(o_IceWand)
 	var index = global.WeaponEquippedID
 	draw_sprite(sprite,index,middle+3,640)
 }
@@ -58,21 +58,21 @@ if global.WeaponEquipped = true {
 //Test environment tutorial
 if show_help = true {
 	draw_set_halign(fa_right)
-	draw_text(x+1273,y,string_hash_to_newline("Welcome to the Project W Test Environment Pre-Alpha v1.0.1!#Here are some controls."))
-	draw_text(x+1273,y+50,string_hash_to_newline("WASD: Movement.#Space: Jump.#G: Spawn a random passive item.#H: Spawn a random active item.#J: Spawn a random spell.#L: Spawn a healing field.#E: Interact.#L. Shift: Sprint.#-: Lower health.#+: Increase health.#R: Restart the game.#F1: Hide/Show this text."))
+	draw_text(x+1273,y,string_hash_to_newline("Welcome to the Project W Test Environment Pre-Alpha v1.0.2!#Here are some controls."))
+	draw_text(x+1273,y+50,string_hash_to_newline("WASD: Movement.#Space: Jump.#G: Spawn a random passive item.#H: Spawn a random active item.#J: Spawn a random spell.#K: Spawn an Ice Wand.#L: Spawn a healing field.#E: Interact.#L. Shift: Sprint.#-: Lower health.#+: Increase health.#R: Restart the game.#F1: Hide/Show this text."))
 	draw_set_halign(fa_left)
 }
 
 //Debug
-draw_text(x,y,o_watchertest.is_jumping)
+//draw_text(x,y,o_watchertest.is_jumping)
 /*draw_text(x+5,y,"FPS:" + string(fps))
 if o_watchertest.spd_inc > 0 {
 	draw_text(x+5,y+20,"Move Speed:+" + string(o_watchertest.spd_inc))
 } else if o_watchertest.spd_inc <= 0 {
 	draw_text(x+5,y+20,"Move Speed:" + string(o_watchertest.spd_inc))
-}
+}*/
 draw_text(x+5,y+40,"Weapon:" + string(o_watchertest.weapon))
-draw_set_halign(fa_left)
+//draw_set_halign(fa_left)
 /*draw_text(x+130,y,"Passive Equipped:" + string(global.PassiveEquipped))
 draw_text(x+130,y+20,"Active Equipped:" + string(global.ActiveEquipped))
 draw_text(x+130,y+40,"Spell Equipped:" + string(global.SpellEquipped))

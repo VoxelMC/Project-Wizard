@@ -10,8 +10,10 @@ playery = o_watchertest.y
 	if keyboard_check_pressed(ord("J")) {
 		instance_create_layer(playerx,playery,"Items",choose(o_SGlyph,o_SHeiro))
 	}
-	if keyboard_check_pressed(ord("K")) {
-		instance_create_layer(playerx,playery,"Items",choose(o_FireWand,o_IceWand))
+	if !instance_exists(o_IceWand) {
+		if keyboard_check_pressed(ord("K")) {
+			instance_create_layer(playerx,playery,"Items",o_IceWand)
+		}
 	}
 
 if o_watchertest.CurrentHP != 0 {
