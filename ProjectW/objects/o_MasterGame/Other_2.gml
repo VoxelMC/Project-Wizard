@@ -12,3 +12,4 @@ global.WeaponEquippedID = 0
 show_help = true;
 playerx = o_watchertest.x
 playery = o_watchertest.y
+

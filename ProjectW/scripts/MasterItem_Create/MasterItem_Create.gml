@@ -5,47 +5,44 @@
 //Example: MasterItem_Create("Passive",1.1,100,100)
 
 var Item_Type = argument0
+var ItemID = argument1
 
 if Item_Type = "Passive" {
-	var ItemCreate = instance_create_layer(argument2,argument3,"Items",o_MasterPassive)
-	var ItemID = argument1
+	var ItemCreate = instance_create_layer(argument2,argument3,"Items",o_MasterItem)
 	with ItemCreate {
 		switch (ItemID) {
-			case 1.1: object_set_sprite(o_MasterPassive,s_PGlowy) break;
-			case 1.2: object_set_sprite(o_MasterPassive,s_PMaze) break;
+			case 1: myid = 1 break;
+			case 2: myid = 2 break;
 		}
 	}
 }
 
 if Item_Type = "Active" {
-	var ItemCreate = instance_create_layer(argument2,argument3,"Items",o_MasterActives)
-	var ItemID = argument1
+	var ItemCreate = instance_create_layer(argument2,argument3,"Items",o_MasterItem)
 	with ItemCreate {
 		switch (ItemID) {
-			case 2.1: object_set_sprite(o_MasterActives,s_ATriangle) break
-			case 2.2: object_set_sprite(o_MasterActives,s_ASquare) break;
+			case 3: myid = 3 break
+			case 4: myid = 4 break;
 		}
 	}
 }
 
 if Item_Type = "Spell" {
-	var ItemCreate = instance_create_layer(argument2,argument3,"Items",o_MasterSpell)
-	var ItemID = argument1
+	var ItemCreate = instance_create_layer(argument2,argument3,"Items",o_MasterItem)
 	with ItemCreate {
 		switch (ItemID) {
-			case 3.1: object_set_sprite(o_MasterSpell,s_SGlyph) break;
-			case 3.2: object_set_sprite(o_MasterSpell,s_SHeiro) break;
+			case 5: myid = 5 break;
+			case 6: myid = 6 break;
 		}
 	}
 }
 
 if Item_Type = "Weapon" {
-	var ItemCreate = instance_create_layer(argument2,argument3,"Items",o_MasterWeapon)
-	var ItemID = argument1
+	var ItemCreate = instance_create_layer(argument2,argument3,"Items",o_MasterItem)
 	with ItemCreate {
 		switch (ItemID) {
-			case 4.1: object_set_sprite(o_MasterWeapon,s_IceWand) break;
-			case 4.2: object_set_sprite(o_MasterWeapon,s_FireWand) break;
+			case 7: myid = 7 break;
+			case 8: myid = 8 break;
 		}
 	}
 }

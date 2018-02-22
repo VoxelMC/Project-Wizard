@@ -31,7 +31,7 @@ draw_sprite(s_SpellSlot,image_index,middle-190,650)
 //draw_sprite(s_ActiveSlot,image_index,middle-550,640)
 
 
-if global.PassiveEquipped = true {
+/*if global.PassiveEquipped = true {
 	var sprite = object_get_sprite(o_MasterPassive)
 	var index = global.PassiveEquippedID
 	draw_sprite(sprite,index,middle+103,652)
@@ -53,7 +53,7 @@ if global.WeaponEquipped = true {
 	var sprite = object_get_sprite(o_IceWand)
 	var index = global.WeaponEquippedID
 	draw_sprite(sprite,index,middle+3,640)
-}
+}*/
 
 //Test environment tutorial
 if show_help = true {
@@ -65,12 +65,12 @@ if show_help = true {
 
 //Debug
 //draw_text(x,y,o_watchertest.is_jumping)
-/*draw_text(x+5,y,"FPS:" + string(fps))
+draw_text(x+5,y,"FPS:" + string(fps))
 if o_watchertest.spd_inc > 0 {
 	draw_text(x+5,y+20,"Move Speed:+" + string(o_watchertest.spd_inc))
 } else if o_watchertest.spd_inc <= 0 {
 	draw_text(x+5,y+20,"Move Speed:" + string(o_watchertest.spd_inc))
-}*/
+}
 draw_text(x+5,y+40,"Weapon:" + string(o_watchertest.weapon))
 //draw_set_halign(fa_left)
 /*draw_text(x+130,y,"Passive Equipped:" + string(global.PassiveEquipped))

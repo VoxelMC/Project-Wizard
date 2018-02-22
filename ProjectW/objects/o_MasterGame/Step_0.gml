@@ -2,17 +2,17 @@
 playerx = o_watchertest.x
 playery = o_watchertest.y
 	if keyboard_check_pressed(ord("G")) {
-		instance_create_layer(playerx,playery,"Items",choose(o_PGlowy,o_PMaze))
+		MasterItem_Create("Passive",choose(1,2),playerx,playery)
 	}
 	if keyboard_check_pressed(ord("H")) {
-		instance_create_layer(playerx,playery,"Items",choose(o_ASquare,o_ATriangle))
+		MasterItem_Create("Active",choose(3,4),playerx,playery)
 	}
 	if keyboard_check_pressed(ord("J")) {
-		instance_create_layer(playerx,playery,"Items",choose(o_SGlyph,o_SHeiro))
+		MasterItem_Create("Spells",choose(5,6),playerx,playery)
 	}
 	if !instance_exists(o_IceWand) {
 		if keyboard_check_pressed(ord("K")) {
-			instance_create_layer(playerx,playery,"Items",o_IceWand)
+			MasterItem_Create("Weapon",choose(7,8),playerx,playery)
 		}
 	}
 
