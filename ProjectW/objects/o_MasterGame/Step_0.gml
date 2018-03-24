@@ -1,7 +1,7 @@
 //Create Item
 playerx = o_watchertest.x
 playery = o_watchertest.y
-	if keyboard_check_pressed(ord("G")) {
+	/*if keyboard_check_pressed(ord("G")) {
 		instance_create_layer(playerx,playery,"Items",choose(o_PGlowy,o_PMaze))
 	}
 	if keyboard_check_pressed(ord("H")) {
@@ -14,7 +14,15 @@ playery = o_watchertest.y
 		if keyboard_check_pressed(ord("K")) {
 			instance_create_layer(playerx,playery,"Items",o_IceWand)
 		}
-	}
+	}*/
+	
+if mouse_check_button_pressed(mb_left) {
+	var createditem;
+	createditem = MasterItem_Create(irandom_range(1,8),mouse_x,mouse_y)
+	ds_list_add(ID,createditem);
+}
+
+
 
 if o_watchertest.CurrentHP != 0 {
 	if keyboard_check(vk_subtract) {

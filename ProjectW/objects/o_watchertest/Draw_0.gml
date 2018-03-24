@@ -23,9 +23,9 @@ if place_meeting(x,y,o_MasterItem) or place_meeting(x,y,o_door) {
 		draw_set_halign(fa_center)
 		draw_text_transformed(x,y-90,"Item Type: Spell",0.80,0.80,0)
 	}*/
-	if place_meeting(x,y,o_IceWand) {
+	/*if place_meeting(x,y,o_IceWand) {
 		draw_set_halign(fa_center)
 		draw_text_transformed(x,y-110,string_hash_to_newline("Item Type: Weapon#Shoots ice projectiles."),0.80,0.80,0)
 		draw_set_halign(fa_left)
-	}
+	}*/
 }

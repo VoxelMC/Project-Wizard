@@ -22,7 +22,8 @@ CurrentMana = 50
 MaxMana = 50
 
 //Inventory Variables
-global.inv = ds_list_create();
+globalvar inv;
+inv = ds_list_create();
 
 
 //Key Mappings
