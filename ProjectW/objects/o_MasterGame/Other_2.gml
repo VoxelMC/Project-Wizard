@@ -12,7 +12,6 @@ global.WeaponEquippedID = 0
 show_help = true;
 playerx = o_watchertest.x
 playery = o_watchertest.y
-<<<<<<< HEAD
 globalvar ID;
 ID = ds_list_create();
 
@@ -28,6 +27,3 @@ global.ispriteArray[item.glyph] = s_SGlyph //ID = 5
 global.ispriteArray[item.heiro] = s_SHeiro //ID = 6
 global.ispriteArray[item.icewand] = s_IceWand //ID = 7
 global.ispriteArray[item.firewand] = s_FireWand //ID = 8
-=======
-
->>>>>>> 1de1b8e46ee792a81d4f98b0f9137a7d9b9f2585
