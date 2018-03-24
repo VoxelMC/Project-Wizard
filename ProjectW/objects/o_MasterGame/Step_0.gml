@@ -1,10 +1,13 @@
 //Create Item
 playerx = o_watchertest.x
 playery = o_watchertest.y
+<<<<<<< HEAD
 	/*if keyboard_check_pressed(ord("G")) {
 		instance_create_layer(playerx,playery,"Items",choose(o_PGlowy,o_PMaze))
+=======
 	if keyboard_check_pressed(ord("G")) {
 		MasterItem_Create("Passive",choose(1,2),playerx,playery)
+>>>>>>> 1de1b8e46ee792a81d4f98b0f9137a7d9b9f2585
 	}
 	if keyboard_check_pressed(ord("H")) {
 		MasterItem_Create("Active",choose(3,4),playerx,playery)

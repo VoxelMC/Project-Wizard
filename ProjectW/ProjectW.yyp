@@ -591,14 +591,6 @@
             }
         },
         {
-            "Key": "e0662ffb-24b0-4544-a5d5-1b87f710c836",
-            "Value": {
-                "id": "618581cb-c1e7-4371-9bb1-a13a1c9e7b5c",
-                "resourcePath": "objects\\o_MasterItem\\o_MasterItem.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "e75dd3ce-b4c1-4fa4-9279-6cebda5fee1d",
             "Value": {
                 "id": "204dbb60-135a-41ef-a6c9-98b9141187e8",
