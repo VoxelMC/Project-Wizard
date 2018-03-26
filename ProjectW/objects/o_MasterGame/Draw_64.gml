@@ -67,13 +67,17 @@ if show_help = true {
 var w=0 
 var h=0
 var spacing = 20
-for(var i=0; i<ds_list_size(inv); i++){
-    draw_text(5 + (w*spacing), 5 + (h*spacing) , inv[| i]);
+for(var i=0; i<ds_list_size(pasinv); i++){
+    draw_text(5 + (w*spacing), 5 + (h*spacing) , pasinv[| i]);
 	h++
 	if (h >= (floor(window_get_height()/spacing))){
             h = 0; w++;
 	}
 }
+
+var drawact;
+drawact = actinv[? "ActiveID"]
+draw_text(30,30,drawact)
 
 var IDw=0 
 var IDh=0

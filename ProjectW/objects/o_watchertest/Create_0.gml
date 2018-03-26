@@ -23,14 +23,13 @@ MaxMana = 50
 
 //Inventory Variables
 globalvar pasinv;
-pasinv = ds_grid_create(2,0)
+pasinv = ds_list_create();
 globalvar actinv;
-actinv = ds_grid_create(2,1)
+actinv = ds_map_create();
 globalvar spellinv;
-spellinv = ds_grid_create(2,4)
+spellinv = ds_list_create();
 globalvar wepinv;
-wepinv = ds_grid_create(2,1)
-
+wepinv = ds_map_create();
 
 //Key Mappings
 keyboard_set_map(ord("A"),vk_left)
