@@ -2,7 +2,6 @@
 ///@param Item_X_Position
 ///@param Item_Y_Position
 //Example: MasterItem_Create(1,"Passive",100,100)
-//THE ITEM TYPE USES AN ENUM FOR ITEM TYPE AND ID!
 
 
 var ItemID = argument0
@@ -29,7 +28,7 @@ var ItemCreate = instance_create_layer(argument1,argument2,"Items",o_MasterItem)
 ItemCreate.my_id = ItemID
 ItemCreate.my_id_type = Item_Type //Item Type, Passive/Active/Spell/Weapon
 ItemCreate.my_grid = Item_Type_Grid //Item Type but the Grid can read it (TEMPORARY)
-ItemCreate.my_description = "Error, no description?"
+ItemCreate.my_description = "Error, no description!"
 with ItemCreate {
 	my_name = ds_grid_get(my_grid,0,my_id)
 	sprite_index = ds_grid_get(my_grid,1,my_id)

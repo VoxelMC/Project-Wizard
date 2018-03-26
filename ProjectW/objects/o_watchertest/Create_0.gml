@@ -22,8 +22,14 @@ CurrentMana = 50
 MaxMana = 50
 
 //Inventory Variables
-globalvar inv;
-inv = ds_list_create();
+globalvar pasinv;
+pasinv = ds_grid_create(2,0)
+globalvar actinv;
+actinv = ds_grid_create(2,1)
+globalvar spellinv;
+spellinv = ds_grid_create(2,4)
+globalvar wepinv;
+wepinv = ds_grid_create(2,1)
 
 
 //Key Mappings
