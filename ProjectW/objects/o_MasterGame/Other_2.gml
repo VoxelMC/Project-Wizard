@@ -13,3 +13,9 @@ show_help = true;
 playerx = o_watchertest.x
 playery = o_watchertest.y
 
+/* Items */
+//Glowy [1]
+global.item[1,1] = "Glowy" //Name
+global.item[1,2] = "Passive" //Item Type
+global.item[1,3] = "Increases strength by 2" //Description
+global.item[1,4] = 2 //Effect Increase

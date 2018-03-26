@@ -1,4 +1,6 @@
 //Create Item
+for(i=0;i<=10;i+=1)
+{global.item[i,1]=-1}
 playerx = o_watchertest.x
 playery = o_watchertest.y
 	if keyboard_check_pressed(ord("G")) {
