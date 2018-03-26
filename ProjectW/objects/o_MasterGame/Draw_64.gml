@@ -31,7 +31,7 @@ draw_sprite(s_SpellSlot,image_index,middle-190,650)
 //draw_sprite(s_ActiveSlot,image_index,middle-550,640)
 
 
-/*if global.PassiveEquipped = true {
+if global.PassiveEquipped = true {
 	var sprite = object_get_sprite(o_MasterPassive)
 	var index = global.PassiveEquippedID
 	draw_sprite(sprite,index,middle+103,652)
@@ -53,7 +53,7 @@ if global.WeaponEquipped = true {
 	var sprite = object_get_sprite(o_IceWand)
 	var index = global.WeaponEquippedID
 	draw_sprite(sprite,index,middle+3,640)
-}*/
+}
 
 //Test environment tutorial
 if show_help = true {
@@ -63,15 +63,45 @@ if show_help = true {
 	draw_set_halign(fa_left)
 }
 
+//Inventory text
+var w=0 
+var h=0
+var spacing = 20
+for(var i=0; i<ds_list_size(inv); i++){
+    draw_text(5 + (w*spacing), 5 + (h*spacing) , inv[| i]);
+	h++
+	if (h >= (floor(window_get_height()/spacing))){
+            h = 0; w++;
+	}
+}
+
+var IDw=0 
+var IDh=0
+var wspacing = 60
+var hspacing = 20
+for(var i=0; i<ds_list_size(ID); i++){
+    draw_text(20 + (IDw*wspacing), 20 + (IDh*hspacing) , ID[| i]);
+    IDh++
+    if (IDh >= (floor(window_get_height()/hspacing))){
+            IDh = 0; IDw++;
+    }
+}
+
+
+
+
+
+
 //Debug
 //draw_text(x,y,o_watchertest.is_jumping)
-draw_text(x+5,y,"FPS:" + string(fps))
+/*draw_text(x+5,y,"FPS:" + string(fps))
 if o_watchertest.spd_inc > 0 {
 	draw_text(x+5,y+20,"Move Speed:+" + string(o_watchertest.spd_inc))
 } else if o_watchertest.spd_inc <= 0 {
 	draw_text(x+5,y+20,"Move Speed:" + string(o_watchertest.spd_inc))
-}
-draw_text(x+5,y+40,"Weapon:" + string(o_watchertest.weapon))
+}*/
+//draw_text(x+5,y+40,"Weapon:" + string(o_watchertest.weapon))
+//draw_text(x+5,y+50,item.glowy)
 //draw_set_halign(fa_left)
 /*draw_text(x+130,y,"Passive Equipped:" + string(global.PassiveEquipped))
 draw_text(x+130,y+20,"Active Equipped:" + string(global.ActiveEquipped))

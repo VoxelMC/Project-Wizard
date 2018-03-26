@@ -41,15 +41,8 @@ if(place_meeting(x + xsp, y, o_floortest))
     speed_x = 0; //We still have to set the theoretical value to 0 here
 	spd_inc = 0;
 }
-if spd_wanted > 0 {
-	x += (spd_inc+xsp);
-}
-if spd_wanted < 0 {
-	x += (-spd_inc+xsp);
-}
-if spd_wanted = 0 {
-	x += 0;
-}
+
+x += (spd_inc)*sign(spd_wanted) + xsp
 
 speed_y += grav; //Apply gravity
 
@@ -80,7 +73,6 @@ if mouse_check_button_pressed(mb_left) {
 }
 
 
-
 //Animation
 if spd_wanted > 0 {
 	flipped = 1
@@ -94,11 +86,6 @@ if spd_wanted > 0 or spd_wanted < 0 {
 	animation_state = "Idle"
 }
 
+
 //Sprinting
-if keyboard_check_pressed(vk_shift) {
-	spd_inc += 3
-	image_speed = 1.1
-} else if keyboard_check_released(vk_shift) {
-	spd_inc -= 3
-	image_speed = 0.8
-}
+Sprint();

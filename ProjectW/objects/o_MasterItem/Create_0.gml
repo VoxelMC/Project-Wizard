@@ -1,35 +1,31 @@
-//Make the item work
-switch (myid) {
-	
-	/* PASSIVES */
-	case 1: //GLOWY
-		sprite_index = s_PGlowy;
-		//o_watchertest.dmg += 2; 
-		break;
-	case 2: //MAZE
-		sprite_index = s_PMaze;
-		//o_watchertest.dmg += 3;
-		break;
-		
-	/* ACTIVES */
-	case 3: //TRIANGLE
-		sprite_index = s_ATriangle; break;
-	case 4: //SQUARE
-		sprite_index = s_ASquare; break;
-		
-	/* SPELLS */
-	case 5: //GLYPH
-		sprite_index = s_SGlyph; break;
-	case 6: //HEIRO
-		sprite_index = s_SHeiro; break;
-	
-	/* WEAPONS */
-	case 7: //ICE WAND
-		sprite_index = s_IceWand;
-		o_watchertest.weapon = "Ice Wand"; break;
-	case 8: //FIRE WAND
-		sprite_index = s_FireWand;
-		o_watchertest.weapon = "Fire Wand"; break;
-		
-}
-		
+/// @description
+/* ITEM INITIALIZING */
+
+//GRID INIT
+/*globalvar passive;
+passive = ds_grid_create(10,10);
+
+globalvar active;
+active = ds_grid_create(10,10);
+
+globalvar spell;
+spell = ds_grid_create(10,10);
+
+globalvar weapon;
+weapon = ds_grid_create(10,10);
+
+//PASSIVES
+item_init_passive(0,"Glowy",s_PGlowy,"Increases attack by 1.",1)
+item_init_passive(1,"Maze",s_PMaze,"Increases attack by 2.",2)
+
+//ACTIVES
+item_init_active(2,"Triangle",s_ATriangle,"Nothing yet.",1)
+item_init_active(3,"Square",s_ASquare,"Nothing yet.",2)
+
+//SPELLS
+item_init_spell(4,"Glyph",s_SGlyph,"Nothing yet.",1)
+item_init_spell(5,"Heiro",s_SHeiro,"Nothing yet.",2)
+
+//WEAPONS
+item_init_weapon(6,"Ice Wand",s_IceWand,"A wand that shoots ice projectiles.")
+item_init_weapon(7,"Fire Wand",s_FireWand,"A wand that shoots fire projectiles.")

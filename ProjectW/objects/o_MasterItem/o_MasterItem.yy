@@ -5,7 +5,17 @@
     "name": "o_MasterItem",
     "eventList": [
         {
-            "id": "53b775a3-8458-4f6d-91ad-4d782596b94c",
+            "id": "a3c77df7-82fd-49c0-9e84-ec1d72f7fc37",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "cba10936-e972-4f3c-a531-8862be71c06e"
+        },
+        {
+            "id": "e974ea21-f170-4ba8-b851-4737c8c5e01f",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
