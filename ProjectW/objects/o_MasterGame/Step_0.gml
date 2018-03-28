@@ -16,11 +16,11 @@ playery = o_watchertest.y
 		}
 	}*/
 	
-if mouse_check_button_pressed(mb_left) {
+/*if mouse_check_button_pressed(mb_left) {
 	//var createditem;
 	MasterItem_Create(irandom_range(0,7),mouse_x,mouse_y)
 	//ds_list_add(ID,createditem);
-}
+}*/
 
 
 

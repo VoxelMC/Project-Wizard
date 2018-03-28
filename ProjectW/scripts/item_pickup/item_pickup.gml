@@ -9,40 +9,48 @@ switch othertype {
 	
 	case "Passive": 
 		var amount = ds_grid_height(pasinv)
-		ds_grid_resize(pasinv,3,amount+1)
+		ds_grid_resize(pasinv,4,amount+1)
 		amount = ds_grid_height(pasinv)
-		ds_grid_add(pasinv,prop.ID,amount,otherid)
-		ds_grid_add(pasinv,prop.sprite,amount,otherspr)
-		ds_grid_add(pasinv,prop.name,amount,othername)
-		ds_grid_add(pasinv,prop.desc,amount,otherdesc) break;
+		ds_grid_set(pasinv,prop.ID,amount-1,otherid)
+		ds_grid_set(pasinv,prop.sprite,amount-1,otherspr)
+		ds_grid_set(pasinv,prop.name,amount-1,othername)
+		ds_grid_set(pasinv,prop.desc,amount-1,otherdesc) break;
 	
 	case "Active":
-		if actequipped = undefined {
-			ds_grid_add(actinv,prop.ID,0,otherid)
-			ds_grid_add(actinv,prop.sprite,0,otherspr)
-			ds_grid_add(actinv,prop.name,0,othername)
-			ds_grid_add(actinv,prop.desc,0,otherdesc)
+		if actequipped = "none" {
+			ds_grid_set(actinv,prop.ID,0,otherid)
+			ds_grid_set(actinv,prop.sprite,0,otherspr)
+			ds_grid_set(actinv,prop.name,0,othername)
+			ds_grid_set(actinv,prop.desc,0,otherdesc)
+			actequipped = ds_grid_get(actinv,0,0);
 		} else {
 			MasterItem_Create(actequipped,x,y)
-			ds_grid_add(actinv,prop.ID,0,otherid)
-			ds_grid_add(actinv,prop.sprite,0,otherspr)
-			ds_grid_add(actinv,prop.name,0,othername)
-			ds_grid_add(actinv,prop.desc,0,otherdesc)
-		}
+			ds_grid_set(actinv,prop.ID,0,otherid)
+			ds_grid_set(actinv,prop.sprite,0,otherspr)
+			ds_grid_set(actinv,prop.name,0,othername)
+			ds_grid_set(actinv,prop.desc,0,otherdesc)
+			actequipped = ds_grid_get(actinv,0,0);
+		} break;
 	
-	case "Spell":
+	case "Spell": //I don't have anything here yet, this doesn't cause problems 
+	break;
 	
 	case "Weapon":
-		if wepequipped = undefined {
-			ds_grid_add(wepinv,prop.ID,0,otherid)
-			ds_grid_add(wepinv,prop.sprite,0,otherspr)
-			ds_grid_add(wepinv,prop.name,0,othername)
-			ds_grid_add(wepinv,prop.desc,0,otherdesc)
+		if wepequipped = "none" {
+			ds_grid_set(wepinv,prop.ID,0,otherid)
+			ds_grid_set(wepinv,prop.sprite,0,otherspr)
+			ds_grid_set(wepinv,prop.name,0,othername)
+			ds_grid_set(wepinv,prop.desc,0,otherdesc)
+			wepequipped = ds_grid_get(wepinv,prop.ID,0);
+			eqweapon = ds_grid_get(wepinv,prop.ID,0);
 		} else {
 			MasterItem_Create(wepequipped,x,y)
-			ds_grid_add(wepinv,prop.ID,0,otherid)
-			ds_grid_add(wepinv,prop.sprite,0,otherspr)
-			ds_grid_add(wepinv,prop.name,0,othername)
-			ds_grid_add(wepinv,prop.desc,0,otherdesc)
-		}
+			ds_grid_set(wepinv,prop.ID,0,otherid)
+			ds_grid_set(wepinv,prop.sprite,0,otherspr)
+			ds_grid_set(wepinv,prop.name,0,othername)
+			ds_grid_set(wepinv,prop.desc,0,otherdesc)
+			wepequipped = ds_grid_get(wepinv,0,0);
+			eqweapon = ds_grid_get(wepinv,prop.ID,0);
+		} break;
 }
+instance_destroy(other);

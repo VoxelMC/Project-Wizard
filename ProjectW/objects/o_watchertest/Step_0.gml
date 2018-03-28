@@ -72,7 +72,7 @@ y += ysp;
 
 //Attacking
 if mouse_check_button_pressed(mb_left) {
-	Weapon_Use(weapon)
+	Weapon_Use(eqweapon)
 }
 
 

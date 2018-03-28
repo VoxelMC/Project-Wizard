@@ -431,6 +431,14 @@
             }
         },
         {
+            "Key": "83aee08d-6141-4094-85ce-439ed76a00e2",
+            "Value": {
+                "id": "34a8d303-bdb5-4833-9135-a8748ed1a517",
+                "resourcePath": "objects\\o_FireProjectile\\o_FireProjectile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "8a2daeb3-abc7-4d6d-9d72-5d2eb3d994e0",
             "Value": {
                 "id": "de53be85-2431-4ddc-8ce6-d9b9e29ffa05",
@@ -719,6 +727,14 @@
             }
         },
         {
+            "Key": "fc727cbd-7ecc-4226-a163-f8b873dbcc9f",
+            "Value": {
+                "id": "692b3ec3-d326-4c66-a6ae-3187deb86655",
+                "resourcePath": "sprites\\s_FireProjectile\\s_FireProjectile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "fd1c4f74-f719-4215-af13-e1123eb7b74c",
             "Value": {
                 "id": "c4764299-03ce-4516-8958-c62b7d516889",
@@ -738,14 +754,14 @@
     "script_order": [
         "fd1c4f74-f719-4215-af13-e1123eb7b74c",
         "225df481-2b6a-4240-9db2-789f8a1aa7ed",
+        "d0cd514b-1d8a-4ec6-8f44-b2141d0221a4",
         "09329869-8bf8-4e05-bb2d-291df595d4a0",
         "5b71367d-cdbe-4875-bdbd-8609b6631d3a",
         "b092c232-6214-42f9-b864-724d08e4767a",
         "411c2892-ec5d-4d35-bc18-147e11be42c8",
         "30667739-4772-4476-b8be-abdfd66f232d",
         "1e463069-3436-490a-90eb-782531d85b3d",
-        "5beeb5ce-70a0-4200-80be-d3d288223cb1",
-        "d0cd514b-1d8a-4ec6-8f44-b2141d0221a4"
+        "5beeb5ce-70a0-4200-80be-d3d288223cb1"
     ],
     "tutorial": ""
 }

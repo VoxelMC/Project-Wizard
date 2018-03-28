@@ -90,17 +90,6 @@ for(var i=0; i<ds_list_size(ID); i++){
 }*/
 
 
-
-
-
-
-
-
-
-
-
-
-
 //draw_text(x,y,o_watchertest.is_jumping)
 /*draw_text(x+5,y,"FPS:" + string(fps))
 if o_watchertest.spd_inc > 0 {
