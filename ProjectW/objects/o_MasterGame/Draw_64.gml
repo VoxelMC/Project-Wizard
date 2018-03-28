@@ -64,7 +64,7 @@ if show_help = true {
 }
 
 //Inventory text
-var w=0 
+/*var w=0 
 var h=0
 var spacing = 20
 for(var i=0; i<ds_list_size(pasinv); i++){
@@ -73,13 +73,11 @@ for(var i=0; i<ds_list_size(pasinv); i++){
 	if (h >= (floor(window_get_height()/spacing))){
             h = 0; w++;
 	}
-}
+}*/
 
-var drawact;
-drawact = actinv[? "ActiveID"]
-draw_text(30,30,drawact)
 
-var IDw=0 
+
+/*var IDw=0 
 var IDh=0
 var wspacing = 60
 var hspacing = 20
@@ -89,14 +87,20 @@ for(var i=0; i<ds_list_size(ID); i++){
     if (IDh >= (floor(window_get_height()/hspacing))){
             IDh = 0; IDw++;
     }
-}
+}*/
 
 
 
 
 
 
-//Debug
+
+
+
+
+
+
+
 //draw_text(x,y,o_watchertest.is_jumping)
 /*draw_text(x+5,y,"FPS:" + string(fps))
 if o_watchertest.spd_inc > 0 {

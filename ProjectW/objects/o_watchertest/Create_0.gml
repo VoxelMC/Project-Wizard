@@ -13,7 +13,6 @@ animation_state = "Idle"
 flipped = 1
 
 //Combat Variables
-weapon = "none"
 
 //Health/Mana Variables
 CurrentHP = 100
@@ -23,13 +22,15 @@ MaxMana = 50
 
 //Inventory Variables
 globalvar pasinv;
-pasinv = ds_list_create();
+pasinv = ds_grid_create(3,0);
 globalvar actinv;
-actinv = ds_map_create();
+actinv = ds_grid_create(3,0);
 globalvar spellinv;
-spellinv = ds_list_create();
+spellinv = ds_grid_create(3,3);
 globalvar wepinv;
-wepinv = ds_map_create();
+wepinv = ds_grid_create(3,0);
+wepequipped = ds_grid_get(wepinv,0,0);
+actequipped = ds_grid_get(actinv,0,0);
 
 //Key Mappings
 keyboard_set_map(ord("A"),vk_left)

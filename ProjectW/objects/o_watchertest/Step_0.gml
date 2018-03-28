@@ -11,6 +11,9 @@ if animation_state = "Idle" {
 	}
 }
 
+//Item Check
+
+
 var k_left = keyboard_check(vk_left);
 var k_right = keyboard_check(vk_right);
 var k_jump  = keyboard_check_pressed(vk_space);

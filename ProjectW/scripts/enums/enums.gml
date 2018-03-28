@@ -19,4 +19,12 @@ enum type
 	weapon
 	}
 	
+enum prop
+	{
+	ID,
+	sprite,
+	name,
+	desc,
+	}
+	
 	
