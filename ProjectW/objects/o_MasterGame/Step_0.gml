@@ -1,20 +1,14 @@
-//Create Item
 playerx = o_watchertest.x
 playery = o_watchertest.y
-	/*if keyboard_check_pressed(ord("G")) {
-		instance_create_layer(playerx,playery,"Items",choose(o_PGlowy,o_PMaze))
+
+//Inventory open
+if keyboard_check_pressed(vk_escape) {
+	switch inv_open {
+		case true: inv_open = false break;
+		case false: inv_open = true break;
 	}
-	if keyboard_check_pressed(ord("H")) {
-		instance_create_layer(playerx,playery,"Items",choose(o_ASquare,o_ATriangle))
-	}
-	if keyboard_check_pressed(ord("J")) {
-		instance_create_layer(playerx,playery,"Items",choose(o_SGlyph,o_SHeiro))
-	}
-	if !instance_exists(o_IceWand) {
-		if keyboard_check_pressed(ord("K")) {
-			instance_create_layer(playerx,playery,"Items",o_IceWand)
-		}
-	}*/
+	instance_create_layer(x,y,"Inventory",o_Inventory)
+}
 	
 /*if mouse_check_button_pressed(mb_left) {
 	//var createditem;
