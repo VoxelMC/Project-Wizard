@@ -62,14 +62,14 @@ item_init_weapon(6,"Ice Wand",s_IceWand,"A wand that shoots ice projectiles.")
 item_init_weapon(7,"Fire Wand",s_FireWand,"A wand that shoots fire projectiles.")
 
 //Spawn some starting items
-MasterItem_Create(0,700,350)
-MasterItem_Create(1,775,350)
-MasterItem_Create(2,850,350)
-MasterItem_Create(3,925,350)
-MasterItem_Create(4,1000,350)
-MasterItem_Create(5,1075,350)
-MasterItem_Create(6,1150,350)
-MasterItem_Create(7,1225,350)
+MasterItem_Create(item.glowy,700,350)
+MasterItem_Create(item.maze,775,350)
+MasterItem_Create(item.triangle,850,350)
+MasterItem_Create(item.square,925,350)
+MasterItem_Create(item.heiro,1000,350)
+MasterItem_Create(item.glyph,1075,350)
+MasterItem_Create(item.icewand,1150,350)
+MasterItem_Create(item.firewand,1225,350)
 
 
 

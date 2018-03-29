@@ -1,6 +1,6 @@
 /// @description debug/UI stuff
 //debug
-var actid = ds_grid_get(actinv,0,0)
+/*var actid = ds_grid_get(actinv,0,0)
 var actspr = ds_grid_get(actinv,1,0)
 var actname = ds_grid_get(actinv,2,0)
 var actdesc = ds_grid_get(actinv,3,0)
@@ -15,14 +15,15 @@ draw_text(50,110,"Active Description: " + string(actdesc))
 draw_text(50,130,"Weapon ID: " + string(wepid))
 draw_text(50,150,"Weapon Sprite: " + string(wepspr))
 draw_text(50,170,"Weapon Name: " + string(wepname))
-draw_text(50,190,"Weapon Description: " + string(wepdesc))
+draw_text(50,190,"Weapon Description: " + string(wepdesc))*/
 
 //draw_text(200,220,wepequipped)
 
+//Draw sprites for inventory
 var actsprite = ds_grid_get(actinv,1,0)
 var wepsprite = ds_grid_get(wepinv,1,0)
 if actsprite != 0 {
-	draw_sprite(actsprite,image_index,200,637)
+	draw_sprite(actsprite,image_index,100,640)
 }
 
 if wepsprite != 0 {

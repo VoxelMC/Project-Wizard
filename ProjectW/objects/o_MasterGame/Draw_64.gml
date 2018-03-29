@@ -28,7 +28,10 @@ draw_sprite(s_SpellSlot,image_index,middle+100,650)
 draw_sprite(s_WeaponSlot,image_index,middle,640)
 draw_sprite(s_SpellSlot,image_index,middle-100,650)
 draw_sprite(s_SpellSlot,image_index,middle-190,650)
-//draw_sprite(s_ActiveSlot,image_index,middle-550,640)
+draw_set_halign(fa_center)
+draw_text_transformed(middle-540,565,"Active",1.2,1.2,0)
+draw_set_halign(fa_left)
+draw_sprite(s_ActiveSlot,image_index,middle-540,640)
 
 
 if global.PassiveEquipped = true {
@@ -58,8 +61,8 @@ if global.WeaponEquipped = true {
 //Test environment tutorial
 if show_help = true {
 	draw_set_halign(fa_right)
-	draw_text(x+1273,y,string_hash_to_newline("Welcome to the Project W Test Environment Pre-Alpha v1.0.2!#Here are some controls."))
-	draw_text(x+1273,y+50,string_hash_to_newline("WASD: Movement.#Space: Jump.#G: Spawn a random passive item.#H: Spawn a random active item.#J: Spawn a random spell.#K: Spawn an Ice Wand.#L: Spawn a healing field.#E: Interact.#L. Shift: Sprint.#-: Lower health.#+: Increase health.#R: Restart the game.#F1: Hide/Show this text."))
+	draw_text(x+1273,y,string_hash_to_newline("Welcome to the Project W Test Environment Pre-Alpha v1.1!#Here are some controls."))
+	draw_text(x+1273,y+50,string_hash_to_newline("WASD: Movement.#Space: Jump.#L: Spawn a healing field.#E: Interact.#L. Shift: Sprint.#+: Increase health.#-: Decrease health.#R: Restart the game.#F1: Hide/Show this text."))
 	draw_set_halign(fa_left)
 }
 
