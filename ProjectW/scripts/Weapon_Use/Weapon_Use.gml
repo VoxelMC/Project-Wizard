@@ -1,4 +1,4 @@
-///@paramWeapon
+///@param Weapon
 //Example: Weapon_Use("Ice Wand")
 
 var wep = argument0 

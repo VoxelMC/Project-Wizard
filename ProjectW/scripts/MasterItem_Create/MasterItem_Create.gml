@@ -40,14 +40,3 @@ return ItemCreate //that way you can store the game maker object ID into a DS an
 
 
 
-
-
-
-
-
-
-
-
-
-
-

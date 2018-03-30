@@ -1,4 +1,4 @@
-//State Check
+	//State Check
 if global.inv_open = false {
 
 if animation_state = "Idle" {
