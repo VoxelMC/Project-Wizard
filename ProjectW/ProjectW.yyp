@@ -655,6 +655,14 @@
             }
         },
         {
+            "Key": "e0039917-daf5-4c03-858c-db57ad7c95a9",
+            "Value": {
+                "id": "33546254-5ebc-4778-b01f-ec8d935fd1c5",
+                "resourcePath": "notes\\note1.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "e75dd3ce-b4c1-4fa4-9279-6cebda5fee1d",
             "Value": {
                 "id": "204dbb60-135a-41ef-a6c9-98b9141187e8",
