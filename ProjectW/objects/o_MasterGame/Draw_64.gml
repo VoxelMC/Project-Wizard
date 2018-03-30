@@ -33,31 +33,6 @@ draw_text_transformed(middle-540,565,"Active",1.2,1.2,0)
 draw_set_halign(fa_left)
 draw_sprite(s_ActiveSlot,image_index,middle-540,640)
 
-
-if global.PassiveEquipped = true {
-	var sprite = object_get_sprite(o_MasterPassive)
-	var index = global.PassiveEquippedID
-	draw_sprite(sprite,index,middle+103,652)
-}
-
-if global.ActiveEquipped = true {
-	var sprite = object_get_sprite(o_MasterActives)
-	var index = global.ActiveEquippedID
-	draw_sprite(sprite,index,middle-98,652)
-}
-
-if global.SpellEquipped = true {
-	var sprite = object_get_sprite(o_MasterSpell)
-	var index = global.SpellEquippedID
-	draw_sprite(sprite,index,middle+191,652)
-}
-
-if global.WeaponEquipped = true {
-	var sprite = object_get_sprite(o_IceWand)
-	var index = global.WeaponEquippedID
-	draw_sprite(sprite,index,middle+3,640)
-}
-
 //Test environment tutorial
 if show_help = true {
 	draw_set_halign(fa_right)

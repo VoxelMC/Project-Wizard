@@ -32,7 +32,16 @@ switch othertype {
 			actequipped = ds_grid_get(actinv,0,0);
 		} break;
 	
-	case "Spell": //I don't have anything here yet, this doesn't cause problems 
+	case "Spell": 
+		var spellamount = ds_grid_height(spellinv)
+		if spellamount != 4 {
+			ds_grid_resize(spellinv,4,spellamount + 1)
+			var spellamount = ds_grid_height(spellinv)
+			ds_grid_set(spellinv,prop.ID,spellamount-1,otherid)
+			ds_grid_set(spellinv,prop.sprite,spellamount-1,otherspr)
+			ds_grid_set(spellinv,prop.name,spellamount-1,othername)
+			ds_grid_set(spellinv,prop.desc,spellamount-1,otherdesc) break;
+		}
 	break;
 	
 	case "Weapon":
