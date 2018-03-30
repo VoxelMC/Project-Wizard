@@ -1,2 +1,2 @@
 /// @description
-instance_deactivate_all(true);
+global.inv_open = false

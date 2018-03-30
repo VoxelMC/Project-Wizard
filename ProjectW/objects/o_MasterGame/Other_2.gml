@@ -11,7 +11,8 @@ global.SpellEquippedID = 0
 global.ActiveEquippedID = 0
 global.WeaponEquippedID = 0
 
-show_help = true;
+global.inv_open = false;
+show_help = false;
 playerx = o_watchertest.x
 playery = o_watchertest.y
 globalvar ID;

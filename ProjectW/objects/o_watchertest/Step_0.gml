@@ -1,4 +1,6 @@
 //State Check
+if global.inv_open = false {
+
 if animation_state = "Idle" {
 	image_speed = 0.8
 	if image_index < 9 {
@@ -10,9 +12,6 @@ if animation_state = "Idle" {
 		image_index = 1
 	}
 }
-
-//Item Check
-
 
 var k_left = keyboard_check(vk_left);
 var k_right = keyboard_check(vk_right);
@@ -27,7 +26,7 @@ if(k_left)
 if(k_right)
 {
     spd_wanted += 6;
-}
+} 
 
 speed_x += (spd_wanted - speed_x) * 0.2; //Smoothly accelerate / decelerate to the wanted speed.
 
@@ -75,7 +74,6 @@ if mouse_check_button_pressed(mb_left) {
 	Weapon_Use(eqweapon)
 }
 
-
 //Animation
 if spd_wanted > 0 {
 	flipped = 1
@@ -89,6 +87,13 @@ if spd_wanted > 0 or spd_wanted < 0 {
 	animation_state = "Idle"
 }
 
-
 //Sprinting
 Sprint();
+
+if is_jumping = false {
+	if keyboard_check_pressed(ord("L")) {
+		instance_create_depth(x,y,-10000,o_healingaoe)
+	}
+}
+
+} //close the inventory check

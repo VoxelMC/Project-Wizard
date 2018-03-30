@@ -4,21 +4,21 @@ var middle = camera_get_view_x(0)+camera_get_view_width(0)/2 //Middle = 640
 //Health Bar
 var hspriteWidth = sprite_get_width(s_HealthBar);
 var hspriteHeight = sprite_get_height(s_HealthBar);
-var hpPercent = o_watchertest.CurrentHP/o_watchertest.MaxHP;
+var hpPercent = global.CurrentHP/global.MaxHP;
 draw_sprite(s_BarBackground,image_index,middle-440,630)
 draw_sprite_part(s_HealthBar, 0, 0, 0, hspriteWidth*hpPercent, hspriteHeight, middle-440, 630);
 
 //Mana Bar
 var mspriteWidth = sprite_get_width(s_ManaBar);
 var mspriteHeight = sprite_get_height(s_ManaBar);
-var manaPercent = o_watchertest.CurrentMana/o_watchertest.MaxMana;
+var manaPercent = global.CurrentMana/global.MaxMana;
 draw_sprite(s_BarBackground,image_index,middle+240,630)
 draw_sprite_part(s_ManaBar, 0, 0, 0, mspriteWidth*manaPercent, mspriteHeight, middle+240, 630);
 
 //Health/Mana Text
 draw_set_color(c_black)
-draw_text(middle-370,633,string(o_watchertest.CurrentHP) + "/" + string(o_watchertest.MaxHP));
-draw_text(middle+322,633,string(o_watchertest.CurrentMana) + "/" + string(o_watchertest.MaxMana));
+draw_text(middle-370,633,string(global.CurrentHP) + "/" + string(global.MaxHP));
+draw_text(middle+322,633,string(global.CurrentMana) + "/" + string(global.MaxMana));
 draw_set_color(c_white)
 
 

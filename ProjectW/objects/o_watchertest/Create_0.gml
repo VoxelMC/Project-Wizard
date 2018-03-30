@@ -16,10 +16,10 @@ flipped = 1
 eqweapon = "none"
 
 //Health/Mana Variables
-CurrentHP = 100
-MaxHP = 100
-CurrentMana = 50
-MaxMana = 50
+global.CurrentHP = 100
+global.MaxHP = 100
+global.CurrentMana = 50
+global.MaxMana = 50
 
 //Inventory Variables
 globalvar pasinv;
