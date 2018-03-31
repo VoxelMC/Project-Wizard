@@ -519,6 +519,14 @@
             }
         },
         {
+            "Key": "a9036f50-107a-4949-a1fc-dd6ed444b437",
+            "Value": {
+                "id": "c6dac551-9914-4ce2-896a-49e61bac17fc",
+                "resourcePath": "sprites\\s_fire\\s_fire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "338938b1-4d76-4009-84c9-a20a816d6820",
