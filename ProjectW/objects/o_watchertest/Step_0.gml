@@ -70,8 +70,9 @@ if(place_meeting(x, y + ysp, o_floortest))
 y += ysp;
 
 //Attacking
-if mouse_check_button_pressed(mb_left) {
+if mouse_check_button(mb_left) {	
 	Weapon_Use(eqweapon)
+	global.screenshake = true;
 }
 
 //Animation

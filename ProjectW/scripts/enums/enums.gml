@@ -1,3 +1,4 @@
+#region Item ID Name Enum'
 enum item 
 	{
 	glowy, //Passive, Damage +1, ID: 0
@@ -9,7 +10,9 @@ enum item
 	icewand, //Weapon, Shoots an Ice Projectile, N/A Damage, ID: 6
 	firewand //Weapon, Shoots a Fire Projectile, N/A Damage, ID: 7
 	}
-	
+#endregion
+
+#region Item Type Enum
 enum type
 	{
 	passive,
@@ -17,13 +20,25 @@ enum type
 	spell,
 	weapon
 	}
-	
+#endregion
+
+#region Item Properties Enum
 enum prop
 	{
 	ID,
 	sprite,
 	name,
 	desc,
+	weptype,
+	damage,
+	Rof
 	}
-	
+#endregion
+
+#region Weapon Type Enum
+enum weptype
+	{
+	wand
+	}
+#endregion
 	
