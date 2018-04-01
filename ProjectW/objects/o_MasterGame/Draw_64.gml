@@ -78,7 +78,3 @@ if o_watchertest.spd_inc > 0 {
 //draw_text(x+5,y+40,"Weapon:" + string(o_watchertest.weapon))
 //draw_text(x+5,y+50,item.glowy)
 //draw_set_halign(fa_left)
-/*draw_text(x+130,y,"Passive Equipped:" + string(global.PassiveEquipped))
-draw_text(x+130,y+20,"Active Equipped:" + string(global.ActiveEquipped))
-draw_text(x+130,y+40,"Spell Equipped:" + string(global.SpellEquipped))
-draw_text(x+130,y+60,"Weapon Equipped:" + string(global.WeaponEquipped))*/

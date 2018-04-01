@@ -14,6 +14,8 @@ flipped = 1
 
 //Combat Variables
 eqweapon = "none"
+do_reload = false;
+reloadtime = 1
 
 //Health/Mana Variables
 global.CurrentHP = 100
@@ -29,7 +31,7 @@ actinv = ds_grid_create(4,1);
 globalvar spellinv;
 spellinv = ds_grid_create(4,3);
 globalvar wepinv;
-wepinv = ds_grid_create(4,1);
+wepinv = ds_grid_create(7,1);
 wepequipped = "none"
 actequipped = "none"
 

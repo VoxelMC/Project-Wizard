@@ -70,8 +70,10 @@ if(place_meeting(x, y + ysp, o_floortest))
 y += ysp;
 
 //Attacking
-if mouse_check_button_pressed(mb_left) {	
-	Weapon_Use(eqweapon)
+if eqweapon != "none" {
+	if mouse_check_button(mb_left) {	
+		Weapon_Use(eqweapon)
+	}
 }
 
 //Animation
@@ -93,6 +95,14 @@ Sprint();
 if is_jumping = false {
 	if keyboard_check_pressed(ord("L")) {
 		instance_create_depth(x,y,-10000,o_healingaoe)
+	}
+}
+
+//Reload subtract
+if do_reload = true {
+	if (reloadtime && !--reloadtime) {
+	do_reload = false
+	reloadtime = 30
 	}
 }
 

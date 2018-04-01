@@ -59,8 +59,8 @@ item_init_spell(4,"Glyph",s_SGlyph,"Nothing yet.",1)
 item_init_spell(5,"Heiro",s_SHeiro,"Nothing yet.",2)
 
 //WEAPONS
-item_init_weapon(6,"Ice Wand",s_IceWand,"A wand that shoots ice projectiles.",weptype.wand,5,1.5)
-item_init_weapon(7,"Fire Wand",s_FireWand,"A wand that shoots fire projectiles.",weptype.wand,10,1)
+item_init_weapon(6,"Ice Wand",s_IceWand,"A wand that shoots ice projectiles.",weptype.wand,5,1)
+item_init_weapon(7,"Fire Wand",s_FireWand,"A wand that shoots fire projectiles.",weptype.wand,10,2)
 
 //Spawn some starting items
 MasterItem_Create(item.glowy,700,350)

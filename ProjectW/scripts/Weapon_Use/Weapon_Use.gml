@@ -2,8 +2,14 @@
 //Example: Weapon_Use("Ice Wand")
 
 var wep = argument0 
+/*var wepid = ds_grid_get(weapon,1,wep)
+var RoF = ds_grid_get(wepinv,prop.Rof,wepid)
+var damage = ds_grid_get(wepinv,prop.damage,wepid)*/
+
+if do_reload = false {
 
 switch (wep) {
+	
 	case item.icewand: 
 	var proj = instance_create_depth(x,y,depth,o_IceProjectile)
 		with proj {
@@ -11,7 +17,9 @@ switch (wep) {
 			speed = 10
 			image_angle = direction
 			image_speed = 0;
-		} break;
+			//my_dmg = damage
+		} 
+		do_reload = true; break;
 	case item.firewand:
 	var proj = instance_create_depth(x,y,depth,o_FireProjectile)
 		with proj {
@@ -19,5 +27,8 @@ switch (wep) {
 			speed = 10
 			image_angle = direction
 			image_speed = 0;
-		} break;
+			//my_dmg = damage
+		}
+		do_reload = true; break;
+	}
 }
