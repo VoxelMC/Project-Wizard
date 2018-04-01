@@ -3,9 +3,11 @@ var othertype = other.my_id_type
 var othername = other.my_name
 var otherdesc = other.my_description
 var otherspr = other.my_sprite
+if othertype = "Weapon" {
 var otherweptype = other.my_weptype
 var otherdamage = other.my_damage;
 var otherRoF = other.my_RoF;
+}
 
 //Cycle through other's item type because each reacts differently
 switch othertype {
@@ -55,7 +57,7 @@ switch othertype {
 			ds_grid_set(wepinv,prop.desc,0,otherdesc)
 			ds_grid_set(wepinv,prop.weptype,0,otherweptype)
 			ds_grid_set(wepinv,prop.damage,0,otherdamage)
-			ds_grid_set(wepinv,5,0,otherRoF)
+			ds_grid_set(wepinv,prop.Rof,0,otherRoF)
 			wepequipped = ds_grid_get(wepinv,prop.ID,0);
 			eqweapon = ds_grid_get(wepinv,prop.ID,0);
 			reloadtime = ds_grid_get(wepinv,5,0);
@@ -67,7 +69,7 @@ switch othertype {
 			ds_grid_set(wepinv,prop.desc,0,otherdesc)
 			ds_grid_set(wepinv,prop.weptype,0,otherweptype)
 			ds_grid_set(wepinv,prop.damage,0,otherdamage)
-			ds_grid_set(wepinv,5,0,otherRoF)
+			ds_grid_set(wepinv,prop.Rof,0,otherRoF)
 			wepequipped = ds_grid_get(wepinv,0,0);
 			eqweapon = ds_grid_get(wepinv,prop.ID,0);
 			reloadtime = ds_grid_get(wepinv,5,0);

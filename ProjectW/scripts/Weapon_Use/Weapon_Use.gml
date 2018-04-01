@@ -2,9 +2,9 @@
 //Example: Weapon_Use("Ice Wand")
 
 var wep = argument0 
-/*var wepid = ds_grid_get(weapon,1,wep)
-var RoF = ds_grid_get(wepinv,prop.Rof,wepid)
-var damage = ds_grid_get(wepinv,prop.damage,wepid)*/
+var wepid = ds_grid_get(weapon,1,wep)
+var RoF = ds_grid_get(weapon,prop.Rof,wepid)
+var damage = ds_grid_get(weapon,prop.damage,wepid)
 
 if do_reload = false {
 
@@ -17,7 +17,7 @@ switch (wep) {
 			speed = 10
 			image_angle = direction
 			image_speed = 0;
-			//my_dmg = damage
+			my_dmg = damage
 		} 
 		do_reload = true; break;
 	case item.firewand:
@@ -27,7 +27,7 @@ switch (wep) {
 			speed = 10
 			image_angle = direction
 			image_speed = 0;
-			//my_dmg = damage
+			my_dmg = damage
 		}
 		do_reload = true; break;
 	}

@@ -100,9 +100,10 @@ if is_jumping = false {
 
 //Reload subtract
 if do_reload = true {
+	var RoF = ds_grid_get(wepinv,prop.Rof,0)
 	if (reloadtime && !--reloadtime) {
 	do_reload = false
-	reloadtime = 30
+	reloadtime = RoF
 	}
 }
 
