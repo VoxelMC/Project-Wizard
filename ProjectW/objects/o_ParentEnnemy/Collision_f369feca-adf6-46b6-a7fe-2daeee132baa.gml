@@ -1,0 +1,1 @@
+healthplz -= ds_grid_get(weapon,4,7)
