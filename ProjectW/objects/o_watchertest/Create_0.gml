@@ -15,7 +15,7 @@ flipped = 1
 //Combat Variables
 eqweapon = "none"
 do_reload = false;
-reloadtime = 1
+reloadtime = 0
 
 //Health/Mana Variables
 global.CurrentHP = 100
