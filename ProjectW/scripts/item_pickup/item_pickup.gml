@@ -29,7 +29,7 @@ switch othertype {
 			ds_grid_set(actinv,prop.desc,0,otherdesc)
 			actequipped = ds_grid_get(actinv,0,0);
 		} else {
-			MasterItem_Create(actequipped,x,y)
+			MasterItem_Create(actequipped,"Active",x,y)
 			ds_grid_set(actinv,prop.ID,0,otherid)
 			ds_grid_set(actinv,prop.sprite,0,otherspr)
 			ds_grid_set(actinv,prop.name,0,othername)
@@ -62,7 +62,7 @@ switch othertype {
 			eqweapon = ds_grid_get(wepinv,prop.ID,0);
 			reloadtime = ds_grid_get(wepinv,5,0);
 		} else {
-			MasterItem_Create(wepequipped,x,y)
+			MasterItem_Create(wepequipped,"Weapon",x,y)
 			ds_grid_set(wepinv,prop.ID,0,otherid)
 			ds_grid_set(wepinv,prop.sprite,0,otherspr)
 			ds_grid_set(wepinv,prop.name,0,othername)

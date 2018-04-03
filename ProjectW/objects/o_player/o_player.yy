@@ -2,7 +2,7 @@
     "id": "43635e08-b323-4e6a-93e7-5a124112e4ea",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_watchertest",
+    "name": "o_player",
     "eventList": [
         {
             "id": "fe97f1f1-62b0-4527-85e4-b9570ba45fc0",
@@ -95,6 +95,6 @@
         
     ],
     "solid": false,
-    "spriteId": "2905e812-688b-4992-aa60-f10408e2967e",
+    "spriteId": "4249e49f-d5b6-4fac-85bb-8192da358e77",
     "visible": true
 }

@@ -68,13 +68,13 @@ for(var i=0; i<ds_list_size(ID); i++){
 }*/
 
 
-//draw_text(x,y,o_watchertest.is_jumping)
+//draw_text(x,y,o_player.is_jumping)
 /*draw_text(x+5,y,"FPS:" + string(fps))
-if o_watchertest.spd_inc > 0 {
-	draw_text(x+5,y+20,"Move Speed:+" + string(o_watchertest.spd_inc))
-} else if o_watchertest.spd_inc <= 0 {
-	draw_text(x+5,y+20,"Move Speed:" + string(o_watchertest.spd_inc))
+if o_player.spd_inc > 0 {
+	draw_text(x+5,y+20,"Move Speed:+" + string(o_player.spd_inc))
+} else if o_player.spd_inc <= 0 {
+	draw_text(x+5,y+20,"Move Speed:" + string(o_player.spd_inc))
 }*/
-//draw_text(x+5,y+40,"Weapon:" + string(o_watchertest.weapon))
+//draw_text(x+5,y+40,"Weapon:" + string(o_player.weapon))
 //draw_text(x+5,y+50,item.glowy)
 //draw_set_halign(fa_left)

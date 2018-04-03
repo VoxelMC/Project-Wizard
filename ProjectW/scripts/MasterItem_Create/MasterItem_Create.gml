@@ -1,30 +1,21 @@
 ///@param Item_ID
+///@param Item_Type
 ///@param Item_X_Position
 ///@param Item_Y_Position
 //Example: MasterItem_Create(1,"Passive",100,100)
 
 
 var ItemID = argument0
-var Item_Type;
+var Item_Type = argument1
 var Item_Type_Grid;
-if (0 <= ItemID and ItemID <= 1 ) {
-    Item_Type = "Passive"
-	Item_Type_Grid = passive
-}
-if (2 <= ItemID and ItemID <= 3 ) {
-    Item_Type = "Active"
-	Item_Type_Grid = active
-}
-if (4 <= ItemID and ItemID <= 5 ) {
-    Item_Type = "Spell"
-	Item_Type_Grid = spell
-}
-if (6 <= ItemID and ItemID <= 7 ) {
-    Item_Type = "Weapon"
-	Item_Type_Grid = weapon
+switch Item_Type {
+	case "Passive": Item_Type_Grid = passive break;
+	case "Active": Item_Type_Grid = active break;
+	case "Spell": Item_Type_Grid = spell break;
+	case "Weapon": Item_Type_Grid = weapon break;
 }
  
-var ItemCreate = instance_create_layer(argument1,argument2,"Items",o_MasterItem)
+var ItemCreate = instance_create_layer(argument2,argument3,"Items",o_MasterItem)
 ItemCreate.my_id = ItemID
 ItemCreate.my_id_type = Item_Type //Item Type, Passive/Active/Spell/Weapon
 ItemCreate.my_grid = Item_Type_Grid //Item Type but the Grid can read it (TEMPORARY)

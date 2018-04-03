@@ -1,24 +1,32 @@
-#region Item ID Name Enum'
-enum item 
+#region Passive Item ID Name Enum
+enum passive 
 	{
 	glowy, //Passive, Damage +1, ID: 0
 	maze, //Passive, Damage +2, ID: 1
-	triangle, //Active, No Use, ID: 2
-	square, //Active, No Use, ID: 3
-	glyph, //Spell, No Use, ID: 4
-	heiro, //Spell, No Use, ID: 5
-	icewand, //Weapon, Shoots an Ice Projectile, N/A Damage, ID: 6
-	firewand //Weapon, Shoots a Fire Projectile, N/A Damage, ID: 7
 	}
 #endregion
 
-#region Item Type Enum
-enum type
+#region Passive Item ID Name Enum
+enum active
 	{
-	passive,
-	active,
-	spell,
-	weapon
+	triangle, //Passive, Damage +1, ID: 0
+	square, //Passive, Damage +2, ID: 1
+	}
+#endregion
+
+#region Passive Item ID Name Enum
+enum spell 
+	{
+	heiro, //Passive, Damage +1, ID: 0
+	glyph, //Passive, Damage +2, ID: 1
+	}
+#endregion
+
+#region Passive Item ID Name Enum
+enum weapon
+	{
+	icewand, //Passive, Damage +1, ID: 0
+	firewand, //Passive, Damage +2, ID: 1
 	}
 #endregion
 
