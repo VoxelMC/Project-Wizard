@@ -11,6 +11,7 @@ is_jumping = false;
 //Animation Variables
 animation_state = "Idle"
 flipped = 1
+image_speed = 0.8
 
 //Combat Variables
 eqweapon = "none"

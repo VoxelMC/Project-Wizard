@@ -1,16 +1,9 @@
 	//State Check
 if global.inv_open = false {
 
-if animation_state = "Idle" {
-	image_speed = 0.8
-	if image_index < 9 {
-		image_index = 9
-	}
-} else if animation_state = "Walking" {
-	image_speed = 0.8
-	if image_index >= 9 {
-		image_index = 1
-	}
+switch animation_state {
+	case "Idle": sprite_index = s_player_idle; break;
+	case "Walking": sprite_index = s_player_walk; break;
 }
 
 var k_left = keyboard_check(vk_left);
@@ -90,7 +83,15 @@ if spd_wanted > 0 or spd_wanted < 0 {
 }
 
 //Sprinting
-Sprint();
+if keyboard_check_pressed(vk_shift) {
+	spd_inc += 3
+	if animation_state = "Walking" {
+		image_speed = 1.1
+	}
+} else if keyboard_check_released(vk_shift) {
+	spd_inc -= 3
+	image_speed = 0.8
+}
 
 if is_jumping = false {
 	if keyboard_check_pressed(ord("L")) {

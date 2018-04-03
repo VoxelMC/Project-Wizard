@@ -15,6 +15,8 @@ draw_text(50,210,"Weapon Type: " + string(weptype))
 draw_text(50,230,"Weapon Damage: " + string(wepdamage))
 draw_text(50,250,"Weapon RoF:" + string(wepRoF))
 
+draw_text(10,10,animation_state)
+
 //Draw sprites for inventory
 var actsprite = ds_grid_get(actinv,1,0)
 var wepsprite = ds_grid_get(wepinv,1,0)

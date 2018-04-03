@@ -2,7 +2,7 @@
     "id": "4249e49f-d5b6-4fac-85bb-8192da358e77",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "s_player",
+    "name": "s_player_walk",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -11,7 +11,7 @@
     "bbox_right": 39,
     "bbox_top": 0,
     "bboxmode": 0,
-    "colkind": 1,
+    "colkind": 0,
     "coltolerance": 0,
     "edgeFiltering": false,
     "frames": [
