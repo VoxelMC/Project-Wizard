@@ -32,8 +32,8 @@ globalvar weapon;
 weapon = ds_grid_create(10,10);
 
 //PASSIVES
-item_init_passive(0,"Glowy",s_PGlowy,"Increases attack by 1.",1)
-item_init_passive(1,"Maze",s_PMaze,"Increases attack by 2.",2)
+item_init_passive(0,"Glowy",s_PGlowy,"Increases attack by 1.",1,pastype.relic)
+item_init_passive(1,"Maze",s_PMaze,"Increases attack by 2.",2,pastype.rune)
 
 //ACTIVES
 item_init_active(0,"Triangle",s_ATriangle,"Nothing yet.",1)
@@ -56,6 +56,9 @@ MasterItem_Create(spell.heiro,"Spell",1000,350)
 MasterItem_Create(spell.glyph,"Spell",1075,350)
 MasterItem_Create(weapon.icewand,"Weapon",1150,350)
 MasterItem_Create(weapon.firewand,"Weapon",1225,350)
+MasterItem_Create(spell.heiro,"Spell",1300,350)
+MasterItem_Create(spell.glyph,"Spell",1375,350)
+
 
 
 

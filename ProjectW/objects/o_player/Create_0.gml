@@ -30,7 +30,7 @@ pasinv = ds_grid_create(4,1);
 globalvar actinv;
 actinv = ds_grid_create(4,1);
 globalvar spellinv;
-spellinv = ds_grid_create(4,3);
+spellinv = ds_grid_create(4,0);
 globalvar wepinv;
 wepinv = ds_grid_create(7,1);
 wepequipped = "none"

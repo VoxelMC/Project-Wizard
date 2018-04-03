@@ -6,7 +6,7 @@ enum passive
 	}
 #endregion
 
-#region Passive Item ID Name Enum
+#region ACtive Item ID Name Enum
 enum active
 	{
 	triangle, //Passive, Damage +1, ID: 0
@@ -14,7 +14,7 @@ enum active
 	}
 #endregion
 
-#region Passive Item ID Name Enum
+#region Spell Item ID Name Enum
 enum spell 
 	{
 	heiro, //Passive, Damage +1, ID: 0
@@ -22,7 +22,7 @@ enum spell
 	}
 #endregion
 
-#region Passive Item ID Name Enum
+#region Weapon Item ID Name Enum
 enum weapon
 	{
 	icewand, //Passive, Damage +1, ID: 0
@@ -30,23 +30,47 @@ enum weapon
 	}
 #endregion
 
-#region Item Properties Enum
+#region Item Properties General Enum
 enum prop
 	{
 	ID,
 	sprite,
 	name,
 	desc,
-	weptype,
-	damage,
-	Rof
+	}
+#endregion
+
+#region Item Properties Weapon Enum
+enum propwep
+	{
+	type = 4,
+	damage = 5,
+	Rof = 6
+	}
+#endregion
+
+#region Item Properties Passive Enum
+enum proppas
+	{
+	passivetype = 4
 	}
 #endregion
 
 #region Weapon Type Enum
 enum weptype
 	{
-	wand
+	wand,
+	staff,
+	tome,
+	idol
+	}
+#endregion
+
+#region Passive Type Enum
+enum pastype
+	{
+	relic,
+	rune
 	}
 #endregion
 	

@@ -3,8 +3,8 @@
 
 var wep = argument0 
 var wepid = ds_grid_get(weapon,1,wep)
-var RoF = ds_grid_get(weapon,prop.Rof,wepid)
-var damage = ds_grid_get(weapon,prop.damage,wepid)
+var RoF = ds_grid_get(weapon,propwep.Rof,wepid)
+var damage = ds_grid_get(weapon,propwep.damage,wepid)
 
 if do_reload = false {
 

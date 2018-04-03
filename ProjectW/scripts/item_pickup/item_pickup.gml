@@ -55,9 +55,9 @@ switch othertype {
 			ds_grid_set(wepinv,prop.sprite,0,otherspr)
 			ds_grid_set(wepinv,prop.name,0,othername)
 			ds_grid_set(wepinv,prop.desc,0,otherdesc)
-			ds_grid_set(wepinv,prop.weptype,0,otherweptype)
-			ds_grid_set(wepinv,prop.damage,0,otherdamage)
-			ds_grid_set(wepinv,prop.Rof,0,otherRoF)
+			ds_grid_set(wepinv,propwep.type,0,otherweptype)
+			ds_grid_set(wepinv,propwep.damage,0,otherdamage)
+			ds_grid_set(wepinv,propwep.Rof,0,otherRoF)
 			wepequipped = ds_grid_get(wepinv,prop.ID,0);
 			eqweapon = ds_grid_get(wepinv,prop.ID,0);
 			reloadtime = ds_grid_get(wepinv,5,0);
@@ -67,9 +67,9 @@ switch othertype {
 			ds_grid_set(wepinv,prop.sprite,0,otherspr)
 			ds_grid_set(wepinv,prop.name,0,othername)
 			ds_grid_set(wepinv,prop.desc,0,otherdesc)
-			ds_grid_set(wepinv,prop.weptype,0,otherweptype)
-			ds_grid_set(wepinv,prop.damage,0,otherdamage)
-			ds_grid_set(wepinv,prop.Rof,0,otherRoF)
+			ds_grid_set(wepinv,propwep.type,0,otherweptype)
+			ds_grid_set(wepinv,propwep.damage,0,otherdamage)
+			ds_grid_set(wepinv,propwep.Rof,0,otherRoF)
 			wepequipped = ds_grid_get(wepinv,0,0);
 			eqweapon = ds_grid_get(wepinv,prop.ID,0);
 			reloadtime = ds_grid_get(wepinv,5,0);

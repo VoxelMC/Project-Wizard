@@ -28,10 +28,6 @@ draw_sprite(s_SpellSlot,image_index,middle+100,650)
 draw_sprite(s_WeaponSlot,image_index,middle,640)
 draw_sprite(s_SpellSlot,image_index,middle-100,650)
 draw_sprite(s_SpellSlot,image_index,middle-190,650)
-draw_set_halign(fa_center)
-draw_text_transformed(middle-540,565,"Active",1.2,1.2,0)
-draw_set_halign(fa_left)
-draw_sprite(s_ActiveSlot,image_index,middle-540,640)
 
 //Test environment tutorial
 if show_help = true {
