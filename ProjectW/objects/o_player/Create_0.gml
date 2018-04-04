@@ -1,4 +1,4 @@
-///@description Initialize variables
+///@description Initialize player variables
 
 //Movement Variables
 speed_x = 0
@@ -35,9 +35,6 @@ globalvar wepinv;
 wepinv = ds_grid_create(7,1);
 wepequipped = "none"
 actequipped = "none"
-
-//Other Variables
-global.runefragments = 0;
 
 //Key Mappings
 keyboard_set_map(ord("A"),vk_left)

@@ -1,10 +1,32 @@
 ///@description Initialization
 randomize();
+draw_set_font(fnt_main)
+
+///Initialize variables
+
+//Menu Variables
 global.inv_open = false;
+global.pause = false;
+global.view_width = camera_get_view_width(view_camera[0])
+global.view_height = camera_get_view_height(view_camera[0])
+
+//Key Input Variables
+global.key_revert = ord("X");
+global.key_enter = vk_enter;
+global.key_left	= ord("A");
+global.key_right = ord("D");
+global.key_up = ord("W");
+global.key_down = ord("S");
+
+//Game Variables
+global.runefragments = 0;
+
+//MasterGame Specific Variables
 show_help = false;
 playerx = o_player.x
 playery = o_player.y
-draw_set_font(fnt_main)
+
+display_set_gui_size(global.view_width,global.view_height);
 
 /* ITEM INITIALIZING */
 

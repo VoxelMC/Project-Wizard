@@ -6,7 +6,7 @@ enum passiveid
 	}
 #endregion
 
-#region ACtive Item ID Name Enum
+#region Active Item ID Name Enum
 enum activeid
 	{
 	triangle, //Passive, Damage +1, ID: 0
@@ -72,5 +72,16 @@ enum pastype
 	relic,
 	rune
 	}
+#endregion
+
+#region Menu Pages
+enum menu_page {
+	main,
+	settings,
+	audio,
+	difficulty,
+	graphics,
+	controls,
+}
 #endregion
 	
