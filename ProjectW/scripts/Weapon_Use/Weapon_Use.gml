@@ -10,7 +10,7 @@ if do_reload = false {
 
 switch (wep) {
 	
-	case weapon.icewand: 
+	case weaponid.icewand: 
 	var proj = instance_create_depth(x,y,depth,o_IceProjectile)
 		with proj {
 			direction = point_direction(x,y,mouse_x,mouse_y)
@@ -20,7 +20,7 @@ switch (wep) {
 			my_dmg = damage
 		} 
 		do_reload = true; break;
-	case weapon.firewand:
+	case weaponid.firewand:
 	var proj = instance_create_depth(x,y,depth,o_FireProjectile)
 		with proj {
 			direction = point_direction(x,y,mouse_x,mouse_y)

@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "85ec9d96-1702-4aa9-9a93-c0b5784312b8",
+            "Value": {
+                "id": "955ece98-0b5a-40cd-92c9-a4f1dfe11154",
+                "resourcePath": "fonts\\fnt_main\\fnt_main.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "8a2daeb3-abc7-4d6d-9d72-5d2eb3d994e0",
             "Value": {
                 "id": "de53be85-2431-4ddc-8ce6-d9b9e29ffa05",
@@ -551,6 +559,14 @@
             }
         },
         {
+            "Key": "c0fa9b91-979c-4c8a-befe-4b417a45f51d",
+            "Value": {
+                "id": "4c9200c5-7609-403f-82f5-2ae5ec1cb0c7",
+                "resourcePath": "objects\\o_runefragment\\o_runefragment.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c8b9f9dc-d38e-441d-943d-a2636fc17afa",
             "Value": {
                 "id": "4ca7f2bf-9a8a-4995-b4db-49c32f507b76",
@@ -644,6 +660,14 @@
                 "id": "0892b3d4-b836-420e-8c5c-6fef721a3f62",
                 "resourcePath": "rooms\\testhouse\\testhouse.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "ef91565f-4bae-44b7-a5fe-151d410b90b8",
+            "Value": {
+                "id": "9a6b1445-e6c0-49be-9916-a60753055f39",
+                "resourcePath": "sprites\\s_runefragment\\s_runefragment.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

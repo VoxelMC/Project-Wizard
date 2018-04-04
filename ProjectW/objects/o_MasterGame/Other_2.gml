@@ -1,20 +1,10 @@
 ///@description Initialization
 randomize();
-//Item Variables
-global.PassiveEquipped = false;
-global.WeaponEquipped = false;
-global.SpellEquipped = false;
-global.ActiveEquipped = false;
-
-global.PassiveEquippedID = 0
-global.SpellEquippedID = 0
-global.ActiveEquippedID = 0
-global.WeaponEquippedID = 0
-
 global.inv_open = false;
 show_help = false;
 playerx = o_player.x
 playery = o_player.y
+draw_set_font(fnt_main)
 
 /* ITEM INITIALIZING */
 
@@ -32,8 +22,8 @@ globalvar weapon;
 weapon = ds_grid_create(10,10);
 
 //PASSIVES
-item_init_passive(0,"Glowy",s_PGlowy,"Increases attack by 1.",1,pastype.relic)
-item_init_passive(1,"Maze",s_PMaze,"Increases attack by 2.",2,pastype.rune)
+item_init_passive(0,"Glowy",s_PGlowy,"Increases attack by 1.",pastype.relic)
+item_init_passive(1,"Maze",s_PMaze,"Increases attack by 2.",pastype.rune)
 
 //ACTIVES
 item_init_active(0,"Triangle",s_ATriangle,"Nothing yet.",1)
@@ -48,16 +38,16 @@ item_init_weapon(0,"Ice Wand",s_IceWand,"A wand that shoots ice projectiles.",we
 item_init_weapon(1,"Fire Wand",s_FireWand,"A wand that shoots fire projectiles.",weptype.wand,5,25)
 
 //Spawn some starting items
-MasterItem_Create(passive.glowy,"Passive",700,350)
-MasterItem_Create(passive.maze,"Passive",775,350)
-MasterItem_Create(active.triangle,"Active",850,350)
-MasterItem_Create(active.square,"Active",925,350)
-MasterItem_Create(spell.heiro,"Spell",1000,350)
-MasterItem_Create(spell.glyph,"Spell",1075,350)
-MasterItem_Create(weapon.icewand,"Weapon",1150,350)
-MasterItem_Create(weapon.firewand,"Weapon",1225,350)
-MasterItem_Create(spell.heiro,"Spell",1300,350)
-MasterItem_Create(spell.glyph,"Spell",1375,350)
+MasterItem_Create(passiveid.glowy,"Passive",700,350)
+MasterItem_Create(passiveid.maze,"Passive",775,350)
+MasterItem_Create(activeid.triangle,"Active",850,350)
+MasterItem_Create(activeid.square,"Active",925,350)
+MasterItem_Create(spellid.heiro,"Spell",1000,350)
+MasterItem_Create(spellid.glyph,"Spell",1075,350)
+MasterItem_Create(weaponid.icewand,"Weapon",1150,350)
+MasterItem_Create(weaponid.firewand,"Weapon",1225,350)
+MasterItem_Create(spellid.heiro,"Spell",1300,350)
+MasterItem_Create(spellid.glyph,"Spell",1375,350)
 
 
 

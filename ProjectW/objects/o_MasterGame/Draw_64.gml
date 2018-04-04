@@ -17,8 +17,8 @@ draw_sprite_part(s_ManaBar, 0, 0, 0, mspriteWidth*manaPercent, mspriteHeight, mi
 
 //Health/Mana Text
 draw_set_color(c_black)
-draw_text(middle-370,633,string(global.CurrentHP) + "/" + string(global.MaxHP));
-draw_text(middle+322,633,string(global.CurrentMana) + "/" + string(global.MaxMana));
+draw_text_transformed(middle-380,633,string(global.CurrentHP) + "/" + string(global.MaxHP),0.30,0.30,0);
+draw_text_transformed(middle+315,633,string(global.CurrentMana) + "/" + string(global.MaxMana),0.30,0.30,0);
 draw_set_color(c_white)
 
 
@@ -32,45 +32,8 @@ draw_sprite(s_SpellSlot,image_index,middle-190,650)
 //Test environment tutorial
 if show_help = true {
 	draw_set_halign(fa_right)
-	draw_text(x+1273,y,string_hash_to_newline("Welcome to the Project W Test Environment Pre-Alpha v1.1!#Here are some controls."))
-	draw_text(x+1273,y+50,string_hash_to_newline("WASD: Movement.#Space: Jump.#L: Spawn a healing field.#E: Interact.#L. Shift: Sprint.#+: Increase health.#-: Decrease health.#R: Restart the game.#F1: Hide/Show this text."))
+	draw_text_transformed(x+1273,y,string_hash_to_newline("Welcome to the Project W Test Environment Pre-Alpha v1.1!#Here are some controls."),0.20,0.20,0)
+	draw_text_transformed(x+1273,y+50,string_hash_to_newline("WASD: Movement.#Space: Jump.#L: Spawn a healing field.#E: Interact.#L. Shift: Sprint.#+: Increase health.#-: Decrease health.#R: Restart the game.#F1: Hide/Show this text."),0.20,0.20,0)
 	draw_set_halign(fa_left)
 }
 
-//Inventory text
-/*var w=0 
-var h=0
-var spacing = 20
-for(var i=0; i<ds_list_size(pasinv); i++){
-    draw_text(5 + (w*spacing), 5 + (h*spacing) , pasinv[| i]);
-	h++
-	if (h >= (floor(window_get_height()/spacing))){
-            h = 0; w++;
-	}
-}*/
-
-
-
-/*var IDw=0 
-var IDh=0
-var wspacing = 60
-var hspacing = 20
-for(var i=0; i<ds_list_size(ID); i++){
-    draw_text(20 + (IDw*wspacing), 20 + (IDh*hspacing) , ID[| i]);
-    IDh++
-    if (IDh >= (floor(window_get_height()/hspacing))){
-            IDh = 0; IDw++;
-    }
-}*/
-
-
-//draw_text(x,y,o_player.is_jumping)
-/*draw_text(x+5,y,"FPS:" + string(fps))
-if o_player.spd_inc > 0 {
-	draw_text(x+5,y+20,"Move Speed:+" + string(o_player.spd_inc))
-} else if o_player.spd_inc <= 0 {
-	draw_text(x+5,y+20,"Move Speed:" + string(o_player.spd_inc))
-}*/
-//draw_text(x+5,y+40,"Weapon:" + string(o_player.weapon))
-//draw_text(x+5,y+50,item.glowy)
-//draw_set_halign(fa_left)

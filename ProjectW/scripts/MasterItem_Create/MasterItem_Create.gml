@@ -27,8 +27,7 @@ switch Item_Type_Grid {
 			my_name = ds_grid_get(my_grid,0,my_id)
 			my_sprite = ds_grid_get(my_grid,1,my_id)
 			my_description = ds_grid_get(my_grid,2,my_id)
-			my_effect = ds_grid_get(my_grid,3,my_id)
-			my_pastype = ds_grid_get(my_grid,4,my_id)
+			my_pastype = ds_grid_get(my_grid,3,my_id)
 			sprite_index = my_sprite
 		} break;
 	case active:

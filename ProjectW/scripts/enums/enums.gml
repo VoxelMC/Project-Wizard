@@ -1,5 +1,5 @@
 #region Passive Item ID Name Enum
-enum passive 
+enum passiveid 
 	{
 	glowy, //Passive, Damage +1, ID: 0
 	maze, //Passive, Damage +2, ID: 1
@@ -7,7 +7,7 @@ enum passive
 #endregion
 
 #region ACtive Item ID Name Enum
-enum active
+enum activeid
 	{
 	triangle, //Passive, Damage +1, ID: 0
 	square, //Passive, Damage +2, ID: 1
@@ -15,7 +15,7 @@ enum active
 #endregion
 
 #region Spell Item ID Name Enum
-enum spell 
+enum spellid 
 	{
 	heiro, //Passive, Damage +1, ID: 0
 	glyph, //Passive, Damage +2, ID: 1
@@ -23,7 +23,7 @@ enum spell
 #endregion
 
 #region Weapon Item ID Name Enum
-enum weapon
+enum weaponid
 	{
 	icewand, //Passive, Damage +1, ID: 0
 	firewand, //Passive, Damage +2, ID: 1
@@ -52,7 +52,7 @@ enum propwep
 #region Item Properties Passive Enum
 enum proppas
 	{
-	passivetype = 4
+	passivetype = 3
 	}
 #endregion
 

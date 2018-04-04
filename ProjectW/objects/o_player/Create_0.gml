@@ -26,7 +26,7 @@ global.MaxMana = 50
 
 //Inventory Variables
 globalvar pasinv;
-pasinv = ds_grid_create(4,1);
+pasinv = ds_grid_create(5,1);
 globalvar actinv;
 actinv = ds_grid_create(4,1);
 globalvar spellinv;
@@ -35,6 +35,9 @@ globalvar wepinv;
 wepinv = ds_grid_create(7,1);
 wepequipped = "none"
 actequipped = "none"
+
+//Other Variables
+global.runefragments = 0;
 
 //Key Mappings
 keyboard_set_map(ord("A"),vk_left)

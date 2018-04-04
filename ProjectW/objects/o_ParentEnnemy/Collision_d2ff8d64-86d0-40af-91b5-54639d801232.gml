@@ -1,2 +1,2 @@
-healthplz -= ds_grid_get(weapon,4,weapon.icewand)
+healthplz -= ds_grid_get(weapon,4,weaponid.icewand)
 instance_destroy(other);
