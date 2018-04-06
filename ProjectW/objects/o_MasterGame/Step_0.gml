@@ -28,3 +28,13 @@ if keyboard_check_pressed(vk_f1) {
 if keyboard_check_pressed(ord("R")) {
 	game_restart();
 }
+
+if keyboard_check_pressed(ord("B")) {
+	camera_set_view_size(view_camera[0],960,540)
+}
+if keyboard_check_pressed(ord("N")) {
+	camera_set_view_size(view_camera[0],1280,720)
+}
+if keyboard_check_pressed(ord("M")) {
+	camera_set_view_size(view_camera[0],1920,1080)
+}

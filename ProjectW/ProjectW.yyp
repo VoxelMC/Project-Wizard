@@ -351,6 +351,14 @@
             }
         },
         {
+            "Key": "66c60c23-a02f-4d5a-9707-b2a0643014a5",
+            "Value": {
+                "id": "be684502-4766-4004-8e77-b85ce0496a5f",
+                "resourcePath": "sprites\\s_tilegrass\\s_tilegrass.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "68e68bd9-aaa0-4855-8094-31207aac7e28",
             "Value": {
                 "id": "5b8ce078-10ff-40ab-ae16-480f22cd9a9d",
@@ -644,6 +652,14 @@
                 "id": "af8e218f-c5f7-478c-939f-b040f288fd14",
                 "resourcePath": "sprites\\s_house\\s_house.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d46de436-36a6-4524-9508-fcb283481ef1",
+            "Value": {
+                "id": "f7ffcb85-1465-4aac-807a-9eb7090053c6",
+                "resourcePath": "tilesets\\tile_grass\\tile_grass.yy",
+                "resourceType": "GMTileSet"
             }
         },
         {

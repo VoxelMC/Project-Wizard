@@ -2,7 +2,7 @@
 //Example: Weapon_Use("Ice Wand")
 
 var wep = argument0 
-var wepid = ds_grid_get(weapon,1,wep)
+var wepid = ds_grid_get(weapon,0,wep)
 var RoF = ds_grid_get(weapon,propwep.Rof,wepid)
 var damage = ds_grid_get(weapon,propwep.damage,wepid)
 
