@@ -2,14 +2,15 @@ draw_set_color(c_black)
 draw_set_alpha(0.7)
 if global.inv_open = true {
 	draw_rectangle_color(0,0,2000,2000,c_black,c_black,c_black,c_black,0)
+	o_player.image_speed = 0;
 }
 draw_set_alpha(1)
 draw_set_color(c_white)
 
 if global.inv_open = true {
 	//Passive Drawing
-	draw_text_transformed(40,40,"RELICS",0.9,0.9,0)
-	draw_text_transformed(40,220,"RUNES",0.9,0.9,0)
+	draw_text_transformed(40,40,"RELICS",0.7,0.7,0)
+	draw_text_transformed(40,220,"RUNES",0.7,0.7,0)
 	
 	for(var i=1; i<ds_grid_height(pasinv); i++){
 	var rew=0, reh=0, ruw=0, ruh=0;
@@ -49,3 +50,6 @@ if global.inv_open = true {
 	draw_text_transformed(1220,15,"= " + string(global.runefragments),0.4,0.4,0)
 	
 }
+
+if global.inv_open = false 
+	o_player.image_speed = 0.8 exit;

@@ -1,3 +1,3 @@
-if healthplz <= 0
-{ instance_destroy()
+if EnemyHealth <= 0 { 
+	instance_destroy()
 }

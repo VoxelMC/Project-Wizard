@@ -1,6 +1,6 @@
 ///Display Properties
 ideal_width=0;
-ideal_height=400
+ideal_height=540;
 zoom=1;
 max_zoom=1;
 display_width=display_get_width();

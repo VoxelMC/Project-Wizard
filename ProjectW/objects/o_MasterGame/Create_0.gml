@@ -7,8 +7,6 @@ draw_set_font(fnt_main)
 //Menu Variables
 global.inv_open = false;
 global.pause = false;
-global.view_width = camera_get_view_width(view_camera[0])
-global.view_height = camera_get_view_height(view_camera[0])
 
 //Key Input Variables
 global.key_revert = ord("X");
@@ -22,11 +20,9 @@ global.key_down = ord("S");
 global.runefragments = 0;
 
 //MasterGame Specific Variables
-show_help = false;
+show_help = true;
 playerx = o_player.x
 playery = o_player.y
-
-display_set_gui_size(global.view_width,global.view_height);
 
 /* ITEM INITIALIZING */
 

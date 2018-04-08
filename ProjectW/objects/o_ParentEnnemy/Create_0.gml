@@ -1,1 +1,2 @@
-healthplz = 100
+EnemyHealth = 100;
+EnemyMaxHealth = 100;
