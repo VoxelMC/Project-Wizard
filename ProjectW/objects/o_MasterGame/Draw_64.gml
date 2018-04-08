@@ -21,9 +21,9 @@ draw_set_color(c_white)
 
 
 //UI
-draw_sprite(s_SpellSlot,image_index,680,480)
+draw_sprite(s_SpellSlot,image_index,320,480)
 draw_sprite(s_SpellSlot,image_index,580,480)
-draw_sprite(s_WeaponSlot,image_index,480,470)
+draw_sprite(s_WeaponSlot,image_index,640,470)
 draw_sprite(s_SpellSlot,image_index,380,480)
 draw_sprite(s_SpellSlot,image_index,280,480)
 

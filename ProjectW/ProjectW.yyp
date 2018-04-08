@@ -487,10 +487,10 @@
             }
         },
         {
-            "Key": "9c74e46e-d1e1-4b30-bf23-e4cc814a394d",
+            "Key": "9fcd5c9b-0068-4465-be29-114a583bb772",
             "Value": {
-                "id": "29eeec03-a190-431f-b9f2-e9f4592394c6",
-                "resourcePath": "objects\\o_camera\\o_camera.yy",
+                "id": "6f3566ea-f05c-4b2e-bb9c-5322aed320ed",
+                "resourcePath": "objects\\o_display_init\\o_display_init.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -508,6 +508,14 @@
                 "id": "37f9d300-d7fd-47de-9643-f4b131ea7222",
                 "resourcePath": "sprites\\s_ASquare\\s_ASquare.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "a3e6f2a2-0a7a-4338-a269-e968f829a12d",
+            "Value": {
+                "id": "6e76e884-c52a-4405-a00b-5425869f674a",
+                "resourcePath": "rooms\\rm_init\\rm_init.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -540,6 +548,14 @@
                 "id": "338938b1-4d76-4009-84c9-a20a816d6820",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "ae3c6a42-b1bb-436e-8173-5c9adbf5f828",
+            "Value": {
+                "id": "b4ed5098-7806-499e-b805-92639f448150",
+                "resourcePath": "scripts\\round_n\\round_n.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -776,7 +792,8 @@
         "30667739-4772-4476-b8be-abdfd66f232d",
         "1e463069-3436-490a-90eb-782531d85b3d",
         "5beeb5ce-70a0-4200-80be-d3d288223cb1",
-        "b092c232-6214-42f9-b864-724d08e4767a"
+        "b092c232-6214-42f9-b864-724d08e4767a",
+        "ae3c6a42-b1bb-436e-8173-5c9adbf5f828"
     ],
     "tutorial": ""
 }
