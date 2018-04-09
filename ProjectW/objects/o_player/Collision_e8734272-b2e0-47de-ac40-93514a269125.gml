@@ -1,4 +1,4 @@
 /// @description
-if CurrentHP != MaxHP {
-	CurrentHP += 1
+if global.CurrentHP != global.MaxHP {
+	global.CurrentHP += 1
 }
