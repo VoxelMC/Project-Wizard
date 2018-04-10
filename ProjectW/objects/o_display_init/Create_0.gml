@@ -37,9 +37,9 @@ if(ideal_height & 1)
     
 //Calculate Max Zoom
 max_zoom=floor(global.display_width/ideal_width);  
-window_set_fullscreen(true);
-zoom++;
-//window_set_size(ideal_width,ideal_height);
+//window_set_fullscreen(true);
+//zoom++;
+window_set_size(ideal_width,ideal_height);
 display_set_gui_size(ideal_width,ideal_height);
 surface_resize(application_surface,ideal_width*zoom,ideal_height*zoom);
 
