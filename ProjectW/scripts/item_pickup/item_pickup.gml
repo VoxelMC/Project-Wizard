@@ -3,6 +3,7 @@ var othertype = other.my_id_type
 var othername = other.my_name
 var otherdesc = other.my_description
 var otherspr = other.my_sprite
+var othereffect = other.my_effect
 if othertype = "Weapon" {
 var otherweptype = other.my_weptype
 var otherdamage = other.my_damage;
@@ -23,6 +24,7 @@ switch othertype {
 		ds_grid_set(pasinv,prop.sprite,amount-1,otherspr)
 		ds_grid_set(pasinv,prop.name,amount-1,othername)
 		ds_grid_set(pasinv,prop.desc,amount-1,otherdesc)
+		ds_grid_set(pasinv,prop.effect,amount-1,othereffect);
 		ds_grid_set(pasinv,proppas.passivetype,amount-1,otherpastype); break;
 	
 	case "Active":

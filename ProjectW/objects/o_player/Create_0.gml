@@ -1,10 +1,10 @@
 ///@description Initialize player variables
 
 //Movement/Collision Variables
-gravity_ = 1;	
+gravity_ = 0.4;	
 velocity_ = [0, 0]; //Don't change this
 max_velocity_ = [7, 11]; //1st value is the x, 2nd is the y
-jump_speed_ = 15; 
+jump_speed_ = 7; 
 acceleration_ = 1.5;
 sprinting = false; 
 is_jumping = false;

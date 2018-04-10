@@ -37,6 +37,7 @@ enum prop
 	sprite,
 	name,
 	desc,
+	effect,
 	}
 #endregion
 
@@ -52,7 +53,7 @@ enum propwep
 #region Item Properties Passive Enum
 enum proppas
 	{
-	passivetype = 3
+	passivetype = 5
 	}
 #endregion
 
