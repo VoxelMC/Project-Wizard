@@ -1,0 +1,7 @@
+**4/15/2018 CHANGELOG**
+**-** Implemented fully functioning resolution. (Res changing + Windowed support will be added at a later date)
+**-** Completely gutted out the testing room, and remade it with tiles.
+**-** Added collision for tiles
+**-** Signficantly changed movement, hopefully for the better
+**-** 
+**-** Fixed some random bugs and a crash

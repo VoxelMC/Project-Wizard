@@ -18,6 +18,7 @@ global.key_down = ord("S");
 
 //Game Variables
 global.runefragments = 0;
+global.spd_inc = 0; //How much the speed has been increased by.
 
 //MasterGame Specific Variables
 show_help = true;
@@ -56,16 +57,16 @@ item_init_weapon(0,"Ice Wand",s_IceWand,"A wand that shoots ice projectiles.",we
 item_init_weapon(1,"Fire Wand",s_FireWand,"A wand that shoots fire projectiles.",weptype.wand,5,25)
 
 //Spawn some starting items
-MasterItem_Create(passiveid.glowy,"Passive",700,350)
-MasterItem_Create(passiveid.maze,"Passive",775,350)
-MasterItem_Create(activeid.triangle,"Active",850,350)
-MasterItem_Create(activeid.square,"Active",925,350)
-MasterItem_Create(spellid.heiro,"Spell",1000,350)
-MasterItem_Create(spellid.glyph,"Spell",1075,350)
-MasterItem_Create(weaponid.icewand,"Weapon",1150,350)
-MasterItem_Create(weaponid.firewand,"Weapon",1225,350)
-MasterItem_Create(spellid.heiro,"Spell",1300,350)
-MasterItem_Create(spellid.glyph,"Spell",1375,350)
+MasterItem_Create(passiveid.glowy,"Passive",650,350)
+MasterItem_Create(passiveid.maze,"Passive",725,350)
+MasterItem_Create(activeid.triangle,"Active",800,350)
+MasterItem_Create(activeid.square,"Active",875,350)
+MasterItem_Create(spellid.heiro,"Spell",950,350)
+MasterItem_Create(spellid.glyph,"Spell",1025,350)
+MasterItem_Create(weaponid.icewand,"Weapon",1100,350)
+MasterItem_Create(weaponid.firewand,"Weapon",1175,350)
+MasterItem_Create(spellid.heiro,"Spell",1250,350)
+MasterItem_Create(spellid.glyph,"Spell",1325,350)
 
 
 

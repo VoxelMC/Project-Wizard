@@ -1,12 +1,17 @@
 ///@description Initialize player variables
 
-//Movement Variables
-speed_x = 0
-speed_y = 0
-grav = 0.5	
-sprinting = false;
-spd_inc = 0; //How much the speed has been increased by.
+//Movement/Collision Variables
+gravity_ = 1;	
+velocity_ = [0, 0]; //Don't change this
+max_velocity_ = [7, 11]; //1st value is the x, 2nd is the y
+jump_speed_ = 15; 
+acceleration_ = 1.5;
+sprinting = false; 
 is_jumping = false;
+old_spd_inc = global.spd_inc;
+
+var layer_id = layer_get_id("Tiles_Main");
+collision_tile_map_id_ = layer_tilemap_get_id(layer_id);
 
 //Animation Variables
 animation_state = "Idle"

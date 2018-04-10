@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "0940ba85-2e69-40af-9326-fcb03853cf05",
+            "Value": {
+                "id": "e16a2def-db69-48b9-81d8-6a5df0d5e97d",
+                "resourcePath": "scripts\\move_and_contact_tiles\\move_and_contact_tiles.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "19e2d0b0-07e0-40df-8a7f-510c21918de0",
             "Value": {
                 "id": "40686400-db55-4dc8-84b6-2cf92f0a3de0",
@@ -591,6 +599,14 @@
             }
         },
         {
+            "Key": "b6b24c4b-c797-4cc2-985a-3877c699ef1f",
+            "Value": {
+                "id": "f723d22b-f872-4c42-b5a1-48db67600bcb",
+                "resourcePath": "notes\\Weekly Changelog.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "bff4ee48-573f-4eec-83cb-d866ff95efac",
             "Value": {
                 "id": "47f60b93-01ee-4e8a-bdd0-ac755c1787b9",
@@ -679,6 +695,14 @@
             }
         },
         {
+            "Key": "d76aa470-9282-43b5-8d52-f47f7335654c",
+            "Value": {
+                "id": "b1b9f114-8a79-49de-934c-7553f81fc7b0",
+                "resourcePath": "views\\d76aa470-9282-43b5-8d52-f47f7335654c.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "e54cbb56-ed85-4b73-9aae-8d87174272cb",
             "Value": {
                 "id": "88920123-020f-417f-8bf0-7e15e451933a",
@@ -732,6 +756,14 @@
                 "id": "4d7e7820-62d4-4fdb-a3e4-73372f30e276",
                 "resourcePath": "options\\mac\\options_mac.yy",
                 "resourceType": "GMMacOptions"
+            }
+        },
+        {
+            "Key": "f41a0c78-7e40-425c-a810-b1ed38a1d533",
+            "Value": {
+                "id": "58f3863e-8af9-4f32-aa71-dcc240145708",
+                "resourcePath": "scripts\\tile_collide_at_points\\tile_collide_at_points.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -793,7 +825,9 @@
         "1e463069-3436-490a-90eb-782531d85b3d",
         "5beeb5ce-70a0-4200-80be-d3d288223cb1",
         "b092c232-6214-42f9-b864-724d08e4767a",
-        "ae3c6a42-b1bb-436e-8173-5c9adbf5f828"
+        "ae3c6a42-b1bb-436e-8173-5c9adbf5f828",
+        "f41a0c78-7e40-425c-a810-b1ed38a1d533",
+        "0940ba85-2e69-40af-9326-fcb03853cf05"
     ],
     "tutorial": ""
 }

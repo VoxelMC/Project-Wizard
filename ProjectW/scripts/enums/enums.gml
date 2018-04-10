@@ -84,4 +84,8 @@ enum menu_page {
 	controls,
 }
 #endregion
+
+#region Macros
+#macro tilesize (32)
+#endregion
 	

@@ -1,13 +1,13 @@
 ///@description Draw the UI
 var dguiwidth = display_get_gui_width();
 var dguiheight = display_get_gui_height();
-draw_text_transformed(x,y+10,"Display GUI Width:" + string(dguiwidth),0.30,0.30,0);
+/*draw_text_transformed(x,y+10,"Display GUI Width:" + string(dguiwidth),0.30,0.30,0);
 draw_text_transformed(x,y+30,"Display GUI Height:" + string(dguiheight),0.30,0.30,0);
 draw_text_transformed(x,y+50,"Display Width:" + string(global.display_width),0.30,0.30,0);
 draw_text_transformed(x,y+70,"Display Height:" + string(global.display_height),0.30,0.30,0);
 draw_text_transformed(x,y+90,"Ideal Width:" + string(o_display_init.ideal_width),0.30,0.30,0);
 draw_text_transformed(x,y+110,"Ideal Height:" + string(o_display_init.ideal_height),0.30,0.30,0);
-draw_text_transformed(x,y+130,"Aspect Ratio:" + string(o_display_init.aspect_ratio),0.30,0.30,0);
+draw_text_transformed(x,y+130,"Aspect Ratio:" + string(o_display_init.aspect_ratio),0.30,0.30,0);*/
 
 
 

@@ -6,61 +6,44 @@ switch animation_state {
 	case "Walking": sprite_index = s_player_walk; break;
 }
 
-var k_left = keyboard_check(vk_left);
-var k_right = keyboard_check(vk_right);
-var k_jump  = keyboard_check_pressed(vk_space);
+///Movement Logic
 
-var spd_wanted = 0; //The wanted horizontal speed for this step
+//Get the input
+var x_input = (keyboard_check(vk_right) - keyboard_check(vk_left)) * acceleration_; //Get the player input to use for later.
 
-if(k_left)
-{
-    spd_wanted -= 6;
-}
-if(k_right)
-{
-    spd_wanted += 6;
-} 
+//Vector variables
+var vector2_x = 0;
+var vector2_y = 1;
 
-speed_x += (spd_wanted - speed_x) * 0.2; //Smoothly accelerate / decelerate to the wanted speed.
+//Horizontal Movement
+velocity_[vector2_x] = clamp(velocity_[vector2_x] + x_input, -max_velocity_[vector2_x], max_velocity_[vector2_x]); //Forces the player to stay within the max velocity, left or right.
 
-var xsp = round(speed_x); //Turn the theoretical value into an integer for collision and movement
-
-//Horizontal collision
-if(place_meeting(x + xsp, y, o_floortest))
-{
-    while(!place_meeting(x + sign(xsp), y, o_floortest))
-    { 
-        x += sign(xsp);
-    }
-    xsp = 0;
-    speed_x = 0; //We still have to set the theoretical value to 0 here
-	spd_inc = 0;
+//Friction
+if x_input == 0 {
+	velocity_[vector2_x] = lerp(velocity_[vector2_x], 0, .2);
 }
 
-x += (spd_inc)*sign(spd_wanted) + xsp
+//Gravity
+velocity_[vector2_y] += gravity_; //Apply Gravity
 
-speed_y += grav; //Apply gravity
+//Move and Contact Tiles
+move_and_contact_tiles(collision_tile_map_id_, tilesize, velocity_);
 
-if(k_jump && place_meeting(x, y + 1, o_floortest))
-{
-    speed_y = -9;
-	is_jumping = true;
-}
-
-var ysp = round(speed_y); //Turn the theoretical value into an integer for collision and movement
-
-//Vertical collision
-if(place_meeting(x, y + ysp, o_floortest))
-{
-    while(!place_meeting(x, y + sign(ysp), o_floortest))
-    {
-        y += sign(ysp);
-    }
-    ysp     = 0
-    speed_y = 0; //We still have to set the theoretical value to 0 here
+//Jumping
+var on_ground = tile_collide_at_points(collision_tile_map_id_, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]); //Check if there is a tile under us
+if on_ground {
+	//Jumping
+	if keyboard_check_pressed(vk_space) {
+		velocity_[vector2_y] = -jump_speed_;
+		is_jumping = true;
+	}
+} else {
+	// Control jump height
+	if keyboard_check_released(vk_space) && velocity_[vector2_y] <= -(jump_speed_/3) {
+		velocity_[vector2_y] = -(jump_speed_/3);
+	}
 	is_jumping = false;
 }
-y += ysp;
 
 //Attacking
 if eqweapon != "none" {
@@ -70,26 +53,26 @@ if eqweapon != "none" {
 }
 
 //Animation
-if spd_wanted > 0 {
+if x_input > 0 {
 	flipped = 1
-} else if spd_wanted < 0 {
+} else if x_input < 0 {
 	flipped = -1
 }
 
-if spd_wanted > 0 or spd_wanted < 0 {
+if x_input != 0 {
 	animation_state = "Walking"
-} else if spd_wanted = 0 {
+} else {
 	animation_state = "Idle"
 }
 
 //Sprinting
 if keyboard_check_pressed(vk_shift) {
-	spd_inc += 3
+	max_velocity_[vector2_x] += 3;
 	if animation_state = "Walking" {
 		image_speed = 1.1
 	}
 } else if keyboard_check_released(vk_shift) {
-	spd_inc -= 3
+	max_velocity_[vector2_x] -= 3;
 	image_speed = 0.8
 }
 
