@@ -7,10 +7,11 @@ if place_meeting(x,y,o_player) {
 }
 
 //Debug
-if debug_mode = true {
-	draw_text_transformed(x,y+50,"ID:" + string(my_id),0.8,0.8,0)
-	draw_text_transformed(x,y+70,"ID Type:" + string(my_id_type),0.8,0.8,0)
-	draw_text_transformed(x,y+90,"Grid:" + string(my_grid),0.8,0.8,0)
-	draw_text_transformed(x,y+110,"Name:" + string(my_name),0.8,0.8,0)
-	draw_text_transformed(x,y+130,"Desc:" + string(my_description),0.8,0.8,0)
-}
+	/*draw_text_transformed(x,y-90,"ID:" + string(my_id),0.2,0.2,0)
+	draw_text_transformed(x,y-110,"ID Type:" + string(my_id_type),0.2,0.2,0)
+	draw_text_transformed(x,y-130,"Grid:" + string(my_grid),0.2,0.2,0)
+	draw_text_transformed(x,y-150,"Name:" + string(my_name),0.2,0.2,0)
+	draw_text_transformed(x,y-170,"Desc:" + string(my_description),0.2,0.2,0)
+	if my_id_type = "Weapon" {
+	draw_text_transformed(x,y-190,"Damage:" + string(my_damage),0.2,0.2,0)
+	}*/

@@ -12,9 +12,9 @@ for(var i=0; i<ds_grid_height(spellinv); i++){
 	var item_id = ds_grid_get(spellinv,prop.ID,i)
 	var item_sprite = ds_grid_get(spellinv,prop.sprite,i)
 	if i < 2 {
-		draw_sprite(item_sprite,image_index,dguiwidth-669 + (w*90), dguiheight-52)
+		draw_sprite(item_sprite,image_index,dguiwidth/2 - 189 + (w*90), dguiheight-52)
 	} else {
-		draw_sprite(item_sprite,image_index,dguiwidth-559 + (w*90), dguiheight-52)
+		draw_sprite(item_sprite,image_index,dguiwidth/2 - 79 + (w*90), dguiheight-52)
 	}
 	w++;
 }

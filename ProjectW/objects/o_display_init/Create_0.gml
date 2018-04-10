@@ -21,6 +21,7 @@ ideal_width=round(ideal_height*aspect_ratio);
 		var d = round(global.display_height/ideal_height);
 		ideal_height=global.display_height/d;
 	}*/
+	
 if aspect_ratio = 1.6 {
 	ideal_width = 960
 	ideal_height = 540

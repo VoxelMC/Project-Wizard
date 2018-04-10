@@ -4,7 +4,7 @@
 gravity_ = 0.4;	
 velocity_ = [0, 0]; //Don't change this
 max_velocity_ = [7, 11]; //1st value is the x, 2nd is the y
-jump_speed_ = 7; 
+jump_speed_ = 8;
 acceleration_ = 1.5;
 sprinting = false; 
 is_jumping = false;
@@ -20,8 +20,9 @@ image_speed = 0.8
 
 //Combat Variables
 eqweapon = "none"
-do_reload = false;
+do_reload = true;
 reloadtime = 0
+dmg_mod = 0
 
 //Health/Mana Variables
 global.CurrentHP = 100
@@ -31,7 +32,7 @@ global.MaxMana = 50
 
 //Inventory Variables
 globalvar pasinv;
-pasinv = ds_grid_create(5,1);
+pasinv = ds_grid_create(6,1);
 globalvar actinv;
 actinv = ds_grid_create(4,1);
 globalvar spellinv;

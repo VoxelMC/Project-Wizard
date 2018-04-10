@@ -20,7 +20,7 @@ velocity_[vector2_x] = clamp(velocity_[vector2_x] + x_input, -max_velocity_[vect
 
 //Friction
 if x_input == 0 {
-	velocity_[vector2_x] = lerp(velocity_[vector2_x], 0, .2);
+	velocity_[vector2_x] = lerp(velocity_[vector2_x], 0, .3);
 }
 
 //Gravity

@@ -3,7 +3,6 @@ var othertype = other.my_id_type
 var othername = other.my_name
 var otherdesc = other.my_description
 var otherspr = other.my_sprite
-var othereffect = other.my_effect
 if othertype = "Weapon" {
 var otherweptype = other.my_weptype
 var otherdamage = other.my_damage;
@@ -11,6 +10,7 @@ var otherRoF = other.my_RoF;
 }
 if othertype = "Passive" {
 var otherpastype = other.my_pastype
+var othereffect = other.my_effect
 }
 
 //Cycle through other's item type because each reacts differently
@@ -18,14 +18,15 @@ switch othertype {
 	
 	case "Passive": 
 		var amount = ds_grid_height(pasinv)
-		ds_grid_resize(pasinv,4,amount+1)
+		ds_grid_resize(pasinv,6,amount+1)
 		amount = ds_grid_height(pasinv)
 		ds_grid_set(pasinv,prop.ID,amount-1,otherid)
 		ds_grid_set(pasinv,prop.sprite,amount-1,otherspr)
 		ds_grid_set(pasinv,prop.name,amount-1,othername)
 		ds_grid_set(pasinv,prop.desc,amount-1,otherdesc)
 		ds_grid_set(pasinv,prop.effect,amount-1,othereffect);
-		ds_grid_set(pasinv,proppas.passivetype,amount-1,otherpastype); break;
+		ds_grid_set(pasinv,proppas.passivetype,amount-1,otherpastype);
+		dmg_mod += ds_grid_get(pasinv,prop.effect,amount-1); break;
 	
 	case "Active":
 		if actequipped = "none" {
