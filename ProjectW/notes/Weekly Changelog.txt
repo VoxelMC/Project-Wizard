@@ -5,3 +5,5 @@
 **-** Signficantly changed movement, hopefully for the better
 **-** Implemented a use for the passive items, they now increase your damage by 1 or 2 depending on which item you pick up.
 **-** Fixed some random bugs and a crash
+**-** Added in new sprites for the fire and ice wand.
+**-**

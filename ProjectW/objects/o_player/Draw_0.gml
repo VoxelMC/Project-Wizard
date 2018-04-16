@@ -11,3 +11,9 @@ if place_meeting(x,y,o_MasterItem) or place_meeting(x,y,o_door) {
 		draw_sprite(s_ItemPopup,image_index,x+8.1,y-52)
 	}*/
 }
+
+if wepequipped != "none" {
+	var spritetodraw = s_IceWand;
+	var wepangle = point_direction(x,y,mouse_x,mouse_y)
+	draw_sprite_ext(spritetodraw,0,x,y,1,1,wepangle,c_white,0);
+}
