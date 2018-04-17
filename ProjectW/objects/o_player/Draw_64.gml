@@ -4,7 +4,7 @@ var dguiwidth = display_get_gui_width();
 var dguiheight = display_get_gui_height();
 var wepsprite = ds_grid_get(wepinv,1,0)
 if wepsprite != 0 {
-	draw_sprite(wepsprite,image_index,dguiwidth/2,dguiheight-65)
+	draw_sprite(wepsprite,image_index,dguiwidth/2-25,dguiheight-55)
 }
 
 var w=0;

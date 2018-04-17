@@ -91,4 +91,11 @@ if do_reload = true {
 	}
 }
 
+//Check for mouse position to change flipped
+if mouse_x > x {
+	flipped = 1;
+} else {
+	flipped = -1;
+}
+
 } //close the inventory check
