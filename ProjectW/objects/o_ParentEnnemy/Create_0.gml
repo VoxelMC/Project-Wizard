@@ -1,2 +1,2 @@
-EnemyHealth = 40;
-EnemyMaxHealth = 40;
+EnemyHealth = 9999;
+EnemyMaxHealth = 9999;

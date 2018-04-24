@@ -27,6 +27,7 @@ enum weaponid
 	{
 	icewand, //Passive, Damage +1, ID: 0
 	firewand, //Passive, Damage +2, ID: 1
+	grasswand,
 	}
 #endregion
 

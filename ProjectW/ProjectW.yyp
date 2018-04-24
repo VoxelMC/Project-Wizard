@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "0c6ff2d0-2801-41f6-9d1d-73897ba5ddeb",
+            "Value": {
+                "id": "42a8cba3-7408-40b3-84b1-99e5b256f7c8",
+                "resourcePath": "sprites\\s_GrassProjectile\\s_GrassProjectile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "16393037-3076-4e53-945e-006401a3cf71",
             "Value": {
                 "id": "57f999e9-aafa-4305-a825-83e176bbddef",
@@ -131,6 +139,14 @@
             "Value": {
                 "id": "e35321bd-f63a-448e-9c6d-f29e906be42b",
                 "resourcePath": "sprites\\s_healingaoe\\s_healingaoe.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "202666aa-64b1-448a-80e1-5dc3a24c581f",
+            "Value": {
+                "id": "e6c38d3a-824f-4e88-bb6c-57a7dbe746e9",
+                "resourcePath": "sprites\\s_GrassWand\\s_GrassWand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -235,6 +251,14 @@
             "Value": {
                 "id": "cde3a971-2bdb-4542-b0d6-8d0925e8b1c3",
                 "resourcePath": "objects\\o_badguy\\o_badguy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "4d16cc53-459e-43ed-bff0-b1aa3086cf42",
+            "Value": {
+                "id": "d2513443-433c-4cb6-b7d6-0d79aec3af29",
+                "resourcePath": "objects\\o_GrassProjectile\\o_GrassProjectile.yy",
                 "resourceType": "GMObject"
             }
         },

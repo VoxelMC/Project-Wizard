@@ -53,8 +53,9 @@ item_init_spell(0,"Glyph",s_SGlyph,"Nothing yet.",1)
 item_init_spell(1,"Heiro",s_SHeiro,"Nothing yet.",2)
 
 //WEAPONS
-item_init_weapon(0,"Ice Wand",s_IceWand,"A wand that shoots ice projectiles.",weptype.wand,1,15)
-item_init_weapon(1,"Fire Wand",s_FireWand,"A wand that shoots fire projectiles.",weptype.wand,3,25)
+item_init_weapon(weaponid.icewand,"Ice Wand",s_IceWand,"A wand that shoots ice projectiles.",weptype.wand,1,15)
+item_init_weapon(weaponid.firewand,"Fire Wand",s_FireWand,"A wand that shoots fire projectiles.",weptype.wand,3,25)
+item_init_weapon(weaponid.grasswand,"Grass Wand",s_GrassWand,"A wand that shoots grass projectiles.",weptype.wand,5,5)
 
 //Spawn some starting items
 MasterItem_Create(passiveid.glowy,"Passive",650,350)
@@ -65,7 +66,7 @@ MasterItem_Create(spellid.heiro,"Spell",950,350)
 MasterItem_Create(spellid.glyph,"Spell",1025,350)
 MasterItem_Create(weaponid.icewand,"Weapon",1100,350)
 MasterItem_Create(weaponid.firewand,"Weapon",1175,350)
-MasterItem_Create(spellid.heiro,"Spell",1250,350)
+MasterItem_Create(weaponid.grasswand,"Weapon",1250,350)
 MasterItem_Create(spellid.glyph,"Spell",1325,350)
 
 

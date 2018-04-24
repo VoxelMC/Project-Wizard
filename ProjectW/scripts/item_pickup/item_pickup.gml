@@ -77,7 +77,7 @@ switch othertype {
 			ds_grid_set(wepinv,propwep.type,0,otherweptype)
 			ds_grid_set(wepinv,propwep.damage,0,otherdamage)
 			ds_grid_set(wepinv,propwep.Rof,0,otherRoF)
-			wepequipped = ds_grid_get(wepinv,0,0);
+			wepequipped = ds_grid_get(wepinv,prop.ID,0);
 			eqweapon = ds_grid_get(wepinv,prop.ID,0);
 			reloadtime = ds_grid_get(wepinv,5,0);
 		} break;
