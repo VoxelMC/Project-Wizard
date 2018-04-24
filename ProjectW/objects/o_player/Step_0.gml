@@ -36,7 +36,7 @@ if on_ground {
 	if keyboard_check_pressed(vk_space) {
 		velocity_[vector2_y] = -jump_speed_;
 		is_jumping = true;
-	}
+	} 
 } else {
 	// Control jump height
 	if keyboard_check_released(vk_space) && velocity_[vector2_y] <= -(jump_speed_/3) {
@@ -72,8 +72,8 @@ if keyboard_check_pressed(vk_shift) {
 		image_speed = 1.1
 	}
 } else if keyboard_check_released(vk_shift) {
-	max_velocity_[vector2_x] -= 3;
-	image_speed = 0.8
+		max_velocity_[vector2_x] -= 3;
+		image_speed = 0.8
 }
 
 if is_jumping = false {
@@ -92,10 +92,12 @@ if do_reload = true {
 }
 
 //Check for mouse position to change flipped
-if mouse_x > x {
-	flipped = 1;
-} else {
-	flipped = -1;
+if eqweapon != "none" {
+	if mouse_x > x {
+		flipped = 1;
+	} else {
+		flipped = -1;
+	}
 }
 
 } //close the inventory check

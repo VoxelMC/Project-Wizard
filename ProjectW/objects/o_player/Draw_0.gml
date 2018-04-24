@@ -3,7 +3,6 @@
 if wepequipped != "none" {
 	var spritetodraw = ds_grid_get(wepinv,prop.sprite,wepequipped);
 	var wepangle = point_direction(x,y,mouse_x,mouse_y)
-	draw_text(x,y,spritetodraw);
 	draw_sprite_ext(spritetodraw,image_index,x,y,1,flipped,wepangle-25*flipped,image_blend,image_alpha);
 }
 draw_sprite_ext(sprite_index, image_index, x, y, flipped, 1, 0, image_blend, image_alpha)
