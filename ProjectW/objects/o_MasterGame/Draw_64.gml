@@ -8,14 +8,12 @@ draw_text_transformed(x,y+70,"Display Height:" + string(global.display_height),0
 draw_text_transformed(x,y+90,"Ideal Width:" + string(o_display_init.ideal_width),0.30,0.30,0);
 draw_text_transformed(x,y+110,"Ideal Height:" + string(o_display_init.ideal_height),0.30,0.30,0);
 draw_text_transformed(x,y+130,"Aspect Ratio:" + string(o_display_init.aspect_ratio),0.30,0.30,0);*/
-/*draw_text_transformed(x,y,ds_grid_get(wepinv,0,0),0.30,0.30,0);*/
+/*draw_text_transformed(x,y,ds_grid_get(wepinv,0,0),0.30,0.30,0);
 draw_text_transformed(x,y+50,ds_grid_get(wepinv,1,0),0.30,0.30,0);
-/*draw_text_transformed(x,y+100,ds_grid_get(wepinv,2,0),0.30,0.30,0);
+draw_text_transformed(x,y+100,ds_grid_get(wepinv,2,0),0.30,0.30,0);
 draw_text_transformed(x,y+150,ds_grid_get(wepinv,3,0),0.30,0.30,0);
 draw_text_transformed(x,y+200,ds_grid_get(wepinv,4,0),0.30,0.30,0);
 draw_text_transformed(x,y+250,ds_grid_get(wepinv,5,0),0.30,0.30,0);*/
-draw_text(x,y,o_player.wepequipped);
-
 
 
 //Health Bar

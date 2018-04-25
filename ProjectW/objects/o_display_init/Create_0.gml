@@ -3,15 +3,17 @@ ideal_width=0;
 ideal_height=540;
 zoom=1;
 max_zoom=1;
+alarm_done = false;
 global.display_width=display_get_width();
 global.display_height=display_get_height();
+global.screenshake = false;
 
 aspect_ratio=global.display_width/global.display_height;
 aspect_ratio = clamp(aspect_ratio, 16 / 10, 21 / 9);
 ideal_width=round(ideal_height*aspect_ratio);
 
 //Perfect Pixel Scaling
-	/*if(global.display_width mod ideal_width != 0)
+	if(global.display_width mod ideal_width != 0)
 	{
 		var d = round(global.display_width/ideal_width);
 		ideal_width=global.display_width/d;
@@ -20,7 +22,7 @@ ideal_width=round(ideal_height*aspect_ratio);
 	{
 		var d = round(global.display_height/ideal_height);
 		ideal_height=global.display_height/d;
-	}*/
+	}
 	
 if aspect_ratio = 1.6 {
 	ideal_width = 960
@@ -49,7 +51,7 @@ camera = camera_create();
 globalvar view_x, view_y, view_w, view_h;
 view_x = 0;
 view_y = 0;
-view_w = ideal_width;
-view_h = ideal_height;
+view_w = ideal_width*zoom;
+view_h = ideal_height*zoom;
 
 room_goto_next();

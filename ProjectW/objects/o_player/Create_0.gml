@@ -27,7 +27,7 @@ dmg_mod = 0
 //Health/Mana Variables
 global.CurrentHP = 100
 global.MaxHP = 100
-global.CurrentMana = 50
+global.CurrentMana = 50 
 global.MaxMana = 50
 
 //Inventory Variables

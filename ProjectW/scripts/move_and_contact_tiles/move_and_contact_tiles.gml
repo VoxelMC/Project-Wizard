@@ -13,7 +13,7 @@ var vector2_y = 1;
 x += velocity[vector2_x]
 
 //Right and left collisions
-if velocity[vector2_x] > 0 {
+if velocity[vector2_x] > 0 { 
 	var tile_right = tile_collide_at_points(tile_map_id, [bbox_right-1, bbox_top], [bbox_right-1, bbox_bottom-1]);
 	if tile_right {
 		if object_index != o_player {
@@ -35,9 +35,9 @@ if velocity[vector2_x] > 0 {
 			x = bbox_left & ~(tile_size-1);
 			x += tile_size+x-bbox_left;
 			velocity[@ vector2_x] = 0;
-		}
-	} 
-} 
+		} 
+	}
+}
 
 //Move Vertically
 y += floor(velocity[vector2_y]);
@@ -56,7 +56,7 @@ if (velocity[vector2_y]) > 0 {
 		}
 	}
 } else {
-	var tile_top = tile_collide_at_points(tile_map_id, [bbox_left, bbox_top], [bbox_right-1, bbox_top])
+	var tile_top = tile_collide_at_points(tile_map_id, [bbox_left, bbox_top], [bbox_right-1, bbox_top]);
 	if tile_top {
 		if object_index != o_player {
 			image_speed = 1;

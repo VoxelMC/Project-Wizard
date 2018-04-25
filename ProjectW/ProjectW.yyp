@@ -639,14 +639,6 @@
             }
         },
         {
-            "Key": "bff4ee48-573f-4eec-83cb-d866ff95efac",
-            "Value": {
-                "id": "47f60b93-01ee-4e8a-bdd0-ac755c1787b9",
-                "resourcePath": "datafiles_yy\\GameUI.zip.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "c02a62d6-b08a-4328-adf0-1e46e1074200",
             "Value": {
                 "id": "2344bb54-81ed-4fdc-9c99-6081aa754195",
