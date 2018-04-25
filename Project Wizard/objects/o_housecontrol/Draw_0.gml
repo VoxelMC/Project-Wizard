@@ -1,0 +1,1 @@
+draw_text_transformed(500,300,string_hash_to_newline("NOTHING EXISTS HERE,#PRESS R TO RESTART"),1.50,1.50,0)
