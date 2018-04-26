@@ -45,15 +45,3 @@ actequipped = "none"
 //Key Mappings
 keyboard_set_map(ord("A"),vk_left)
 keyboard_set_map(ord("D"),vk_right)
-
-//--------Dialogue Stuff
-reset_dialogue_defaults();
-myPortrait			= spr_portrait_player;
-myVoice				= snd_voice2;
-myFont				= fnt_main;
-myName				= "Green";
-
-myPortraitTalk		= spr_portrait_examplechar_mouth;
-myPortraitTalk_x	= 26;
-myPortraitTalk_y	= 44;
-myPortraitIdle		= spr_portrait_examplechar_idle;
