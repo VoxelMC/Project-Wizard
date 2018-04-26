@@ -100,4 +100,8 @@ if eqweapon != "none" {
 	}
 }
 
+if keyboard_check_pressed(vk_enter) {
+	create_dialogue("Just a little monologue.", -1);
+}
+
 } //close the inventory check

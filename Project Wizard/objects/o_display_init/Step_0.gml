@@ -5,7 +5,7 @@ if keyboard_check_pressed(vk_f11) {
 		if(zoom>max_zoom) {
 	    zoom=1;
 		}
-		surface_resize(application_surface,ideal_width*zoom,ideal_height*zoom);
+		surface_resize(application_surface,ideal_width*2,ideal_height*2);
 		//window_set_size(ideal_width*zoom,ideal_height*zoom);
 		alarm[0]=1;
 	} else {
@@ -15,13 +15,13 @@ if keyboard_check_pressed(vk_f11) {
 		if(zoom>max_zoom) {
 	    zoom=1;
 		}
-		surface_resize(application_surface,ideal_width*zoom,ideal_height*zoom);
+		surface_resize(application_surface,ideal_width*2,ideal_height*2);
 		alarm[0] = 1;
 	}
 }
-if zoom != 1.5 {
+/*if zoom != 1.5 {
 	zoom += 0.01
-}
+}*/
 	
 //Follow Player
 view_x = o_player.x - view_w/2;
@@ -39,6 +39,6 @@ if global.screenshake = true {
 		alarm_done = true;
 	}
 } else {
-	view_w = ideal_width*zoom;
+	view_w = ideal_width*zoom
 	view_h = ideal_height*zoom;
 }

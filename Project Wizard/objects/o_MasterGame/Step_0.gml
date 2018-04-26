@@ -26,5 +26,7 @@ if keyboard_check_pressed(vk_f1) {
 }
 
 if keyboard_check_pressed(ord("R")) {
-	game_restart();
+	game_restart(); 
 }
+
+
