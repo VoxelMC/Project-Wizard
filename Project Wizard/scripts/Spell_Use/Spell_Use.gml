@@ -6,11 +6,11 @@ var splpos = argument1; //Spell Postion
 var splid = ds_grid_get(spellinv,0,spl)
 
 switch (spl) {
-	case spellid.glyph:
+	case spellid.heal:
 	
 	instance_create_layer(x,y,"Instances",o_healingaoe) break;
 	
-	case spellid.heiro:
+	case spellid.manareg:
 	
 	instance_create_layer(x,y,"Instances",o_manaaoe); break;
 	

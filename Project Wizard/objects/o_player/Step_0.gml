@@ -8,67 +8,17 @@ switch animation_state {
 
 //Use Spells if any are equipped
 var spellequipamount = ds_grid_height(spellinv);
-/*switch (spellequipamount) {
-	case 0: break;
-	case 1: 
-	
-	var spellid1 = ds_grid_get(spellinv,prop.ID,0)
-	switch (keyboard_key) {
-		case ord("H"): Spell_Use(spellid1); break;
-	}  break;
-	
-	case 2:
-	var spellid1 = ds_grid_get(spellinv,prop.ID,0)
-	var spellid2 = ds_grid_get(spellinv,prop.ID,1)
-	switch (keyboard_key) {
-		case ord("H"): Spell_Use(spellid1); break;
-		case ord("J"): Spell_Use(spellid2); break;
-	}  break;
-	
-	case 3:
-	var spellid1 = ds_grid_get(spellinv,prop.ID,0);
-	var spellid2 = ds_grid_get(spellinv,prop.ID,1);
-	var spellid3 = ds_grid_get(spellinv,prop.ID,2);
-	switch (keyboard_key) {
-		case ord("H"): Spell_Use(spellid1); break;
-		case ord("J"): Spell_Use(spellid2); break;
-		case ord("K"): Spell_Use(spellid3); break;
-	}  break;
-	
-	case 4:
-	var spellid1 = ds_grid_get(spellinv,prop.ID,0);
-	var spellid2 = ds_grid_get(spellinv,prop.ID,1);
-	var spellid3 = ds_grid_get(spellinv,prop.ID,2);
-	var spellid4 = ds_grid_get(spellinv,prop.ID,3);
-	switch (keyboard_key) {
-		case ord("H"): Spell_Use(spellid1); break;
-		case ord("J"): Spell_Use(spellid2); break;
-		case ord("K"): Spell_Use(spellid3); break;
-		case ord("L"): Spell_Use(spellid4); break;
-	}  break;
-}*/
 
-if (keyboard_check_pressed(ord("H")) && spellequipamount > 0 && cooldown[1] <= 0) {
+if (keyboard_check_pressed(ord("J")) && spellequipamount > 0 && cooldown[1] <= 0) {
 	
 	var spid = ds_grid_get(spellinv,prop.ID,0);
 	Spell_Use(spid,1);
 	
-} else if  (keyboard_check_pressed(ord("J")) && spellequipamount > 1 && cooldown[2] <= 0) {
+} else if  (keyboard_check_pressed(ord("K")) && spellequipamount > 1 && cooldown[2] <= 0) {
 	
 	var spid = ds_grid_get(spellinv,prop.ID,1);
 	Spell_Use(spid,2);
 	
-} else if  (keyboard_check_pressed(ord("K")) && spellequipamount > 2 && cooldown[3] <= 0) {
-	
-	var spid = ds_grid_get(spellinv,prop.ID,2);
-	Spell_Use(spid,3);
-	cooldown[3] = ds_grid_get(spellinv,propspl.cooldown,
-	
-} else if  (keyboard_check_pressed(ord("L")) && spellequipamount > 3 && cooldown[4] <= 0) {
-	
-	var spid = ds_grid_get(spellinv,prop.ID,3);
-	Spell_Use(spid,4);
-
 }
 
 //Spell cooldown subtract
@@ -78,12 +28,6 @@ if cooldown[1] != 0 {
 if cooldown[2] != 0 {
 	cooldown[2] -=  1;
 } 
-if cooldown[3] != 0 {
-	cooldown[3] -=  1;
-}
-if cooldown[4] != 0 {
-	cooldown[4] -=  1;
-}
 
 //Attacking
 if eqweapon != "none" {

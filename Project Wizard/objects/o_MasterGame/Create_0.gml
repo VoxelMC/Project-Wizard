@@ -49,21 +49,23 @@ item_init_active(0,"Triangle",s_ATriangle,"Nothing yet.",1)
 item_init_active(1,"Square",s_ASquare,"Nothing yet.",2)
 
 //SPELLS
-item_init_spell(0,"Glyph",s_SGlyph,"Nothing yet.",240);
-item_init_spell(1,"Heiro",s_SHeiro,"Nothing yet.",420);
+item_init_spell(0,"Healing Aura",s_SHealing,"Creates a healing aura around the player.",240);
+item_init_spell(1,"Mana Regen Aura",s_SManaRegen,"Creates a mana regenartion aura around the player.",420);
+item_init_spell(2,"Thunderous Rage",s_SLightning,"Adds a lightning effect to your weapon for a short time.",600);
+item_init_spell(3,"Fire Blast",s_SFireBlast,"Adds an explosion effect to your weapon for a short time.",840);
 
 //WEAPONS
-item_init_weapon(weaponid.icewand,"Ice Wand",s_IceWand,"A wand that shoots ice projectiles.",weptype.wand,1,15)
-item_init_weapon(weaponid.firewand,"Fire Wand",s_FireWand,"A wand that shoots fire projectiles.",weptype.wand,3,25)
-item_init_weapon(weaponid.grasswand,"Grass Wand",s_GrassWand,"A wand that shoots grass projectiles.",weptype.wand,5,30)
+item_init_weapon(0,"Ice Wand",s_IceWand,"A wand that shoots ice projectiles.",weptype.wand,1,15)
+item_init_weapon(1,"Fire Wand",s_FireWand,"A wand that shoots fire projectiles.",weptype.wand,3,25)
+item_init_weapon(2,"Grass Wand",s_GrassWand,"A wand that shoots grass projectiles.",weptype.wand,5,30)
 
 //Spawn some starting items
 MasterItem_Create(passiveid.glowy,"Passive",725,350)
 MasterItem_Create(passiveid.maze,"Passive",800,350)
-MasterItem_Create(spellid.heiro,"Spell",875,350)
-MasterItem_Create(spellid.heiro,"Spell",950,350)
-MasterItem_Create(spellid.glyph,"Spell",1025,350)
-MasterItem_Create(spellid.glyph,"Spell",1100,350)
+MasterItem_Create(spellid.heal,"Spell",875,350)
+MasterItem_Create(spellid.manareg,"Spell",950,350)
+MasterItem_Create(spellid.lightning,"Spell",1025,350)
+MasterItem_Create(spellid.fireblast,"Spell",1100,350)
 MasterItem_Create(weaponid.icewand,"Weapon",1175,350)
 MasterItem_Create(weaponid.firewand,"Weapon",1250,350)
 MasterItem_Create(weaponid.grasswand,"Weapon",1325,350)

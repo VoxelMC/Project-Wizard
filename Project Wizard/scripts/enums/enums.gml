@@ -17,8 +17,10 @@ enum activeid
 #region Spell Item ID Name Enum
 enum spellid 
 	{
-	heiro, //Passive, Damage +1, ID: 0
-	glyph, //Passive, Damage +2, ID: 1
+	heal,
+	manareg, 
+	lightning,
+	fireblast,
 	}
 #endregion
 
