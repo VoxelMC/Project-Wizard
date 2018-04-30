@@ -1,8 +1,8 @@
 draw_self();
 if place_meeting(x,y,o_player) {
 	draw_set_halign(fa_center)
-	draw_text_transformed(x,y-50,"Item:" + string(my_name),0.2,0.2,0)
-	draw_text_transformed(x,y-70,my_description,0.2,0.2,0)
+	draw_text(x,y-50,"Item:" + string(my_name))
+	draw_text(x,y-70,my_description)
 	draw_set_halign(fa_left)
 }
 

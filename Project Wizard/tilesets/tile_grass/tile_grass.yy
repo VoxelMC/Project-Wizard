@@ -8,8 +8,8 @@
     ],
     "macroPageTiles": {
         "SerialiseData": null,
-        "SerialiseHeight": 4,
-        "SerialiseWidth": 5,
+        "SerialiseHeight": 6,
+        "SerialiseWidth": 7,
         "TileSerialiseData": [
             0,
             0,
@@ -30,7 +30,29 @@
             0,
             0,
             0,
-            0
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            49,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            49
         ]
     },
     "out_columns": 9,
@@ -118,7 +140,11 @@
             73,
             74,
             75,
-            76
+            76,
+            77,
+            78,
+            79,
+            80
         ],
         "SerialiseFrameCount": 1
     },
@@ -126,11 +152,11 @@
         
     ],
     "tile_animation_speed": 15,
-    "tile_count": 77,
+    "tile_count": 81,
     "tileheight": 32,
-    "tilehsep": 16,
-    "tilevsep": 16,
+    "tilehsep": 1,
+    "tilevsep": 1,
     "tilewidth": 32,
-    "tilexoff": 28,
-    "tileyoff": 21
+    "tilexoff": 56,
+    "tileyoff": 22
 }

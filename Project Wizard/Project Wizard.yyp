@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "05eb85a6-2fbe-4134-bf6f-dd1ae6d3eb68",
+            "Value": {
+                "id": "177ce8f5-c09b-478f-8591-68cf2850aae8",
+                "resourcePath": "sprites\\s_manaaoe\\s_manaaoe.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "07afaac2-8613-44c0-80ec-6add3b46c021",
             "Value": {
                 "id": "f385e695-7397-4115-b608-8e8079cf7824",
@@ -188,6 +196,14 @@
                 "id": "96b982fe-cf35-4789-a64d-d15f9942ce98",
                 "resourcePath": "objects\\o_WeaponSlot\\o_WeaponSlot.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2ed24e81-402f-480d-9424-a2cada3b59ed",
+            "Value": {
+                "id": "22c33546-19e3-4d52-8764-12b5568a8961",
+                "resourcePath": "scripts\\Spell_Use\\Spell_Use.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -543,6 +559,14 @@
             }
         },
         {
+            "Key": "a05c1321-d53b-412f-aa5b-8267ae3aa528",
+            "Value": {
+                "id": "938b78cc-da19-403b-9305-ea8523293b58",
+                "resourcePath": "objects\\o_manaaoe\\o_manaaoe.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a2c4c40e-1065-4e70-9988-5eef7ef2e21e",
             "Value": {
                 "id": "37f9d300-d7fd-47de-9643-f4b131ea7222",
@@ -842,6 +866,7 @@
     "script_order": [
         "fd1c4f74-f719-4215-af13-e1123eb7b74c",
         "225df481-2b6a-4240-9db2-789f8a1aa7ed",
+        "2ed24e81-402f-480d-9424-a2cada3b59ed",
         "d0cd514b-1d8a-4ec6-8f44-b2141d0221a4",
         "5b71367d-cdbe-4875-bdbd-8609b6631d3a",
         "411c2892-ec5d-4d35-bc18-147e11be42c8",

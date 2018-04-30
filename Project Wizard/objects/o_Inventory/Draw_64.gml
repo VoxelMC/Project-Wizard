@@ -9,8 +9,8 @@ draw_set_color(c_white)
 
 if global.inv_open = true {
 	//Passive Drawing
-	draw_text_transformed(40,40,"RELICS",0.7,0.7,0)
-	draw_text_transformed(40,220,"RUNES",0.7,0.7,0)
+	draw_text(40,40,"RELICS")
+	draw_text(40,220,"RUNES")
 	
 	for(var i=1; i<ds_grid_height(pasinv); i++){
 	var rew=0, reh=0, ruw=0, ruh=0;
@@ -23,7 +23,7 @@ if global.inv_open = true {
 		draw_sprite(s_ActiveSlot,image_index, 90 + (rew*96), 150 + (reh*96));
 		draw_sprite(item_sprite,image_index,90 + (rew*96), 150 + (reh*96))
 		draw_set_halign(fa_center)
-		draw_text_transformed(90 + (rew*96), 205 + (reh*96),item_name,0.25,0.25,0)
+		draw_text(90 + (rew*96), 205 + (reh*96),item_name)
 		draw_set_halign(fa_left)
 		//moves to the next line if current one filled:
 		rew++;
@@ -36,7 +36,7 @@ if global.inv_open = true {
 		draw_sprite(s_ActiveSlot,image_index, 90 + (ruw*96), 330 + (ruh*96));
 		draw_sprite(item_sprite,image_index,90 + (ruw*96), 330 + (ruh*96))
 		draw_set_halign(fa_center)
-		draw_text_transformed(90 + (ruw*96), 385 + (ruh*96),item_name,0.25,0.25,0)
+		draw_text(90 + (ruw*96), 385 + (ruh*96),item_name)
 		draw_set_halign(fa_left)
 		//moves to the next line if current one filled:
 		ruw++;
@@ -47,7 +47,7 @@ if global.inv_open = true {
 	} //End of passive inventory drawing
 	
 	draw_sprite(s_runefragment,image_index,1200,28)
-	draw_text_transformed(1220,15,"= " + string(global.runefragments),0.4,0.4,0)
+	draw_text(1220,15,"= " + string(global.runefragments))
 	
 }
 

@@ -58,6 +58,13 @@ enum proppas
 	}
 #endregion
 
+#region Item Properties Spell Enum
+enum propspl
+	{
+	cooldown = 4
+	}
+#endregion
+
 #region Weapon Type Enum
 enum weptype
 	{
