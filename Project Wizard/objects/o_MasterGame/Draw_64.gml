@@ -1,8 +1,8 @@
 ///@description Draw the UI
 var dguiwidth = display_get_gui_width();
 var dguiheight = display_get_gui_height();
-/*draw_text_transformed(x,y+10,"Display GUI Width:" + string(dguiwidth),0.30,0.30,0);
-draw_text_transformed(x,y+30,"Display GUI Height:" + string(dguiheight),0.30,0.30,0);
+draw_text(x,y,"FPS: " + string(fps));
+/*draw_text_transformed(x,y+30,"Display GUI Height:" + string(dguiheight),0.30,0.30,0);
 draw_text_transformed(x,y+50,"Display Width:" + string(global.display_width),0.30,0.30,0);
 draw_text_transformed(x,y+70,"Display Height:" + string(global.display_height),0.30,0.30,0);
 draw_text_transformed(x,y+90,"Ideal Width:" + string(o_display_init.ideal_width),0.30,0.30,0);
@@ -20,30 +20,30 @@ draw_text_transformed(x,y+250,ds_grid_get(wepinv,5,0),0.30,0.30,0);*/
 var hspriteWidth = sprite_get_width(s_HealthBar);
 var hspriteHeight = sprite_get_height(s_HealthBar);
 var hpPercent = global.CurrentHP/global.MaxHP;
-draw_sprite(s_BarBackground,image_index,dguiwidth/2-350,dguiheight-75)
-draw_sprite_part(s_HealthBar, 0, 0, 0, hspriteWidth*hpPercent, hspriteHeight, dguiwidth/2-350, dguiheight-75);
+draw_sprite(s_BarBackground,image_index,dguiwidth/2-470,dguiheight-170)
+draw_sprite_part(s_HealthBar, 0, 0, 0, hspriteWidth*hpPercent, hspriteHeight, dguiwidth/2-470, dguiheight-170);
 
 //Mana Bar
 var mspriteWidth = sprite_get_width(s_ManaBar);
 var mspriteHeight = sprite_get_height(s_ManaBar);
 var manaPercent = global.CurrentMana/global.MaxMana;
-draw_sprite(s_BarBackground,image_index,dguiwidth/2+150,dguiheight-75)
-draw_sprite_part(s_ManaBar, 0, 0, 0, mspriteWidth*manaPercent, mspriteHeight, dguiwidth/2+150, dguiheight-75);
+draw_sprite(s_BarBackground,image_index,dguiwidth/2-470,dguiheight-140)
+draw_sprite_part(s_ManaBar, 0, 0, 0, mspriteWidth*manaPercent, mspriteHeight, dguiwidth/2-470, dguiheight-140);
 
 //Health/Mana Text
 draw_set_color(c_black)
 draw_set_halign(fa_center)
-draw_text(dguiwidth/2-250,dguiheight-70,string(global.CurrentHP) + "/" + string(global.MaxHP));
-draw_text(dguiwidth/2+250,dguiheight-70,string(global.CurrentMana) + "/" + string(global.MaxMana));
+draw_text(dguiwidth/2-370,dguiheight-165,string(global.CurrentHP) + "/" + string(global.MaxHP));
+draw_text(dguiwidth/2-370,dguiheight-135,string(global.CurrentMana) + "/" + string(global.MaxMana));
 draw_set_halign(fa_left);
 draw_set_color(c_white);
 
 
 //UI
 //draw_sprite(s_SpellSlot,image_index,dguiwidth/2-190,dguiheight-55)
-draw_sprite(s_SpellSlot,image_index,dguiwidth/2-100,dguiheight-55)
-draw_sprite(s_WeaponSlot,image_index,dguiwidth/2,dguiheight-65)
-draw_sprite(s_SpellSlot,image_index,dguiwidth/2+100,dguiheight-55)
+draw_sprite(s_SpellSlot,image_index,dguiwidth/2-325,dguiheight-60)
+draw_sprite(s_WeaponSlot,image_index,dguiwidth/2-420,dguiheight-60)
+//draw_sprite(s_SpellSlot,image_index,dguiwidth/2+100,dguiheight-55)
 //draw_sprite(s_SpellSlot,image_index,dguiwidth/2+190,dguiheight-55)
 
 //Test environment tutorial
