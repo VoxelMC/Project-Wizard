@@ -44,6 +44,10 @@ actequipped = "none"
 
 cooldown[1]  = 10;
 cooldown[2] = 10;
+cooldown[3] = 10;
+spellon[1] = 0;
+spellon[2] = 0; 
+spellon[3] = 0;
 
 //Key Mappings
 keyboard_set_map(ord("A"),vk_left)

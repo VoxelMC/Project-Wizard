@@ -4,6 +4,7 @@ ideal_height=540;
 zoom=1;
 max_zoom=1;
 alarm_done = false;
+draw_blackbars = false;
 global.display_width=display_get_width();
 global.display_height=display_get_height();
 global.screenshake = false;
@@ -53,5 +54,8 @@ view_x = 0;
 view_y = 0;
 view_w = ideal_width*zoom;
 view_h = ideal_height*zoom;
+
+global.dguiwidth = display_get_gui_width();
+global.dguiheight = display_get_gui_height();
 
 room_goto_next();

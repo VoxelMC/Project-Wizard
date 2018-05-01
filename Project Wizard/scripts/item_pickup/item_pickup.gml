@@ -50,7 +50,7 @@ switch othertype {
 	case "Spell": 
 		var spellamount = ds_grid_height(spellinv)
 		var spellgridwidth = ds_grid_width(spellinv);
-		if spellamount != 2 {
+		if spellamount != 3 {
 			ds_grid_resize(spellinv,spellgridwidth,spellamount + 1);
 			var spellamount = ds_grid_height(spellinv)
 			ds_grid_set(spellinv,prop.ID,spellamount-1,otherid)

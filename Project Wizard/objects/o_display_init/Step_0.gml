@@ -8,6 +8,7 @@ if keyboard_check_pressed(vk_f11) {
 		surface_resize(application_surface,ideal_width*2,ideal_height*2);
 		//window_set_size(ideal_width*zoom,ideal_height*zoom);
 		alarm[0]=1;
+		draw_blackbars = true;
 	} else {
 		window_set_fullscreen(false);
 		window_set_size(ideal_width,ideal_height);
@@ -17,6 +18,7 @@ if keyboard_check_pressed(vk_f11) {
 		}
 		surface_resize(application_surface,ideal_width*2,ideal_height*2);
 		alarm[0] = 1;
+		draw_blackbars = false;
 	}
 }
 /*if zoom != 1.5 {

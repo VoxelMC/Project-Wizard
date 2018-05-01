@@ -4,6 +4,8 @@ draw_set_font(fnt_main)
 
 ///Initialize variables
 
+
+
 //Menu Variables
 global.inv_open = false;
 global.pause = false;
@@ -15,6 +17,23 @@ global.key_left	= ord("A");
 global.key_right = ord("D");
 global.key_up = ord("W");
 global.key_down = ord("S");
+spellmoveloc = 1;
+spellmoverot[1] = 35;
+spellmoverot[2] = -5;
+spellmoverot[3] = 35;
+spellmovealpha[1] = 1;
+spellmovealpha[2] = 0.5;
+spellmovealpha[3] = 0.5;
+spellon[1] = 0;
+spellon[2] = 0;
+spellon[3] = 0;
+spellmovex[1] = global.dguiwidth/2-433 + lengthdir_x(110,spellmoverot[1]);
+spellmovey[1] = global.dguiheight-32  + lengthdir_y(110,spellmoverot[1]);
+spellmovex[2] = global.dguiwidth/2-433 + lengthdir_x(110,spellmoverot[2]);
+spellmovey[2] = global.dguiheight-32  + lengthdir_y(110,spellmoverot[2]);
+spellmovex[3] = global.dguiwidth/2-433 + lengthdir_x(110,spellmoverot[2]);
+spellmovey[3] = global.dguiheight-32  + lengthdir_y(110,spellmoverot[2]);
+spellmovecheck = false;
 
 //Game Variables
 global.runefragments = 0;
