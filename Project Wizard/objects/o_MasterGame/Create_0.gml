@@ -17,20 +17,15 @@ global.key_left	= ord("A");
 global.key_right = ord("D");
 global.key_up = ord("W");
 global.key_down = ord("S");
-spellmoveloc = 1;
-spellmoverot[1] = 30;
-spellmoverot[2] = 90;
-spellmoverot[3] = 150;
-spellon[1] = 0;
-spellon[2] = 0;
-spellon[3] = 0;
-spellmovex[1] = global.dguiwidth/2-433 + lengthdir_x(110,spellmoverot[1]);
-spellmovey[1] = global.dguiheight-32  + lengthdir_y(110,spellmoverot[1]);
-spellmovex[2] = global.dguiwidth/2-433 + lengthdir_x(110,spellmoverot[2]);
-spellmovey[2] = global.dguiheight-32  + lengthdir_y(110,spellmoverot[2]);
-spellmovex[3] = global.dguiwidth/2-433 + lengthdir_x(110,spellmoverot[2]);
-spellmovey[3] = global.dguiheight-32  + lengthdir_y(110,spellmoverot[2]);
-spellmovecheck = false;
+spelloffset[1] = 95;
+spelloffset[2] = 65;
+spelloffset[3] = 35;
+spelloffset[4] = 5;
+spellon[1] = false;
+spellon[2] = false;
+spellon[3] = false;
+spellon[4] = false;
+
 
 //Game Variables
 global.runefragments = 0;

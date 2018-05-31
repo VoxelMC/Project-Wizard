@@ -36,7 +36,7 @@ pasinv = ds_grid_create(6,1);
 globalvar actinv;
 actinv = ds_grid_create(4,1);
 globalvar spellinv;
-spellinv = ds_grid_create(6,0);
+spellinv = ds_grid_create(6,1);
 globalvar wepinv;
 wepinv = ds_grid_create(7,2);
 wepequipped = "none"
@@ -45,9 +45,7 @@ actequipped = "none"
 cooldown[1]  = 10;
 cooldown[2] = 10;
 cooldown[3] = 10;
-spellon[1] = 0;
-spellon[2] = 0; 
-spellon[3] = 0;
+spellequipamount = ds_grid_height(spellinv);
 
 //Key Mappings
 keyboard_set_map(ord("A"),vk_left)

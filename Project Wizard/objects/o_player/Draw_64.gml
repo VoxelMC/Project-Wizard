@@ -13,7 +13,7 @@ for(var i=0; i<ds_grid_height(spellinv); i++){
 	var item_id = ds_grid_get(spellinv,prop.ID,i)
 	var item_sprite = ds_grid_get(spellinv,prop.sprite,i)
 	if i < 1 {
-		draw_sprite_ext(item_sprite,image_index,o_MasterGame.spellmovex[1],o_MasterGame.spellmovey[1],1,1,image_angle,c_white,o_MasterGame.spellmovealpha[1])
+		draw_sprite(item_sprite,image_index,o_MasterGame.spellmovex[1],o_MasterGame.spellmovey[1])
 		if i = 0 {
 			//draw_text(global.dguiwidth/2-119 + (w*90), global.dguiheight-112,"J");
 			if cooldown[1] != 0 {
@@ -28,7 +28,7 @@ for(var i=0; i<ds_grid_height(spellinv); i++){
 			}
 		}
 	} else if i < 2 {
-		draw_sprite_ext(item_sprite,image_index,o_MasterGame.spellmovex[2],o_MasterGame.spellmovey[2],1,1,image_angle,c_white,o_MasterGame.spellmovealpha[2])
+		draw_sprite(item_sprite,image_index,o_MasterGame.spellmovex[2],o_MasterGame.spellmovey[2])
 		if i = 1 {
 			//draw_text(global.dguiwidth/2-99 + (w*90), global.dguiheight-112,"K");
 			if cooldown[2] != 0 {
@@ -43,7 +43,7 @@ for(var i=0; i<ds_grid_height(spellinv); i++){
 			}
 		}
 	} else if i < 3 {
-		draw_sprite_ext(item_sprite,image_index,o_MasterGame.spellmovex[3],o_MasterGame.spellmovey[3],1,1,image_angle,c_white,o_MasterGame.spellmovealpha[3])
+		draw_sprite(item_sprite,image_index,o_MasterGame.spellmovex[3],o_MasterGame.spellmovey[3])
 		if i = 2 {
 			//draw_text(global.dguiwidth/2-99 + (w*90), global.dguiheight-112,"K");
 			if cooldown[3] != 0 {

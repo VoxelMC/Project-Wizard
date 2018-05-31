@@ -7,27 +7,24 @@ switch animation_state {
 }
 
 //Use Spells if any are equipped
-var spellequipamount = ds_grid_height(spellinv);
 
-if keyboard_check_pressed(ord("Z")) {
-	if (spellequipamount > 0 && cooldown[1] <= 0 && o_MasterGame.spellmoveloc = 1) {
+	if ( keyboard_check_pressed(ord("Z")) && spellequipamount > 0 && cooldown[1] <= 0) {
 	
 		var spid = ds_grid_get(spellinv,prop.ID,0);
 		Spell_Use(spid,1);
 	
-	} else if  (spellequipamount > 1 && cooldown[2] <= 0 && o_MasterGame.spellmoveloc = 2) {
+	} else if  ( keyboard_check_pressed(ord("X")) && spellequipamount > 1 && cooldown[2] <= 0) {
 	
 		var spid = ds_grid_get(spellinv,prop.ID,1);
 		Spell_Use(spid,2);
 	
 	}
-	else if  (spellequipamount > 2 && cooldown[3] <= 0 && o_MasterGame.spellmoveloc = 3) {
+	else if  ( keyboard_check_pressed(ord("C")) && spellequipamount > 2 && cooldown[3] <= 0) {
 	
 		var spid = ds_grid_get(spellinv,prop.ID,2);
 		Spell_Use(spid,3);
 	
 	}
-}
 
 //Spell cooldown subtract
 if cooldown[1] != 0 {

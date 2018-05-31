@@ -40,10 +40,10 @@ draw_set_color(c_white);
 
 
 //UI
-draw_sprite_ext(s_NewSpellSlot,spellon[1],spellmovex[1],spellmovey[1],1,1,image_angle,c_white,spellmovealpha[1])
-draw_sprite_ext(s_NewSpellSlot,spellon[2],spellmovex[2],spellmovey[2],1,1,image_angle,c_white,spellmovealpha[2])
-draw_sprite_ext(s_NewSpellSlot,spellon[3],spellmovex[3],spellmovey[3],1,1,image_angle,c_white,spellmovealpha[3])
-draw_sprite(s_NewWeaponSlot,image_index,global.dguiwidth/2-433,global.dguiheight-32)
+for (var i=0;i>=o_player.spellequipamount;i++) {
+draw_sprite(s_NewSpellSlot,spellon[i] ,global.dguiwidth/2-430 + lengthdir_x(140,spellmoverot[i]),global.dguiheight-23  + lengthdir_y(140,spelloffset[i]))
+}
+draw_sprite(s_NewWeaponSlot,image_index,global.dguiwidth/2-430,global.dguiheight-23)
 
 //Test environment tutorial
 if show_help = true {
