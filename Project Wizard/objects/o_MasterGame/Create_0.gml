@@ -17,10 +17,6 @@ global.key_left	= ord("A");
 global.key_right = ord("D");
 global.key_up = ord("W");
 global.key_down = ord("S");
-spelloffset[1] = 95;
-spelloffset[2] = 65;
-spelloffset[3] = 35;
-spelloffset[4] = 5;
 spellon[1] = false;
 spellon[2] = false;
 spellon[3] = false;
@@ -32,7 +28,7 @@ global.runefragments = 0;
 global.spd_inc = 0; //How much the speed has been increased by.
 
 //MasterGame Specific Variables
-show_help = false;
+show_help = true;
 playerx = o_player.x
 playery = o_player.y
 

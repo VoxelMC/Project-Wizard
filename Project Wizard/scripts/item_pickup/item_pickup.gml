@@ -50,7 +50,7 @@ switch othertype {
 	case "Spell": 
 		var spellamount = ds_grid_height(spellinv)
 		var spellgridwidth = ds_grid_width(spellinv);
-		if spellamount != 3 {
+		if spellamount !=  4  {
 			ds_grid_resize(spellinv,spellgridwidth,spellamount + 1);
 			var spellamount = ds_grid_height(spellinv)
 			ds_grid_set(spellinv,prop.ID,spellamount-1,otherid)
@@ -58,6 +58,7 @@ switch othertype {
 			ds_grid_set(spellinv,prop.name,spellamount-1,othername)
 			ds_grid_set(spellinv,prop.desc,spellamount-1,otherdesc)
 			ds_grid_set(spellinv,propspl.cooldown,spellamount-1,othercooldown);
+			spellequipamount += 1;
 		}
 	break;
 	

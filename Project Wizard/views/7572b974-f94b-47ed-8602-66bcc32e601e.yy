@@ -10,7 +10,8 @@
         "c02a62d6-b08a-4328-adf0-1e46e1074200",
         "ec87028f-11cd-44b4-860a-3992e0d3197d",
         "62d6f886-51fa-4df2-b290-595e388183ed",
-        "19f9ab2b-893b-47e1-b70b-b4ed5e9a98b5"
+        "2a51145d-379d-469a-91c0-572d2358e21c",
+        "0c2605f5-068f-4652-8369-a4b71de5b36f"
     ],
     "filterType": "GMSprite",
     "folderName": "GameUI",

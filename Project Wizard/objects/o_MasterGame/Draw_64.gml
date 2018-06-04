@@ -1,7 +1,5 @@
 ///@description Draw the UI
 
-//draw_text(x,y+100,"Rotation " + string(spellmoverot));
-//draw_text(x,y+120,"Rotation Location " + string(spellmoveloc));
 /*draw_text_transformed(x,y+30,"Display GUI Height:" + string(global.dguiheight),0.30,0.30,0);
 draw_text_transformed(x,y+50,"Display Width:" + string(global.display_width),0.30,0.30,0);
 draw_text_transformed(x,y+70,"Display Height:" + string(global.display_height),0.30,0.30,0);
@@ -40,13 +38,16 @@ draw_set_color(c_white);
 
 
 //UI
-for (var i=0;i>=o_player.spellequipamount;i++) {
-draw_sprite(s_NewSpellSlot,spellon[i] ,global.dguiwidth/2-430 + lengthdir_x(140,spellmoverot[i]),global.dguiheight-23  + lengthdir_y(140,spelloffset[i]))
-}
-draw_sprite(s_NewWeaponSlot,image_index,global.dguiwidth/2-430,global.dguiheight-23)
+draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2-90,global.dguiheight);
+draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2-170,global.dguiheight);
+draw_sprite(s_NewWeaponSlot,image_index,global.dguiwidth/2,global.dguiheight);
+draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2+90,global.dguiheight);
+draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2+170,global.dguiheight);
 
 //Test environment tutorial
 if show_help = true {
-	draw_text(x+5,y+5,string_hash_to_newline("Welcome to the Project W Test Environment Pre-Alpha v1.2!#Here are some controls."))
-	draw_text(x+5,y+55,string_hash_to_newline("F11: Fullscreen#WASD: Movement.#Space: Jump.#L: Spawn a healing field.#E: Interact.#L. Shift: Sprint.#+: Increase health.#-: Decrease health.#R: Restart the game.#F1: Hide/Show this text."))
+	draw_set_halign(fa_right);
+	draw_text(960,y,string_hash_to_newline("Welcome to the Project W Test Environment Pre-Alpha v2.0!#Here are some controls."))
+	draw_text(960,y+55,string_hash_to_newline("F11: Fullscreen#WASD: Movement.#Space: Jump.#Z, C, X, V: Spell Slots 1-4 respectively.#E: Interact.#L. Shift: Sprint.#+: Increase health.#-: Decrease health.#R: Restart the game.#F1: Hide/Show this text."))
+	draw_set_halign(fa_left);
 }

@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "0c2605f5-068f-4652-8369-a4b71de5b36f",
+            "Value": {
+                "id": "d217b7dc-ea5b-47d4-9861-820e6bb7f114",
+                "resourcePath": "sprites\\s_NewSpellSlot\\s_NewSpellSlot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0c6ff2d0-2801-41f6-9d1d-73897ba5ddeb",
             "Value": {
                 "id": "42a8cba3-7408-40b3-84b1-99e5b256f7c8",
@@ -108,14 +116,6 @@
                 "id": "40686400-db55-4dc8-84b6-2cf92f0a3de0",
                 "resourcePath": "views\\19e2d0b0-07e0-40df-8a7f-510c21918de0.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "19f9ab2b-893b-47e1-b70b-b4ed5e9a98b5",
-            "Value": {
-                "id": "be805b79-d170-4b9b-9bf9-8e3db3bcced5",
-                "resourcePath": "sprites\\s_ActiveSlot\\s_ActiveSlot.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "2a51145d-379d-469a-91c0-572d2358e21c",
+            "Value": {
+                "id": "b5dbe8e2-2855-4fd8-8de5-b37868338ca2",
+                "resourcePath": "sprites\\s_NewWeaponSlot\\s_NewWeaponSlot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2ed24e81-402f-480d-9424-a2cada3b59ed",
             "Value": {
                 "id": "22c33546-19e3-4d52-8764-12b5568a8961",
@@ -268,14 +276,6 @@
                 "id": "30074301-5008-44d7-8c9c-54bc7d314b99",
                 "resourcePath": "fonts\\fnt_main\\fnt_main.yy",
                 "resourceType": "GMFont"
-            }
-        },
-        {
-            "Key": "4ad56c1a-c13f-424e-bd7e-6ededf45284e",
-            "Value": {
-                "id": "a9823b07-f3d4-4a05-917e-92eeec9f4999",
-                "resourcePath": "sprites\\s_NewWeaponSlot\\s_NewWeaponSlot.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -756,14 +756,6 @@
                 "id": "b1b9f114-8a79-49de-934c-7553f81fc7b0",
                 "resourcePath": "views\\d76aa470-9282-43b5-8d52-f47f7335654c.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "da6fd24d-1ff2-4e9c-a299-5b3f8d495470",
-            "Value": {
-                "id": "80a6e9a0-8f43-4524-b8b3-9f75b25e7e1e",
-                "resourcePath": "sprites\\s_NewSpellSlot\\s_NewSpellSlot.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

@@ -3,7 +3,8 @@
 
 var spl = argument0; //Spell ID
 var splpos = argument1; //Spell Postion
-var splid = ds_grid_get(spellinv,0,spl)
+var splcooldown = ds_grid_get(spell,5,spl);
+show_debug_message("Spell Cooldown:" + string(splcooldown));
 
 switch (spl) {
 	case spellid.heal:
@@ -16,4 +17,4 @@ switch (spl) {
 	
 }
 
-cooldown[splpos] = ds_grid_get(spellinv,propspl.cooldown,splid);
+cooldown[splpos] = splcooldown
