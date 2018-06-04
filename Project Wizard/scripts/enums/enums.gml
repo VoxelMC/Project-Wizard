@@ -63,7 +63,7 @@ enum proppas
 #region Item Properties Spell Enum
 enum propspl
 	{
-	cooldown = 4
+	cooldown = 3
 	}
 #endregion
 

@@ -3,7 +3,7 @@
 
 var spl = argument0; //Spell ID
 var splpos = argument1; //Spell Postion
-var splcooldown = ds_grid_get(spell,5,spl);
+var splcooldown = ds_grid_get(spell,propspl.cooldown,spl);
 show_debug_message("Spell Cooldown:" + string(splcooldown));
 
 switch (spl) {

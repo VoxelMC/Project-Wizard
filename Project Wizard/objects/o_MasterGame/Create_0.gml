@@ -17,10 +17,6 @@ global.key_left	= ord("A");
 global.key_right = ord("D");
 global.key_up = ord("W");
 global.key_down = ord("S");
-spellon[1] = false;
-spellon[2] = false;
-spellon[3] = false;
-spellon[4] = false;
 
 
 //Game Variables

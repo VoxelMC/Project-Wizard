@@ -42,7 +42,7 @@ wepinv = ds_grid_create(7,2);
 wepequipped = "none"
 actequipped = "none"
 
-cooldown[1] = 10;
+cooldown[1] = 1;
 cooldown[2] = 1;
 cooldown[3] = 1;
 cooldown[4] = 1;

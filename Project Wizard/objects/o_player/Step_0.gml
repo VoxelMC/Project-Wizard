@@ -49,7 +49,7 @@ if cooldown[3] != 0 {
 if cooldown[4] != 0 {
 	cooldown[4] -=  1;
 } 
-show_debug_message("Cooldown[1]:" + string(cooldown[1]));
+show_debug_message("Cooldown[4]:" + string(cooldown[4]));
 
 //Attacking
 if eqweapon != "none" {

@@ -62,7 +62,7 @@ for(var i=0; i<ds_grid_height(spellinv); i++){
 			draw_set_alpha(1)
 			draw_set_halign(fa_center)
 			draw_set_valign(fa_center)
-			draw_text_transformed_color(global.dguiwidth/2+170, global.dguiheight-40,ceil(cd1),2,2,0,c_white,c_white,c_white,c_white,1);
+			draw_text_transformed_color(global.dguiwidth/2+170, global.dguiheight-40,ceil(cd4),2,2,0,c_white,c_white,c_white,c_white,1);
 			draw_set_halign(fa_left);
 			draw_set_valign(fa_top);
 		}
