@@ -4,17 +4,28 @@
 var spl = argument0; //Spell ID
 var splpos = argument1; //Spell Postion
 var splcooldown = ds_grid_get(spell,propspl.cooldown,spl);
-show_debug_message("Spell Cooldown:" + string(splcooldown));
+var cancelcooldown = false
 
 switch (spl) {
-	case spellid.heal:
 	
-	instance_create_layer(x,y,"Instances",o_healingaoe) break;
+	case spellid.heal: //HEALING AURA SPELL
 	
-	case spellid.manareg:
+	if is_jumping = false {
+	instance_create_layer(x,y,"Instances",o_healingaoe) 
+	} else { 
+		cancelcooldown = true
+	} break;
 	
-	instance_create_layer(x,y,"Instances",o_manaaoe); break;
+	case spellid.manareg: //MANA REGEN AURA SPELL
+	
+	if is_jumping = false {
+	instance_create_layer(x,y,"Instances",o_manaaoe);
+	} else { 
+		cancelcooldown = true
+	} break;
 	
 }
 
-cooldown[splpos] = splcooldown
+if cancelcooldown = false {
+	cooldown[splpos] = splcooldown
+}

@@ -762,7 +762,7 @@
             "Key": "e54cbb56-ed85-4b73-9aae-8d87174272cb",
             "Value": {
                 "id": "88920123-020f-417f-8bf0-7e15e451933a",
-                "resourcePath": "objects\\o_ParentEnnemy\\o_ParentEnnemy.yy",
+                "resourcePath": "objects\\o_ParentEnemy\\o_ParentEnemy.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -828,14 +828,6 @@
                 "id": "58f3863e-8af9-4f32-aa71-dcc240145708",
                 "resourcePath": "scripts\\tile_collide_at_points\\tile_collide_at_points.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "f64b2472-912e-42d1-93c2-9b6860b09981",
-            "Value": {
-                "id": "dada9c5e-7860-4495-b2b8-377bf6135be6",
-                "resourcePath": "objects\\o_floortest\\o_floortest.yy",
-                "resourceType": "GMObject"
             }
         },
         {

@@ -11,27 +11,23 @@ switch animation_state {
 	if ( keyboard_check_pressed(ord("Z")) && spellequipamount > 0 && cooldown[1] <= 0) {
 	
 		var spid = ds_grid_get(spellinv,prop.ID,0);
-		show_debug_message("Spid1:" + string(spid));
 		Spell_Use(spid,1);
 	
 	} else if  ( keyboard_check_pressed(ord("X")) && spellequipamount > 1 && cooldown[2] <= 0) {
 	
 		var spid = ds_grid_get(spellinv,prop.ID,1);
-		show_debug_message("Spid2:" + string(spid));
 		Spell_Use(spid,2);
 	
 	}
 	else if  ( keyboard_check_pressed(ord("C")) && spellequipamount > 2 && cooldown[3] <= 0) {
 	
 		var spid = ds_grid_get(spellinv,prop.ID,2);
-		show_debug_message("Spid3:" + string(spid));
 		Spell_Use(spid,3);
 	
 	}
 	else if  ( keyboard_check_pressed(ord("V")) && spellequipamount > 3 && cooldown[4] <= 0) {
 	
 		var spid = ds_grid_get(spellinv,prop.ID,3);
-		show_debug_message("Spid4:" + string(spid));
 		Spell_Use(spid,4);
 	
 	}
@@ -49,7 +45,6 @@ if cooldown[3] != 0 {
 if cooldown[4] != 0 {
 	cooldown[4] -=  1;
 } 
-show_debug_message("Cooldown[4]:" + string(cooldown[4]));
 
 //Attacking
 if eqweapon != "none" {
@@ -105,14 +100,14 @@ if on_ground {
 	//Jumping
 	if keyboard_check_pressed(vk_space) {
 		velocity_[vector2_y] = -jump_speed_;
-		is_jumping = true;
 	} 
+	is_jumping = false;
 } else {
 	// Control jump height
 	if keyboard_check_released(vk_space) && velocity_[vector2_y] <= -(jump_speed_/3) {
 		velocity_[vector2_y] = -(jump_speed_/3);
 	}
-	is_jumping = false;
+	is_jumping = true;
 }
 
 //Animation

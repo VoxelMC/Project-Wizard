@@ -1,4 +1,6 @@
 speed = 0
 image_speed = 1
+if animation_start = false {
 other.EnemyHealth -= my_dmg;
-instance_destroy();
+}
+animation_start = true;

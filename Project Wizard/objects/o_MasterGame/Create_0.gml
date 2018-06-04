@@ -47,10 +47,6 @@ weapon = ds_grid_create(10,10);
 item_init_passive(0,"Glowy",s_PGlowy,"Increases attack by 1.",1,pastype.relic)
 item_init_passive(1,"Maze",s_PMaze,"Increases attack by 2.",2,pastype.rune)
 
-//ACTIVES
-item_init_active(0,"Triangle",s_ATriangle,"Nothing yet.",1)
-item_init_active(1,"Square",s_ASquare,"Nothing yet.",2)
-
 //SPELLS
 item_init_spell(0,"Healing Aura",s_SHealing,"Creates a healing aura around the player.",240);
 item_init_spell(1,"Mana Regen Aura",s_SManaRegen,"Creates a mana regenartion aura around the player.",420);

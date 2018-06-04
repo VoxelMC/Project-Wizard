@@ -5,16 +5,6 @@
     "name": "o_GrassProjectile",
     "eventList": [
         {
-            "id": "e53aa2aa-903e-4844-89cb-2e4c386a7063",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 7,
-            "m_owner": "4d16cc53-459e-43ed-bff0-b1aa3086cf42"
-        },
-        {
             "id": "41c4d7e4-9dee-4ea5-b138-6606328a4cf9",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -22,16 +12,6 @@
             "collisionObjectId": "e54cbb56-ed85-4b73-9aae-8d87174272cb",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "4d16cc53-459e-43ed-bff0-b1aa3086cf42"
-        },
-        {
-            "id": "c34ed5c2-2f03-4d69-94aa-c6e7dcedd55f",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 7,
             "m_owner": "4d16cc53-459e-43ed-bff0-b1aa3086cf42"
         }
     ],
