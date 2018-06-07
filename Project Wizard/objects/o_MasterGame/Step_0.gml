@@ -1,13 +1,13 @@
    
 
 
- /*if keyboard_check_pressed(vk_escape) {
+ if keyboard_check_pressed(vk_escape) {
 	if global.inv_open = true {
 		global.inv_open = false;
 	} else if global.inv_open = false {
 		global.inv_open = true;
 	}
-}*/
+}
 
 if global.CurrentHP != 0 {
 	if keyboard_check(vk_subtract) {

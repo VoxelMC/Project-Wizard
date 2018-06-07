@@ -4,7 +4,7 @@ draw_set_font(fnt_main)
 
 ///Initialize variables
 
-
+instance_create_layer(o_player.x,o_player.y,"Instances",o_MasterMenuItem)
 
 //Menu Variables
 global.inv_open = false;

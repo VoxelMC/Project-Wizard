@@ -11,7 +11,7 @@ switch (spl) {
 	case spellid.heal: //HEALING AURA SPELL
 	
 	if is_jumping = false {
-	instance_create_layer(x,y,"Instances",o_healingaoe) 
+	instance_create_layer(x,y,"Auras",o_healingaoe) 
 	} else { 
 		cancelcooldown = true
 	} break;
@@ -19,7 +19,7 @@ switch (spl) {
 	case spellid.manareg: //MANA REGEN AURA SPELL
 	
 	if is_jumping = false {
-	instance_create_layer(x,y,"Instances",o_manaaoe);
+	instance_create_layer(x,y,"Auras",o_manaaoe);
 	} else { 
 		cancelcooldown = true
 	} break;

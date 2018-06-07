@@ -1,5 +1,4 @@
 //Draw the player
-//draw_rectangle(bbox_left,bbox_top,bbox_right,bbox_bottom,false);
 if wepequipped != "none" {
 	var spritetodraw = ds_grid_get(weapon,prop.sprite,wepequipped);
 	var wepangle = point_direction(x,y,mouse_x,mouse_y)

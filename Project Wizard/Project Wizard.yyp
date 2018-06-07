@@ -623,6 +623,14 @@
             }
         },
         {
+            "Key": "aa507e78-8116-4177-9706-ae1d87395c7f",
+            "Value": {
+                "id": "110e4103-dbb5-4130-8404-e7f9c7062a5f",
+                "resourcePath": "objects\\o_MasterMenuItem\\o_MasterMenuItem.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "ae3c6a42-b1bb-436e-8173-5c9adbf5f828",
             "Value": {
                 "id": "b4ed5098-7806-499e-b805-92639f448150",

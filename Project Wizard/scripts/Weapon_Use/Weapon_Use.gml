@@ -17,7 +17,7 @@ switch (wep) {
 	case weaponid.icewand: 
 	var proj = instance_create_layer(x+x_offset,y+y_offset,"Projectiles",o_IceProjectile)
 		with proj {
-			direction = point_direction(x,y,mouse_x,mouse_y)
+			direction = dir
 			speed = 15
 			image_angle = direction
 			image_speed = 0;
@@ -27,7 +27,7 @@ switch (wep) {
 	case weaponid.firewand:
 	var proj = instance_create_layer(x+x_offset,y+y_offset,"Projectiles",o_FireProjectile)
 		with proj {
-			direction = point_direction(x,y,mouse_x,mouse_y)
+			direction = dir
 			speed = 15
 			image_angle = direction
 			image_speed = 0;
@@ -38,7 +38,7 @@ switch (wep) {
 	for(var i=0;i<7;i++) {
 		proj = instance_create_layer(x+x_offset,y+y_offset,"Projectiles",o_GrassProjectile)
 		with proj {
-			direction = point_direction(x,y,mouse_x,mouse_y) + (irandom_range(-2,2)*i/2);
+			direction = dir + (irandom_range(-2,2)*i/2);
 			speed = 12 + (irandom_range(1,2)*i/3)
 			image_angle = direction
 			image_speed = 0;

@@ -1,0 +1,5 @@
+Changelog for next build:
+**-**Fixed tiny text bug on the test enemy
+**-**Added markers for the spell keys on the spell UI.
+**-**Fixed the shooting bug where moving your mouse onto the player and shooting would shoot the opposite direction.
+**-**Fixed text going behind the healing/mana regen aura
