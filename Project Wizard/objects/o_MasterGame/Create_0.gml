@@ -45,7 +45,7 @@ weapon = ds_grid_create(10,10);
 
 //PASSIVES
 item_init_passive(0,"Glowy",s_PGlowy,"Increases attack by 1.",1,pastype.relic)
-item_init_passive(1,"Maze",s_PMaze,"Increases attack by 2.",2,pastype.rune)
+item_init_passive(1,"Maze",s_PMaze,"Increases attack by 2. This is a really long phrase for a big description. Wow.",2,pastype.rune)
 
 //SPELLS
 item_init_spell(0,"Healing Aura",s_SHealing,"Creates a healing aura around the player.",240);
@@ -61,6 +61,21 @@ item_init_weapon(2,"Grass Wand",s_GrassWand,"A wand that shoots grass projectile
 //Spawn some starting items
 MasterItem_Create(passiveid.glowy,"Passive",725,350)
 MasterItem_Create(passiveid.maze,"Passive",800,350)
+MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ MasterItem_Create(passiveid.maze,"Passive",800,350)
+ 
 MasterItem_Create(spellid.heal,"Spell",875,350)
 MasterItem_Create(spellid.manareg,"Spell",950,350)
 MasterItem_Create(spellid.lightning,"Spell",1025,350)

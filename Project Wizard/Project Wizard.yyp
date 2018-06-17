@@ -767,6 +767,14 @@
             }
         },
         {
+            "Key": "e5106052-507f-4e62-95b8-e14c1fa5a0d9",
+            "Value": {
+                "id": "f86aa552-c788-4958-b8f6-15c43f020a69",
+                "resourcePath": "sprites\\s_passivepedestal\\s_passivepedestal.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e54cbb56-ed85-4b73-9aae-8d87174272cb",
             "Value": {
                 "id": "88920123-020f-417f-8bf0-7e15e451933a",

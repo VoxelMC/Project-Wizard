@@ -1,5 +1,6 @@
 /// @description UI stuff
 //Draw sprites for inventory
+if global.inv_open = false {
 var cd1 = cooldown[1]/room_speed;
 var cd2 = cooldown[2]/room_speed;
 var cd3 = cooldown[3]/room_speed;
@@ -67,4 +68,5 @@ for(var i=0; i<ds_grid_height(spellinv); i++){
 			draw_set_valign(fa_top);
 		}
 	}
+}
 }
