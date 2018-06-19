@@ -1,11 +1,10 @@
-   
-
-
- if keyboard_check_pressed(vk_escape) {
+if (keyboard_check_pressed(vk_escape) && !instance_exists(o_textbox))  {
 	if global.inv_open = true {
 		global.inv_open = false;
+		global.stop = false;
 	} else if global.inv_open = false {
 		global.inv_open = true;
+		global.stop = true;
 	}
 }
 

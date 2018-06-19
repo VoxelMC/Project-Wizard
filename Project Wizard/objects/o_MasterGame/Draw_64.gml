@@ -47,7 +47,7 @@ draw_sprite(s_keyboardkeys,3,global.dguiwidth/2+170,global.dguiheight-80);
 //Test environment tutorial
 if show_help = true {
 	draw_set_halign(fa_right);
-	draw_text(960,y,string_hash_to_newline("Welcome to the Project W Test Environment Pre-Alpha v2.0!#Here are some controls."))
+	draw_text(960,y,string_hash_to_newline("Welcome to the Project W Test Environment Pre-Alpha v2.0.1!#Here are some controls."))
 	draw_text(960,y+55,string_hash_to_newline("F11: Fullscreen#WASD: Movement.#Space: Jump.#Z, C, X, V: Spell Slots 1-4 respectively.#E: Interact.#L. Shift: Sprint.#+: Increase health.#-: Decrease health.#R: Restart the game.#F1: Hide/Show this text."))
 	draw_set_halign(fa_left);
 }

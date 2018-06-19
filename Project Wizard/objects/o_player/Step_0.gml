@@ -1,13 +1,11 @@
 //State Check
-if global.inv_open = false {
-
 switch animation_state {
 	case "Idle": sprite_index = s_player_idle; break;
 	case "Walking": sprite_index = s_player_walk; break;
 }
 
 //Use Spells if any are equipped
-
+if global.stop = false {
 	if ( keyboard_check_pressed(ord("Z")) && spellequipamount > 0 && cooldown[1] <= 0) {
 	
 		var spid = ds_grid_get(spellinv,prop.ID,0);
@@ -71,11 +69,15 @@ if eqweapon != "none" {
 	}
 }
 
+}
 ///Movement Logic
 
 //Get the input
+if global.stop = false {
 var x_input = (keyboard_check(vk_right) - keyboard_check(vk_left)) * acceleration_; //Get the player input to use for later.
-
+} else {
+	var x_input = 0;
+}
 //Vector variables
 var vector2_x = 0;
 var vector2_y = 1;
@@ -94,6 +96,7 @@ velocity_[vector2_y] += gravity_; //Apply Gravity
 //Move and Contact Tiles
 move_and_contact_tiles(collision_tile_map_id_, tilesize, velocity_);
 
+if global.stop = false {
 //Jumping
 var on_ground = tile_collide_at_points(collision_tile_map_id_, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]); //Check if there is a tile under us
 if on_ground {
@@ -117,12 +120,6 @@ if x_input > 0 {
 	flipped = -1
 }
 
-if x_input != 0 {
-	animation_state = "Walking"
-} else {
-	animation_state = "Idle"
-}
-
 //Sprinting
 if keyboard_check_pressed(vk_shift) {
 	max_velocity_[vector2_x] += 3;
@@ -133,7 +130,10 @@ if keyboard_check_pressed(vk_shift) {
 		max_velocity_[vector2_x] -= 3;
 		image_speed = 0.8
 }
+}
 
-
-
-} //close the inventory check
+if x_input != 0 {
+	animation_state = "Walking"
+} else {
+	animation_state = "Idle"
+}

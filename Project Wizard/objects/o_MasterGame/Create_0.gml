@@ -8,6 +8,7 @@ instance_create_layer(o_player.x,o_player.y,"Instances",o_MasterMenuItem)
 
 //Menu Variables
 global.inv_open = false;
+global.stop = false;
 global.pause = false;
 
 //Key Input Variables
