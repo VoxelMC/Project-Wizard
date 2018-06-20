@@ -11,15 +11,6 @@ global.inv_open = false;
 global.stop = false;
 global.pause = false;
 
-//Key Input Variables
-global.key_revert = ord("X");
-global.key_enter = vk_enter;
-global.key_left	= ord("A");
-global.key_right = ord("D");
-global.key_up = ord("W");
-global.key_down = ord("S");
-
-
 //Game Variables
 global.runefragments = 0;
 global.spd_inc = 0; //How much the speed has been increased by.

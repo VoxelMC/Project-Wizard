@@ -1,11 +1,6 @@
-if (keyboard_check_pressed(vk_escape) && !instance_exists(o_textbox))  {
-	if global.inv_open = true {
-		global.inv_open = false;
-		global.stop = false;
-	} else if global.inv_open = false {
-		global.inv_open = true;
-		global.stop = true;
-	}
+if (keyboard_check_pressed(vk_escape) && !instance_exists(o_dialogue))  {
+	global.inv_open = !global.inv_open
+	global.stop = !global.stop;
 }
 
 if global.CurrentHP != 0 {
@@ -20,11 +15,7 @@ if global.CurrentHP != 100 {
 }
 
 if keyboard_check_pressed(vk_f1) {
-	if show_help = true {
-		show_help = false;
-	} else if show_help = false {
-		show_help = true;
-	}
+	show_help = !show_help
 }
 
 if keyboard_check_pressed(ord("R")) {

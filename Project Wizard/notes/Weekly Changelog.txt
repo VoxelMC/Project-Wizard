@@ -1,5 +1,6 @@
 Changelog for next build:
-**-**Fixed tiny text bug on the test enemy
-**-**Added markers for the spell keys on the spell UI.
-**-**Fixed the shooting bug where moving your mouse onto the player and shooting would shoot the opposite direction.
-**-**Fixed text going behind the healing/mana regen aura
+**-**Revamped the dialogue, it can now display portraits and text effects
+**-**Swapped C and X labels
+**-**Made pressing E to open dialogue only work if you are over the NPC
+**-**Fixed the passive menu not being positioned correctly in some instances.
+**-**

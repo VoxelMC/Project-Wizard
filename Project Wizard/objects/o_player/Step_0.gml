@@ -1,4 +1,4 @@
-//State Check
+ //State Check
 switch animation_state {
 	case "Idle": sprite_index = s_player_idle; break;
 	case "Walking": sprite_index = s_player_walk; break;
@@ -86,12 +86,17 @@ var vector2_y = 1;
 velocity_[vector2_x] = clamp(velocity_[vector2_x] + x_input, -max_velocity_[vector2_x], max_velocity_[vector2_x]); //Forces the player to stay within the max velocity, left or right.
 
 //Friction
+if global.stop = false {
 if x_input == 0 {
 	velocity_[vector2_x] = lerp(velocity_[vector2_x], 0, .3);
+}
+} else {
+	velocity_[vector2_x] = 0;
 }
 
 //Gravity
 velocity_[vector2_y] += gravity_; //Apply Gravity
+
 
 //Move and Contact Tiles
 move_and_contact_tiles(collision_tile_map_id_, tilesize, velocity_);
@@ -119,6 +124,7 @@ if x_input > 0 {
 } else if x_input < 0 {
 	flipped = -1
 }
+}
 
 //Sprinting
 if keyboard_check_pressed(vk_shift) {
@@ -129,7 +135,6 @@ if keyboard_check_pressed(vk_shift) {
 } else if keyboard_check_released(vk_shift) {
 		max_velocity_[vector2_x] -= 3;
 		image_speed = 0.8
-}
 }
 
 if x_input != 0 {
