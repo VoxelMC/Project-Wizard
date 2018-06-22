@@ -85,14 +85,10 @@ enum pastype
 	}
 #endregion
 
-#region Menu Pages
-enum menu_page {
-	main,
-	settings,
-	audio,
-	difficulty,
-	graphics,
-	controls,
+#region Portrait Text Enum
+enum portrait {
+	npctest,
+	watcher
 }
 #endregion
 

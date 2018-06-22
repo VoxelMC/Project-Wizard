@@ -415,6 +415,22 @@
             }
         },
         {
+            "Key": "5e70eff8-23ea-40dd-ab86-0d79114530a5",
+            "Value": {
+                "id": "49501913-ccf3-4692-b10c-9d770e2f25ff",
+                "resourcePath": "objects\\o_parentNPC\\o_parentNPC.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5f0b9700-81e7-4d37-ad7f-bdc2f4af8553",
+            "Value": {
+                "id": "02871221-2463-40e1-99a7-b6e4356f8005",
+                "resourcePath": "sprites\\s_WatcherPortrait\\s_WatcherPortrait.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "62632f47-5685-4f4f-8842-d2f2f0dd33ee",
             "Value": {
                 "id": "0e090814-3d35-46cc-b11d-5330ec9cf5b0",

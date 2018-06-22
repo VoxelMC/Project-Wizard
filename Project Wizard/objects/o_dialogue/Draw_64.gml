@@ -5,7 +5,7 @@ message_end = array_length_1d(message);
 if (message_end > 0) {
 	//Variables for Typewriter
 	var charWidth = 9;
-	var lineEnd = 35;
+	var lineEnd = 90;
 	var line = 0;
 	var space = 0;
 	var i = 1;
@@ -133,10 +133,10 @@ if (message_end > 0) {
 	}
 	
 	//Draw Portrait
-	switch(portrait)
+	switch(message)
 	{
-		case "none": break;
-		case "NPCTest": draw_sprite(s_NPCTestPortrait,0,pX,pY); break;    
+		case portrait.npctest: draw_sprite(s_NPCTestPortrait,0,pX,pY); break;    
+		case portrait.watcher: draw_sprite(s_WatcherPortrait,0,pX,pY+2.5); break;    
 	}
 	
 	//Draw Blinker

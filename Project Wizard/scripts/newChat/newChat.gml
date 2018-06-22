@@ -3,8 +3,8 @@
 ///@param portrait
 ///@param name
 var sent = argument0;
-var portrait = argument1;
-var name = argument2;
+var portrait = argument1
+var name = argument2
 
 var text = instance_create_layer(0,0,"Textbox",o_dialogue);
 

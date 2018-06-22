@@ -32,7 +32,7 @@ global.MaxMana = 50
 
 //Inventory Variables
 globalvar pasinv;
-pasinv = ds_grid_create(6,1);
+pasinv = ds_grid_create(6,0);
 globalvar actinv;
 actinv = ds_grid_create(4,1);
 globalvar spellinv;

@@ -28,3 +28,6 @@ if global.inv_open = false {
 	o_player.image_speed = 0.8
 	exit;
 }
+var test = instance_number(o_MasterMenuItem);
+draw_text(_x2-500,_y1+140,test)
+draw_text(_x2-500,_y1+180,ds_grid_height(pasinv));
