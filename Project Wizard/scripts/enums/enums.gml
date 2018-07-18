@@ -85,13 +85,6 @@ enum pastype
 	}
 #endregion
 
-#region Portrait Text Enum
-enum portrait {
-	npctest,
-	watcher
-}
-#endregion
-
 #region Macros
 #macro tilesize (32)
 #endregion

@@ -26,8 +26,8 @@ if keyboard_check_pressed(vk_f11) {
 }*/
 	
 //Follow Player
-view_x = o_player.x - view_w/2;
-view_y = o_player.y - view_h/2;
+view_x = lerp(view_x,global.focus.x - view_w/2,.3);
+view_y = lerp(view_y,global.focus.y - view_h/2,.3);
 
 view_x = clamp(view_x,0,room_width-view_w);
 view_y = clamp(view_y,0,room_height-view_h);
@@ -43,4 +43,8 @@ if global.screenshake = true {
 } else {
 	view_w = ideal_width*zoom
 	view_h = ideal_height*zoom;
+}
+
+if keyboard_check_pressed(ord("M")) {
+	room_goto_next();
 }

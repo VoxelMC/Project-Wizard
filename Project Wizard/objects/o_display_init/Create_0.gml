@@ -1,4 +1,5 @@
 ///Display Properties
+global.focus = o_display_init;
 ideal_width=0;
 ideal_height=540;
 zoom=1;
@@ -57,5 +58,3 @@ view_h = ideal_height*zoom;
 
 global.dguiwidth = display_get_gui_width();
 global.dguiheight = display_get_gui_height();
-
-room_goto_next();

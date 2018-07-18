@@ -1,4 +1,4 @@
-//How many messages are in the array
+ //How many messages are in the array
 t++;
 message_end = array_length_1d(message);
 
@@ -41,7 +41,12 @@ if (message_end > 0) {
 		//If we don't, we're done
 		else
 		{
-			done = true;
+			if convo = false {
+				done = true;
+			} else {
+				o_MasterGame.timeline_position += 1;
+				instance_destroy();
+			}
 		}
 	}
 	}
@@ -133,23 +138,20 @@ if (message_end > 0) {
 	}
 	
 	//Draw Portrait
-	switch(message)
+	switch(portrait)
 	{
-		case portrait.npctest: draw_sprite(s_NPCTestPortrait,0,pX,pY); break;    
-		case portrait.watcher: draw_sprite(s_WatcherPortrait,0,pX,pY+2.5); break;    
+		case "NPCTest": draw_sprite(s_NPCTestPortrait,0,pX,pY); break;    
+		case "Watcher": draw_sprite(s_WatcherPortrait,0,pX,pY+2.5); break;    
 	}
 	
 	//Draw Blinker
 	if blinker = true {
 		draw_sprite(s_blinker,image_index,pX+925,pY+85);
 	}
+	
+	global.focus = focus;
 
 }
-
-draw_text(10,50,cutoff);
-draw_text(10,70,message_end);
-draw_text(10,90,blinker);
-draw_text(10,110,lineEnd);
 
 if done = true {
 	instance_destroy();

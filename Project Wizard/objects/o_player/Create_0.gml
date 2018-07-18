@@ -3,12 +3,13 @@
 //Movement/Collision Variables
 gravity_ = 0.5;
 velocity_ = [0, 0]; //Don't change this
-max_velocity_ = [7, 11]; //1st value is the x, 2nd is the y
+max_velocity_ = [6, 11]; //1st value is the x, 2nd is the y
 jump_speed_ = 10;
 acceleration_ = 1.5;
 sprinting = false; 
 is_jumping = false;
 old_spd_inc = global.spd_inc;
+global.focus = self;
 
 var layer_id = layer_get_id("Tiles_Main");
 collision_tile_map_id_ = layer_tilemap_get_id(layer_id);
