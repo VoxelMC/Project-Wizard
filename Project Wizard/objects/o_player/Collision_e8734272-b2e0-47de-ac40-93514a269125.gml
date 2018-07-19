@@ -1,4 +1,4 @@
 /// @description
 if global.CurrentHP != global.MaxHP {
-	global.CurrentHP += 1
+	alarm[3] = 5;
 }

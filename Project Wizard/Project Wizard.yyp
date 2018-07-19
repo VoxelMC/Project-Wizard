@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "12e17136-d8b1-42b2-905c-14acd6d69dc8",
+            "Value": {
+                "id": "ad57ee89-ad70-4ddc-8f51-3c1918832b5f",
+                "resourcePath": "scripts\\move_and_contact_tiles_enemy\\move_and_contact_tiles_enemy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "16393037-3076-4e53-945e-006401a3cf71",
             "Value": {
                 "id": "57f999e9-aafa-4305-a825-83e176bbddef",
@@ -500,6 +508,14 @@
                 "id": "62e8ed59-4801-4d4a-9f2f-487450701688",
                 "resourcePath": "sprites\\s_badguy\\s_badguy.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6ee13f84-4b96-4e43-a36c-0d9562f2dd3f",
+            "Value": {
+                "id": "23193093-cae1-4f80-9bdf-5cc2fe9d99f2",
+                "resourcePath": "objects\\o_tuttrigger\\o_tuttrigger.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1013,6 +1029,7 @@
         "ae3c6a42-b1bb-436e-8173-5c9adbf5f828",
         "f41a0c78-7e40-425c-a810-b1ed38a1d533",
         "0940ba85-2e69-40af-9326-fcb03853cf05",
+        "12e17136-d8b1-42b2-905c-14acd6d69dc8",
         "401813cc-c28f-4bd1-9231-ec0113bd262e",
         "6551e049-039a-41dc-a724-51e30001b97d",
         "2f8a6583-665b-4339-a913-65fd362b29ce",

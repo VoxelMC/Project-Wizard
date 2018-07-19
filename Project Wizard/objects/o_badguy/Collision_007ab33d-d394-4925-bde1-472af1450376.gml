@@ -1,0 +1,1 @@
+global.CurrentHP -= 5;

@@ -142,3 +142,7 @@ if x_input != 0 {
 } else {
 	animation_state = "Idle"
 }
+
+if place_meeting(x+2*flipped,y,o_slidedoor) {
+	x = xprevious
+}

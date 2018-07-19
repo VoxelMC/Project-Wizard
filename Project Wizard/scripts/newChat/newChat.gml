@@ -10,11 +10,11 @@ var name = argument[2];
 var convo = false;
 var focus = global.focus;
 if argument_count > 2 {
-var convo = argument[3]
+convo = argument[3]
 }
-/*if argument_count > 3 {
-var focus = argument[4]
-}*/
+if argument_count > 3 {
+focus = argument[4]
+}
 
 var text = instance_create_layer(0,0,"Textbox",o_dialogue);
 

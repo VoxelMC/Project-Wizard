@@ -15,7 +15,7 @@ aspect_ratio = clamp(aspect_ratio, 16 / 10, 21 / 9);
 ideal_width=round(ideal_height*aspect_ratio);
 
 //Perfect Pixel Scaling
-	if(global.display_width mod ideal_width != 0)
+	/*if(global.display_width mod ideal_width != 0)
 	{
 		var d = round(global.display_width/ideal_width);
 		ideal_width=global.display_width/d;
@@ -24,7 +24,7 @@ ideal_width=round(ideal_height*aspect_ratio);
 	{
 		var d = round(global.display_height/ideal_height);
 		ideal_height=global.display_height/d;
-	}
+	}*/
 	
 if aspect_ratio = 1.6 {
 	ideal_width = 960
