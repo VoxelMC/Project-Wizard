@@ -2,7 +2,7 @@
     "id": "4c503d1f-e111-40fb-b0e8-eab75d68d57a",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_badguy",
+    "name": "o_slime",
     "eventList": [
         {
             "id": "65b19cce-8cca-4b8e-b844-2d6dd243cb08",
@@ -25,7 +25,17 @@
             "m_owner": "4c503d1f-e111-40fb-b0e8-eab75d68d57a"
         },
         {
-            "id": "e4f4cb6e-1d12-4597-a63e-416a96b274a9",
+            "id": "007ab33d-d394-4925-bde1-472af1450376",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "43635e08-b323-4e6a-93e7-5a124112e4ea",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "4c503d1f-e111-40fb-b0e8-eab75d68d57a"
+        },
+        {
+            "id": "c00cc6d1-372e-49f9-a8a9-8448770f4437",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
@@ -35,23 +45,23 @@
             "m_owner": "4c503d1f-e111-40fb-b0e8-eab75d68d57a"
         },
         {
-            "id": "0e1d0006-0a7e-4440-8993-163cdae50634",
+            "id": "5f1d8428-cee0-4abc-a926-f71b3456f224",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 7,
-            "eventtype": 2,
+            "enumb": 0,
+            "eventtype": 8,
             "m_owner": "4c503d1f-e111-40fb-b0e8-eab75d68d57a"
         },
         {
-            "id": "007ab33d-d394-4925-bde1-472af1450376",
+            "id": "b77bce0f-f8ea-4836-b645-41ffc3609e25",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "43635e08-b323-4e6a-93e7-5a124112e4ea",
-            "enumb": 0,
-            "eventtype": 4,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 6,
+            "eventtype": 2,
             "m_owner": "4c503d1f-e111-40fb-b0e8-eab75d68d57a"
         }
     ],

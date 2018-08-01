@@ -1,7 +1,11 @@
  //State Check
-switch animation_state {
-	case "Idle": sprite_index = s_player_idle; break;
-	case "Walking": sprite_index = s_player_walk; break;
+switch anim_state {
+	case "idle": sprite_index = s_player_idle; break;
+	case "walking": sprite_index = s_player_walk; break;
+}
+switch state {
+	case "none": break;
+	case "inv":
 }
 
 //Use Spells if any are equipped
@@ -129,7 +133,7 @@ if x_input > 0 {
 //Sprinting
 if keyboard_check_pressed(vk_shift) {
 	max_velocity_[vector2_x] += 3;
-	if animation_state = "Walking" {
+	if anim_state = "walking" {
 		image_speed = 1.1
 	}
 } else if keyboard_check_released(vk_shift) {
@@ -138,9 +142,9 @@ if keyboard_check_pressed(vk_shift) {
 }
 
 if x_input != 0 {
-	animation_state = "Walking"
+	anim_state = "walking"
 } else {
-	animation_state = "Idle"
+	anim_state = "idle"
 }
 
 if place_meeting(x+2*flipped,y,o_slidedoor) {

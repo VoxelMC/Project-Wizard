@@ -16,7 +16,7 @@ x += velocity[vector2_x]
 if velocity[vector2_x] > 0 { 
 	var tile_right = tile_collide_at_points(tile_map_id, [bbox_right-1, bbox_top], [bbox_right-1, bbox_bottom-1]);
 	if tile_right {
-		if (object_index != o_badguy) {
+		if (object_index != o_slime) {
 			image_speed = 1;
 			speed = 0;
 		} else {
@@ -28,7 +28,7 @@ if velocity[vector2_x] > 0 {
 } else {
 	var tile_left = tile_collide_at_points(tile_map_id, [bbox_left, bbox_top], [bbox_left, bbox_bottom-1])
 	if tile_left {
-		if (object_index != o_badguy) {
+		if (object_index != o_slime) {
 			image_speed = 1;
 			speed = 0;
 		} else {
@@ -46,7 +46,7 @@ y += floor(velocity[vector2_y]);
 if (velocity[vector2_y]) > 0 {
 	var tile_bottom = tile_collide_at_points(tile_map_id, [bbox_left, bbox_bottom-1], [bbox_right-1, bbox_bottom-1]);
 	if tile_bottom {
-		if (object_index != o_badguy) {
+		if (object_index != o_slime) {
 			image_speed = 1;
 			speed = 0;
 		} else {
@@ -58,7 +58,7 @@ if (velocity[vector2_y]) > 0 {
 } else {
 	var tile_top = tile_collide_at_points(tile_map_id, [bbox_left, bbox_top], [bbox_right-1, bbox_top]);
 	if tile_top {
-		if (object_index != o_badguy)  {
+		if (object_index != o_slime)  {
 			image_speed = 1;
 			speed = 0;
 		} else {

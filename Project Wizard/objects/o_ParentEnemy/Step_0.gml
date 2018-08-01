@@ -7,7 +7,7 @@ var vector2_x = 0;
 var vector2_y = 1;
 
 //Horizontal Movement
-velocity_[vector2_x] = clamp(velocity_[vector2_x] + move, -max_velocity_[vector2_x], max_velocity_[vector2_x]); //Forces the player to stay within the max velocity, left or right.
+velocity_[vector2_x] = clamp(velocity_[vector2_x] - move, -max_velocity_[vector2_x], max_velocity_[vector2_x]); //Forces the player to stay within the max velocity, left or right.
 
 //Friction
 if move = 0 {
@@ -26,13 +26,15 @@ var on_ground = tile_collide_at_points(collision_tile_map_id_, [bbox_left, bbox_
 if on_ground {
 	if jump = true {
 		velocity_[vector2_y] = -jump_speed_;
-	} 
-	jump = false;
+		move = 1*flipped;
+	}
 } 
 
-if o_player.x > x {
-	flipped = 1;
-} else {
-	flipped = -1;
+if state != "special" {
+	if o_player.x < x {
+		flipped = 1;
+	} else {
+		flipped = -1;
+	}
 }
 	

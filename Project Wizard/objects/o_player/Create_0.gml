@@ -10,12 +10,13 @@ sprinting = false;
 is_jumping = false;
 old_spd_inc = global.spd_inc;
 global.focus = self;
+state = "none";
 
 var layer_id = layer_get_id("Tiles_Main");
 collision_tile_map_id_ = layer_tilemap_get_id(layer_id);
 
 //Animation Variables
-animation_state = "Idle"
+anim_state = "idle";
 flipped = 1
 image_speed = 0.8
 
