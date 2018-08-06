@@ -1,6 +1,6 @@
 gravity_ = 0.5;
 velocity_ = [0, 0]; //Don't change this
-max_velocity_ = [8, 5]; //1st value is the x, 2nd is the y
+max_velocity_ = [7, 5]; //1st value is the x, 2nd is the y
 jump_speed_ = 9;
 acceleration_ = 1.5;
 jump = false;

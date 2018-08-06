@@ -1,5 +1,4 @@
-///@description Initialize player variables
-
+/// @description Initialize player variables
 //Movement/Collision Variables
 gravity_ = 0.5;
 velocity_ = [0, 0]; //Don't change this
@@ -11,6 +10,7 @@ is_jumping = false;
 old_spd_inc = global.spd_inc;
 global.focus = self;
 state = "none";
+
 
 var layer_id = layer_get_id("Tiles_Main");
 collision_tile_map_id_ = layer_tilemap_get_id(layer_id);
