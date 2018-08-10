@@ -1,0 +1,5 @@
+-Health is in a weird state right now. This is getting a complete revamp in the next build. For player health is basically completely broken lol
+-The slime enemy can go through the slide doors.
+-The slime enemy's animations are slightly bugged and don't look quite right in some cases.
+-If you press E to advance dialogue before its finished, it will advance without finishing the dialogue.
+-Resolution stuff *might* be broken with the introduction of a main menu. Please report on this.

@@ -1,6 +1,0 @@
-Changelog for next build:
-**-**Revamped the dialogue, it can now display portraits and text effects
-**-**Swapped C and X labels
-**-**Made pressing E to open dialogue only work if you are over the NPC
-**-**Fixed the passive menu not being positioned correctly in some instances.
-**-**

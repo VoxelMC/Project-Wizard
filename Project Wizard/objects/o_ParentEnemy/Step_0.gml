@@ -1,5 +1,6 @@
 if EnemyHealth <= 0 { 
-	instance_destroy()
+	instance_destroy();
+	o_MasterGame.timeline_position += 1;
 }
 
 //Vector variables
@@ -27,6 +28,8 @@ if on_ground {
 	if jump = true {
 		velocity_[vector2_y] = -jump_speed_;
 		move = 1*flipped;
+	} else {
+	    velocity_[vector2_y] = 0;
 	}
 } 
 

@@ -167,6 +167,14 @@
             }
         },
         {
+            "Key": "21574ae5-0b45-471f-9051-76b20acf555f",
+            "Value": {
+                "id": "374c7353-6495-474c-a8a4-2c23cd6babf9",
+                "resourcePath": "objects\\o_MainMenu\\o_MainMenu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2245d34f-ab69-485a-a19e-d04c2796955c",
             "Value": {
                 "id": "d29b450a-9c2e-418c-947e-5c9beb28b1a8",
@@ -759,14 +767,6 @@
             }
         },
         {
-            "Key": "a897794f-18d3-4af9-a7e9-ec709c08b99f",
-            "Value": {
-                "id": "d953f865-e492-452b-8431-d98006aacbe8",
-                "resourcePath": "objects\\o_door\\o_door.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "a9036f50-107a-4949-a1fc-dd6ed444b437",
             "Value": {
                 "id": "c6dac551-9914-4ce2-896a-49e61bac17fc",
@@ -834,7 +834,7 @@
             "Key": "b6b24c4b-c797-4cc2-985a-3877c699ef1f",
             "Value": {
                 "id": "f723d22b-f872-4c42-b5a1-48db67600bcb",
-                "resourcePath": "notes\\Weekly Changelog.yy",
+                "resourcePath": "notes\\Known Issues.yy",
                 "resourceType": "GMNotes"
             }
         },
@@ -868,6 +868,14 @@
                 "id": "4c9200c5-7609-403f-82f5-2ae5ec1cb0c7",
                 "resourcePath": "objects\\o_runefragment\\o_runefragment.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c1335623-b53e-4837-a227-2cc0a6cf77c3",
+            "Value": {
+                "id": "972d91b5-e8a8-41f7-a60c-220c1a6c6113",
+                "resourcePath": "rooms\\rm_mainmenu\\rm_mainmenu.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1020,14 +1028,6 @@
                 "id": "c963097d-f051-4425-ab3a-87b787b76cfc",
                 "resourcePath": "views\\ec90cdb0-3109-4af2-aad3-55b4547e6ac4.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "ed6010c8-206c-4b7c-88ca-b4a31c7ecf59",
-            "Value": {
-                "id": "0892b3d4-b836-420e-8c5c-6fef721a3f62",
-                "resourcePath": "rooms\\testhouse\\testhouse.yy",
-                "resourceType": "GMRoom"
             }
         },
         {

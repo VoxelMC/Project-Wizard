@@ -14,5 +14,5 @@ anim_state = "idle";
 var layer_id = layer_get_id("Tiles_Main");
 collision_tile_map_id_ = layer_tilemap_get_id(layer_id);
 
-EnemyHealth = 9999;
-EnemyMaxHealth = 9999;
+EnemyHealth = 10;
+EnemyMaxHealth = 10;

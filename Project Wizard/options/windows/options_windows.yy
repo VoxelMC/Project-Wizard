@@ -10,7 +10,7 @@
     "option_windows_copyright_info": "(c) 2017 Infinity Scope",
     "option_windows_description_info": "A GameMaker Studio 2 Game",
     "option_windows_display_cursor": true,
-    "option_windows_display_name": "Project Wizard Test Realm v2.0.1",
+    "option_windows_display_name": "Project Wizard Test Realm",
     "option_windows_enable_steam": false,
     "option_windows_executable_name": "ProjectWizard",
     "option_windows_icon": "${base_options_dir}\\windows\\icons\\icon.ico",
@@ -29,8 +29,8 @@
     "option_windows_texture_page": "2048x2048",
     "option_windows_use_splash": false,
     "option_windows_version": {
-        "build": 1,
-        "major": 2,
+        "build": 0,
+        "major": 1,
         "minor": 0,
         "revision": 0
     },

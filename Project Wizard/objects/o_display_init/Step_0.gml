@@ -44,7 +44,3 @@ if global.screenshake = true {
 	view_w = ideal_width*zoom
 	view_h = ideal_height*zoom;
 }
-
-if keyboard_check_pressed(ord("M")) {
-	room_goto_next();
-}

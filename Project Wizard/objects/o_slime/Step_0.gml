@@ -18,12 +18,18 @@ case "idle":
 	jump = false;
 	anim_state = "idle";
 	break;
+case "hit":
+    move = -1*flipped
+    if hitswitch = true {
+        alarm[8] = 5;
+        hitswitch = false
+    }
+    break;
 }
 
 switch anim_state {
 case "idle": sprite_index = s_slime_idle; break;
 case "move": sprite_index = s_slime_move; break;
-case "jump": sprite_index = s_slime_jump; break;
 }
 
 if state = "move" {
@@ -37,8 +43,3 @@ if state = "move" {
 		image_index = 2;
 	}
 }
-    
-
-EnemyHealth = 9999;
-EnemyMaxHealth = 9999;
-
