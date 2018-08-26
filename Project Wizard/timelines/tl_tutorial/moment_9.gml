@@ -1,5 +1,4 @@
-instance_destroy(o_dialogue)
-global.stop = false;
-global.currentconvo = "N/A";
-global.focus = o_player;
-door2.open = true;
+global.currentconvo = tl_tutorial
+var m;
+m[0] = "*0In a moment, 2 slimes will appear. Please defeat them with your items.";
+newChat(m,"none","???",true,o_player);

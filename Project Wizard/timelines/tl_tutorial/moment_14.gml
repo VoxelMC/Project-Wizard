@@ -1,4 +1,4 @@
+global.currentconvo = tl_tutorial;
 var m;
-m[0] = "I've said too much. Moving on.";
-m[1] = "Oh no! A slime has appeared! Defeat it, quickly!"
+m[0] = "Very well done! Now, more slimes and a bat are going to appear. Keep fighting them!"
 newChat(m,"none","Mist",true,o_player);

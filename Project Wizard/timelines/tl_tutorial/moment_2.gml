@@ -1,4 +1,5 @@
-var m;
-m[0] = "*0Who said that? Where are you? *1Where am I???"
-m[1] = "*0I'm so confused... so so confused..."
-newChat(m,"Watcher","Tester #59032",true,o_player);
+instance_destroy(o_dialogue)
+global.stop = false;
+global.currentconvo = "N/A";
+global.focus = o_player;
+door1.open = true;

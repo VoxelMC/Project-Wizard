@@ -5,7 +5,7 @@ switch anim_state {
 }
 switch state {
 	case "none": break;
-	case "inv":
+	case "inv": global.invincible = true;
 }
 
 //Use Spells if any are equipped
@@ -145,8 +145,4 @@ if x_input != 0 {
 	anim_state = "walking"
 } else {
 	anim_state = "idle"
-}
-
-if place_meeting(x+2*flipped,y,o_slidedoor) {
-	x = xprevious
 }

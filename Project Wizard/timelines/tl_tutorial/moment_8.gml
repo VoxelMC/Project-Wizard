@@ -1,3 +1,5 @@
-var m;
-m[0] = "Please pick all of them up, and move on to the next room."
-newChat(m,"none","???",true,o_player);
+instance_destroy(o_dialogue)
+global.stop = false;
+global.currentconvo = "N/A";
+global.focus = o_player;
+door2.open = true;

@@ -37,6 +37,7 @@ if (message_end > 0) {
 			message_current++;
 			cutoff = 0;
 			blinker = false;
+			
 		}
 		//If we don't, we're done
 		else
@@ -152,6 +153,11 @@ if (message_end > 0) {
 	global.focus = focus;
 
 }
+	draw_text(10,10,i);
+	draw_text(10,30,space);
+	draw_text(10,50,lineEnd);
+	draw_text(10,70,message_current);
+	draw_text(10,90,message_end);
 
 if done = true {
 	instance_destroy();

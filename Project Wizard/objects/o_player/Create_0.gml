@@ -19,16 +19,18 @@ collision_tile_map_id_ = layer_tilemap_get_id(layer_id);
 anim_state = "idle";
 flipped = 1
 image_speed = 0.8
+flicker = 1;
 
 //Combat Variables
 eqweapon = "none"
 do_reload = true;
 reloadtime = 0
 dmg_mod = 0
+global.invincible = false;
 
 //Health/Mana Variables
-global.CurrentHP = 100
-global.MaxHP = 100
+global.CurrentHP = 10;
+global.MaxHP = 10;
 global.CurrentMana = 50 
 global.MaxMana = 50
 

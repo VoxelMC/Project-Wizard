@@ -1,4 +1,4 @@
 var m;
-m[0] = "Welcome tester #59032."
-m[1] = "We are going to put you through some tests to train you. Please proceed through the front door."
+m[0] = "*0Welcome to *2Project W!"
+m[1] = "I will be teaching you how to play. Please go into the door to your right."
 newChat(m,"none","???",true,o_player);

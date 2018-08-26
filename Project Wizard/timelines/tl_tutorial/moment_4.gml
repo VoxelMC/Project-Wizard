@@ -1,4 +1,3 @@
-global.currentconvo = tl_tutorial;
 var m;
-m[0] = "To your right, you will spot..."
-newChat(m,"none","???",true,o_player);
+m[0] = "a passive item, which gives you stat boosts without you having to trigger anything,"
+newChat(m,"none","???",true,tutorialpassive);

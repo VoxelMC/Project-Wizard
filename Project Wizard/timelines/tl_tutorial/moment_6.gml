@@ -1,3 +1,3 @@
 var m;
-m[0] = "a spell, which can do various things, but must be activated by you, and has a cooldown,"
-newChat(m,"none","???",true,tutorialspell);
+m[0] = "and a weapon, which its use is pretty obvious."
+newChat(m,"none","???",true,tutorialwep);

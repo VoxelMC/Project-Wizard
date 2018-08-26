@@ -1,3 +1,5 @@
-var m;
-m[0] = "Who I am is not important. What is important is training you before... *1they come."
-newChat(m,"none","Mist",true,o_player);
+instance_create_layer(2118,325,"Instances",o_slime);
+instance_create_layer(1908,325,"Instances",o_slime);
+global.focus = o_player;
+global.stop = false;
+global.currentconvo = "N/A";
