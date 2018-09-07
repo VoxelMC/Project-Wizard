@@ -20,6 +20,7 @@ anim_state = "idle";
 flipped = 1
 image_speed = 0.8
 flicker = 1;
+start = false;
 
 //Combat Variables
 eqweapon = "none"

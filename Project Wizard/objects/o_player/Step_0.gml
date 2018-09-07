@@ -5,7 +5,10 @@ switch anim_state {
 }
 switch state {
 	case "none": break;
-	case "inv": global.invincible = true;
+	case "inv": 
+	global.invincible = true; 
+	state = "none"; 
+	break;
 }
 
 //Use Spells if any are equipped

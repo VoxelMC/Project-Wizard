@@ -4,5 +4,5 @@ if state = "special" {
 } else {
     global.CurrentHP -= 1;
 }
-}
 o_player.state = "inv"
+}

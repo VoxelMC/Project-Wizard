@@ -1,2 +1,2 @@
 /// @description
-global.invicible = false;
+global.invincible = false;
