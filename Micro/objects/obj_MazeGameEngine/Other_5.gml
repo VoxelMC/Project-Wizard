@@ -1,0 +1,1 @@
+global.lastgame = room

@@ -1,0 +1,2 @@
+global.MiniGame = "RaceGame"
+

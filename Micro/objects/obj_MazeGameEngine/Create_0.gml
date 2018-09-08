@@ -1,0 +1,3 @@
+global.MiniGame = "MazeGame"
+randomize();
+

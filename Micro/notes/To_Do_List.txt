@@ -1,0 +1,19 @@
+v1.1 To-Do-List (Release Dec. 23rd)
+
+-Make the instructions move to the bottom right of the screen.
+
+-Online Leaderboards
+
+-Mouse Control in all menus
+
+-New Microgame.
+
+UPDATE STUFF:
+
+-LEADERBOARDS (TOP PRIORITY)
+
+-Sound Effects and Music
+
+-Make games end when timer runs out
+
+

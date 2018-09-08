@@ -1,0 +1,4 @@
+global.MiniGame = "CircleGame"
+randomize();
+
+

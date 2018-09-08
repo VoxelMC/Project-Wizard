@@ -1,0 +1,1 @@
+global.ScoreGained = 0
