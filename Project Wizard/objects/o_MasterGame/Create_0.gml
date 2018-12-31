@@ -19,7 +19,6 @@ global.currentconvo = "N/A";
 
 //MasterGame Specific Variables
 show_help = false;
-o_slidedoor.lock_door = true;
 playerx = o_player.x
 playery = o_player.y
 
@@ -53,7 +52,7 @@ item_init_weapon(0,"Ice Wand",s_IceWand,"A wand that shoots ice projectiles.",we
 item_init_weapon(1,"Fire Wand",s_FireWand,"A wand that shoots fire projectiles.",weptype.wand,3,25)
 item_init_weapon(2,"Grass Wand",s_GrassWand,"A wand that shoots grass projectiles.",weptype.wand,5,30)
 
-cutsceneStart(tl_tutorial,false);
+//cutsceneStart(tl_tutorial,false);
 
 
 

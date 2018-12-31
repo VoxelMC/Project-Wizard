@@ -42,5 +42,5 @@ if global.screenshake = true {
 	}
 } else {
 	view_w = ideal_width*zoom
-	view_h = ideal_height*zoom;
+	view_h = ideal_height*zoom 
 }

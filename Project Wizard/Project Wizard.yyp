@@ -31,6 +31,14 @@
     },
     "resources": [
         {
+            "Key": "01b37b41-eb4e-4ebc-a2ea-77170edc219a",
+            "Value": {
+                "id": "5fe011c3-a387-4344-8024-161b28da05db",
+                "resourcePath": "datafiles_yy\\neko.dll.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "020558db-a8ce-44a5-ae11-5690d46df3a6",
             "Value": {
                 "id": "c6f12021-7a45-4a3a-9ebc-6d7783d6475f",
@@ -71,14 +79,6 @@
             }
         },
         {
-            "Key": "0940ba85-2e69-40af-9326-fcb03853cf05",
-            "Value": {
-                "id": "e16a2def-db69-48b9-81d8-6a5df0d5e97d",
-                "resourcePath": "scripts\\move_and_contact_tiles\\move_and_contact_tiles.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "0c2605f5-068f-4652-8369-a4b71de5b36f",
             "Value": {
                 "id": "d217b7dc-ea5b-47d4-9861-820e6bb7f114",
@@ -100,14 +100,6 @@
                 "id": "f19a6b8e-440c-4871-b381-eeef1791b2f1",
                 "resourcePath": "objects\\o_dialogue\\o_dialogue.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "12e17136-d8b1-42b2-905c-14acd6d69dc8",
-            "Value": {
-                "id": "ad57ee89-ad70-4ddc-8f51-3c1918832b5f",
-                "resourcePath": "scripts\\move_and_contact_tiles_enemy\\move_and_contact_tiles_enemy.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -199,6 +191,14 @@
             }
         },
         {
+            "Key": "25596f4b-5008-4396-8dcc-fae4e87e4224",
+            "Value": {
+                "id": "9bf0d8a9-eaaa-40a4-b292-f215ff7a60da",
+                "resourcePath": "datafiles_yy\\gmlive-server.n.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "27ceeb0a-dfb6-4a2b-bf77-2db1624e6837",
             "Value": {
                 "id": "fdb0b3b2-0a29-4d56-a385-05cd828ea34b",
@@ -228,14 +228,6 @@
                 "id": "b5dbe8e2-2855-4fd8-8de5-b37868338ca2",
                 "resourcePath": "sprites\\s_NewWeaponSlot\\s_NewWeaponSlot.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "2d125c6c-b0d1-4ac5-88ff-7eab0f8e7079",
-            "Value": {
-                "id": "e53edc01-d9c5-4a6a-891f-0b331d959246",
-                "resourcePath": "datafiles_yy\\std.ndll.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -273,7 +265,7 @@
         {
             "Key": "33634c94-b392-4387-9e8a-14a6330a1256",
             "Value": {
-                "id": "d6448ae9-1b46-453e-a035-631d649c43cd",
+                "id": "e5f3a9c1-5684-4c8a-afb7-a32fe7bdeab1",
                 "resourcePath": "objects\\obj_gmlive\\obj_gmlive.yy",
                 "resourceType": "GMObject"
             }
@@ -289,7 +281,7 @@
         {
             "Key": "34ebc914-3fea-42f7-a6b9-db18b75cd055",
             "Value": {
-                "id": "65a8d868-7f90-453f-804d-ed957b90936e",
+                "id": "848b917d-c0ac-46c5-a118-b211009ed5e9",
                 "resourcePath": "extensions\\GMLive\\GMLive.yy",
                 "resourceType": "GMExtension"
             }
@@ -300,6 +292,14 @@
                 "id": "53755bf5-7fe5-4809-a95d-75738bc5386e",
                 "resourcePath": "sprites\\s_IceWand\\s_IceWand.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "393c66d3-30b5-463a-b48e-eb6d7b7cd352",
+            "Value": {
+                "id": "be54fa96-f3cd-4078-badc-475d5c1288be",
+                "resourcePath": "datafiles_yy\\gmlive-server.exe.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -543,6 +543,14 @@
             }
         },
         {
+            "Key": "6eac6ee7-a04d-4152-b6eb-ad0483e4c15b",
+            "Value": {
+                "id": "2f4de583-a3ed-4eb4-b5b0-0b2ac1535efa",
+                "resourcePath": "datafiles_yy\\gmlive.html.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "6ee13f84-4b96-4e43-a36c-0d9562f2dd3f",
             "Value": {
                 "id": "23193093-cae1-4f80-9bdf-5cc2fe9d99f2",
@@ -679,19 +687,19 @@
             }
         },
         {
-            "Key": "907acc52-8c24-4d75-97b5-f764ded2caf3",
-            "Value": {
-                "id": "01999fbc-eb18-480d-8384-f76dea1ea1b6",
-                "resourcePath": "datafiles_yy\\gmlive-server.n.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "917316da-295d-453e-9c91-2212ba88be11",
             "Value": {
                 "id": "c0f3d598-b42e-4565-b10c-67c1763f3c4d",
                 "resourcePath": "views\\917316da-295d-453e-9c91-2212ba88be11.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "917af7af-4477-46e4-9363-79d4c7a0a4b3",
+            "Value": {
+                "id": "0810e6cd-b1d5-4bf3-83f6-11daec26daa5",
+                "resourcePath": "sprites\\s_wall\\s_wall.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -823,6 +831,14 @@
             }
         },
         {
+            "Key": "b57c9b88-5836-45d6-86c8-a134c51e3938",
+            "Value": {
+                "id": "bc544a49-1d90-4ca0-8049-35b1ab6cf8a3",
+                "resourcePath": "datafiles_yy\\gc.dll.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "b61c7285-7c67-4ec4-890a-2d38d8cce0f2",
             "Value": {
                 "id": "1f22bfca-2db6-41ad-ad80-7bf4b1918b38",
@@ -879,6 +895,14 @@
             }
         },
         {
+            "Key": "c6d60902-0787-49a6-a7e8-4dc9157961d0",
+            "Value": {
+                "id": "e71e88ca-8bb9-4de8-ab55-b9800c003c6d",
+                "resourcePath": "datafiles_yy\\std.ndll.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "c8b9f9dc-d38e-441d-943d-a2636fc17afa",
             "Value": {
                 "id": "4ca7f2bf-9a8a-4995-b4db-49c32f507b76",
@@ -919,14 +943,6 @@
             }
         },
         {
-            "Key": "ccabb9db-67a1-4ee1-b367-95d924d23e55",
-            "Value": {
-                "id": "74fa1131-d198-4a85-a7c3-8aac4e3a2cc7",
-                "resourcePath": "datafiles_yy\\regexp.ndll.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "ceb8b3f4-8fae-45bf-b924-f1d9951faa94",
             "Value": {
                 "id": "1b665db2-a3ae-4039-9106-5fde4fccf54b",
@@ -959,27 +975,19 @@
             }
         },
         {
-            "Key": "d447ab82-f462-423c-aa8c-ff53bfbe2fe0",
+            "Key": "d595d888-495b-404b-a0b2-542915abb852",
             "Value": {
-                "id": "f737b02d-78c6-4c90-b4d1-997304b98201",
-                "resourcePath": "datafiles_yy\\neko.dll.yy",
-                "resourceType": "GMIncludedFile"
+                "id": "e0135d03-7e7f-4000-914f-fb9793bba6e8",
+                "resourcePath": "objects\\o_wall\\o_wall.yy",
+                "resourceType": "GMObject"
             }
         },
         {
-            "Key": "d46de436-36a6-4524-9508-fcb283481ef1",
+            "Key": "de1ec758-a316-4ca0-bec0-7f2dcb37c686",
             "Value": {
-                "id": "f7ffcb85-1465-4aac-807a-9eb7090053c6",
+                "id": "f7b88737-9ce8-4811-a05e-0752b2fd32c4",
                 "resourcePath": "tilesets\\tile_grass\\tile_grass.yy",
                 "resourceType": "GMTileSet"
-            }
-        },
-        {
-            "Key": "d76aa470-9282-43b5-8d52-f47f7335654c",
-            "Value": {
-                "id": "b1b9f114-8a79-49de-934c-7553f81fc7b0",
-                "resourcePath": "views\\d76aa470-9282-43b5-8d52-f47f7335654c.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -1004,6 +1012,14 @@
                 "id": "49b1cf8c-a016-4e10-859d-fe39c53e19e7",
                 "resourcePath": "objects\\o_slidedoor\\o_slidedoor.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e66ec2d9-5c66-4b5e-aa7f-bc557f504471",
+            "Value": {
+                "id": "1276473a-8f92-4641-bb90-5b71979979b7",
+                "resourcePath": "datafiles_yy\\regexp.ndll.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -1039,6 +1055,14 @@
             }
         },
         {
+            "Key": "efb72e31-fd62-4997-a8f4-02af94df0a7a",
+            "Value": {
+                "id": "bb957e82-3b33-4543-9481-6e154bc50211",
+                "resourcePath": "sprites\\s_tilerealgrass\\s_tilerealgrass.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "4d7e7820-62d4-4fdb-a3e4-73372f30e276",
@@ -1047,27 +1071,11 @@
             }
         },
         {
-            "Key": "f41a0c78-7e40-425c-a810-b1ed38a1d533",
+            "Key": "f4fcef78-6487-4b6e-b941-20dc791f2629",
             "Value": {
-                "id": "58f3863e-8af9-4f32-aa71-dcc240145708",
-                "resourcePath": "scripts\\tile_collide_at_points\\tile_collide_at_points.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "f44c3547-9e38-4daa-9dd8-abdb42bd8949",
-            "Value": {
-                "id": "87d12fd3-0c59-461a-86fd-58f752e97193",
-                "resourcePath": "datafiles_yy\\gc.dll.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
-            "Key": "f6e22316-f71e-43dc-80e5-32818d8c50ee",
-            "Value": {
-                "id": "5e7bc90b-a6c1-4933-a2b1-49ce45188a04",
-                "resourcePath": "datafiles_yy\\gmlive-server.exe.yy",
-                "resourceType": "GMIncludedFile"
+                "id": "3388173a-a6d3-4378-b171-69cf5ae4a987",
+                "resourcePath": "objects\\o_debug\\o_debug.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1101,14 +1109,6 @@
                 "resourcePath": "scripts\\MasterItem_Create\\MasterItem_Create.yy",
                 "resourceType": "GMScript"
             }
-        },
-        {
-            "Key": "fdf8687f-0a45-462a-918b-d0c23a8c7688",
-            "Value": {
-                "id": "5cfc8cad-6baa-4810-969b-0336e2fb7a9b",
-                "resourcePath": "datafiles_yy\\gmlive.html.yy",
-                "resourceType": "GMIncludedFile"
-            }
         }
     ],
     "script_order": [
@@ -1123,9 +1123,6 @@
         "5beeb5ce-70a0-4200-80be-d3d288223cb1",
         "b092c232-6214-42f9-b864-724d08e4767a",
         "ae3c6a42-b1bb-436e-8173-5c9adbf5f828",
-        "f41a0c78-7e40-425c-a810-b1ed38a1d533",
-        "0940ba85-2e69-40af-9326-fcb03853cf05",
-        "12e17136-d8b1-42b2-905c-14acd6d69dc8",
         "401813cc-c28f-4bd1-9231-ec0113bd262e",
         "6551e049-039a-41dc-a724-51e30001b97d",
         "2f8a6583-665b-4339-a913-65fd362b29ce",

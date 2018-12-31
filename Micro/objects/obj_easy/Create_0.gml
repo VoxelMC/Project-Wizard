@@ -1,2 +1,0 @@
-mousehovering = false
-

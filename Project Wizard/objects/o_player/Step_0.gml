@@ -1,15 +1,17 @@
  //State Check
+if (live_call()) return live_result;
 switch anim_state {
-	case "idle": sprite_index = s_player_idle; break;
-	case "walking": sprite_index = s_player_walk; break;
+	case "Idle": sprite_index = s_player_idle; break;
+	case "Walking": sprite_index = s_player_walk; break;
 }
+/*
 switch state {
 	case "none": break;
 	case "inv": 
 	global.invincible = true; 
 	state = "none"; 
 	break;
-}
+}*/
 
 //Use Spells if any are equipped
 if global.stop = false {
@@ -51,10 +53,17 @@ if cooldown[4] != 0 {
 	cooldown[4] -=  1;
 } 
 
-//Attacking
+//Weapon Code
 if eqweapon != "none" {
+	//Use the equipped weapon
 	if mouse_check_button(mb_left) {	
 		Weapon_Use(eqweapon)
+	}
+	//Point the character towards the cursor
+	if mouse_x > x {
+		flipped = 1;
+	} else {
+		flipped = -1;
 	}
 }
 
@@ -67,85 +76,89 @@ if do_reload = true {
 	}
 }
 
-//Check for mouse position to change flipped
-if eqweapon != "none" {
-	if mouse_x > x {
-		flipped = 1;
-	} else {
-		flipped = -1;
-	}
 }
 
-}
-///Movement Logic
+/// Movement Logic ///
 
-//Get the input
-if global.stop = false {
-var x_input = (keyboard_check(vk_right) - keyboard_check(vk_left)) * acceleration_; //Get the player input to use for later.
-} else {
-	var x_input = 0;
-}
-//Vector variables
-var vector2_x = 0;
-var vector2_y = 1;
+//Set keybinds to variables for easier use later on
+key_left = keyboard_check(ord("A"));
+key_right = keyboard_check(ord("D"));
+key_jump = keyboard_check_pressed(vk_space);
+var key_jump_held = keyboard_check(vk_space);
 
-//Horizontal Movement
-velocity_[vector2_x] = clamp(velocity_[vector2_x] + x_input, -max_velocity_[vector2_x], max_velocity_[vector2_x]); //Forces the player to stay within the max velocity, left or right.
+//Check fly mode status
+if fly = false {
 
-//Friction
-if global.stop = false {
-if x_input == 0 {
-	velocity_[vector2_x] = lerp(velocity_[vector2_x], 0, .3);
-}
-} else {
-	velocity_[vector2_x] = 0;
+//Check inputs, if pressed then move and flip character in direction of movement
+if (key_right) {
+	hspd += 1;
+	flipped = 1;
+} 
+if (key_left) {
+	hspd -= 1;
+	flipped = -1;
 }
 
-//Gravity
-velocity_[vector2_y] += gravity_; //Apply Gravity
+//Check if the both directions are pressed or none are pressed, and stop
+if (!keyboard_check(ord("D")) && !keyboard_check(ord("A"))) {
+	hspd-=sign(hspd)
+} else if (keyboard_check(ord("D")) && keyboard_check(ord("A"))) {
+	hspd-=sign(hspd)
+}
 
+hspd = clamp(hspd, -maxhspd, maxhspd); //this makes sure hspd doesn't exceed the max value
 
-//Move and Contact Tiles
-move_and_contact_tiles(collision_tile_map_id_, tilesize, velocity_);
+vspd = vspd +  0.35 //Adds gravity to vspeed
 
-if global.stop = false {
 //Jumping
-var on_ground = tile_collide_at_points(collision_tile_map_id_, [bbox_left, bbox_bottom], [bbox_right-1, bbox_bottom]); //Check if there is a tile under us
-if on_ground {
-	//Jumping
-	if keyboard_check_pressed(vk_space) {
-		velocity_[vector2_y] = -jump_speed_;
-	} 
-	is_jumping = false;
+if (place_meeting(x, y+1, o_wall) && (key_jump)) { 
+	vspd = -7;
+	on_ground = false;
+}
+
+//Variable Jump (stopping a jump midair, for better air control
+if (!on_ground) && (!key_jump_held) {
+	vspd = max(vspd,-jump_speed/2);
+}
+
+///Collison Code///
+
+//Horizontal
+if (place_meeting(x+hspd, y, o_wall)){
+    while (!place_meeting(x+sign(hspd), y, o_wall)){ 
+        x+=sign(hspd);
+    }
+    hspd=0;
+}
+x+=hspd;
+
+//Vertical
+if (place_meeting(x, y+vspd, o_wall)){
+    while (!place_meeting(x, y+sign(vspd), o_wall)){
+        y+=sign(vspd);
+    }
+   vspd=0;
+   on_ground = true;
+} 
+y+=vspd;
+
+if hspd != 0 {
+	anim_state = "Walking";
 } else {
-	// Control jump height
-	if keyboard_check_released(vk_space) && velocity_[vector2_y] <= -(jump_speed_/3) {
-		velocity_[vector2_y] = -(jump_speed_/3);
+	anim_state = "Idle";
+}
+
+} else if fly = true {
+	if keyboard_check(ord("A")) {
+		x -= 5;
 	}
-	is_jumping = true;
-}
-
-//Animation
-if x_input > 0 {
-	flipped = 1
-} else if x_input < 0 {
-	flipped = -1
-}
-}
-
-//Sprinting
-if keyboard_check_pressed(vk_shift) {
-	max_velocity_[vector2_x] += 3;
-	if anim_state = "walking" {
-		image_speed = 1.1
+	if keyboard_check(ord("D")) {
+		x += 5;
 	}
-} else if keyboard_check_released(vk_shift) {
-		max_velocity_[vector2_x] -= 3;
-		image_speed = 0.8
-}
-
-if x_input != 0 {
-	anim_state = "walking"
-} else {
-	anim_state = "idle"
-}
+	if keyboard_check(ord("W")) {
+		y -= 5;
+	}
+	if keyboard_check(ord("S")) {
+		y += 5;
+	}
+} 

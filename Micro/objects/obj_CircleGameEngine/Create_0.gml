@@ -1,4 +1,0 @@
-global.MiniGame = "CircleGame"
-randomize();
-
-

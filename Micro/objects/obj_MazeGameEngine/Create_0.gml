@@ -1,3 +1,0 @@
-global.MiniGame = "MazeGame"
-randomize();
-

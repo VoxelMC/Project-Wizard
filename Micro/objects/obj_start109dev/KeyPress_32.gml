@@ -1,1 +1,0 @@
-startnow1 = 0

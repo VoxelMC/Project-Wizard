@@ -1,19 +1,18 @@
 /// @description Initialize player variables
 //Movement/Collision Variables
-gravity_ = 0.5;
-velocity_ = [0, 0]; //Don't change this
-max_velocity_ = [6, 11]; //1st value is the x, 2nd is the y
-jump_speed_ = 10;
-acceleration_ = 1.5;
+gravity_ = 0.3;
+hspd = 0; 
+maxhspd = 5; //Horizonal Maximum Speed
+vspd = 0; //Vertical Speed
+jump_speed = 5; //Speed we jump up before going down, similar to jump height
 sprinting = false; 
-is_jumping = false;
-old_spd_inc = global.spd_inc;
+on_ground = true;
 global.focus = self;
 state = "none";
-
-
-var layer_id = layer_get_id("Tiles_Main");
-collision_tile_map_id_ = layer_tilemap_get_id(layer_id);
+fly = true
+key_left = -1;
+key_right = -1;
+key_jump = -1;
 
 //Animation Variables
 anim_state = "idle";
@@ -29,11 +28,9 @@ reloadtime = 0
 dmg_mod = 0
 global.invincible = false;
 
-//Health/Mana Variables
+//Health Variables
 global.CurrentHP = 10;
 global.MaxHP = 10;
-global.CurrentMana = 50 
-global.MaxMana = 50
 
 //Inventory Variables
 globalvar pasinv;
@@ -52,7 +49,3 @@ cooldown[2] = 1;
 cooldown[3] = 1;
 cooldown[4] = 1;
 spellequipamount = ds_grid_height(spellinv);
-
-//Key Mappings
-keyboard_set_map(ord("A"),vk_left)
-keyboard_set_map(ord("D"),vk_right)

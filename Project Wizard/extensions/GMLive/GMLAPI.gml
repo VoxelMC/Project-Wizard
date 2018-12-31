@@ -9444,7 +9444,6 @@ if (live_enabled) {
 	gml_const_add("buffer_wrap",buffer_wrap);
 	gml_const_add("buffer_fast",buffer_fast);
 	gml_const_add("buffer_vbuffer",buffer_vbuffer);
-	gml_const_add("buffer_network",buffer_network);
 	gml_const_add("buffer_u8",buffer_u8);
 	gml_const_add("buffer_s8",buffer_s8);
 	gml_const_add("buffer_u16",buffer_u16);

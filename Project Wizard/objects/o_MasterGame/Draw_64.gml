@@ -1,18 +1,5 @@
 ///@description Draw the UI
 
-/*draw_text_transformed(x,y+30,"Display GUI Height:" + string(global.dguiheight),0.30,0.30,0);
-draw_text_transformed(x,y+50,"Display Width:" + string(global.display_width),0.30,0.30,0);
-draw_text_transformed(x,y+70,"Display Height:" + string(global.display_height),0.30,0.30,0);
-draw_text_transformed(x,y+90,"Ideal Width:" + string(o_display_init.ideal_width),0.30,0.30,0);
-draw_text_transformed(x,y+110,"Ideal Height:" + string(o_display_init.ideal_height),0.30,0.30,0);
-draw_text_transformed(x,y+130,"Aspect Ratio:" + string(o_display_init.aspect_ratio),0.30,0.30,0);*/
-/*draw_text_transformed(x,y,ds_grid_get(wepinv,0,0),0.30,0.30,0);
-draw_text_transformed(x,y+50,ds_grid_get(wepinv,1,0),0.30,0.30,0);
-draw_text_transformed(x,y+100,ds_grid_get(wepinv,2,0),0.30,0.30,0);
-draw_text_transformed(x,y+150,ds_grid_get(wepinv,3,0),0.30,0.30,0);
-draw_text_transformed(x,y+200,ds_grid_get(wepinv,4,0),0.30,0.30,0);
-draw_text_transformed(x,y+250,ds_grid_get(wepinv,5,0),0.30,0.30,0);*/
-
 if global.inv_open = false {
 //Health Bar
 var hspriteWidth = sprite_get_width(s_HealthBar);
