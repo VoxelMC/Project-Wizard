@@ -1,7 +1,8 @@
-ID LIST FOR ITEMS
+SPELL USAGE FOR EACH WEAPON TYPE:
 
-Key:
-IT = Item Type
+Healing Aura:
+Wand: Fatty heal with 10 second cooldown
+Staff: Smol heal with 3 sec cooldown
+Tome: Big aura summoned on player
+Idol: Little aura summoned on player, lasts for less time than tome but makes you invincible
 
-WEAPONS
-1: Ice Wand (IT: Weapon) (Use: Increases player speed by 1.)

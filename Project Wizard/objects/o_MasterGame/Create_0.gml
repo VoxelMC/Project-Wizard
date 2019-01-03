@@ -1,4 +1,5 @@
 ///@description Initialization
+if (live_call()) return live_result;
 randomize();
 draw_set_font(fnt_main)
 
@@ -44,13 +45,20 @@ item_init_passive(1,"Maze",s_PMaze,"Increases attack by 2. This is a really long
 //SPELLS
 item_init_spell(0,"Healing Aura",s_SHealing,"Creates a healing aura around the player.",240);
 item_init_spell(1,"Mana Regen Aura",s_SManaRegen,"Creates a mana regenartion aura around the player.",420);
-item_init_spell(2,"Thunderous Rage",s_SLightning,"Adds a lightning effect to your weapon for a short time.",600);
-item_init_spell(3,"Fire Blast",s_SFireBlast,"Adds an explosion effect to your weapon for a short time.",840);
+item_init_spell(2,"Thunderous Rage",s_SLightning,"A basic lightning attack",600);
+item_init_spell(3,"Fire Blast",s_SFireBlast,"A basic fire attack.",840);
 
 //WEAPONS
-item_init_weapon(0,"Ice Wand",s_IceWand,"A wand that shoots ice projectiles.",weptype.wand,1,15)
-item_init_weapon(1,"Fire Wand",s_FireWand,"A wand that shoots fire projectiles.",weptype.wand,3,25)
-item_init_weapon(2,"Grass Wand",s_GrassWand,"A wand that shoots grass projectiles.",weptype.wand,5,30)
+item_init_weapon(0,"Wand",s_BasicWand,"A basic wand.",weptype.wand,2)
+item_init_weapon(1,"Staff",s_BasicStaff,"A basic staff.",weptype.staff,2)
+item_init_weapon(2,"Tome",s_BasicTome,"A basic tome.",weptype.tome,2)
+item_init_weapon(3,"Idol",s_BasicIdol,"It's literally just a basic idol. What more description do you need?",weptype.idol,2)
+
+MasterItem_Create(weaponid.wand,"Weapon",100,330)
+MasterItem_Create(weaponid.staff,"Weapon",200,330)
+MasterItem_Create(weaponid.tome,"Weapon",300,330)
+MasterItem_Create(weaponid.idol,"Weapon",400,330)
+MasterItem_Create(spellid.heal,"Spell",500,330)
 
 //cutsceneStart(tl_tutorial,false);
 

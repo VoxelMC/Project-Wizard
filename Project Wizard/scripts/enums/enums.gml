@@ -27,9 +27,10 @@ enum spellid
 #region Weapon Item ID Name Enum
 enum weaponid
 	{
-	icewand, //Passive, Damage +1, ID: 0
-	firewand, //Passive, Damage +2, ID: 1
-	grasswand,
+	wand, 
+	staff,
+	tome,
+	idol
 	}
 #endregion
 
@@ -84,8 +85,3 @@ enum pastype
 	rune
 	}
 #endregion
-
-#region Macros
-#macro tilesize (32)
-#endregion
-	

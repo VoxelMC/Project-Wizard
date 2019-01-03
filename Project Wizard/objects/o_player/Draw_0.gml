@@ -1,10 +1,13 @@
-if (live_call()) return live_result;
 //Draw the Weapon
-if wepequipped != "none" {
+/*if wepequipped != "none" {
 	var spritetodraw = ds_grid_get(weapon,prop.sprite,wepequipped);
 	var wepangle = point_direction(x,y,mouse_x,mouse_y)
 	draw_sprite_ext(spritetodraw,image_index,x,y,1,flipped,wepangle-25*flipped,image_blend,flicker);
-}
+	draw_text(x,y-70,ds_grid_get(wepinv,propwep.type,0))
+	draw_text(x,y-85,ds_grid_get(wepinv,propwep.damage,0))
+	draw_text(x,y-100,ds_grid_get(wepinv,propwep.Rof,0))
+	draw_text(x,y-115,eqweapon);
+}*/
 
 //Ready the alarms for the invincibility frames
 if (global.invincible = true && alarm[10] == -1 && alarm[9] == -1) {

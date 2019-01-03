@@ -1,5 +1,4 @@
  //State Check
-if (live_call()) return live_result;
 switch anim_state {
 	case "Idle": sprite_index = s_player_idle; break;
 	case "Walking": sprite_index = s_player_walk; break;
@@ -15,28 +14,31 @@ switch state {
 
 //Use Spells if any are equipped
 if global.stop = false {
-	if ( keyboard_check_pressed(ord("Z")) && spellequipamount > 0 && cooldown[1] <= 0) {
+	if eqweapon != "none" {
+		var wtype = ds_grid_get(wepinv,propwep.type,0);
+		if (mouse_check_button_pressed(mb_left) && spellequipamount > 0 && cooldown[1] <= 0 ) {
 	
-		var spid = ds_grid_get(spellinv,prop.ID,0);
-		Spell_Use(spid,1);
+			var spid = ds_grid_get(spellinv,prop.ID,0);
+			Spell_Use(spid,1,wtype);
 	
-	} else if  ( keyboard_check_pressed(ord("X")) && spellequipamount > 1 && cooldown[2] <= 0) {
+		} else if  (mouse_check_button_pressed(mb_right) && spellequipamount > 1 && cooldown[2] <= 0) {
 	
-		var spid = ds_grid_get(spellinv,prop.ID,1);
-		Spell_Use(spid,2);
+			var spid = ds_grid_get(spellinv,prop.ID,1);
+			Spell_Use(spid,2,wtype);
 	
-	}
-	else if  ( keyboard_check_pressed(ord("C")) && spellequipamount > 2 && cooldown[3] <= 0) {
+		}
+		else if  ( keyboard_check_pressed(ord("Q")) && spellequipamount > 2 && cooldown[3] <= 0) {
 	
-		var spid = ds_grid_get(spellinv,prop.ID,2);
-		Spell_Use(spid,3);
+			var spid = ds_grid_get(spellinv,prop.ID,2);
+			Spell_Use(spid,3,wtype);
 	
-	}
-	else if  ( keyboard_check_pressed(ord("V")) && spellequipamount > 3 && cooldown[4] <= 0) {
+		}
+		else if  ( keyboard_check_pressed(ord("E")) && spellequipamount > 3 && cooldown[4] <= 0) {
 	
-		var spid = ds_grid_get(spellinv,prop.ID,3);
-		Spell_Use(spid,4);
+			var spid = ds_grid_get(spellinv,prop.ID,3);
+			Spell_Use(spid,4,wtype);
 	
+		}
 	}
 
 //Spell cooldown subtract
@@ -54,27 +56,27 @@ if cooldown[4] != 0 {
 } 
 
 //Weapon Code
-if eqweapon != "none" {
-	//Use the equipped weapon
-	if mouse_check_button(mb_left) {	
-		Weapon_Use(eqweapon)
-	}
+if (eqweapon != "none") && (spellequipamount = 0) {
 	//Point the character towards the cursor
 	if mouse_x > x {
 		flipped = 1;
 	} else {
 		flipped = -1;
 	}
+	//Use the equipped weapon
+	if mouse_check_button(mb_left) {	
+		Weapon_Use(eqweapon)
+	}
 }
 
 //Reload subtract
-if do_reload = true {
+/*if do_reload = true {
 	var RoF = ds_grid_get(wepinv,propwep.Rof,0)
 	if (reloadtime && !--reloadtime) {
 	do_reload = false
 	reloadtime = RoF
 	}
-}
+}*/
 
 }
 

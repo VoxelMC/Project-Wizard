@@ -8,3 +8,4 @@ qscale = 2;
 rscale = 2;
 bscale = 2;
 pos = 480;
+//audio_play_sound(mus_menu,1000,true);

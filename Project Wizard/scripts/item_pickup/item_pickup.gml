@@ -6,7 +6,6 @@ var otherspr = other.my_sprite
 if othertype = "Weapon" {
 var otherweptype = other.my_weptype
 var otherdamage = other.my_damage;
-var otherRoF = other.my_RoF;
 }
 if othertype = "Passive" {
 var otherpastype = other.my_pastype
@@ -70,10 +69,8 @@ switch othertype {
 			ds_grid_set(wepinv,prop.desc,0,otherdesc)
 			ds_grid_set(wepinv,propwep.type,0,otherweptype)
 			ds_grid_set(wepinv,propwep.damage,0,otherdamage)
-			ds_grid_set(wepinv,propwep.Rof,0,otherRoF)
 			wepequipped = ds_grid_get(wepinv,prop.ID,0);
 			eqweapon = ds_grid_get(wepinv,prop.ID,0);
-			reloadtime = ds_grid_get(wepinv,5,0);
 		} else {
 			MasterItem_Create(wepequipped,"Weapon",x,y)
 			ds_grid_set(wepinv,prop.ID,0,otherid)
@@ -82,10 +79,8 @@ switch othertype {
 			ds_grid_set(wepinv,prop.desc,0,otherdesc)
 			ds_grid_set(wepinv,propwep.type,0,otherweptype)
 			ds_grid_set(wepinv,propwep.damage,0,otherdamage)
-			ds_grid_set(wepinv,propwep.Rof,0,otherRoF)
 			wepequipped = ds_grid_get(wepinv,prop.ID,0);
 			eqweapon = ds_grid_get(wepinv,prop.ID,0);
-			reloadtime = ds_grid_get(wepinv,5,0);
 		} break;
 }
 instance_destroy(other);

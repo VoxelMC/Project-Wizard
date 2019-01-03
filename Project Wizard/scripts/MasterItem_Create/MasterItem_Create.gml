@@ -54,7 +54,6 @@ switch Item_Type_Grid {
 			my_description = ds_grid_get(my_grid,2,my_id)
 			my_weptype = ds_grid_get(my_grid,3,my_id)
 			my_damage = ds_grid_get(my_grid,4,my_id)
-			my_RoF = ds_grid_get(my_grid,5,my_id)
 			sprite_index = my_sprite
 		} 
 		break;

@@ -13,6 +13,7 @@ if debug = true {
 			o_player.fly = false;
 		} else {
 			o_player.fly = true;
+			o_player.anim_state = "Idle";
 		}
 	}
 }

@@ -9,7 +9,7 @@ sprinting = false;
 on_ground = true;
 global.focus = self;
 state = "none";
-fly = true
+fly = false
 key_left = -1;
 key_right = -1;
 key_jump = -1;
@@ -40,7 +40,7 @@ actinv = ds_grid_create(4,1);
 globalvar spellinv;
 spellinv = ds_grid_create(6,0);
 globalvar wepinv;
-wepinv = ds_grid_create(7,2);
+wepinv = ds_grid_create(7,5);
 wepequipped = "none"
 actequipped = "none"
 
