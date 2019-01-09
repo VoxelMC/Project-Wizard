@@ -1,5 +1,4 @@
 ///@description Initialization
-if (live_call()) return live_result;
 randomize();
 draw_set_font(fnt_main)
 
@@ -43,8 +42,8 @@ item_init_passive(0,"Glowy",s_PGlowy,"Increases attack by 1.",1,pastype.relic)
 item_init_passive(1,"Maze",s_PMaze,"Increases attack by 2. This is a really long phrase for a big description. Wow.",2,pastype.rune)
 
 //SPELLS
-item_init_spell(0,"Healing Aura",s_SHealing,"Creates a healing aura around the player.",240);
-item_init_spell(1,"Mana Regen Aura",s_SManaRegen,"Creates a mana regenartion aura around the player.",420);
+item_init_spell(0,"Healing Aura",s_SHealing,"A basic healing spell.",240);
+item_init_spell(1,"Mana Regen Aura",s_SManaRegen,"Creates a mana regenartion aura around the player.",420); //To be deleted, Mana is no longer a mechanic
 item_init_spell(2,"Thunderous Rage",s_SLightning,"A basic lightning attack",600);
 item_init_spell(3,"Fire Blast",s_SFireBlast,"A basic fire attack.",840);
 
@@ -59,6 +58,7 @@ MasterItem_Create(weaponid.staff,"Weapon",200,330)
 MasterItem_Create(weaponid.tome,"Weapon",300,330)
 MasterItem_Create(weaponid.idol,"Weapon",400,330)
 MasterItem_Create(spellid.heal,"Spell",500,330)
+MasterItem_Create(spellid.lightning,"Spell",600,330)
 
 //cutsceneStart(tl_tutorial,false);
 

@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 if keyboard_check_pressed(vk_f1) {
 	if debug = true {
 		debug = false;

@@ -1,2 +1,3 @@
 /// @description
-alarm[11] = 120;
+uptime = 120;
+alarm[11] = uptime;

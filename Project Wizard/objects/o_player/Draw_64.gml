@@ -5,10 +5,10 @@ var cd1 = cooldown[1]/room_speed;
 var cd2 = cooldown[2]/room_speed;
 var cd3 = cooldown[3]/room_speed;
 var cd4 = cooldown[4]/room_speed;
-var uioffset = 40
+var uioffset = 40;
 var wepsprite = ds_grid_get(wepinv,1,0)
 if wepsprite != 0 {
-	draw_sprite(wepsprite,image_index,global.dguiwidth/2-25,global.dguiheight-uioffset)
+	draw_sprite(wepsprite,image_index,global.dguiwidth/2,global.dguiheight-50)
 }
 
 
