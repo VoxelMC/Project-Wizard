@@ -1,3 +1,4 @@
+ if (live_call()) return live_result;
  //State Check
 switch anim_state {
 	case "Idle": sprite_index = s_player_idle; break;
@@ -55,29 +56,6 @@ if cooldown[4] != 0 {
 	cooldown[4] -=  1;
 } 
 
-//Weapon Code
-if (eqweapon != "none") && (spellequipamount = 0) {
-	//Point the character towards the cursor
-	if mouse_x > x {
-		flipped = 1;
-	} else {
-		flipped = -1;
-	}
-	//Use the equipped weapon
-	if mouse_check_button(mb_left) {	
-		Weapon_Use(eqweapon)
-	}
-}
-
-//Reload subtract
-/*if do_reload = true {
-	var RoF = ds_grid_get(wepinv,propwep.Rof,0)
-	if (reloadtime && !--reloadtime) {
-	do_reload = false
-	reloadtime = RoF
-	}
-}*/
-
 }
 
 /// Movement Logic ///
@@ -90,7 +68,7 @@ var key_jump_held = keyboard_check(vk_space);
 
 //Check fly mode status
 if fly = false {
-
+if movestop = false {
 //Check inputs, if pressed then move and flip character in direction of movement
 if (key_right) {
 	hspd += 1;
@@ -110,8 +88,6 @@ if (!keyboard_check(ord("D")) && !keyboard_check(ord("A"))) {
 
 hspd = clamp(hspd, -maxhspd, maxhspd); //this makes sure hspd doesn't exceed the max value
 
-vspd = vspd +  0.35 //Adds gravity to vspeed
-
 //Jumping
 if (place_meeting(x, y+1, o_wall) && (key_jump)) { 
 	vspd = -7;
@@ -122,6 +98,10 @@ if (place_meeting(x, y+1, o_wall) && (key_jump)) {
 if (!on_ground) && (!key_jump_held) {
 	vspd = max(vspd,-jump_speed/2);
 }
+
+vspd = vspd +  0.35 //Adds gravity to vspeed
+
+
 
 ///Collison Code///
 
@@ -149,7 +129,9 @@ if hspd != 0 {
 } else {
 	anim_state = "Idle";
 }
-
+} else {
+	anim_state = "Idle";
+}
 } else if fly = true {
 	if keyboard_check(ord("A")) {
 		x -= 5;
@@ -163,4 +145,4 @@ if hspd != 0 {
 	if keyboard_check(ord("S")) {
 		y += 5;
 	}
-} 
+}

@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "2e83460e-7664-4a40-af35-8abadb67574b",
+            "Value": {
+                "id": "ce5babc0-26d3-4b44-b533-a13d3601e77b",
+                "resourcePath": "objects\\o_LightningClouds\\o_LightningClouds.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2ed24e81-402f-480d-9424-a2cada3b59ed",
             "Value": {
                 "id": "22c33546-19e3-4d52-8764-12b5568a8961",
@@ -515,6 +523,22 @@
             "Value": {
                 "id": "26cd576e-53d6-4523-b909-12410f3bec36",
                 "resourcePath": "sprites\\s_ItemPopup\\s_ItemPopup.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6412d764-b325-47bc-94fe-47a866020f81",
+            "Value": {
+                "id": "bd4cd754-5815-41e6-8a81-3dcd03a6a3e7",
+                "resourcePath": "sprites\\s_LightningClouds\\s_LightningClouds.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "642d96f2-b083-4ce0-82af-74639ce3ee1d",
+            "Value": {
+                "id": "ff20abfc-824e-40af-be8d-17d46ca65a5c",
+                "resourcePath": "sprites\\s_LightningProj\\s_LightningProj.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -803,6 +827,14 @@
             "Value": {
                 "id": "110e4103-dbb5-4130-8404-e7f9c7062a5f",
                 "resourcePath": "objects\\o_MasterMenuItem\\o_MasterMenuItem.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "abe2887a-109a-4ea1-9089-22dcf2d53061",
+            "Value": {
+                "id": "d924f207-5939-4e70-9158-6647bd2e97ae",
+                "resourcePath": "objects\\o_LightningProj\\o_LightningProj.yy",
                 "resourceType": "GMObject"
             }
         },

@@ -11,7 +11,6 @@ global.inv_open = false;
 global.stop = false;
 global.pause = false;
 
-
 //Game Variables
 global.runefragments = 0;
 global.spd_inc = 0; //How much the speed has been increased by.

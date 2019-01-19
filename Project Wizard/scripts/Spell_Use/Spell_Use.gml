@@ -7,9 +7,10 @@ var splpos = argument1; //Spell Postion
 var wtype = argument2; //Weapon Type
 var splcooldown = 0; 
 var cancelcooldown = false
+var dir = point_direction(x,y,mouse_x,mouse_y);
 
 switch (spl) {
-	//BASIC HEALING SPELL
+	#region Basic Healing Spell
 	case spellid.heal:
 		switch (wtype) {
 			case weptype.wand:
@@ -43,22 +44,42 @@ switch (spl) {
 			}
 			break;
 		}
-	//BASIC LIGHTNING SPELL
+	#endregion
+	#region Basic Lightning Spell
 	case spellid.lightning:
 		switch (wtype) {
 			case weptype.wand: 
-				
+				if !instance_exists(o_LightningProj) && on_ground = true {
+					var proj = instance_create_layer(x,y,"Projectiles",o_LightningProj)
+					with proj {
+						direction = dir;
+						image_angle = direction;
+					}
+					if mouse_x > x {
+						flipped = 1;
+					} else {
+						flipped = -1;
+					}
+					movestop = true;
+				} 
+				if mouse_check_button_released(mb_left) {
+					movestop = false;
+					instance_destroy(proj);
+				}	
 			break;
 			case weptype.staff:
-			
+				
 			break;
 			case weptype.tome:
-			
+			if !instance_exists(o_LightningClouds) && on_ground = true {
+				instance_create_layer(mouse_x,mouse_y,"Projectiles",o_LightningClouds)
+			}
 			break;
 			case weptype.idol: 
-			
+				
 			break;
 		}
+		#endregion
 }
 
 if cancelcooldown = false {

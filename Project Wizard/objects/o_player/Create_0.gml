@@ -13,6 +13,7 @@ fly = false
 key_left = -1;
 key_right = -1;
 key_jump = -1;
+movestop = false;
 
 //Animation Variables
 anim_state = "idle";
