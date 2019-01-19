@@ -77,6 +77,7 @@ switch (spl) {
 			break;
 			case weptype.idol: 
 				
+				splcooldown = 360; //6 seconds
 			break;
 		}
 		#endregion

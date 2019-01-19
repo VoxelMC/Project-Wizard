@@ -79,6 +79,14 @@
             }
         },
         {
+            "Key": "09c089a9-2e7c-4c86-8988-fd8ca53453d1",
+            "Value": {
+                "id": "b3595af4-6ba2-4c03-b0af-cc3c1569dc6b",
+                "resourcePath": "objects\\o_LightningBalls\\o_LightningBalls.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0c2605f5-068f-4652-8369-a4b71de5b36f",
             "Value": {
                 "id": "d217b7dc-ea5b-47d4-9861-820e6bb7f114",
@@ -883,6 +891,14 @@
             "Value": {
                 "id": "b7f8773d-4fd2-412a-ab47-b771c916e11c",
                 "resourcePath": "sprites\\s_door\\s_door.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "b7b6cc8b-2903-4fd3-893f-15240106de96",
+            "Value": {
+                "id": "eef92b92-7c36-4239-973a-7444ebd608fc",
+                "resourcePath": "sprites\\s_LightningBall\\s_LightningBall.yy",
                 "resourceType": "GMSprite"
             }
         },
