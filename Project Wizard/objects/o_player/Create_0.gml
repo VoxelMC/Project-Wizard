@@ -42,6 +42,11 @@ globalvar spellinv;
 spellinv = ds_grid_create(6,0);
 globalvar wepinv;
 wepinv = ds_grid_create(7,5);
+globalvar splist;
+splist[0] = -1; //LMB
+splist[1] = -1; //RMB
+splist[2] = -1; //Q
+splist[3] = -1; //E
 wepequipped = "none"
 actequipped = "none"
 
@@ -49,4 +54,4 @@ cooldown[1] = 1;
 cooldown[2] = 1;
 cooldown[3] = 1;
 cooldown[4] = 1;
-spellequipamount = ds_grid_height(spellinv);
+spellequipamount = -1;

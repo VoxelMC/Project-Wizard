@@ -44,6 +44,7 @@ switch (spl) {
 			}
 			break;
 		}
+	break;
 	#endregion
 	#region Basic Lightning Spell
 	case spellid.lightning:
@@ -61,11 +62,7 @@ switch (spl) {
 						flipped = -1;
 					}
 					movestop = true;
-				} 
-				if mouse_check_button_released(mb_left) {
-					movestop = false;
-					instance_destroy(proj);
-				}	
+				}
 			break;
 			case weptype.staff:
 				
@@ -74,12 +71,14 @@ switch (spl) {
 			if !instance_exists(o_LightningClouds) && on_ground = true {
 				instance_create_layer(mouse_x,mouse_y,"Projectiles",o_LightningClouds)
 			}
+			splcooldown = 360; //6 seconds
 			break;
 			case weptype.idol: 
 				
 				splcooldown = 360; //6 seconds
 			break;
 		}
+		break;
 		#endregion
 }
 

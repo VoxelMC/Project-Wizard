@@ -17,24 +17,24 @@ switch state {
 if global.stop = false {
 	if eqweapon != "none" {
 		var wtype = ds_grid_get(wepinv,propwep.type,0);
-		if (mouse_check_button_pressed(mb_left) && spellequipamount > 0 && cooldown[1] <= 0 ) {
+		if (mouse_check_button_pressed(mb_left) && splist[0] != -1 && cooldown[1] <= 0 ) {
 	
 			var spid = ds_grid_get(spellinv,prop.ID,0);
 			Spell_Use(spid,1,wtype);
 	
-		} else if  (mouse_check_button_pressed(mb_right) && spellequipamount > 1 && cooldown[2] <= 0) {
+		} else if  (mouse_check_button_pressed(mb_right) && splist[1] != -1 && cooldown[2] <= 0) {
 	
 			var spid = ds_grid_get(spellinv,prop.ID,1);
 			Spell_Use(spid,2,wtype);
 	
 		}
-		else if  ( keyboard_check_pressed(ord("Q")) && spellequipamount > 2 && cooldown[3] <= 0) {
+		else if  ( keyboard_check_pressed(ord("Q")) && splist[2] != -1 && cooldown[3] <= 0) {
 	
 			var spid = ds_grid_get(spellinv,prop.ID,2);
 			Spell_Use(spid,3,wtype);
 	
 		}
-		else if  ( keyboard_check_pressed(ord("E")) && spellequipamount > 3 && cooldown[4] <= 0) {
+		else if  ( keyboard_check_pressed(ord("E")) && splist[3] != -1 && cooldown[4] <= 0) {
 	
 			var spid = ds_grid_get(spellinv,prop.ID,3);
 			Spell_Use(spid,4,wtype);

@@ -58,6 +58,7 @@ switch othertype {
 			ds_grid_set(spellinv,prop.desc,spellamount-1,otherdesc)
 			ds_grid_set(spellinv,propspl.cooldown,spellamount-1,othercooldown);
 			spellequipamount += 1;
+			splist[spellequipamount] = otherid;
 		}
 	break;
 	
