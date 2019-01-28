@@ -1,4 +1,3 @@
- if (live_call()) return live_result;
  //State Check
 switch anim_state {
 	case "Idle": sprite_index = s_player_idle; break;
@@ -15,7 +14,7 @@ switch state {
 
 //Use Spells if any are equipped
 if global.stop = false {
-	if eqweapon != "none" {
+	if global.wepequipped != "none" {
 		var wtype = ds_grid_get(wepinv,propwep.type,0);
 		if (mouse_check_button_pressed(mb_left) && splist[0] != -1 && cooldown[1] <= 0 ) {
 	

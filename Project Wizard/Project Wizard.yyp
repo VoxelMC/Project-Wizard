@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "1e73e316-c078-42d6-a792-4b765ff1c766",
+            "Value": {
+                "id": "d66cf146-f2d0-4466-ae06-fbd82b363b3c",
+                "resourcePath": "sprites\\s_relictab\\s_relictab.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1f150c84-b00b-483e-ba8e-4ed06af950ea",
             "Value": {
                 "id": "e35321bd-f63a-448e-9c6d-f29e906be42b",
@@ -707,6 +715,14 @@
             "Value": {
                 "id": "34a8d303-bdb5-4833-9135-a8748ed1a517",
                 "resourcePath": "objects\\o_FireProjectile\\o_FireProjectile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "84fc7f94-63c2-46c1-a5ba-a6aede42f358",
+            "Value": {
+                "id": "0b3b8598-85e4-4c66-be2e-2500a10d93e3",
+                "resourcePath": "objects\\o_relictab\\o_relictab.yy",
                 "resourceType": "GMObject"
             }
         },

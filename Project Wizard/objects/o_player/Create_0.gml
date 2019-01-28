@@ -23,7 +23,6 @@ flicker = 1;
 start = false;
 
 //Combat Variables
-eqweapon = "none"
 do_reload = true;
 reloadtime = 0
 dmg_mod = 0
@@ -34,20 +33,11 @@ global.CurrentHP = 10;
 global.MaxHP = 10;
 
 //Inventory Variables
-globalvar pasinv;
-pasinv = ds_grid_create(6,0);
-globalvar actinv;
-actinv = ds_grid_create(4,1);
-globalvar spellinv;
-spellinv = ds_grid_create(6,0);
-globalvar wepinv;
-wepinv = ds_grid_create(7,5);
 globalvar splist;
 splist[0] = -1; //LMB
 splist[1] = -1; //RMB
 splist[2] = -1; //Q
 splist[3] = -1; //E
-wepequipped = "none"
 actequipped = "none"
 
 cooldown[1] = 1;

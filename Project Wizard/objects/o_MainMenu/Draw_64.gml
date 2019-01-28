@@ -1,4 +1,3 @@
-/// @description
 if changelog = false {
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
@@ -74,5 +73,36 @@ draw_text_transformed(870,507,"Changelog",2,2,image_angle);
     
     draw_set_halign(fa_center);
 }
-
 draw_rectangle(780,480,959,539,true);
+
+//Draw the Select your Weapon screen.
+if go = true {
+	if a[0] < 1 {
+	a[0] += 0.015;
+	} 
+	draw_set_alpha(a[0]);
+	draw_rectangle_color(0,0,2000,2000,c_black,c_black,c_black,c_black,false);
+	draw_set_alpha(1);
+	if a[0] >= 1 {
+		if a[1] < 1 {
+			a[1] += 0.015;
+		}
+		draw_set_font(fnt_main_title);
+		draw_text_transformed_color(480,110,string_hash_to_newline("Select your Weapon."),1,1,image_angle,c_white,c_white,c_white,c_white,a[1]);
+		draw_sprite_ext(s_BasicWand,0,175,300,wepscale[0],wepscale[0],1,c_white,a[1]);
+		draw_sprite_ext(s_BasicStaff,0,375,300,wepscale[1],wepscale[1],1,c_white,a[1]);
+		draw_sprite_ext(s_BasicTome,0,575,300,wepscale[2],wepscale[2],1,c_white,a[1]);
+		draw_sprite_ext(s_BasicIdol,0,775,300,wepscale[3],wepscale[3],1,c_white,a[1]);
+		draw_set_font(fnt_main);
+	}
+}
+
+if go2 = true {
+		a[2] += 0.005;
+	if a[2] > 1.3 {
+		room_goto(testroom);
+	}
+	draw_set_alpha(a[2]);
+	draw_rectangle_color(0,0,2000,2000,c_white,c_white,c_white,c_white,false);
+	draw_set_alpha(1);
+}

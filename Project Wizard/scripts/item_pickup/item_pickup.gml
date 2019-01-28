@@ -63,25 +63,23 @@ switch othertype {
 	break;
 	
 	case "Weapon":
-		if wepequipped = "none" {
+		if global.wepequipped = "none" {
 			ds_grid_set(wepinv,prop.ID,0,otherid)
 			ds_grid_set(wepinv,prop.sprite,0,otherspr)
 			ds_grid_set(wepinv,prop.name,0,othername)
 			ds_grid_set(wepinv,prop.desc,0,otherdesc)
 			ds_grid_set(wepinv,propwep.type,0,otherweptype)
 			ds_grid_set(wepinv,propwep.damage,0,otherdamage)
-			wepequipped = ds_grid_get(wepinv,prop.ID,0);
-			eqweapon = ds_grid_get(wepinv,prop.ID,0);
+			global.wepequipped = ds_grid_get(wepinv,prop.ID,0);
 		} else {
-			MasterItem_Create(wepequipped,"Weapon",x,y)
+			//MasterItem_Create(global.wepequipped,"Weapon",x,y)
 			ds_grid_set(wepinv,prop.ID,0,otherid)
 			ds_grid_set(wepinv,prop.sprite,0,otherspr)
 			ds_grid_set(wepinv,prop.name,0,othername)
 			ds_grid_set(wepinv,prop.desc,0,otherdesc)
 			ds_grid_set(wepinv,propwep.type,0,otherweptype)
 			ds_grid_set(wepinv,propwep.damage,0,otherdamage)
-			wepequipped = ds_grid_get(wepinv,prop.ID,0);
-			eqweapon = ds_grid_get(wepinv,prop.ID,0);
+			global.wepequipped = ds_grid_get(wepinv,prop.ID,0);
 		} break;
 }
 instance_destroy(other);
