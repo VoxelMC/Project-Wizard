@@ -6,19 +6,10 @@ enum passiveid
 	}
 #endregion
 
-#region Active Item ID Name Enum
-enum activeid
-	{
-	triangle, //Passive, Damage +1, ID: 0
-	square, //Passive, Damage +2, ID: 1
-	}
-#endregion
-
 #region Spell Item ID Name Enum
 enum spellid 
 	{
 	heal,
-	manareg, 
 	lightning,
 	fireblast,
 	}

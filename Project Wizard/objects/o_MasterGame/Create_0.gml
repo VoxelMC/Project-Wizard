@@ -27,6 +27,7 @@ MasterItem_Create(weaponid.tome,"Weapon",300,330)
 MasterItem_Create(weaponid.idol,"Weapon",400,330)
 MasterItem_Create(spellid.heal,"Spell",500,330)
 MasterItem_Create(spellid.lightning,"Spell",600,330)
+MasterItem_Create(passiveid.glowy,"Passive",700,330);
 
 //cutsceneStart(tl_tutorial,false);
 

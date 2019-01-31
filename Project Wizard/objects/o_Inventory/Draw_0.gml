@@ -17,11 +17,13 @@ if global.inv_open = true {
 		draw_sprite(obj_selected_sprite,0,_x2-140,_y1+165)
 		draw_set_halign(fa_left)
 	}
-	draw_text_transformed(_x1+30,_y1+260,"Runes",2,2,0);
-	//draw_text_transformed(_x1+150,_y1+260,"Relics",2,2,0); 
-	instance_create_layer(_x1+150,_y1+260,"Inventory",o_relictab);
-	draw_text_transformed(_x1+290,_y1+260,"Spells",2,2,0);
-	draw_text_transformed(_x1+430,_y1+260,"Weapons",2,2,0);
+	if tab_fin = false {
+		instance_create_layer(_x1+75,_y1+270,"Inv_Instances",o_runetab);
+		instance_create_layer(_x1+215,_y1+270,"Inv_Instances",o_relictab);
+		instance_create_layer(_x1+355,_y1+270,"Inv_Instances",o_spelltab);
+		instance_create_layer(_x1+495,_y1+270,"Inv_Instances",o_weptab);
+		tab_fin = true;
+	}
 	o_player.image_speed = 0;
 }
 draw_set_alpha(1);
@@ -29,5 +31,6 @@ draw_set_color(c_white)
 
 if global.inv_open = false {
 	o_player.image_speed = 0.8
+	tab_fin = false;
 	exit;
 }

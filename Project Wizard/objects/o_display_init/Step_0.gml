@@ -26,6 +26,7 @@ if keyboard_check_pressed(vk_f11) {
 }*/
 	
 //Follow Player
+if global.stop = false {
 view_x = lerp(view_x,global.focus.x - view_w/2,.3);
 view_y = lerp(view_y,global.focus.y - view_h/2,.3);
 
@@ -43,4 +44,5 @@ if global.screenshake = true {
 } else {
 	view_w = ideal_width*zoom
 	view_h = ideal_height*zoom 
+}
 }

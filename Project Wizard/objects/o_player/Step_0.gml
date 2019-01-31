@@ -60,6 +60,7 @@ if cooldown[4] != 0 {
 /// Movement Logic ///
 
 //Set keybinds to variables for easier use later on
+if global.stop = false {
 key_left = keyboard_check(ord("A"));
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
@@ -144,4 +145,8 @@ if hspd != 0 {
 	if keyboard_check(ord("S")) {
 		y += 5;
 	}
+}
+} else {
+	hspd = 0;
+	vspd = 0;
 }

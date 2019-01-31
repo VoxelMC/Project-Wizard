@@ -16,8 +16,3 @@ if (global.invincible = true && alarm[10] == -1 && alarm[9] == -1) {
 
 //Draw the Player
 draw_sprite_ext(sprite_index, image_index, x, y, flipped, 1, 0, image_blend, flicker)
-
-draw_text(x,y-70,splist[0]);
-draw_text(x,y-80,splist[1]);
-draw_text(x,y-90,splist[2]);
-draw_text(x,y-100,splist[3]);

@@ -29,23 +29,6 @@ switch othertype {
 		ds_grid_set(pasinv,prop.effect,amount-1,othereffect);
 		ds_grid_set(pasinv,proppas.passivetype,amount-1,otherpastype);
 		dmg_mod += ds_grid_get(pasinv,prop.effect,amount-1); break;
-	
-	case "Active":
-		if actequipped = "none" {
-			ds_grid_set(actinv,prop.ID,0,otherid)
-			ds_grid_set(actinv,prop.sprite,0,otherspr)
-			ds_grid_set(actinv,prop.name,0,othername)
-			ds_grid_set(actinv,prop.desc,0,otherdesc)
-			actequipped = ds_grid_get(actinv,0,0);
-		} else {
-			MasterItem_Create(actequipped,"Active",x,y)
-			ds_grid_set(actinv,prop.ID,0,otherid)
-			ds_grid_set(actinv,prop.sprite,0,otherspr)
-			ds_grid_set(actinv,prop.name,0,othername)
-			ds_grid_set(actinv,prop.desc,0,otherdesc)
-			actequipped = ds_grid_get(actinv,0,0);
-		} break;
-	
 	case "Spell": 
 		var spellamount = ds_grid_height(spellinv)
 		var spellgridwidth = ds_grid_width(spellinv);
@@ -72,7 +55,7 @@ switch othertype {
 			ds_grid_set(wepinv,propwep.damage,0,otherdamage)
 			global.wepequipped = ds_grid_get(wepinv,prop.ID,0);
 		} else {
-			//MasterItem_Create(global.wepequipped,"Weapon",x,y)
+			MasterItem_Create(global.wepequipped,"Weapon",x,y)
 			ds_grid_set(wepinv,prop.ID,0,otherid)
 			ds_grid_set(wepinv,prop.sprite,0,otherspr)
 			ds_grid_set(wepinv,prop.name,0,othername)

@@ -38,7 +38,6 @@ splist[0] = -1; //LMB
 splist[1] = -1; //RMB
 splist[2] = -1; //Q
 splist[3] = -1; //E
-actequipped = "none"
 
 cooldown[1] = 1;
 cooldown[2] = 1;
