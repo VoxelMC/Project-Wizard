@@ -18,18 +18,14 @@ draw_set_halign(fa_left);
 
 //UI
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2-170,global.dguiheight);
-draw_sprite(s_keyboardkeys,0,global.dguiwidth/2-170,global.dguiheight-80);
 
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2-90,global.dguiheight);
-draw_sprite(s_keyboardkeys,1,global.dguiwidth/2-90,global.dguiheight-80);
 
 draw_sprite(s_NewWeaponSlot,image_index,global.dguiwidth/2,global.dguiheight);
 
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2+90,global.dguiheight);
-draw_sprite(s_keyboardkeys,2,global.dguiwidth/2+90,global.dguiheight-80);
 
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2+170,global.dguiheight);
-draw_sprite(s_keyboardkeys,3,global.dguiwidth/2+170,global.dguiheight-80);
 
 //Test environment tutorial
 if show_help = true {

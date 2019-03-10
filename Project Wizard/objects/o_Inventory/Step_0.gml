@@ -4,7 +4,9 @@ if global.inv_open = true {
 	var amount = 0;	
 	//Tabs
 	switch (current_tab)  {
+#region Rune
 		case "Rune": break;
+#endregion
 #region Relic
 		case "Relic": 
 			var height = ds_grid_height(pasinv);
@@ -32,16 +34,16 @@ if global.inv_open = true {
 			var item_sprite = spellinv[# prop.sprite,i];
 			var item_name = spellinv[# prop.name,i];
 			var item_type = "Spell";
-			var item = instance_create_layer(view_w-915 + (w*64),view_h-210 + (h*64),"Inv_Instances",o_MasterMenuItem)
+			var item = instance_create_layer(view_w-915 + (w*64),view_h-500 + (h*64),"Inv_Instances",o_MasterMenuItem)
 				with item {
 					my_name = item_name;
 					my_sprite = item_sprite;
 					my_type = item_type;
 				}
 				//moves to the next line if current one filled:
-				w++;
-				if (w >= (floor(960/96))){
-					w = 0; h++;
+				h++;
+				if (h >= (floor(960/96))){
+					w ++; h=0;
 				}
 		} break;
 #endregion
