@@ -4,8 +4,6 @@ draw_set_font(fnt_main)
 
 ///Initialize variables
 
-instance_create_layer(o_player.x,o_player.y,"Instances",o_MasterMenuItem)
-
 //Menu Variables
 global.inv_open = false;
 global.stop = false;
@@ -15,6 +13,10 @@ global.pause = false;
 global.runefragments = 0;
 global.spd_inc = 0; //How much the speed has been increased by.
 global.currentconvo = "N/A";
+global.up_pos[0] = 0;
+global.up_pos[1] = 0;
+global.up_pos[2] = 0;
+global.up_pos[3] = 0;
 
 //MasterGame Specific Variables
 show_help = false;

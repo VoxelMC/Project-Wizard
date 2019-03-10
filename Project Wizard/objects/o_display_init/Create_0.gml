@@ -59,4 +59,5 @@ view_h = ideal_height*zoom;
 global.dguiwidth = display_get_gui_width();
 global.dguiheight = display_get_gui_height();
 
+
 room_goto_next();

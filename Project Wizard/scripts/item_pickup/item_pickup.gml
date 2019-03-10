@@ -11,9 +11,6 @@ if othertype = "Passive" {
 var otherpastype = other.my_pastype
 var othereffect = other.my_effect
 }
-if othertype = "Spell" {
-var othercooldown = other.my_cooldown;
-}
 
 //Cycle through other's item type because each reacts differently
 switch othertype {
@@ -29,6 +26,7 @@ switch othertype {
 		ds_grid_set(pasinv,prop.effect,amount-1,othereffect);
 		ds_grid_set(pasinv,proppas.passivetype,amount-1,otherpastype);
 		dmg_mod += ds_grid_get(pasinv,prop.effect,amount-1); break;
+		
 	case "Spell": 
 		var spellamount = ds_grid_height(spellinv)
 		var spellgridwidth = ds_grid_width(spellinv);
@@ -39,7 +37,6 @@ switch othertype {
 			ds_grid_set(spellinv,prop.sprite,spellamount-1,otherspr)
 			ds_grid_set(spellinv,prop.name,spellamount-1,othername)
 			ds_grid_set(spellinv,prop.desc,spellamount-1,otherdesc)
-			ds_grid_set(spellinv,propspl.cooldown,spellamount-1,othercooldown);
 			spellequipamount += 1;
 			splist[spellequipamount] = otherid;
 		}

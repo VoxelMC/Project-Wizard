@@ -44,9 +44,9 @@ weapon = ds_grid_create(10,10);
 item_init_passive(0,"Glowy",s_PGlowy,"Increases the maximum amount of jumps by 1.",1,pastype.relic)
 
 //SPELLS
-item_init_spell(0,"Healing Aura",s_SHealing,"A basic healing spell.",240);
-item_init_spell(1,"Thunderous Rage",s_SLightning,"A basic lightning attack",600);
-item_init_spell(2,"Fire Blast",s_SFireBlast,"A basic fire attack.",840);
+item_init_spell(0,"Healing Aura",s_SHealing,"A basic healing spell.");
+item_init_spell(1,"Thunderous Rage",s_SLightning,"A basic lightning attack");
+item_init_spell(2,"Fire Blast",s_SFireBlast,"A basic fire attack.");
 
 //WEAPONS
 item_init_weapon(0,"Wand",s_BasicWand,"A basic wand.",weptype.wand,2)
