@@ -10,3 +10,5 @@ up_display[0] = c_red;
 up_display[1] = c_red;
 up_display[2] = c_red;
 up_display[3] = c_red;
+fill = false;
+fill_amt = 0;

@@ -65,12 +65,21 @@ if current_menu = 0 {
 draw_text_transformed(870,507,"Changelog",2,2,image_angle);
 } else {
     draw_text_transformed(870,509,"Back",2,2,image_angle);
-    draw_text_transformed(480,30,"Changelog for Pre-Alpha v1.0.X:",2,2,image_angle)
+    draw_text_transformed(470,30,"Changelog for Demo Pre-Alpha v1.0:",2,2,image_angle)
     draw_set_halign(fa_left);
-    draw_text_transformed(50,65,"-Added in a WIP main menu with basic functionalities. Much more will be added to this later.",1,1,image_angle)
+    draw_text_transformed(50,65,"-Added in a main menu with basic functionalities. Much more will be added to this later.",1,1,image_angle)
     draw_text_transformed(50,100,string_hash_to_newline("-Improved the menu by making it look better and fixing some bugs."),1,1,image_angle)
-    draw_text_transformed(50,135,string_hash_to_newline("-Revamped health completely."),1,1,image_angle)
-    
+    draw_text_transformed(50,135,string_hash_to_newline("-Added a new tileset for the ground."),1,1,image_angle);
+    draw_text_transformed(50,170,string_hash_to_newline("-Completely rebuilt the movement system and collision system from the ground up."),1,1,image_angle);
+    draw_text_transformed(50,205,string_hash_to_newline("-Completely redesigned the passive menu, turning it into a general menu. (WIP)"),1,1,image_angle);
+    draw_text_transformed(50,240,string_hash_to_newline("-Started a combat redesign, spells now have different effects depending on the weapon equipped."),1,1,image_angle);
+    draw_text_transformed(50,275,string_hash_to_newline("-Readded the healing spell with new effects."),1,1,image_angle);
+    draw_text_transformed(50,310,string_hash_to_newline("-Added a lightning spell, which works with the Wand and Tome (Staff and Idol usage coming later.)"),1,1,image_angle);
+    draw_text_transformed(50,345,string_hash_to_newline("-Added a debug menu, and a fly mode (ignores collision and lets you fly around.)"),1,1,image_angle);
+    draw_text_transformed(50,380,string_hash_to_newline("-Added the ability to upgrade spells, though at the moment it does nothing."),1,1,image_angle);
+    draw_text_transformed(50,415,string_hash_to_newline("-Added a restart game button (R)"),1,1,image_angle);
+    draw_text_transformed(50,450,string_hash_to_newline("-Fixed many many many many bugs."),1,1,image_angle);
+	
     draw_set_halign(fa_center);
 }
 draw_rectangle(780,480,959,539,true);

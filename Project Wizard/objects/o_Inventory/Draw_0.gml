@@ -7,15 +7,6 @@ if global.inv_open = true {
 	var _x2 = view_x + view_w;
 	var _y2 = view_y + view_h;
 	draw_rectangle_color(_x1,_y1,_x2,_y2,c_black,c_black,c_black,c_black,false);
-	draw_set_alpha(1);
-	draw_set_color(c_white) 
-	if obj_selected = true {
-		draw_set_halign(fa_center);
-		draw_text_transformed(_x2-137,_y1+293,obj_selected_name,1.5,1.5,0);
-		draw_text_ext(_x2-137,_y1+320,obj_selected_desc,-1,244)
-		draw_sprite(obj_selected_sprite,0,_x2-140,_y1+165)
-		draw_set_halign(fa_left)
-	}
 	if tab_fin = false {
 		instance_create_layer(_x1+75,_y1+508,"Inv_Instances",o_runetab);
 		instance_create_layer(_x1+215,_y1+508,"Inv_Instances",o_relictab);

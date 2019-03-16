@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 obj_selected = false;
 obj_selected_name = "N/A"
 obj_selected_desc = "N/A"
