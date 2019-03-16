@@ -9,6 +9,7 @@ draw_blackbars = false;
 global.display_width=display_get_width();
 global.display_height=display_get_height();
 global.screenshake = false;
+global.stop = false;
 
 aspect_ratio=global.display_width/global.display_height;
 aspect_ratio = clamp(aspect_ratio, 16 / 10, 21 / 9);
