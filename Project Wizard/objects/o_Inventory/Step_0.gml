@@ -35,9 +35,9 @@ if global.inv_open = true {
 			var item_name = spellinv[# 2,i];
 			var item_desc = spellinv[# 3,i];
 			var item_type = "Spell";
-			var item_pos = i;
-			var item = instance_create_layer(view_w-625 + (w*100),view_h-150 + (h*64),"Inv_Instances",o_MasterMenuItem)
-				with item {
+			var item_pos = i 
+			itemspl[i] = instance_create_layer(view_w-730 + (w*100),view_h-165 + (h*64),"Inv_Instances",o_MasterMenuItem)
+				with itemspl[i] {
 					my_name = item_name;
 					my_sprite = item_sprite;
 					my_type = item_type;

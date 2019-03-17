@@ -1,7 +1,7 @@
 if (live_call()) return live_result;
-obj_selected = false;
-obj_selected_name = "N/A"
-obj_selected_desc = "N/A"
-obj_selected_sprite = s_fire;
 current_tab = "Spell";
 tab_fin = false;
+itemspl[0] = 0;
+itemspl[1] = 0;
+itemspl[2] = 0;
+itemspl[3] = 0;

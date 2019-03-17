@@ -4,7 +4,8 @@
     "mvc": "1.1",
     "name": "19e2d0b0-07e0-40df-8a7f-510c21918de0",
     "children": [
-        "d1d1e0bc-c114-40be-8e47-f5d4e417a2bf"
+        "d1d1e0bc-c114-40be-8e47-f5d4e417a2bf",
+        "71db0ae3-c019-46d3-afc2-89f75db7bebb"
     ],
     "filterType": "GMNotes",
     "folderName": "notes",

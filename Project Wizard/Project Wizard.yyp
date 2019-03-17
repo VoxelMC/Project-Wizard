@@ -535,6 +535,14 @@
             }
         },
         {
+            "Key": "60799376-a8b9-4666-86f7-a69c17a0370b",
+            "Value": {
+                "id": "57471679-83dc-4220-af8b-4fb4775ac3d5",
+                "resourcePath": "sprites\\s_upgradebar2\\s_upgradebar2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "60abe133-9f6f-4d7e-abb8-cd4807c6c78e",
             "Value": {
                 "id": "746f23e4-1723-4f44-9848-2e7504cc3c31",
@@ -663,6 +671,14 @@
             }
         },
         {
+            "Key": "71db0ae3-c019-46d3-afc2-89f75db7bebb",
+            "Value": {
+                "id": "78086473-8fa4-4a7d-8f93-78944e943262",
+                "resourcePath": "notes\\note1.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "72c79e41-cbaf-4591-adb4-5443d802e5b9",
             "Value": {
                 "id": "43055e70-ee72-4525-9e53-4bcb68945fcb",
@@ -714,7 +730,7 @@
             "Key": "7cd34624-b835-4f12-9fe7-874ff979e9be",
             "Value": {
                 "id": "400eb2ee-63d5-46a8-bbec-38b3067489d0",
-                "resourcePath": "sprites\\s_upgradebar\\s_upgradebar.yy",
+                "resourcePath": "sprites\\s_upgradebar1\\s_upgradebar1.yy",
                 "resourceType": "GMSprite"
             }
         },
