@@ -7,8 +7,8 @@ Tome: Big aura summoned on player
 Idol: Little aura summoned on player, lasts for less time than tome but makes you invincible
 
 Lightning Spell:
-Wand:
+Wand: Shoot a lightning bolt, locks you to that spot
 Staff:
-Tome:
-Idol:
+Tome: Creates a lightning cloud over your cursor.
+Idol:  Creates a bunch of lightning balls around character 
 

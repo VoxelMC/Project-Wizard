@@ -1,5 +1,3 @@
-/// @description
-if (live_call()) return live_result;
 if global.inv_open = false {
 	instance_destroy();
 }
@@ -32,10 +30,14 @@ if point_in_rectangle(mouse_gui_x,mouse_gui_y,x-25,y-25,x+25,y+25) {
 
 if fill = true {
 	if fill_amt < 25 {
-		fill_amt += 0.2;
+		fill_amt += 0.3;
 	}
 } else {
-	if fill_amt > 0 {
-	fill_amt -= 0.4;
+	if fill_amt > 0 && global.up_pos[my_pos] < 4 {
+	fill_amt -= 0.5;
 	}
+}
+
+if global.up_pos[my_pos] = 4 {
+	fill_amt = 24;
 }

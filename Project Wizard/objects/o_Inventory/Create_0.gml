@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 current_tab = "Spell";
 tab_fin = false;
 itemspl[0] = 0;

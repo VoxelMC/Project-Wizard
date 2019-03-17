@@ -74,7 +74,7 @@ switch (spl) {
 			splcooldown = 360; //6 seconds
 			break;
 			case weptype.idol: 
-				
+				instance_create_layer(o_player.x+60,o_player.y,"Projectiles",o_LightningBalls);
 				splcooldown = 360; //6 seconds
 			break;
 		}

@@ -4,10 +4,9 @@ draw_set_alpha(0.8)
 if global.inv_open = true {
 	draw_rectangle_color(0,0,0+view_w,0+view_h,c_black,c_black,c_black,c_black,false);
 	if tab_fin = false {
-		instance_create_layer(0,168,"Inv_Instances",o_runetab);
-		instance_create_layer(0,238,"Inv_Instances",o_relictab);
-		instance_create_layer(0,308,"Inv_Instances",o_spelltab);
-		instance_create_layer(0,378,"Inv_Instances",o_weptab);
+		instance_create_layer(0,205,"Inv_Instances",o_relictab);
+		instance_create_layer(0,275,"Inv_Instances",o_spelltab);
+		instance_create_layer(0,345,"Inv_Instances",o_weptab);
 		tab_fin = true;
 	}
 	#region Right Box Item Descriptions
