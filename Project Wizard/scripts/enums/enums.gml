@@ -69,3 +69,18 @@ enum pastype
 	rune
 	}
 #endregion
+
+#region Keybinding Storage Enum
+enum key 
+	{
+	left,
+	right,
+	jump,
+	interact,
+	spl1,
+	spl2,
+	spl3,
+	spl4,
+	pause,
+	}
+#endregion

@@ -30,7 +30,7 @@ if (message_end > 0) {
 	
 	//Next Message
 	if alarmdone = true {
-	if (keyboard_check_pressed(ord("E"))) {
+	if (keyboard_check_pressed(global.keybind[key.interact])) {
 		//If we still have some more messages, go to the next one
 		if (message_current < message_end-1)
 		{
@@ -109,29 +109,6 @@ if (message_end > 0) {
 				draw_text(tX+(space*charWidth), pY+20+(13*line)+shift, string_char_at(message[message_current], i));
 				break;
 			}
-			case 3: //Gradient Text
-			{
-				var col = make_color_hsv(t+i, 255, 255);
-				var col2 = make_color_hsv(t+i+75, 255, 255);
-				draw_text_transformed_color(tX+(space*charWidth), pY+20+(13*line), string_char_at(message[message_current], i), 1, 1, 0, col, col, col2, col2, 1);
-				break;
-			}
-			case 4: //Gradient + Sine
-			{
-				var so = t+ i;
-				var shift = sin(so*pi*freq/room_speed) * amplitude;
-				var col = make_color_hsv(t+i, 255, 255);
-				var col2 = make_color_hsv(t+i+75, 255, 255);
-				draw_text_transformed_color(tX+(space*charWidth), pY+20+(13*line) + shift, string_char_at(message[message_current], i), 1, 1, 0, col, col, col2, col2, 1);
-				break;
-			}
-			case 5: //Gradient + Shaky
-			{
-				var col = make_color_hsv(t+i, 255, 255);
-				var col2 = make_color_hsv(t+i+75, 255, 255);
-				draw_text_transformed_color(tX+(space*charWidth)+ random_range(-1,1), pY+20+(13*line) + random_range(-1,1), string_char_at(message[message_current], i), 1, 1, 0, col, col, col2, col2, 1);
-				break;
-			}
 		}
 		
 		space++;
@@ -142,7 +119,8 @@ if (message_end > 0) {
 	switch(portrait)
 	{
 		case "NPCTest": draw_sprite(s_NPCTestPortrait,0,pX,pY); break;    
-		case "Watcher": draw_sprite(s_WatcherPortrait,0,pX,pY+2.5); break;    
+		case "Watcher": draw_sprite(s_WatcherPortrait,0,pX,pY+2.5); break; 
+		case "Dummy": draw_sprite(s_trainingdummyportrait,0,pX,pY+2.5); break;
 	}
 	
 	//Draw Blinker
@@ -158,7 +136,7 @@ if (message_end > 0) {
 	draw_text(10,50,lineEnd);
 	draw_text(10,70,message_current);
 	draw_text(10,90,message_end);
-
+	
 if done = true {
 	instance_destroy();
 	global.stop = false;

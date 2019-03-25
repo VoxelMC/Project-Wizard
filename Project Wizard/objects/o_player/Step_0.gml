@@ -16,24 +16,24 @@ switch state {
 if global.stop = false {
 	if global.wepequipped != "none" {
 		var wtype = ds_grid_get(wepinv,propwep.type,0);
-		if (mouse_check_button_pressed(mb_left) && splist[0] != -1 && cooldown[1] <= 0 ) {
+		if (mouse_check_button_pressed(global.keybind[key.spl1]) && splist[0] != -1 && cooldown[1] <= 0 ) {
 	
 			var spid = ds_grid_get(spellinv,prop.ID,0);
 			Spell_Use(spid,1,wtype);
 	
-		} else if  (mouse_check_button_pressed(mb_right) && splist[1] != -1 && cooldown[2] <= 0) {
+		} else if  (mouse_check_button_pressed(global.keybind[key.spl2]) && splist[1] != -1 && cooldown[2] <= 0) {
 	
 			var spid = ds_grid_get(spellinv,prop.ID,1);
 			Spell_Use(spid,2,wtype);
 	
 		}
-		else if  ( keyboard_check_pressed(ord("Q")) && splist[2] != -1 && cooldown[3] <= 0) {
+		else if  (keyboard_check_pressed(global.keybind[key.spl3]) && splist[2] != -1 && cooldown[3] <= 0) {
 	
 			var spid = ds_grid_get(spellinv,prop.ID,2);
 			Spell_Use(spid,3,wtype);
 	
 		}
-		else if  ( keyboard_check_pressed(ord("E")) && splist[3] != -1 && cooldown[4] <= 0) {
+		else if  ( keyboard_check_pressed(global.keybind[key.spl4]) && splist[3] != -1 && cooldown[4] <= 0) {
 	
 			var spid = ds_grid_get(spellinv,prop.ID,3);
 			Spell_Use(spid,4,wtype);
@@ -61,10 +61,10 @@ if cooldown[4] != 0 {
 
 //Set keybinds to variables for easier use later on
 if global.stop = false {
-key_left = keyboard_check(ord("A"));
-key_right = keyboard_check(ord("D"));
-key_jump = keyboard_check_pressed(vk_space);
-var key_jump_held = keyboard_check(vk_space);
+key_left = keyboard_check(global.keybind[key.left]);
+key_right = keyboard_check(global.keybind[key.right]);
+key_jump = keyboard_check_pressed(global.keybind[key.jump]);
+var key_jump_held = keyboard_check(global.keybind[key.jump]);
 
 //Check fly mode status
 if fly = false {
@@ -80,9 +80,9 @@ if (key_left) {
 }
 
 //Check if the both directions are pressed or none are pressed, and stop
-if (!keyboard_check(ord("D")) && !keyboard_check(ord("A"))) {
+if (!keyboard_check(key_right) && !keyboard_check(key_left)) {
 	hspd-=sign(hspd)
-} else if (keyboard_check(ord("D")) && keyboard_check(ord("A"))) {
+} else if (keyboard_check(key_right) && keyboard_check(key_left)) {
 	hspd-=sign(hspd)
 }
 
