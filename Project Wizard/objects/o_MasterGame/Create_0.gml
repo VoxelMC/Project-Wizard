@@ -1,4 +1,4 @@
-///@description Initialization
+/// @description Initialization
 randomize();
 draw_set_font(fnt_main)
 

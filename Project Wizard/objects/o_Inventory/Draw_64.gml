@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 draw_set_color(c_black)
 draw_set_alpha(0.8)
 if global.inv_open = true {
@@ -9,7 +10,7 @@ if global.inv_open = true {
 		instance_create_layer(0,345,"Inv_Instances",o_weptab);
 		tab_fin = true;
 	}
-	#region Right Box Item Descriptions
+	/*#region Right Box Item Descriptions
 	if current_tab = "Spell" {
 		draw_rectangle_color(650,10,940,530,c_aqua,c_aqua,c_aqua,c_aqua,true);
 		draw_rectangle_color(650,10,940,132.5,c_aqua,c_aqua,c_aqua,c_aqua,true);
@@ -54,7 +55,7 @@ if global.inv_open = true {
 		}
 
 #endregion
-	}
+	}*/
 	draw_set_color(c_black);
 #endregion
 	o_player.image_speed = 0;

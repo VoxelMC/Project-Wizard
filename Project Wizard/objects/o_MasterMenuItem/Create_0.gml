@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 /// @description
 image_speed = 0;
 image_index = 0;

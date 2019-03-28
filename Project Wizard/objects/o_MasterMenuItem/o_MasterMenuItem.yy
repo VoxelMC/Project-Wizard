@@ -5,16 +5,6 @@
     "name": "o_MasterMenuItem",
     "eventList": [
         {
-            "id": "bff73a1f-1855-4eaa-8078-b3a78f7f0715",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "aa507e78-8116-4177-9706-ae1d87395c7f"
-        },
-        {
             "id": "147cb24e-c0bc-4a04-afad-dcc6f8cf772b",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -22,6 +12,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 0,
+            "m_owner": "aa507e78-8116-4177-9706-ae1d87395c7f"
+        },
+        {
+            "id": "bff73a1f-1855-4eaa-8078-b3a78f7f0715",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "aa507e78-8116-4177-9706-ae1d87395c7f"
         },
         {

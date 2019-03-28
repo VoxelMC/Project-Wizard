@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 if global.inv_open = false {
 	instance_destroy();
 }

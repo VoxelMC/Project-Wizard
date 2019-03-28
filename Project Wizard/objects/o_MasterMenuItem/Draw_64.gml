@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 /// @description
 if my_type = "Spell" {
 	var shakex = irandom_range(x-1,x+1);
