@@ -3,7 +3,7 @@ draw_set_color(c_black)
 draw_set_alpha(0.8)
 if global.inv_open = true {
 	draw_rectangle_color(0,0,view_w,view_h,c_black,c_black,c_black,c_black,false);
-	draw_sprite(s_settingsgear,0,50,50);
+	draw_sprite(s_settingsgear,0,30,30);
 	if tab_fin = false {
 		instance_create_layer(0,205,"Inv_Instances",o_relictab);
 		instance_create_layer(0,275,"Inv_Instances",o_spelltab);

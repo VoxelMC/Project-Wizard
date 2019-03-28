@@ -11,8 +11,10 @@ if my_type = "Spell" {
 		draw_sprite(my_sprite,image_index,shakex,shakey);
 	}
 	if show_popup = true {
-		nine_slice_box_stretch(s_9slicebox,x+20,y-235,x+235,y-15);
+		nine_slice_box(s_9slicebox,x+20,y-235,x+235,y-15);
 		draw_text(x+32,y-225,my_name)
+		draw_set_font(fnt_main_popup);
 		draw_text(x+32,y-205,my_desc)
+		draw_set_font(fnt_main);
 	}
 }
