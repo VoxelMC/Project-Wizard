@@ -1,14 +1,16 @@
 {
     "id": "45a7ab9f-ea4d-40f4-ad15-fe22ad1727f0",
     "modelName": "GMFont",
-    "mvc": "1.0",
+    "mvc": "1.1",
     "name": "fnt_main",
     "AntiAlias": 0,
     "TTFName": "",
+    "ascenderOffset": 0,
     "bold": false,
     "charset": 0,
     "first": 0,
     "fontName": "Fixedsys Excelsior 3.01",
+    "glyphOperations": 0,
     "glyphs": [
         {
             "Key": 32,
@@ -1451,13 +1453,16 @@
             }
         }
     ],
-    "image": null,
+    "hinting": 0,
     "includeTTF": false,
+    "interpreter": 0,
     "italic": false,
     "kerningPairs": [
         
     ],
     "last": 0,
+    "maintainGms1Font": false,
+    "pointRounding": 0,
     "ranges": [
         {
             "x": 32,
