@@ -45,14 +45,3 @@ MasterItem_Create(spellid.lightning,"Spell",700,330)
 MasterItem_Create(spellid.lightning,"Spell",800,330)
 
 //cutsceneStart(tl_tutorial,false);
-
-
-
-
-
-
-
-
-
-
-

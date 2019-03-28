@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 if global.inv_open = true {	
 	var w=0, h=0; 
 	var amount = 0;
@@ -32,7 +33,7 @@ if global.inv_open = true {
 			var item_desc = spellinv[# 3,i];
 			var item_type = "Spell";
 			var item_pos = i 
-			itemspl[i] = instance_create_layer(view_w-750 + (w*120),view_h-165 + (h*64),"Inv_Instances",o_MasterMenuItem)
+			itemspl[i] = instance_create_layer(view_w-620 + (w*120),view_h-165 + (h*64),"Inv_Instances",o_MasterMenuItem)
 				with itemspl[i] {
 					my_name = item_name;
 					my_sprite = item_sprite;

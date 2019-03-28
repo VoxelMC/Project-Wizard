@@ -8,3 +8,4 @@ my_type = "Relic";
 my_pos = 0;
 fill = false;
 fill_amt = 0;
+show_popup = false;

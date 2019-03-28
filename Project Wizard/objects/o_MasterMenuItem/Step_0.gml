@@ -24,9 +24,11 @@ if point_in_rectangle(mouse_gui_x,mouse_gui_y,x-25,y-25,x+25,y+25) {
 		} else {
 			fill = false;
 		}
+		show_popup = true;
 	}
 } else {
 	fill = false;
+	show_popup = false;
 }
 
 if fill = true {
@@ -38,7 +40,6 @@ if fill = true {
 	fill_amt -= 0.5;
 	}
 }
-
 if global.up_pos[my_pos] = 4 {
 	fill_amt = 24;
 }

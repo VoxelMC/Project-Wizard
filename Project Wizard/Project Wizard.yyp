@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "01f4e7b1-8f95-4072-823b-8fca45f14020",
+            "Value": {
+                "id": "f63a9f85-1dce-4654-91c5-3c8c99d6f459",
+                "resourcePath": "scripts\\nine_slice_box\\nine_slice_box.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "020558db-a8ce-44a5-ae11-5690d46df3a6",
             "Value": {
                 "id": "c6f12021-7a45-4a3a-9ebc-6d7783d6475f",
@@ -895,6 +903,14 @@
             }
         },
         {
+            "Key": "afff7902-6160-4470-9948-b1e520552e32",
+            "Value": {
+                "id": "ce4dbcf6-5ca6-472c-addf-336901d6d33a",
+                "resourcePath": "fonts\\fnt_main_popup\\fnt_main_popup.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "b092c232-6214-42f9-b864-724d08e4767a",
             "Value": {
                 "id": "8bae5cb8-a00b-4db5-a90a-8ad355542946",
@@ -1103,6 +1119,14 @@
             }
         },
         {
+            "Key": "e5c8a8b7-5157-43b2-bc7a-124ab3c7e9ff",
+            "Value": {
+                "id": "f4b78d78-c906-4962-8340-c0c359dc3936",
+                "resourcePath": "sprites\\s_9slicebox\\s_9slicebox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e66ec2d9-5c66-4b5e-aa7f-bc557f504471",
             "Value": {
                 "id": "1276473a-8f92-4641-bb90-5b71979979b7",
@@ -1143,6 +1167,14 @@
             }
         },
         {
+            "Key": "efc8408d-d363-4296-89f0-6e10503128e8",
+            "Value": {
+                "id": "af15aec1-dd42-4dfe-a102-25deea8ef312",
+                "resourcePath": "rooms\\testroom2\\testroom2.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "f1ebc558-d4b7-449b-9fa7-5f4db8d93c37",
             "Value": {
                 "id": "dc1eeda5-f0a6-413a-8eca-38e712db6794",
@@ -1164,6 +1196,14 @@
                 "id": "3388173a-a6d3-4378-b171-69cf5ae4a987",
                 "resourcePath": "objects\\o_debug\\o_debug.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "f518c21c-6848-4045-9897-97768b6f7bb1",
+            "Value": {
+                "id": "4d144d30-5503-4dd0-b4d2-5fdc5ad7e2ff",
+                "resourcePath": "scripts\\nine_slice_box_stretch\\nine_slice_box_stretch.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1215,7 +1255,9 @@
         "2f8a6583-665b-4339-a913-65fd362b29ce",
         "9818a417-945f-45e3-aa02-f62aff8d029e",
         "c94d66a7-751e-4877-b6c9-2359340206a9",
-        "1be9bab9-46fd-4277-b3aa-c2f27f02ddc7"
+        "1be9bab9-46fd-4277-b3aa-c2f27f02ddc7",
+        "01f4e7b1-8f95-4072-823b-8fca45f14020",
+        "f518c21c-6848-4045-9897-97768b6f7bb1"
     ],
     "tutorial": ""
 }
