@@ -17,6 +17,19 @@ global.up_pos[1] = 0;
 global.up_pos[2] = 0;
 global.up_pos[3] = 0;
 
+//Keyboard Binding Variables
+ini_open("settings.ini");
+global.keybind[key.left] = ini_read_real("Keybinds","Left",ord("A"))
+global.keybind[key.right] = ini_read_real("Keybinds","Right",ord("D"))
+global.keybind[key.jump] = ini_read_real("Keybinds","Space",vk_space)
+global.keybind[key.interact] = ini_read_real("Keybinds","Interact",ord("F"))
+global.keybind[key.spl1] = ini_read_real("Keybinds","Spell 1",mb_left)
+global.keybind[key.spl2] = ini_read_real("Keybinds","Spell 2",mb_right)
+global.keybind[key.spl3] = ini_read_real("Keybinds","Spell 3",ord("Q"))
+global.keybind[key.spl4] = ini_read_real("Keybinds","Spell 4",ord("E"))
+global.keybind[key.pause] = ini_read_real("Keybinds","Pause",vk_escape)
+ini_close();
+
 //MasterGame Specific Variables
 show_help = false;
 playerx = o_player.x

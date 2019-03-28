@@ -1,3 +1,5 @@
-if keyboard_check_pressed(ord("E")) {
-	item_pickup();
+if global.stop = false {
+	if keyboard_check_pressed(global.keybind[key.interact]) {
+		item_pickup();
+	}
 }

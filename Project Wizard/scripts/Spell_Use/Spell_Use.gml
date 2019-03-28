@@ -4,6 +4,12 @@
 
 var spl = argument0; //Spell ID
 var splpos = argument1; //Spell Postion
+	switch (splpos) {
+		case 1: var bind = global.keybind[key.spl1]; break;
+		case 2: var bind = global.keybind[key.spl2]; break;
+		case 3: var bind = global.keybind[key.spl3]; break;
+		case 4: var bind = global.keybind[key.spl4]; break;
+	}
 var wtype = argument2; //Weapon Type
 var splcooldown = 0; 
 var cancelcooldown = false
@@ -75,6 +81,9 @@ switch (spl) {
 			break;
 			case weptype.idol: 
 				instance_create_layer(o_player.x+60,o_player.y,"Projectiles",o_LightningBalls);
+				with o_LightningBalls {
+					launchkey = bind;
+				}
 				splcooldown = 360; //6 seconds
 			break;
 		}
