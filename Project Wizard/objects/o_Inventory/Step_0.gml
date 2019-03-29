@@ -1,4 +1,4 @@
-if (live_call()) return live_result;
+
 if global.inv_open = true {	
 	var w=0, h=0; 
 	var amount = 0;

@@ -1,2 +1,1 @@
-/// @description
 alarmdone = true;

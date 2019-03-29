@@ -1,0 +1,1 @@
+draw_sprite(s_settingsgear, image_index, 30, 30); //Draw on top of the inventory dim

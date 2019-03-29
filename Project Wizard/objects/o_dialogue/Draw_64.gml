@@ -1,3 +1,4 @@
+
  //How many messages are in the array
 t++;
 message_end = array_length_1d(message);
@@ -53,7 +54,7 @@ if (message_end > 0) {
 	}
 	
 	//Draw Textbox
-	draw_sprite(s_textbox,0,pX-10,pY-10);
+	nine_slice_box(s_9slicebox,pX-10,pY-10,pX+945,pY+105);
 	
 	var tX = pX+106
 	if (portrait == "none") {  
@@ -131,12 +132,13 @@ if (message_end > 0) {
 	global.focus = focus;
 
 }
+/* Debug
 	draw_text(10,10,i);
 	draw_text(10,30,space);
 	draw_text(10,50,lineEnd);
 	draw_text(10,70,message_current);
 	draw_text(10,90,message_end);
-	
+*/
 if done = true {
 	instance_destroy();
 	global.stop = false;

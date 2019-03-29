@@ -1,4 +1,3 @@
-
 if o_Inventory.current_tab != "Relic" {
 	image_index = 0;
 } else {
