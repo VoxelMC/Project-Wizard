@@ -11,7 +11,6 @@ if wepsprite != 0 {
 	draw_sprite(wepsprite,image_index,global.dguiwidth/2,global.dguiheight-50)
 }
 
-
 for(var i=0; i<ds_grid_height(spellinv); i++){
 	var item_id = ds_grid_get(spellinv,prop.ID,i)
 	var item_sprite = ds_grid_get(spellinv,prop.sprite,i)
@@ -70,3 +69,4 @@ for(var i=0; i<ds_grid_height(spellinv); i++){
 	}
 }
 }
+

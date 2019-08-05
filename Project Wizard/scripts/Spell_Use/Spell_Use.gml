@@ -1,6 +1,7 @@
 ///@param Spell_ID
 ///@param Spell_Position
 ///@param Weapon_Type
+if (live_call(argument0, argument1, argument2)) return live_result;
 
 var spl = argument0; //Spell ID
 var splpos = argument1; //Spell Postion
@@ -71,13 +72,24 @@ switch (spl) {
 				}
 			break;
 			case weptype.staff:
-				
+				var proj = instance_create_layer(x,y,"Projectiles",o_SmolLightningProj)
+				with proj {
+					direction = dir;
+					image_angle = direction;
+					speed = 16;
+				}
+				if mouse_x > x {
+					flipped = 1;
+				} else {
+					flipped = -1;
+				}
+				splcooldown = 120
 			break;
 			case weptype.tome:
-			if !instance_exists(o_LightningClouds) && on_ground = true {
+			if !instance_exists(o_LightningClouds) && on_ground = true && !collision_point(mouse_x,mouse_y,o_wall,false,true) {
 				instance_create_layer(mouse_x,mouse_y,"Projectiles",o_LightningClouds)
+				splcooldown = 360; //6 seconds
 			}
-			splcooldown = 360; //6 seconds
 			break;
 			case weptype.idol: 
 				instance_create_layer(o_player.x+60,o_player.y,"Projectiles",o_LightningBalls);
@@ -85,6 +97,35 @@ switch (spl) {
 					launchkey = bind;
 				}
 				splcooldown = 360; //6 seconds
+			break;
+		}
+		break;
+		#endregion
+	#region Basic Fire Spell
+	case spellid.fire:
+		switch (wtype) {
+			case weptype.wand: 
+			if beam_active = false {
+				beam_active = true;
+			}
+			break;
+			case weptype.staff:
+				
+			break;
+			case weptype.tome:
+			if splcooldown = 0 {
+				instance_create_layer(o_player.x,o_player.y,"Projectiles",o_Fireball);
+				with o_Fireball {
+					t1 = 5;
+					t2 = 10;
+					t3 = 15;
+					t4 = 20;
+				}
+				splcooldown = 180;
+			}
+			break;
+			case weptype.idol: 
+				
 			break;
 		}
 		break;

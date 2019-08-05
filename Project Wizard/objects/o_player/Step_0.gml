@@ -57,6 +57,8 @@ if cooldown[4] != 0 {
 
 }
 
+
+
 /// Movement Logic ///
 
 //Set keybinds to variables for easier use later on

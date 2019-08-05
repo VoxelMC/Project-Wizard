@@ -19,6 +19,8 @@ wepscale[3] = 1.5;
 splscale[0] = 1.5;
 splscale[1] = 1.5;
 select = "none";
+
+/// @description
 globalvar pasinv;
 pasinv = ds_grid_create(6,0);
 globalvar spellinv;

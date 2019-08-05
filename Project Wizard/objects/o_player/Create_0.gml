@@ -20,12 +20,12 @@ anim_state = "idle";
 flipped = 1
 image_speed = 0.8
 flicker = 1;
-start = false;
 
 //Combat Variables
 do_reload = true;
-reloadtime = 0
 dmg_mod = 0
+beam_active = false;
+beam_surf = 0;
 global.invincible = false;
 
 //Health Variables

@@ -11,7 +11,7 @@ enum spellid
 	{
 	heal,
 	lightning,
-	fireblast,
+	fire
 	}
 #endregion
 

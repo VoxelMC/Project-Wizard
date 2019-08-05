@@ -1,3 +1,4 @@
 /// @description
-timer = 30;
-timer2 = 120;
+timer = 15;
+timer2 = 180;
+show_debug_message("ALIVE!")

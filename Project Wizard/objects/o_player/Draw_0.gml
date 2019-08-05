@@ -14,5 +14,13 @@ if (global.invincible = true && alarm[10] == -1 && alarm[9] == -1) {
 		alarm[10] = 30;
 }
 
+if beam_active = true {
+		draw_beam();
+}
+
 //Draw the Player
 draw_sprite_ext(sprite_index, image_index, x, y, flipped, 1, 0, image_blend, flicker)
+
+
+
+
