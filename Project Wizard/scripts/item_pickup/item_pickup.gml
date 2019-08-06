@@ -14,7 +14,6 @@ var othereffect = other.my_effect
 
 //Cycle through other's item type because each reacts differently
 switch othertype {
-	
 	case "Passive": 
 		var amount = ds_grid_height(pasinv)
 		ds_grid_resize(pasinv,6,amount+1)
@@ -25,12 +24,16 @@ switch othertype {
 		ds_grid_set(pasinv,prop.desc,amount-1,otherdesc)
 		ds_grid_set(pasinv,prop.effect,amount-1,othereffect);
 		ds_grid_set(pasinv,proppas.passivetype,amount-1,otherpastype);
-		dmg_mod += ds_grid_get(pasinv,prop.effect,amount-1); break;
+		dmg_mod += ds_grid_get(pasinv,prop.effect,amount-1); 
+		instance_destroy(other); 
+		break;
 		
 	case "Spell": 
 		var spellamount = ds_grid_height(spellinv)
 		var spellgridwidth = ds_grid_width(spellinv);
-		if spellamount !=  4  {
+		var spelloverlap = ds_grid_value_exists(spellinv,0,0,spellgridwidth,spellamount,otherid)
+		if spelloverlap = false {
+		if spellamount != 4 {
 			ds_grid_resize(spellinv,spellgridwidth,spellamount + 1);
 			var spellamount = ds_grid_height(spellinv)
 			ds_grid_set(spellinv,prop.ID,spellamount-1,otherid)
@@ -39,8 +42,9 @@ switch othertype {
 			ds_grid_set(spellinv,prop.desc,spellamount-1,otherdesc)
 			spellequipamount += 1;
 			splist[spellequipamount] = otherid;
+			instance_destroy(other);
 		}
-	break;
+		} break;
 	
 	case "Weapon":
 		if global.wepequipped = "none" {
@@ -60,6 +64,7 @@ switch othertype {
 			ds_grid_set(wepinv,propwep.type,0,otherweptype)
 			ds_grid_set(wepinv,propwep.damage,0,otherdamage)
 			global.wepequipped = ds_grid_get(wepinv,prop.ID,0);
-		} break;
+		}
+		instance_destroy(other);
+		break;
 }
-instance_destroy(other);

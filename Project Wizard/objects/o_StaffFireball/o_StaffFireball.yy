@@ -1,18 +1,28 @@
 {
-    "id": "57041289-2f34-4cd7-958a-4ef2c7d0685b",
+    "id": "60f30643-7012-4405-9066-02755068d3c4",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_IceProjectile",
+    "name": "o_StaffFireball",
     "eventList": [
         {
-            "id": "98dc824d-191e-4699-a697-4336469d8d09",
+            "id": "3afb7cf3-7ce7-4f7b-a972-1546136ae1b0",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "e54cbb56-ed85-4b73-9aae-8d87174272cb",
+            "collisionObjectId": "d5eb6764-c4ab-4b6b-b091-3dced8220166",
             "enumb": 0,
             "eventtype": 4,
-            "m_owner": "57041289-2f34-4cd7-958a-4ef2c7d0685b"
+            "m_owner": "60f30643-7012-4405-9066-02755068d3c4"
+        },
+        {
+            "id": "d7198579-0f4f-dc92-fbc3-60326a9d05a8",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "d595d888-495b-404b-a0b2-542915abb852",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "60f30643-7012-4405-9066-02755068d3c4"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
@@ -33,6 +43,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "59273484-da7e-4afe-a2a5-a338561b5fcd",
+    "spriteId": "a517fceb-60b0-48b2-9665-cfea715b01bb",
     "visible": true
 }

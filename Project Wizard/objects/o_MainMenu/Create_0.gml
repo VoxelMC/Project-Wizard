@@ -51,10 +51,10 @@ item_init_spell(1,"Thunderous Rage",s_SLightning,"A basic lightning attack.");
 item_init_spell(2,"Fire Blast",s_SFireBlast,"A basic fire attack.");
 
 //WEAPONS
-item_init_weapon(0,"Wand",s_BasicWand,"A basic wand.",weptype.wand,2)
-item_init_weapon(1,"Staff",s_BasicStaff,"A basic staff.",weptype.staff,2)
-item_init_weapon(2,"Tome",s_BasicTome,"A basic tome.",weptype.tome,2)
-item_init_weapon(3,"Idol",s_BasicIdol,"It's literally just a basic idol. What more description do you need?",weptype.idol,2)
+item_init_weapon(0,"Wand",s_BasicWand,"A basic wand.",weptype.wand,3)
+item_init_weapon(1,"Staff",s_BasicStaff,"A basic staff.",weptype.staff,3)
+item_init_weapon(2,"Tome",s_BasicTome,"A basic tome.",weptype.tome,3)
+item_init_weapon(3,"Idol",s_BasicIdol,"It's literally just a basic idol. What more description do you need?",weptype.idol,3)
 
 //audio_play_sound(mus_menu,1000,true);
 room_goto(testroom);

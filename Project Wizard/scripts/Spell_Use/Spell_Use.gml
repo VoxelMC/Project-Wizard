@@ -1,7 +1,6 @@
 ///@param Spell_ID
 ///@param Spell_Position
 ///@param Weapon_Type
-if (live_call(argument0, argument1, argument2)) return live_result;
 
 var spl = argument0; //Spell ID
 var splpos = argument1; //Spell Postion
@@ -23,14 +22,16 @@ switch (spl) {
 			case weptype.wand:
 			if global.CurrentHP != global.MaxHP {
 				global.CurrentHP += 2;
-			}
 				splcooldown = 180; //3 seconds
+			}
+				
 			break;
 			case weptype.staff:
 			if global.CurrentHP != global.MaxHP {
 				global.CurrentHP += 5;
-			}
 				splcooldown = 600; //10 seconds
+			}
+				
 			break;
 			case weptype.tome:
 			if !instance_exists(o_healingaoe) && o_player.on_ground = true {
@@ -83,7 +84,7 @@ switch (spl) {
 				} else {
 					flipped = -1;
 				}
-				splcooldown = 120
+				splcooldown = 300; //5 seconds
 			break;
 			case weptype.tome:
 			if !instance_exists(o_LightningClouds) && on_ground = true && !collision_point(mouse_x,mouse_y,o_wall,false,true) {
@@ -107,10 +108,22 @@ switch (spl) {
 			case weptype.wand: 
 			if beam_active = false {
 				beam_active = true;
+				beam_bind = bind;
 			}
 			break;
 			case weptype.staff:
-				
+				var proj = instance_create_layer(x,y,"Projectiles",o_StaffFireball)
+				with proj {
+					direction = dir;
+					image_angle = direction;
+					speed = 8;
+				}
+				if mouse_x > x {
+					flipped = 1;
+				} else {
+					flipped = -1;
+				}
+				splcooldown = 300; //5 seconds
 			break;
 			case weptype.tome:
 			if splcooldown = 0 {
@@ -121,7 +134,7 @@ switch (spl) {
 					t3 = 15;
 					t4 = 20;
 				}
-				splcooldown = 180;
+				splcooldown = 600; //10 seconds
 			}
 			break;
 			case weptype.idol: 
@@ -133,5 +146,5 @@ switch (spl) {
 }
 
 if cancelcooldown = false {
-	cooldown[splpos] = splcooldown
+	//cooldown[splpos] = splcooldown
 }

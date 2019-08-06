@@ -15,7 +15,7 @@ if (global.invincible = true && alarm[10] == -1 && alarm[9] == -1) {
 }
 
 if beam_active = true {
-		draw_beam();
+	draw_beam(beam_bind);
 }
 
 //Draw the Player

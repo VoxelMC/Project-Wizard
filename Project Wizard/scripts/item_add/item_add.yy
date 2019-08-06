@@ -1,8 +1,8 @@
 {
-    "id": "225df481-2b6a-4240-9db2-789f8a1aa7ed",
+    "id": "1df8117e-8fa4-41be-9e1a-98fef0fd27cb",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Weapon_Use",
+    "name": "item_add",
     "IsCompatibility": false,
     "IsDnD": false
 }

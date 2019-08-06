@@ -16,5 +16,3 @@ if timer2 = 0 {
 	instance_destroy(o_LightningCloudProj);
 	instance_destroy();
 }
-
-show_debug_message("Lightning:" + string(instance_number(o_LightningCloudProj)))

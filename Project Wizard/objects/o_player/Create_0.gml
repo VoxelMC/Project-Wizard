@@ -26,6 +26,7 @@ do_reload = true;
 dmg_mod = 0
 beam_active = false;
 beam_surf = 0;
+beam_bind = mb_left;
 global.invincible = false;
 
 //Health Variables

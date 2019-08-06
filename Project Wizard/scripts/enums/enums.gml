@@ -39,9 +39,8 @@ enum prop
 #region Item Properties Weapon Enum
 enum propwep
 	{
-	type = 4,
-	damage = 5,
-	Rof = 6
+	type = 3,
+	damage = 4,
 	}
 #endregion
 
