@@ -3,6 +3,12 @@ var othertype = other.my_id_type
 var othername = other.my_name
 var otherdesc = other.my_description
 var otherspr = other.my_sprite
+if othertype = "Spell" {
+	var otherwdesc = other.my_wdescription;
+	var othersdesc = other.my_sdescription;
+	var othertdesc = other.my_tdescription;
+	var otheridesc = other.my_idescription;
+}
 if othertype = "Weapon" {
 var otherweptype = other.my_weptype
 var otherdamage = other.my_damage;

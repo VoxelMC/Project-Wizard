@@ -40,7 +40,7 @@ enum prop
 enum propwep
 	{
 	type = 3,
-	damage = 4,
+	damage = 4
 	}
 #endregion
 
@@ -48,6 +48,16 @@ enum propwep
 enum proppas
 	{
 	passivetype = 5
+	}
+#endregion
+
+#region Item Properties Spell Enum
+enum propspl
+	{
+	wdesc = 3,
+	sdesc = 4,
+	tdesc = 5,
+	idesc = 6,
 	}
 #endregion
 

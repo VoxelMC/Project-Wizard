@@ -4,7 +4,6 @@
 ///@param Description
 ///@param Weapon_Type
 ///@param Damage
-///@param Rate_of_Fire
 
 var item_id = argument0;
 var name = argument1;
@@ -12,7 +11,6 @@ var spr = argument2;
 var desc = argument3;
 var type = argument4;
 var damage = argument5;
-
 
 ds_grid_add(weapon,0,item_id,name);
 ds_grid_add(weapon,1,item_id,spr);
