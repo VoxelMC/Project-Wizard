@@ -54,10 +54,10 @@ enum proppas
 #region Item Properties Spell Enum
 enum propspl
 	{
-	wdesc = 3,
-	sdesc = 4,
-	tdesc = 5,
-	idesc = 6,
+	wdesc = 4,
+	sdesc = 5,
+	tdesc = 6,
+	idesc = 7,
 	}
 #endregion
 

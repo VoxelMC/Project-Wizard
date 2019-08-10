@@ -50,14 +50,12 @@ switch itemtypestr {
 			ds_grid_set(spellinv,prop.sprite,spellamount-1,item_sprite)
 			ds_grid_set(spellinv,prop.name,spellamount-1,item_name)
 			ds_grid_set(spellinv,prop.desc,spellamount-1,item_desc)
+			ds_grid_set(spellinv,propspl.wdesc,spellamount-1,item_wdesc)
+			ds_grid_set(spellinv,propspl.sdesc,spellamount-1,item_sdesc)
+			ds_grid_set(spellinv,propspl.tdesc,spellamount-1,item_tdesc)
+			ds_grid_set(spellinv,propspl.idesc,spellamount-1,item_idesc)
 			o_player.spellequipamount += 1;
 			splist[o_player.spellequipamount] = itemid;
-			show_debug_message(itemid)
-			show_debug_message(item_name)
-			show_debug_message(item_wdesc)
-			show_debug_message(item_sdesc);
-			show_debug_message(item_tdesc);
-			show_debug_message(item_idesc);
 		}
 		}
 	break;

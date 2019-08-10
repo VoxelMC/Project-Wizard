@@ -31,6 +31,10 @@ if global.inv_open = true {
 			var item_sprite = spellinv[# 1,i];
 			var item_name = spellinv[# 2,i];
 			var item_desc = spellinv[# 3,i];
+			var item_wdesc = spellinv[# 4,i];
+			var item_sdesc = spellinv[# 5,i];
+			var item_tdesc = spellinv[# 6,i];
+			var item_idesc = spellinv[# 7,i];
 			var item_type = "Spell";
 			var item_pos = i 
 			itemspl[i] = instance_create_layer(view_w-620 + (w*120),view_h-165 + (h*64),"Inv_Instances",o_MasterMenuItem)
@@ -40,6 +44,10 @@ if global.inv_open = true {
 					my_type = item_type;
 					my_pos = item_pos;
 					my_desc = item_desc;
+					my_wdesc = item_wdesc;
+					my_sdesc = item_sdesc;
+					my_tdesc = item_tdesc;
+					my_idesc = item_idesc;
 				}
 				//moves to the next line if current one filled:
 				w++;
