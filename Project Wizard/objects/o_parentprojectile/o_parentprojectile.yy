@@ -5,16 +5,6 @@
     "name": "o_parentprojectile",
     "eventList": [
         {
-            "id": "0f17ff73-bb1e-4e32-88ce-24ca86af5d84",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "16393037-3076-4e53-945e-006401a3cf71"
-        },
-        {
             "id": "f7e56ed7-5b31-4d02-a8de-1ad4c143b1b5",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -29,9 +19,9 @@
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "eventtype": 4,
-            "enumb": 0,
             "collisionObjectId": "d5eb6764-c4ab-4b6b-b091-3dced8220166",
+            "enumb": 0,
+            "eventtype": 4,
             "m_owner": "16393037-3076-4e53-945e-006401a3cf71"
         },
         {

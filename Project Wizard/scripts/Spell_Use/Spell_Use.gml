@@ -87,17 +87,17 @@ switch (spl) {
 				splcooldown = 300; //5 seconds
 			break;
 			case weptype.tome:
-			if !instance_exists(o_LightningClouds) && on_ground = true && !collision_point(mouse_x,mouse_y,o_wall,false,true) {
-				instance_create_layer(mouse_x,mouse_y,"Projectiles",o_LightningClouds)
-				splcooldown = 360; //6 seconds
-			}
-			break;
-			case weptype.idol: 
 				instance_create_layer(o_player.x+60,o_player.y,"Projectiles",o_LightningBalls);
 				with o_LightningBalls {
 					launchkey = bind;
 				}
 				splcooldown = 360; //6 seconds
+			break;
+			case weptype.idol: 
+				if !instance_exists(o_LightningClouds) && on_ground = true && !collision_point(mouse_x,mouse_y,o_wall,false,true) {
+					instance_create_layer(mouse_x,mouse_y,"Projectiles",o_LightningClouds)
+					splcooldown = 360; //6 seconds
+				}
 			break;
 		}
 		break;

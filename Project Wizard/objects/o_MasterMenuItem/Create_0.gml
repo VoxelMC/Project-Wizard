@@ -8,3 +8,7 @@ my_pos = 0;
 fill = false;
 fill_amt = 0;
 show_popup = false;
+col_w = c_white;
+col_s = c_white;
+col_t = c_white;
+col_i = c_white;
