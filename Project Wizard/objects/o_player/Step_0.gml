@@ -14,6 +14,7 @@ switch state {
 
 //Use Spells if any are equipped
 if global.stop = false {
+	image_alpha = 1;
 	if global.wepequipped != "none" {
 		var wtype = ds_grid_get(wepinv,propwep.type,0);
 		if (mouse_check_button_pressed(global.keybind[key.spl1]) && splist[0] != -1 && cooldown[1] <= 0 ) {
@@ -53,16 +54,11 @@ if cooldown[3] != 0 {
 } 
 if cooldown[4] != 0 {
 	cooldown[4] -=  1;
-} 
-
 }
-
-
 
 /// Movement Logic ///
 
 //Set keybinds to variables for easier use later on
-if global.stop = false {
 key_left = keyboard_check(global.keybind[key.left]);
 key_right = keyboard_check(global.keybind[key.right]);
 key_jump = keyboard_check_pressed(global.keybind[key.jump]);

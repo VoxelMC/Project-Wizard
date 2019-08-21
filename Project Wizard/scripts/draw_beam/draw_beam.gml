@@ -1,7 +1,7 @@
 ///@param Beam_Keybind
 var keybind = argument0
 var distance =  0;
-var angle = point_direction(x,y,mouse_x,mouse_y);
+var angle = beam_dir
 var beamh = 15;
 var surfx = x + dcos(90+angle)*15
 var surfy = y - dsin(90+angle)*15
@@ -19,20 +19,6 @@ if surface_exists(beam_surf) {
 }
 else {
      beam_surf = surface_create(1102, beamh);
-}
-
-if (keybind = mb_left or keybind = mb_right) {
-	if mouse_check_button_released(keybind) {
-		if beam_active = true {
-			beam_active = false;	
-		}
-	}
-} else {
-	if keyboard_check_released(keybind) {
-		if beam_active = true {
-			beam_active = false;	
-		}
-	}
 }
 
 if mouse_x > x {

@@ -27,6 +27,8 @@ dmg_mod = 0
 beam_active = false;
 beam_surf = 0;
 beam_bind = mb_left;
+beam_timer = 10;
+beam_dir = point_direction(x,y,mouse_x,mouse_y);
 global.invincible = false;
 
 //Health Variables

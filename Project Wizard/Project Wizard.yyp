@@ -471,6 +471,14 @@
             }
         },
         {
+            "Key": "572b4213-f9b1-4f7e-a37c-32e0e1f9a70f",
+            "Value": {
+                "id": "c0b91416-fc51-4fa2-b6e3-7748d9b85509",
+                "resourcePath": "sprites\\s_DragonFireball\\s_DragonFireball.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "58f20f35-39ba-44c0-98c0-f3e45f6adc8d",
             "Value": {
                 "id": "1f9b9393-ca6f-4e3f-bb77-a64343f652d8",
@@ -708,6 +716,14 @@
                 "id": "43055e70-ee72-4525-9e53-4bcb68945fcb",
                 "resourcePath": "views\\72c79e41-cbaf-4591-adb4-5443d802e5b9.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7339da64-f3b7-4eae-8817-6e60ec79ae68",
+            "Value": {
+                "id": "8d3a2ac0-ac0b-4045-a9d7-6494b2136ee9",
+                "resourcePath": "objects\\o_DragonFireball\\o_DragonFireball.yy",
+                "resourceType": "GMObject"
             }
         },
         {

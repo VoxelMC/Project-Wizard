@@ -16,10 +16,18 @@ if (global.invincible = true && alarm[10] == -1 && alarm[9] == -1) {
 
 if beam_active = true {
 	draw_beam(beam_bind);
+	if beam_timer != 0 {
+		beam_timer -= 1;
+	} else {
+		beam_active = false;
+		beam_timer = 10;
+	}
 }
 
 //Draw the Player
-draw_sprite_ext(sprite_index, image_index, x, y, flipped, 1, 0, image_blend, flicker)
+if global.stop = false {
+	draw_sprite_ext(sprite_index, image_index, x, y, flipped, 1, 0, image_blend, flicker)
+}
 
 
 

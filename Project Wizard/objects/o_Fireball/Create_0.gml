@@ -6,3 +6,4 @@ t2 = -1;
 t3 = -1;
 t4 = -1;
 alivetime = -1;
+homeamt = 9;

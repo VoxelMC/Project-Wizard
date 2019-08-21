@@ -1,6 +1,16 @@
-if (keyboard_check_pressed(vk_escape) && !instance_exists(o_dialogue))  {
+if (keyboard_check_pressed(global.keybind[key.pause]) && !instance_exists(o_dialogue))  {
 	global.inv_open = !global.inv_open
 	global.stop = !global.stop;
+	if global.stop = true {
+		instance_deactivate_all(true);
+		instance_activate_object(o_MasterMenuItem)
+		instance_activate_object(o_display_init)
+		instance_activate_object(o_Inventory)
+		instance_activate_object(o_player)
+		instance_activate_object(o_wall)
+	} else {
+		instance_activate_all();
+	}
 }
 
 if global.CurrentHP != 0 {

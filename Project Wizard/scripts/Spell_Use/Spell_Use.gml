@@ -106,9 +106,10 @@ switch (spl) {
 	case spellid.fire:
 		switch (wtype) {
 			case weptype.wand: 
-			if beam_active = false {
+			if beam_active != true {
 				beam_active = true;
 				beam_bind = bind;
+				beam_dir = point_direction(x,y,mouse_x,mouse_y);
 			}
 			break;
 			case weptype.staff:
@@ -138,7 +139,10 @@ switch (spl) {
 			}
 			break;
 			case weptype.idol: 
-				
+				if !instance_exists(o_DragonFireball) && collision_rectangle(mouse_x-50,mouse_y-50,mouse_x+50,mouse_y+50,o_lasercolparent,false,true) = noone {
+					instance_create_layer(mouse_x,mouse_y,"Projectiles",o_DragonFireball);
+				}
+				splcooldown = 900; //15 seconds
 			break;
 		}
 		break;
