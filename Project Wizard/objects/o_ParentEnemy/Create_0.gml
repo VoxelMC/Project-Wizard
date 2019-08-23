@@ -1,18 +1,7 @@
-gravity_ = 0.5;
-velocity_ = [0, 0]; //Don't change this
-max_velocity_ = [7, 5]; //1st value is the x, 2nd is the y
-jump_speed_ = 9;
-acceleration_ = 1.5;
-jump = false;
-stop = false;
-move = 0;
-is_jumping = false;
-flipped = 1;
-state = "idle";
-anim_state = "idle";
-
-var layer_id = layer_get_id("Tiles_Main");
-collision_tile_map_id_ = layer_tilemap_get_id(layer_id);
-
-EnemyHealth = 10;
-EnemyMaxHealth = 10;
+gravity_ = 0.3;
+hspd = 0; 
+maxhspd = 5; //Horizonal Maximum Speed
+vspd = 0; //Vertical Speed
+jump_speed = 5; //Speed we jump up before going down, similar to jump height
+sprinting = false; 
+on_ground = true;
