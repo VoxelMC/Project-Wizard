@@ -39,24 +39,25 @@ switch itemtypestr {
 		break;
 		
 	case "Spell": 
-		var spellamount = ds_grid_height(spellinv)
+		var spellamount = ds_grid_height(spellinv);
 		var spellgridwidth = ds_grid_width(spellinv);
 		var spelloverlap = ds_grid_value_exists(spellinv,0,0,spellgridwidth,spellamount,itemid)
 		if spelloverlap = false {
-		if spellamount != 4 {
-			ds_grid_resize(spellinv,spellgridwidth,spellamount + 1);
-			var spellamount = ds_grid_height(spellinv)
-			ds_grid_set(spellinv,prop.ID,spellamount-1,itemid)
-			ds_grid_set(spellinv,prop.sprite,spellamount-1,item_sprite)
-			ds_grid_set(spellinv,prop.name,spellamount-1,item_name)
-			ds_grid_set(spellinv,prop.desc,spellamount-1,item_desc)
-			ds_grid_set(spellinv,propspl.wdesc,spellamount-1,item_wdesc)
-			ds_grid_set(spellinv,propspl.sdesc,spellamount-1,item_sdesc)
-			ds_grid_set(spellinv,propspl.tdesc,spellamount-1,item_tdesc)
-			ds_grid_set(spellinv,propspl.idesc,spellamount-1,item_idesc)
-			o_player.spellequipamount += 1;
-			splist[o_player.spellequipamount] = itemid;
-		}
+			if spellamount != 4 {
+				show_debug_message("I'm in")
+				ds_grid_resize(spellinv,spellgridwidth,spellamount + 1);
+				var spellamount = ds_grid_height(spellinv);
+				ds_grid_set(spellinv,prop.ID,spellamount-1,itemid)
+				ds_grid_set(spellinv,prop.sprite,spellamount-1,item_sprite)
+				ds_grid_set(spellinv,prop.name,spellamount-1,item_name)
+				ds_grid_set(spellinv,prop.desc,spellamount-1,item_desc)
+				ds_grid_set(spellinv,propspl.wdesc,spellamount-1,item_wdesc)
+				ds_grid_set(spellinv,propspl.sdesc,spellamount-1,item_sdesc)
+				ds_grid_set(spellinv,propspl.tdesc,spellamount-1,item_tdesc)
+				ds_grid_set(spellinv,propspl.idesc,spellamount-1,item_idesc)
+				o_player.spellequipamount += 1;
+				splist[o_player.spellequipamount] = itemid;
+			}
 		}
 	break;
 	
