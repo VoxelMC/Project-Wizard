@@ -1,3 +1,15 @@
+#region Enemy State Enum
+enum estate 
+	{
+	idle,
+ 	move_left,
+ 	move_right,
+ 	jump,
+ 	attack,
+ 	spattack
+	}
+#endregion
+
 #region Passive Item ID Name Enum
 enum passiveid 
 	{

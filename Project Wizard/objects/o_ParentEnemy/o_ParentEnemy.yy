@@ -5,23 +5,23 @@
     "name": "o_ParentEnemy",
     "eventList": [
         {
-            "id": "f9b8c874-77fb-4494-9fd5-d23c5b1ee09a",
+            "id": "19bd5f87-c609-89e3-92bd-b61d367a305d",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
             "eventtype": 0,
+            "enumb": 0,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "m_owner": "e54cbb56-ed85-4b73-9aae-8d87174272cb"
         },
         {
-            "id": "dd55544e-7ca8-4faf-ac79-3daff0ab9849",
+            "id": "309db02a-5397-6f68-594c-4835bf04cb95",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
             "eventtype": 3,
+            "enumb": 0,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "m_owner": "e54cbb56-ed85-4b73-9aae-8d87174272cb"
         }
     ],
