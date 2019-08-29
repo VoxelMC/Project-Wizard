@@ -1,9 +1,15 @@
-// Inherit the parent event
+if (live_call()) return live_result;
+
 event_inherited();
 
-EnemyHealth = 10;
-EnemyMaxHealth = 10;
-alarm[5] = 60;
-animation_activate = "none"
-hitswitch = false;
+state = estate.idle
+anim_state = "idle";
+e_dir_next = estate.move_left;
+
+jump = false;
+gravity_ = 0.3;
+hspd = 0; 
+maxhspd = 2; //Horizonal Maximum Speed
+vspd = 0; //Vertical Speed
+on_ground = true;
 

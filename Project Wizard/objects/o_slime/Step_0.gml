@@ -1,45 +1,31 @@
+if (live_call()) return live_result;
 // Inherit the parent event
 event_inherited();
 
-switch state {
-case "jump":
-	jump = true;
-	anim_state = "jump";
-	break;
-case "move":
-	move = 1*flipped;
-	anim_state = "move";
-	break;
-case "special":
-	anim_state = "move";
-	break;
-case "idle":
-	move = 0;
-	jump = false;
-	anim_state = "idle";
-	break;
-case "hit":
-    move = -1*flipped
-    if hitswitch = true {
-        alarm[8] = 5;
-        hitswitch = false
-    }
-    break;
+var p_dir = point_direction(x,y,o_player.x,o_player.y);
+
+if (p_dir < 45 or p_dir >= 315) {
+	e_dir_next = estate.move_right;
+} else if (p_dir >= 135 and p_dir < 225) {
+	e_dir_next = estate.move_left;	
 }
 
-switch anim_state {
-case "idle": sprite_index = s_slime_idle; break;
-case "move": sprite_index = s_slime_move; break;
+state = e_dir_next;
+
+//Switch animations
+switch (anim_state) {
+	case "idle": sprite_index = s_slime_idle;
+	image_speed = 1;
+	image_angle = 0; break;
+	case "moving": sprite_index = s_slime_move; 
+	image_speed = 1;
+	image_angle = 0; break;
+	case "jumping": sprite_index = s_slime_jump; break;
 }
 
-if state = "move" {
-	if image_index > 1 {
-		image_index = 0;
-	}
-} else if state = "special" {
-	image_index = 2;
-	if animation_activate = "special"
-	if (image_index > 5 or image_index < 2) {
-		image_index = 2;
-	}
+if sprite_index = s_slime_jump {
+	image_angle = point_direction(x,y,o_player.x,o_player.y);	
 }
+
+move_e_slime();
+
