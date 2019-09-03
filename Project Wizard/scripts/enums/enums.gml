@@ -4,7 +4,8 @@ enum estate
 	idle,
  	move_left,
  	move_right,
- 	jump,
+	idle_move_left,
+	idle_move_right,
  	attack,
  	spattack
 	}

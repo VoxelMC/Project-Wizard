@@ -1,6 +1,14 @@
 if (live_call()) return live_result;
-// Inherit the parent event
 event_inherited();
+
+if collision_circle(x,y,300,o_player,false,true) {
+	in_radius = true;	
+} else {
+	in_radius = false;
+}
+
+if in_radius = true {
+// Inherit the parent event
 
 var p_dir = point_direction(x,y,o_player.x,o_player.y);
 
@@ -12,6 +20,14 @@ if (p_dir < 45 or p_dir >= 315) {
 
 state = e_dir_next;
 
+} else {
+	idle_move_timer -= 1;
+	if idle_move_timer = 0 {
+		state = choose(estate.idle_move_right,estate.idle_move_left,estate.idle);
+		idle_move_timer = 60;
+	}
+}
+
 //Switch animations
 switch (anim_state) {
 	case "idle": sprite_index = s_slime_idle;
@@ -21,10 +37,6 @@ switch (anim_state) {
 	image_speed = 1;
 	image_angle = 0; break;
 	case "jumping": sprite_index = s_slime_jump; break;
-}
-
-if sprite_index = s_slime_jump {
-	image_angle = point_direction(x,y,o_player.x,o_player.y);	
 }
 
 move_e_slime();
