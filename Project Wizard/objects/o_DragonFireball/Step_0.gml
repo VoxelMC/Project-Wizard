@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 
 if shoottimer != 0 {
 	shoottimer -= 1;

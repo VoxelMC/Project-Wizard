@@ -607,6 +607,14 @@
             }
         },
         {
+            "Key": "61a42e19-4094-4be7-b2f6-2d2f979aa884",
+            "Value": {
+                "id": "6e94aee4-3ac0-423a-b403-1ee2694d1a1f",
+                "resourcePath": "sprites\\s_lostmark\\s_lostmark.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "62632f47-5685-4f4f-8842-d2f2f0dd33ee",
             "Value": {
                 "id": "0e090814-3d35-46cc-b11d-5330ec9cf5b0",
@@ -787,6 +795,14 @@
             "Value": {
                 "id": "894aac4b-3ab5-4c3f-ade0-c6d24cd16e48",
                 "resourcePath": "sprites\\s_SFireAttack\\s_SFireAttack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "82a53de9-0cf9-4bc7-af83-a29b86e2dd8e",
+            "Value": {
+                "id": "9a0d4d35-211c-4c62-9d76-436fe8ca6c90",
+                "resourcePath": "sprites\\s_foundmark\\s_foundmark.yy",
                 "resourceType": "GMSprite"
             }
         },

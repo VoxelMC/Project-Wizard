@@ -1,35 +1,43 @@
 if (live_call()) return live_result;
-if state = estate.move_right {
-	hspd += 1;
-	maxhspd = 2;
-	if jump = false {
-		anim_state = "moving";
-	}
-} else if state = estate.move_left {
-	hspd -= 1;
-	maxhspd = 2;
-	if jump = false {
-		anim_state = "moving";
-	}
-} else if state = estate.idle {
-	hspd = 0;
-	maxhspd = 2;
-	if jump = false {
-		anim_state = "idle";
-	}
-} else if state = estate.idle_move_left {
-	hspd -= 0.2;
-	maxhspd = 1;
-	if jump = false {
-		anim_state = "moving";
-	}
-} else if state = estate.idle_move_right {
-	hspd += 0.2;
-	maxhspd = 1;
-	if jump = false {
-		anim_state = "moving";
+
+if jump = false && state != estate.spattack && state != estate.idle && state != estate.charge {
+	anim_state = "moving";
+}
+
+if state = estate.spattack or state = estate.charge {
+	r = 1000;
+} else {
+	r = 250;
+}
+
+//State speed management
+switch (state) {
+	case estate.move_right:  hspd += 1;
+		maxhspd = 2; break;
+	case estate.move_left: hspd -= 1;
+		maxhspd = 2; break;
+	case estate.idle: hspd = 0;
+		maxhspd = 2;
+		anim_state = "idle"; break;
+	case estate.idle_move_left: hspd -= 0.2;
+		maxhspd = 1; break;
+	case estate.idle_move_right: hspd += 0.2;
+		maxhspd = 1; break;
+	case estate.spattack: hspd -= 10*flipped;
+		maxhspd = 10;
+		anim_state = "spattack"; break;
+	case estate.charge: hspd = 0;
+		maxhspd = 6;
+		anim_state = "charge"; break;
+}
+
+//Attacks
+if state = estate.charge {
+	if attack_timer = 25 {
+		state = estate.spattack;	
 	}
 }
+
 hspd = clamp(hspd, -maxhspd, maxhspd); //this makes sure hspd doesn't exceed the max value
 
 //Jumping

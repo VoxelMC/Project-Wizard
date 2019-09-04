@@ -1,1 +1,1 @@
-debug = true;
+global.debug = true;

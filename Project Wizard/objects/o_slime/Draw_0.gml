@@ -1,7 +1,10 @@
 draw_set_halign(fa_center);
-draw_text(x,y-20,"State: " + string(state))
-draw_text(x,y-40,"State: " + string(anim_state))
-draw_circle(x,y,300,true);
+if global.debug = true { 
+	draw_text(x,y-20,"State: " + string(state))
+	draw_text(x,y-40,"Anim State: " + string(anim_state))
+	draw_text(x,y-60,"Attack Timer: " + string(attack_timer))
+	draw_circle(x,y,300,true); 
+}
 draw_set_halign(fa_left);
 if state = estate.move_left or state = estate.idle_move_left {
 	flipped = 1;

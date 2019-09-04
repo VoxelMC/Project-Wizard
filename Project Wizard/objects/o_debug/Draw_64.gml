@@ -1,4 +1,4 @@
-if debug = true {
+if global.debug = true {
 	draw_set_halign(fa_left)
 	draw_set_valign(fa_top)
 	draw_text(x-60,y+30,"Display:" + string(global.display_width) + "x" + string(global.display_height))

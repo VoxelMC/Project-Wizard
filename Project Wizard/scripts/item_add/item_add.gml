@@ -44,7 +44,6 @@ switch itemtypestr {
 		var spelloverlap = ds_grid_value_exists(spellinv,0,0,spellgridwidth,spellamount,itemid)
 		if spelloverlap = false {
 			if spellamount != 4 {
-				show_debug_message("I'm in")
 				ds_grid_resize(spellinv,spellgridwidth,spellamount + 1);
 				var spellamount = ds_grid_height(spellinv);
 				ds_grid_set(spellinv,prop.ID,spellamount-1,itemid)
