@@ -1,30 +1,27 @@
-if (live_call()) return live_result;
-
 if jump = false && state != estate.spattack && state != estate.idle && state != estate.charge {
 	anim_state = "moving";
 }
 
 if state = estate.spattack or state = estate.charge {
-	r = 1000;
+	r = 5;
 } else {
-	r = 250;
+	r = 1;
 }
-
 //State speed management
 switch (state) {
 	case estate.move_right:  hspd += 1;
-		maxhspd = 2; break;
+		maxhspd = 3; break;
 	case estate.move_left: hspd -= 1;
-		maxhspd = 2; break;
+		maxhspd = 3; break;
 	case estate.idle: hspd = 0;
-		maxhspd = 2;
+		maxhspd = 3;
 		anim_state = "idle"; break;
 	case estate.idle_move_left: hspd -= 0.2;
-		maxhspd = 1; break;
+		maxhspd = 1.4; break;
 	case estate.idle_move_right: hspd += 0.2;
-		maxhspd = 1; break;
-	case estate.spattack: hspd -= 10*flipped;
-		maxhspd = 10;
+		maxhspd = 1.4; break;
+	case estate.spattack: hspd -= 15*flipped;
+		maxhspd = 15;
 		anim_state = "spattack"; break;
 	case estate.charge: hspd = 0;
 		maxhspd = 6;
@@ -73,6 +70,6 @@ y+=vspd;
 //Check to Jump
 if (place_meeting(x+(hspd*8), y, o_wall) and on_ground = true) {
 	jump = true;
-} else if !(place_meeting(x+(hspd*8),y,o_wall)) and on_ground = true {
+} else if !(place_meeting(x+(hspd*6),y,o_wall)) and on_ground = true {
 	jump = false;
 }

@@ -1,5 +1,3 @@
-if (live_call()) return live_result;
-
 event_inherited();
 
 state = estate.idle
@@ -14,6 +12,7 @@ gravity_ = 0.3;
 hspd = 0; 
 maxhspd = 2; //Horizonal Maximum Speed
 vspd = 0; //Vertical Speed
-r = 300;
+r = 1;
 on_ground = true;
 in_radius = false;
+in_alert_radius = false;

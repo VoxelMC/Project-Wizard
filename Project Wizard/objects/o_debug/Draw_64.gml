@@ -15,6 +15,5 @@ if global.debug = true {
 	draw_text(x+890,y+90,"5: Heal");
 	draw_text(x+890,y+105,"6: Lightning");
 	draw_text(x+890,y+120,"7: Fire");
-	draw_text_transformed(x+890,y,fps,2,2,1);
 	draw_set_halign(fa_left);
 }

@@ -1,10 +1,15 @@
-if (live_call()) return live_result;
 event_inherited();
+var p_dir = point_direction(x,y,o_player.x,o_player.y);
 
-if collision_circle(x,y,r,o_player,false,true) {
-	in_radius = true;	
+if collision_rectangle(x-325,y-150,x+325,y+150,o_player,false,true) {
+	in_alert_radius = true;
+	if collision_rectangle(x-200*r,y-100*r,x+200*r,y+100*r,o_player,false,true) {
+		in_radius = true;	
+	} else {
+		in_radius = false;
+	}
 } else {
-	in_radius = false;
+	in_alert_radius = false;
 }
 
 if attack_timer > 0 {
@@ -14,13 +19,13 @@ if attack_timer > 0 {
 }
 
 if in_radius = true {
-var p_dir = point_direction(x,y,o_player.x,o_player.y);
+
 
 if attack_timer = 0 {
 	if state != estate.spattack {
-		var spchance = irandom_range(1,10);
+		var spchance = irandom_range(1,5);
 		show_debug_message(spchance);
-		if spchance > 7 {
+		if spchance = 1 {
 			state = estate.charge;
 			attack_timer = 50;
 		} else {
@@ -43,9 +48,19 @@ if state != estate.spattack and state != estate.charge {
 }
 
 } else {
+	
+	if in_alert_radius = true {
+		if (p_dir < 45 or p_dir >= 315) {
+			state = estate.idle_move_right;
+		} else if (p_dir >= 135 and p_dir < 225) {
+			state = estate.idle_move_left;	
+		}
+		idle_move_timer = 5;
+	}
+	
 	idle_move_timer -= 1;
 	if idle_move_timer = 0 {
-		state = choose(estate.idle_move_right,estate.idle_move_left,estate.idle);
+		state = choose(estate.idle_move_right,estate.idle_move_left,estate.idle,estate.idle);
 		idle_move_timer = irandom_range(60,100);
 	}
 }
@@ -65,4 +80,4 @@ switch (anim_state) {
 }
 
 move_e_slime();
-
+show_debug_message(idle_move_timer);

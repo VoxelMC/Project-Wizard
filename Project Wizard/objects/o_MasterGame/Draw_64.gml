@@ -15,6 +15,11 @@ draw_text(global.dguiwidth/2-380,global.dguiheight-535,string(global.CurrentHP) 
 draw_set_color(c_white)
 draw_set_halign(fa_left);
 
+//FPS
+draw_set_halign(fa_right)
+draw_set_valign(fa_top)
+draw_text_transformed(x+955,y,fps,2,2,1);
+draw_set_halign(fa_left);
 
 //UI
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2-170,global.dguiheight);
