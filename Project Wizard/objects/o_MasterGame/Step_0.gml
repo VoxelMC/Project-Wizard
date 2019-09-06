@@ -24,11 +24,7 @@ if global.CurrentHP != 100 {
 	}
 }
 
-/*if keyboard_check_pressed(vk_f1) {
-	show_help = !show_help
-}*/
+if keyboard_check_pressed(vk_f1) global.debug = !global.debug;
 
-if keyboard_check_pressed(ord("R")) {
-	game_restart(); 
-}
+if keyboard_check_pressed(ord("R")) game_restart(); 
 

@@ -24,7 +24,6 @@ if in_radius = true {
 if attack_timer = 0 {
 	if state != estate.spattack {
 		var spchance = irandom_range(1,5);
-		show_debug_message(spchance);
 		if spchance = 1 {
 			state = estate.charge;
 			attack_timer = 50;
@@ -80,4 +79,3 @@ switch (anim_state) {
 }
 
 move_e_slime();
-show_debug_message(idle_move_timer);

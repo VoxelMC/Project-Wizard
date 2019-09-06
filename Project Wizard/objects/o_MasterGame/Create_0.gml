@@ -8,6 +8,7 @@ draw_set_font(fnt_main)
 global.inv_open = false;
 global.stop = false;
 global.pause = false;
+global.debug = false;
 
 //Game Variables
 global.spd_inc = 0; //How much the speed has been increased by.
@@ -31,7 +32,6 @@ global.keybind[key.pause] = ini_read_real("Keybinds","Pause",vk_escape)
 ini_close();
 
 //MasterGame Specific Variables
-show_help = false;
 playerx = o_player.x
 playery = o_player.y
 

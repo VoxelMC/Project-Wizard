@@ -1,5 +1,4 @@
 /// @description Draw the UI
-
 if global.inv_open = false {
 //Health Bar
 var hspriteWidth = sprite_get_width(s_HealthBar);
@@ -20,6 +19,10 @@ draw_set_halign(fa_right)
 draw_set_valign(fa_top)
 draw_text_transformed(x+955,y,fps,2,2,1);
 draw_set_halign(fa_left);
+draw_text(3,520,"vPre-Alpha v1.1");
+draw_text(3,505,"Press F1 for Debug Mode");
+draw_text(3,490,"Press F11 for Fullscreen");
+
 
 //UI
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2-170,global.dguiheight);
@@ -32,7 +35,4 @@ draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2+90,global.dguiheight);
 
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2+170,global.dguiheight);
 
-//Test environment tutorial
-if show_help = true {
-}
 }

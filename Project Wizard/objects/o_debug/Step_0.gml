@@ -1,11 +1,3 @@
-if keyboard_check_pressed(vk_f1) {
-	if global.debug = true {
-		global.debug = false;
-	} else {
-		global.debug = true;
-	}
-}
-
 if global.debug = true {
 	if keyboard_check_pressed(vk_control) {
 		if o_player.fly = true {

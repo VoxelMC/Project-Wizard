@@ -34,22 +34,22 @@ switch (spl) {
 				
 			break;
 			case weptype.tome:
-			if !instance_exists(o_healingaoe) && o_player.on_ground = true {
+			/*if !instance_exists(o_healingaoe) && o_player.on_ground = true {
 				var bigaura = instance_create_layer(x,y,"Auras",o_healingaoe) 
 				with bigaura {
 					uptime = 360; //6 seconds
 				}
-			}
+			}*/
 			break;
 			case weptype.idol:
-			if !instance_exists(o_healingaoe) && o_player.on_ground = true {
+			/*if !instance_exists(o_healingaoe) && o_player.on_ground = true {
 				var lilaura = instance_create_layer(x,y+20,"Auras",o_healingaoe) 
 				with lilaura {
 					image_xscale = 0.5;
 					image_yscale = 0.5;
 					uptime = 240; //4 seconds
 				}
-			}
+			}*/
 			break;
 		}
 	break;
@@ -58,7 +58,7 @@ switch (spl) {
 	case spellid.lightning:
 		switch (wtype) {
 			case weptype.wand: 
-				if !instance_exists(o_LightningProj) && on_ground = true {
+				/*if !instance_exists(o_LightningProj) && on_ground = true {
 					var proj = instance_create_layer(x,y,"Projectiles",o_LightningProj)
 					with proj {
 						direction = dir;
@@ -70,7 +70,7 @@ switch (spl) {
 						flipped = -1;
 					}
 					movestop = true;
-				}
+				}*/
 			break;
 			case weptype.staff:
 				var proj = instance_create_layer(x,y,"Projectiles",o_SmolLightningProj)
@@ -150,5 +150,5 @@ switch (spl) {
 }
 
 if cancelcooldown = false {
-	//cooldown[splpos] = splcooldown
+	cooldown[splpos] = splcooldown
 }
