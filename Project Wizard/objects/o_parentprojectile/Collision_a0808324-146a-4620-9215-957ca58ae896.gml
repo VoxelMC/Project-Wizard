@@ -1,1 +1,0 @@
-other.HP -= self.damage;
