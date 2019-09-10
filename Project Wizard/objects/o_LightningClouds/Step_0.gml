@@ -9,7 +9,9 @@ if timer = 0 {
 	with o_LightningCloudProj {
 		direction = 270;
 		image_angle = direction;
+		show_debug_message("Made!");
 	}
+	
 }
 
 if timer2 = 0 {

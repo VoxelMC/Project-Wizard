@@ -1,4 +1,3 @@
-
 draw_set_color(c_black)
 draw_set_alpha(0.8)
 if global.inv_open = true {
@@ -21,3 +20,4 @@ if global.inv_open = false {
 	tab_fin = false;
 	exit;
 }
+

@@ -1,3 +1,5 @@
+var spd = 3.5;
+
 if jump = false && state != estate.spattack && state != estate.idle && state != estate.charge {
 	anim_state = "moving";
 }
@@ -10,11 +12,11 @@ if state = estate.spattack or state = estate.charge {
 //State speed management
 switch (state) {
 	case estate.move_right:  hspd += 1;
-		maxhspd = 3; break;
+		maxhspd = spd; break;
 	case estate.move_left: hspd -= 1;
-		maxhspd = 3; break;
+		maxhspd = spd; break;
 	case estate.idle: hspd = 0;
-		maxhspd = 3;
+		maxhspd = spd;
 		anim_state = "idle"; break;
 	case estate.idle_move_left: hspd -= 0.2;
 		maxhspd = 1.4; break;

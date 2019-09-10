@@ -1,9 +1,8 @@
-if (live_call()) return live_result;
 draw_set_halign(fa_center);
 if global.debug = true { 
 	draw_text(x,y-20,"State: " + string(state))
 	draw_text(x,y-40,"Anim State: " + string(anim_state))
-	draw_rectangle(x-300,y-150,x+300,y+150,true); 
+	draw_rectangle(x-325,y-175,x+325,y+175,true); 
 	draw_rectangle_color(x-450,y-225,x+450,y+225,c_red,c_red,c_red,c_red,true); 
 }
 draw_set_halign(fa_left);

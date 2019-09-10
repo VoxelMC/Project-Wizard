@@ -1,10 +1,9 @@
-if (live_call()) return live_result;
 event_inherited();
 var p_dir = point_direction(x,y,o_player.x,o_player.y);
 
-if collision_rectangle(x-500,y-200,x+500,y+200,o_player,false,true) {
+if collision_rectangle(x-450,y-225,x+450,y+225,o_player,false,true) {
 	in_alert_radius = true;
-	if collision_rectangle(x-300*r,y-150*r,x+300*r,y+150*r,o_player,false,true) {
+	if collision_rectangle(x-325*r,y-175*r,x+325*r,y+175*r,o_player,false,true) {
 		in_radius = true;	
 	} else {
 		in_radius = false;
