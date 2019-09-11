@@ -37,7 +37,7 @@ if state = estate.charge {
 	}
 }
 
-hspd = clamp(hspd, -maxhspd, maxhspd) + hspd_force;//this makes sure hspd doesn't exceed the max value
+hspd = clamp(hspd, -maxhspd, maxhspd); //this makes sure hspd doesn't exceed the max value
 
 //Jumping
 if jump = true && on_ground = true { 
@@ -46,7 +46,7 @@ if jump = true && on_ground = true {
 	anim_state = "jumping";
 }
 
-vspd = vspd +  0.35 + vspd_force //Adds gravity to vspeed
+vspd = vspd +  0.35//Adds gravity to vspeed
 
 ///Collison Code///
 

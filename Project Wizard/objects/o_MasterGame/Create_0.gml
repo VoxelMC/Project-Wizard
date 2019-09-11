@@ -2,7 +2,7 @@
 randomize();
 draw_set_font(fnt_main)
 
-///Initialize variables
+///Initialize variables\\\
 
 //Menu Variables
 global.inv_open = false;
@@ -12,12 +12,18 @@ global.debug = false;
 global.indialogue = false;
 
 //Game Variables
-global.spd_inc = 0; //How much the speed has been increased by.
+//global.spd_inc = 0; //How much the speed has been increased by.
 global.currentconvo = "N/A";
 global.up_pos[0] = 0;
 global.up_pos[1] = 0;
 global.up_pos[2] = 0;
 global.up_pos[3] = 0;
+
+for (var i=0;i<8;i++) {
+	global.alarmdone[i] = false;
+	alarmcount[i] = 60;
+	go_alarm[i] = false;
+}
 
 //Keyboard Binding Variables
 ini_open("settings.ini");
@@ -32,12 +38,4 @@ global.keybind[key.spl4] = ini_read_real("Keybinds","Spell 4",ord("E"))
 global.keybind[key.pause] = ini_read_real("Keybinds","Pause",vk_escape)
 ini_close();
 
-//MasterGame Specific Variables
-playerx = o_player.x
-playery = o_player.y
-
 //cutsceneStart(tl_tutorial,false);
-
-MasterItem_Create(spellid.heal,"Spell",100,250)
-MasterItem_Create(spellid.lightning,"Spell",150,250)
-MasterItem_Create(spellid.fire,"Spell",200,250)

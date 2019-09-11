@@ -16,11 +16,9 @@ if state = estate.move_left or state = estate.idle_move_left {
 
 if in_alert_radius = true {
 	if in_radius = false {
-		if global.debug = true draw_sprite(s_lostmark,0,x,y-60);
-		else draw_sprite(s_lostmark,0,x,y-20)
+		draw_sprite(s_lostmark,0,x,y-20)
 	} else {
-		if global.debug = true draw_sprite(s_foundmark,0,x,y-60);
-		else draw_sprite(s_foundmark,0,x,y-20)
+		draw_sprite(s_foundmark,0,x,y-20)
 	}
 }
 

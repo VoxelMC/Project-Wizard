@@ -28,3 +28,7 @@ if keyboard_check_pressed(vk_f1) global.debug = !global.debug;
 
 if keyboard_check_pressed(ord("R")) game_restart(); 
 
+//Alarm Logic
+
+alarms_check();
+

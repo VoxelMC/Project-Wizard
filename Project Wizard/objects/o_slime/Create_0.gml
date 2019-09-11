@@ -1,5 +1,7 @@
 event_inherited();
 
+hp = 10;
+dmg = 2;
 behavior = ai.slime;
 e_dir_next = estate.move_left;
 idle_move_timer = 1;
