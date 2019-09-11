@@ -142,4 +142,5 @@ if (message_end > 0) {
 if done = true {
 	instance_destroy();
 	global.stop = false;
+	global.indialogue = false;
 }

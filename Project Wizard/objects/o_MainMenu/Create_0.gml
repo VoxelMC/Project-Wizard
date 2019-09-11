@@ -43,36 +43,36 @@ globalvar weapon;
 weapon = ds_grid_create(10,10);
 
 //PASSIVES
-item_init_passive(0,"Glowy",s_PGlowy,"Increases the maximum amount of jumps by 1.",1,pastype.relic)
+item_init_passive(1,"Glowy",s_PGlowy,"Increases the maximum amount of jumps by 1.",1,pastype.relic)
 
 //SPELLS
 
 //Healing Spell
-item_init_spell(0,"Healing Aura",s_SHealing,"A basic healing spell.",
+item_init_spell(1,"Healing Aura",s_SHealing,"A basic healing spell.",
 "Wand: Heals you 5 HP instantly.",
 "Staff: Heals you 10 HP instantly.", 
 "Tome: Creates a healing aura that lasts 5 seconds.", 
 "Idol: Creates a smaller healing aura for 5 seconds."); 
 
 //Lightning Spell
-item_init_spell(1,"Thunderous Rage",s_SLightning,"A basic lightning attack.",
+item_init_spell(2,"Thunderous Rage",s_SLightning,"A basic lightning attack.",
 "Wand: Summon a bolt of lightning from your fingertips, which stops you in your tracks.",
 "Staff: Shoots a small lightning bolt that stuns the enemy on impact.",
 "Tome: Creates 3 balls of lightning that circle around you, that can be directed towards the cursor.",
 "Idol: Summons a cloud of lightning that brings down 3 lightning bolts.");
 
 //Fire Spell
-item_init_spell(2,"Fire Blast",s_SFireBlast,"A basic fire attack.",
+item_init_spell(3,"Fire Blast",s_SFireBlast,"A basic fire attack.",
 "Wand: Shoots a beam of fire.",
 "Staff: Shoots a simple fireball that sets the enemy on fire.",
 "Tome: Shoots a slew of homing fireballs directly towards the nearest enemy.",
 "Idol: Summons a fire dragon, which shoots fireballs towards the nearest enemies for a short time.",);
 
 //WEAPONS
-item_init_weapon(0,"Wand",s_BasicWand,"A basic wand.",weptype.wand,3)
-item_init_weapon(1,"Staff",s_BasicStaff,"A basic staff.",weptype.staff,3)
-item_init_weapon(2,"Tome",s_BasicTome,"A basic tome.",weptype.tome,3)
-item_init_weapon(3,"Idol",s_BasicIdol,"A basic idol.",weptype.idol,3)
+item_init_weapon(1,"Wand",s_BasicWand,"A basic wand.",weptype.wand,3)
+item_init_weapon(2,"Staff",s_BasicStaff,"A basic staff.",weptype.staff,3)
+item_init_weapon(3,"Tome",s_BasicTome,"A basic tome.",weptype.tome,3)
+item_init_weapon(4,"Idol",s_BasicIdol,"A basic idol.",weptype.idol,3)
 
 //audio_play_sound(mus_menu,1000,true);
 room_goto(testroom);

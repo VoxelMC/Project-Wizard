@@ -6,7 +6,7 @@ var beamh = 15;
 var surfx = x + dcos(90+angle)*15
 var surfy = y - dsin(90+angle)*15
 
-while !position_meeting(x + lengthdir_x(distance, angle), y + lengthdir_y(distance, angle),o_lasercolparent)	{
+while !position_meeting(x + lengthdir_x(distance, angle), y + lengthdir_y(distance, angle),o_ParentEnemy) && !position_meeting(x + lengthdir_x(distance, angle), y + lengthdir_y(distance, angle),o_wall)	{
 	distance += 1;	
 }
 

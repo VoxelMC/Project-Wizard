@@ -4,6 +4,5 @@ if (place_meeting(x,y,o_player) && keyboard_check_pressed(global.keybind[key.int
 	m[1] = "*1Subject to constant TORTURE."
 	m[2] = "*2Never to be loved by a single soul..."
 	m[3] = "*0F in the chat for me :("
-	m[4] = "aaaaaaaaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
 	newChat(m,"Dummy","Training Dummy",false,o_player);
 }

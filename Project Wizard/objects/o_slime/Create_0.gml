@@ -1,11 +1,9 @@
 event_inherited();
 
-state = estate.idle
-anim_state = "idle";
+behavior = ai.slime;
 e_dir_next = estate.move_left;
 idle_move_timer = 1;
 attack_timer = irandom_range(60,80);
-flipped = 1;
 
 jump = false;
 gravity_ = 0.3;

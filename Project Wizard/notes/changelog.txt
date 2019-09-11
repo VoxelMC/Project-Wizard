@@ -1,15 +1,11 @@
--Added new sprites for the spell menu and rearranged EVERYTHING. Still a WIP, but it's getting close to finished!
+CHANGELOG:
 
--Added in a new lightning spell for the Idol, Lightning Balls!
+[New Stuff]:
 
--Redid the key detection system, to allow for key rebinding (coming soon!)
+[Adjustments]:
 
--Began work on the settings menu.
+[Bug Fixes]:
+-Fixed a bug where the heal spell could not equipped if any other spells were equipped
 
--Added in a non functional training dummy with some fun dialogue
 
--Fixed a crash that would occur if you had less then 4 spells equipped.
-
--Fixed a bug where you could pick up items while in the menu.
-
--Changed the default key for interaction from E to F.
+[KNOWN ISSUES]:

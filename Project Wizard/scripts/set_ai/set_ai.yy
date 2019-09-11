@@ -1,8 +1,8 @@
 {
-    "id": "5b71367d-cdbe-4875-bdbd-8609b6631d3a",
+    "id": "5e6ee59b-a371-4af4-aa2e-3c05ba3c1932",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "draw_set_text",
+    "name": "set_ai",
     "IsCompatibility": false,
     "IsDnD": false
 }

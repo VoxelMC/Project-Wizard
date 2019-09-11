@@ -14,14 +14,15 @@ enum estate
 #region Passive Item ID Name Enum
 enum passiveid 
 	{
+	none, 
 	glowy, //Passive, Damage +1, ID: 0
-	maze, //Passive, Damage +2, ID: 1
 	}
 #endregion
 
 #region Spell Item ID Name Enum
 enum spellid 
 	{
+	none, 
 	heal,
 	lightning,
 	fire
@@ -31,6 +32,7 @@ enum spellid
 #region Weapon Item ID Name Enum
 enum weaponid
 	{
+	none, 
 	wand, 
 	staff,
 	tome,
@@ -104,5 +106,14 @@ enum key
 	spl3,
 	spl4,
 	pause,
+	}
+#endregion
+
+#region AI Enum
+enum ai 
+	{
+	trainingdummy, 
+	slime,
+	bat
 	}
 #endregion

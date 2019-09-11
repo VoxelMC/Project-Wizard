@@ -5,21 +5,21 @@
     "name": "o_parentprojectile",
     "eventList": [
         {
+            "id": "d5e6301f-c761-46bc-9458-60d05298827f",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "16393037-3076-4e53-945e-006401a3cf71"
+        },
+        {
             "id": "f7e56ed7-5b31-4d02-a8de-1ad4c143b1b5",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "d595d888-495b-404b-a0b2-542915abb852",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "16393037-3076-4e53-945e-006401a3cf71"
-        },
-        {
-            "id": "b69ff1ab-1ac9-877c-ccb2-b5a2b448f48e",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "d5eb6764-c4ab-4b6b-b091-3dced8220166",
             "enumb": 0,
             "eventtype": 4,
             "m_owner": "16393037-3076-4e53-945e-006401a3cf71"
@@ -32,26 +32,6 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 7,
-            "m_owner": "16393037-3076-4e53-945e-006401a3cf71"
-        },
-        {
-            "id": "a0808324-146a-4620-9215-957ca58ae896",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "e54cbb56-ed85-4b73-9aae-8d87174272cb",
-            "enumb": 0,
-            "eventtype": 4,
-            "m_owner": "16393037-3076-4e53-945e-006401a3cf71"
-        },
-        {
-            "id": "d5e6301f-c761-46bc-9458-60d05298827f",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
             "m_owner": "16393037-3076-4e53-945e-006401a3cf71"
         }
     ],

@@ -30,4 +30,5 @@ for (i=0; i < array_length_1d(sent); i++)
 }
 
 global.stop = true;
+global.indialogue = true;
 

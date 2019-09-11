@@ -9,6 +9,7 @@ global.inv_open = false;
 global.stop = false;
 global.pause = false;
 global.debug = false;
+global.indialogue = false;
 
 //Game Variables
 global.spd_inc = 0; //How much the speed has been increased by.
@@ -36,3 +37,7 @@ playerx = o_player.x
 playery = o_player.y
 
 //cutsceneStart(tl_tutorial,false);
+
+MasterItem_Create(spellid.heal,"Spell",100,250)
+MasterItem_Create(spellid.lightning,"Spell",150,250)
+MasterItem_Create(spellid.fire,"Spell",200,250)
