@@ -38,4 +38,6 @@ global.keybind[key.spl4] = ini_read_real("Keybinds","Spell 4",ord("E"))
 global.keybind[key.pause] = ini_read_real("Keybinds","Pause",vk_escape)
 ini_close();
 
+MasterItem_Create(spellid.heal,"Spell",10,10);
+
 //cutsceneStart(tl_tutorial,false);
