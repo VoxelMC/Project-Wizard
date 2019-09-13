@@ -7,3 +7,7 @@ if global.debug = true {
 }
 draw_set_halign(fa_left);
 draw_sprite_ext(sprite_index,image_index,x,y,flipped,image_yscale,image_angle,image_blend,image_alpha);
+
+if damage_dealt != -1 {
+	
+}

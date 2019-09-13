@@ -1,7 +1,7 @@
 set_ai(behavior);
 
-if global.alarmdone[alarmnum] = true {
-	image_blend = c_white;
-	show_debug_message("Alarm " + string(alarmnum) + " finished.")
-	global.alarmdone[alarmnum] = false;
+if global.alarmdone[alarmnum[0]] = true {
+	
+	image_blend = make_color_rgb(255,255,255);
+	global.alarmdone[alarmnum[0]] = false;
 }

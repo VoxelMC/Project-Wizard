@@ -519,14 +519,6 @@
             }
         },
         {
-            "Key": "547f50ab-af15-46d0-bb5b-12b31e36f764",
-            "Value": {
-                "id": "e07bfcc3-bc37-4c83-b74b-4a12f97db294",
-                "resourcePath": "sprites\\s_floor\\s_floor.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "572b4213-f9b1-4f7e-a37c-32e0e1f9a70f",
             "Value": {
                 "id": "c0b91416-fc51-4fa2-b6e3-7748d9b85509",
@@ -1087,14 +1079,6 @@
             }
         },
         {
-            "Key": "b66295b0-97ac-4538-86d3-9dab7ef4bc27",
-            "Value": {
-                "id": "b7f8773d-4fd2-412a-ab47-b771c916e11c",
-                "resourcePath": "sprites\\s_door\\s_door.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "b7b6cc8b-2903-4fd3-893f-15240106de96",
             "Value": {
                 "id": "eef92b92-7c36-4239-973a-7444ebd608fc",
@@ -1367,6 +1351,14 @@
             }
         },
         {
+            "Key": "f1572db0-bc85-4369-a97d-87192f3f83a8",
+            "Value": {
+                "id": "1f3bb278-545b-463f-95aa-5504a15a3bc7",
+                "resourcePath": "scripts\\draw_dmg_num\\draw_dmg_num.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f1ebc558-d4b7-449b-9fa7-5f4db8d93c37",
             "Value": {
                 "id": "dc1eeda5-f0a6-413a-8eca-38e712db6794",
@@ -1465,7 +1457,8 @@
         "d7b8121b-ed7d-4e2f-b6e7-0d5b77b13a9a",
         "b33c2641-b8de-48b8-9ed4-402eb24f9d26",
         "5e6ee59b-a371-4af4-aa2e-3c05ba3c1932",
-        "2f001b71-7989-4dc2-99c0-66d50ead3ed3"
+        "2f001b71-7989-4dc2-99c0-66d50ead3ed3",
+        "f1572db0-bc85-4369-a97d-87192f3f83a8"
     ],
     "tutorial": ""
 }

@@ -84,7 +84,7 @@ switch (spl) {
 				} else {
 					flipped = -1;
 				}
-				splcooldown = 300; //5 seconds
+				//splcooldown = 300; //5 seconds
 			break;
 			case weptype.tome:
 				instance_create_layer(o_player.x+60,o_player.y,"Projectiles",o_LightningBalls);
@@ -124,7 +124,7 @@ switch (spl) {
 				} else {
 					flipped = -1;
 				}
-				splcooldown = 300; //5 seconds
+				//splcooldown = 300; //5 seconds
 			break;
 			case weptype.tome:
 			if splcooldown = 0 {
