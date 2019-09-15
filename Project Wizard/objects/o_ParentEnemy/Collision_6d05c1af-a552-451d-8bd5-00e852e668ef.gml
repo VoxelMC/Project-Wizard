@@ -1,3 +1,5 @@
 /// @description
 instance_destroy(other);
-alarmnum[0] = deal_damage(dmg);
+if invin = false {
+	alarmnum = deal_damage(dmg);
+} 

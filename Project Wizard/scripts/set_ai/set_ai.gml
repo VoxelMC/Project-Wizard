@@ -1,4 +1,4 @@
-///@param AI
+/// @param input
 
 var input = argument0;
 

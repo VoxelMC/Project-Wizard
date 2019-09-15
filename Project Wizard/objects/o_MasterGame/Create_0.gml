@@ -14,16 +14,20 @@ global.indialogue = false;
 //Game Variables
 //global.spd_inc = 0; //How much the speed has been increased by.
 global.currentconvo = "N/A";
-global.up_pos[0] = 0;
-global.up_pos[1] = 0;
-global.up_pos[2] = 0;
-global.up_pos[3] = 0;
+for (var i=0;i<4;i++) {
+	global.up_pos[i] = 0;
+}
 
-for (var i=0;i<8;i++) {
-	global.alarmdone[i] = false;
+/*for (var i=0;i<7;i++) {
+	alarmdone[i] = false;
 	alarmcount[i] = 60;
 	go_alarm[i] = false;
-}
+}*/
+
+global.alarmdone[0] = false;
+global.alarmamount = 0;
+global.alarmcount[0] = -1;
+global.go_alarm[0] = false;
 
 //Keyboard Binding Variables
 ini_open("settings.ini");
@@ -38,6 +42,9 @@ global.keybind[key.spl4] = ini_read_real("Keybinds","Spell 4",ord("E"))
 global.keybind[key.pause] = ini_read_real("Keybinds","Pause",vk_escape)
 ini_close();
 
-MasterItem_Create(spellid.heal,"Spell",10,10);
+/*set_alarm(60);
+set_alarm(120);
+set_alarm(180);
+set_alarm(240);*/
 
 //cutsceneStart(tl_tutorial,false);

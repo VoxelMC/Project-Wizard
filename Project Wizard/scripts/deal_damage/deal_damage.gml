@@ -1,5 +1,4 @@
-///@param Damage
-
+/// @param damage
 
 var damage = argument0;
 if damage > 1 {
@@ -18,5 +17,6 @@ if hp <= 0 {
 }
 
 var num = set_alarm(15);
+invin = true;
 
 return num;
