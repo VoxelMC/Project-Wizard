@@ -1,6 +1,8 @@
 /// @param damage
+/// @param kbforce;
 
 var damage = argument0;
+var kbforce = argument1;
 if damage > 1 {
 var e_dmg = irandom_range(damage-1,damage+1);
 } else {
@@ -16,7 +18,14 @@ if hp <= 0 {
 	instance_destroy();
 }
 
-var num = set_alarm(15);
+//Knockback Code
+if kbforce > 0 {
+	kbdir = point_direction(x,y,other.x,other.y);
+	kbstate = true;
+	kbtimer = room_speed * 5;
+}
+
+invintimer = 10;
 invin = true;
 
-return num;
+

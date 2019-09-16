@@ -3,6 +3,7 @@ event_inherited();
 hp = 10;
 dmg = 2;
 behavior = ai.slime;
+kbforce = 6;
 e_dir_next = estate.move_left;
 idle_move_timer = 1;
 attack_timer = irandom_range(60,80);

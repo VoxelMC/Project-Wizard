@@ -30,6 +30,3 @@ if keyboard_check_pressed(ord("R")) game_restart();
 
 //Alarm Logic
 
-alarm_add();
-alarms_check();
-

@@ -687,14 +687,6 @@
             }
         },
         {
-            "Key": "64339ee0-7f9d-1ae9-7294-ae4a339ea27d",
-            "Value": {
-                "id": "8ac6063e-43e2-393e-d54e-2e17a4a07256",
-                "resourcePath": "scripts\\alarm_add\\alarm_add.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "6551e049-039a-41dc-a724-51e30001b97d",
             "Value": {
                 "id": "5afbaf63-b08a-4449-be8e-3ca172c53a13",
@@ -836,14 +828,6 @@
                 "id": "c09e4bde-4b76-4a2f-9b37-47410bdaab2c",
                 "resourcePath": "views\\7edff55e-1038-49a9-8f2f-2c6aa1365dfb.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "7f02f2b5-4601-42ee-b670-b89a0c47b818",
-            "Value": {
-                "id": "77429739-92b5-4995-8b49-2fa1cf2cee69",
-                "resourcePath": "scripts\\set_alarm\\set_alarm.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -1123,14 +1107,6 @@
             "Value": {
                 "id": "7a1b3217-edc5-4de3-b75b-ddb8d2abbd1d",
                 "resourcePath": "scripts\\cycle\\cycle.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "c62dc01b-9c6e-4acc-83d0-aa6612c5cb57",
-            "Value": {
-                "id": "3abd8a16-a3d2-4a04-bc9c-f7929175315c",
-                "resourcePath": "scripts\\alarms_check\\alarms_check.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -1449,9 +1425,6 @@
         "f4e235c3-5481-4f32-baca-fe284f793d75",
         "c2494fe0-06b3-4013-939b-a4c1e4482cff",
         "9a9c249f-d9e5-400e-8b42-2663b389d4d8",
-        "7f02f2b5-4601-42ee-b670-b89a0c47b818",
-        "64339ee0-7f9d-1ae9-7294-ae4a339ea27d",
-        "c62dc01b-9c6e-4acc-83d0-aa6612c5cb57",
         "401813cc-c28f-4bd1-9231-ec0113bd262e",
         "6551e049-039a-41dc-a724-51e30001b97d",
         "2f8a6583-665b-4339-a913-65fd362b29ce",

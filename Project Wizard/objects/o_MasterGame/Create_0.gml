@@ -18,17 +18,6 @@ for (var i=0;i<4;i++) {
 	global.up_pos[i] = 0;
 }
 
-/*for (var i=0;i<7;i++) {
-	alarmdone[i] = false;
-	alarmcount[i] = 60;
-	go_alarm[i] = false;
-}*/
-
-global.alarmdone[0] = false;
-global.alarmamount = 0;
-global.alarmcount[0] = -1;
-global.go_alarm[0] = false;
-
 //Keyboard Binding Variables
 ini_open("settings.ini");
 global.keybind[key.left] = ini_read_real("Keybinds","Left",ord("A"))
