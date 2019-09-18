@@ -4,17 +4,23 @@ switch anim_state {
 	case "Walking": sprite_index = s_player_walk; break;
 }
 
-//Use Spells if any are equipped
+//Use Spells if any are equipped and also use basic attacks.
 if global.stop = false {
 	image_alpha = 1;
 	if global.wepequipped != "none" {
 		var wtype = ds_grid_get(wepinv,propwep.type,0);
-		if (mouse_check_button_pressed(global.keybind[key.spl1]) && splist[0] != -1 && cooldown[1] <= 0 ) {
+		if mouse_check_button_pressed(global.keybind[key.atk1]) {
+			Attack_Use(1,wtype);
+		}
+		if mouse_check_button_pressed(global.keybind[key.atk1]) {
+			Attack_Use(2,wtype);
+		}
+		if (keyboard_check_pressed(global.keybind[key.spl1]) && splist[0] != -1 && cooldown[1] <= 0 ) {
 	
 			var spid = ds_grid_get(spellinv,prop.ID,0);
 			Spell_Use(spid,1,wtype);
 	
-		} else if  (mouse_check_button_pressed(global.keybind[key.spl2]) && splist[1] != -1 && cooldown[2] <= 0) {
+		} else if (keyboard_check_pressed(global.keybind[key.spl2]) && splist[1] != -1 && cooldown[2] <= 0) {
 	
 			var spid = ds_grid_get(spellinv,prop.ID,1);
 			Spell_Use(spid,2,wtype);

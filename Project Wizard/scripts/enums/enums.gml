@@ -102,6 +102,8 @@ enum key
 	right,
 	jump,
 	interact,
+	atk1,
+	atk2,
 	spl1,
 	spl2,
 	spl3,

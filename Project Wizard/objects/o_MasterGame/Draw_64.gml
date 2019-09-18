@@ -35,10 +35,10 @@ draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2+90,global.dguiheight);
 
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2+170,global.dguiheight);
 
-draw_text(297,450,"LMB")
-draw_text(377,450,"RMB")
-draw_text(565.,450,"Q")
-draw_text(646,450,"E")
+draw_text(297,450,"Q")
+draw_text(377,450,"E")
+draw_text(565.,450,"R")
+draw_text(646,450,"F")
 
 }
 

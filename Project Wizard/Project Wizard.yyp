@@ -383,6 +383,14 @@
             }
         },
         {
+            "Key": "33c3463e-38fd-4b62-af23-eaba51764642",
+            "Value": {
+                "id": "554ca009-d8e0-448a-8039-25971044bd2e",
+                "resourcePath": "sprites\\s_BasicProj\\s_BasicProj.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "34ebc914-3fea-42f7-a6b9-db18b75cd055",
             "Value": {
                 "id": "848b917d-c0ac-46c5-a118-b211009ed5e9",
@@ -927,6 +935,14 @@
             }
         },
         {
+            "Key": "99e72973-baea-4a7f-9939-246536861374",
+            "Value": {
+                "id": "bf9695f1-b36c-45e9-a10e-73d8426843a7",
+                "resourcePath": "scripts\\Attack_Use\\Attack_Use.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "9a9c249f-d9e5-400e-8b42-2663b389d4d8",
             "Value": {
                 "id": "e935c6b9-8e24-4f40-8d13-0d4572df1c60",
@@ -1263,6 +1279,14 @@
             }
         },
         {
+            "Key": "e183bb44-aa22-4c7e-a808-e367fcd9e952",
+            "Value": {
+                "id": "1712d0f9-8c65-4386-87f6-d2137584d23f",
+                "resourcePath": "objects\\o_BasicProj\\o_BasicProj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e3daf5af-efbb-4aba-be3a-6547a893a13f",
             "Value": {
                 "id": "c36001b7-6102-4822-a4c5-ad51ccdaa1f5",
@@ -1432,6 +1456,7 @@
         "2ed24e81-402f-480d-9424-a2cada3b59ed",
         "d0cd514b-1d8a-4ec6-8f44-b2141d0221a4",
         "1df8117e-8fa4-41be-9e1a-98fef0fd27cb",
+        "99e72973-baea-4a7f-9939-246536861374",
         "ae3c6a42-b1bb-436e-8173-5c9adbf5f828",
         "9818a417-945f-45e3-aa02-f62aff8d029e",
         "c94d66a7-751e-4877-b6c9-2359340206a9",
