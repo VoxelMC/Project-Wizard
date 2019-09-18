@@ -1231,6 +1231,14 @@
             }
         },
         {
+            "Key": "db1f97c0-24ba-4354-8cdc-b88664dbd683",
+            "Value": {
+                "id": "b820d7d8-0ab1-4524-bc96-9a4e7cece66b",
+                "resourcePath": "datafiles_yy\\Easy Image Trail After Image arrays.yyz.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "dbe765d0-1b59-4894-a956-c4b6e2476e8a",
             "Value": {
                 "id": "11fdc532-65ee-4abe-a34b-3fb0c22f1118",
@@ -1332,6 +1340,14 @@
                 "id": "af15aec1-dd42-4dfe-a102-25deea8ef312",
                 "resourcePath": "rooms\\testroom2\\testroom2.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "f05efd67-bc70-43b1-9b60-1a19467dc52f",
+            "Value": {
+                "id": "e9c0afa7-4e0f-4e8d-8f36-ed0e0eee7c69",
+                "resourcePath": "objects\\o_hitnumbers\\o_hitnumbers.yy",
+                "resourceType": "GMObject"
             }
         },
         {

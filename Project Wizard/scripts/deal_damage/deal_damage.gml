@@ -1,8 +1,6 @@
 /// @param damage
-/// @param kbforce;
 
 var damage = argument0;
-var kbforce = argument1;
 if damage > 1 {
 var e_dmg = irandom_range(damage-1,damage+1);
 } else {
@@ -12,20 +10,19 @@ var e_dmg = irandom_range(damage,damage+1);
 image_blend = make_color_rgb(255,75,75)
 
 hp -= e_dmg 
-damage_dealt = e_dmg;
 
 if hp <= 0 {
 	instance_destroy();
+} else {
+	var pos =  irandom_range(x+20,x-20);
+	var hitnum = instance_create_depth(pos,y,-100,o_hitnumbers);
+	with hitnum {
+		num = e_dmg;	
+	}
 }
 
-//Knockback Code
-if kbforce > 0 {
-	kbdir = point_direction(x,y,other.x,other.y);
-	kbstate = true;
-	kbtimer = room_speed * 5;
-}
+state = estate.knockback;
+kbdir = other.x;
 
-invintimer = 10;
-invin = true;
-
-
+hit = true;
+invintimer = 30;

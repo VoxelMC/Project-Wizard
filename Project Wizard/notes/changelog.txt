@@ -1,11 +1,17 @@
 CHANGELOG:
 
 [New Stuff]:
+-You can now kill enemies, and they now feature hurt states, knockback, all that fun enemy stuff.
+-The amount of damage you deal is displayed next to enemies you hurt as well.
+-HP is now displayed in the debug menu above an enemies head.
 
 [Adjustments]:
+-Increased the size of the alert radius box after the slime has detected you, to make it harder to escape it.
+-Removed the ability to see the alert radius/attack radius box in Debug Mode.
 
 [Bug Fixes]:
--Fixed a bug where the heal spell could not equipped if any other spells were equipped
+-Fixed a bug where the heal spell could not equipped if any other spells were equipped.
+-Fixed some other bugs.
 
 
 [KNOWN ISSUES]:

@@ -1,11 +1,5 @@
 event_inherited();
 
-draw_set_halign(fa_center);
-if global.debug = true { 
-	draw_rectangle(x-325,y-175,x+325,y+175,true); 
-	draw_rectangle_color(x-450,y-225,x+450,y+225,c_red,c_red,c_red,c_red,true); 
-}
-draw_set_halign(fa_left);
 if state = estate.move_left or state = estate.idle_move_left {
 	flipped = 1;
 } else if state = estate.move_right or state = estate.idle_move_right {
@@ -21,4 +15,6 @@ if in_alert_radius = true {
 		draw_sprite(s_foundmark,0,x,y-20)
 	}
 }
+
+
 

@@ -1,0 +1,2 @@
+/// @description
+num = 0;

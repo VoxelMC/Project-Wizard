@@ -8,7 +8,7 @@ switch (anim_state) {
 	image_speed = 1; break;
 	case "jumping": sprite_index = s_slime_jump; break;
 	case "spattack": sprite_index = s_slime_special;
-	image_speed = 1; break;
+	image_speed = 1;  break;
 	case "charge": sprite_index = s_slime_special;
 	image_index = 0;
 	image_speed = 0; break;

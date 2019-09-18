@@ -4,14 +4,20 @@ if jump = false && state != estate.spattack && state != estate.idle && state != 
 	anim_state = "moving";
 }
 
-if state = estate.spattack or state = estate.charge {
+if state = estate.spattack or state = estate.charge or state = estate.knockback {
 	r = 5;
+	invin = true;
+} else if state = estate.move_right or state = estate.move_left {
+	r = 1.5;
+	invin = false;
 } else {
 	r = 1;
+	invin = false;
 }
+
 //State speed management
 switch (state) {
-	case estate.move_right:  hspd += 1;
+	case estate.move_right: hspd += 1;
 		maxhspd = spd; break;
 	case estate.move_left: hspd -= 1;
 		maxhspd = spd; break;
@@ -22,6 +28,13 @@ switch (state) {
 		maxhspd = 1.4; break;
 	case estate.idle_move_right: hspd += 0.2;
 		maxhspd = 1.4; break;
+	case estate.knockback: hspd = 3*flipped;
+		if on_ground = true {
+			vspd = -4;
+			on_ground = false;
+		}
+		maxhspd = 3
+	break;
 	case estate.spattack: hspd -= 15*flipped;
 		maxhspd = 15;
 		anim_state = "spattack"; break;
@@ -46,7 +59,7 @@ if jump = true && on_ground = true {
 	anim_state = "jumping";
 }
 
-vspd = vspd +  0.35//Adds gravity to vspeed
+vspd += 0.35//Adds gravity to vspeed
 
 ///Collison Code///
 
@@ -64,12 +77,17 @@ if (place_meeting(x, y+vspd, o_wall)){
     while (!place_meeting(x, y+sign(vspd), o_wall)){
         y+=sign(vspd);
     }
-   vspd=0;
-   on_ground = true;
+    vspd=0;
+    on_ground = true;
+    if state = estate.knockback {
+		state = estate.idle;
+		jump = false;
+    }
 }
 y+=vspd;
 
 //Check to Jump
+if state != estate.knockback { //Knockback Check Begin
 if (place_meeting(x+(hspd*8), y, o_wall) and on_ground = true) {
 	jump = true;
 } else if !(place_meeting(x+(hspd*6),y,o_wall)) and on_ground = true {
@@ -77,6 +95,7 @@ if (place_meeting(x+(hspd*8), y, o_wall) and on_ground = true) {
 }
 
 ///Attack Code///
+
 
 var p_dir = point_direction(x,y,o_player.x,o_player.y);
 
@@ -90,6 +109,8 @@ if collision_rectangle(x-450,y-225,x+450,y+225,o_player,false,true) {
 } else {
 	in_alert_radius = false;
 }
+} //Knockback Check End
+
 
 if attack_timer > 0 {
 	attack_timer -= 1;
@@ -115,30 +136,32 @@ if attack_timer = 0 {
 	}
 }
 
-if state != estate.spattack and state != estate.charge {
-	if (p_dir < 45 or p_dir >= 315) {
-		e_dir_next = estate.move_right;
-	} else if (p_dir >= 135 and p_dir < 225) {
-		e_dir_next = estate.move_left;	
-	}
-	
-	state = e_dir_next;
-}
+if state != estate.knockback {
 
-} else {
-	
-	if in_alert_radius = true {
+	if state != estate.spattack and state != estate.charge {
 		if (p_dir < 45 or p_dir >= 315) {
-			state = estate.idle_move_right;
+			e_dir_next = estate.move_right;
 		} else if (p_dir >= 135 and p_dir < 225) {
-			state = estate.idle_move_left;	
+			e_dir_next = estate.move_left;	
 		}
-		idle_move_timer = 5;
-	}
-	
-	idle_move_timer -= 1;
-	if idle_move_timer = 0 {
-		state = choose(estate.idle_move_right,estate.idle_move_left,estate.idle,estate.idle);
-		idle_move_timer = irandom_range(60,100);
+		
+		state = e_dir_next;
 	}
 }
+	} else {
+		
+		if in_alert_radius = true {
+			if (p_dir < 45 or p_dir >= 315) {
+				state = estate.idle_move_right;
+			} else if (p_dir >= 135 and p_dir < 225) {
+				state = estate.idle_move_left;	
+			}
+			idle_move_timer = 5;
+		}
+		
+		idle_move_timer -= 1;
+		if idle_move_timer = 0 {
+			state = choose(estate.idle_move_right,estate.idle_move_left,estate.idle,estate.idle);
+			idle_move_timer = irandom_range(60,100);
+		}
+	}

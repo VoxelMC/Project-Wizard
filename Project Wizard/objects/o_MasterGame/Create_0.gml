@@ -31,9 +31,4 @@ global.keybind[key.spl4] = ini_read_real("Keybinds","Spell 4",ord("E"))
 global.keybind[key.pause] = ini_read_real("Keybinds","Pause",vk_escape)
 ini_close();
 
-/*set_alarm(60);
-set_alarm(120);
-set_alarm(180);
-set_alarm(240);*/
-
 //cutsceneStart(tl_tutorial,false);

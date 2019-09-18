@@ -6,8 +6,9 @@ enum estate
  	move_right,
 	idle_move_left,
 	idle_move_right,
+	knockback,
 	charge,
- 	spattack
+ 	spattack,
 	}
 #endregion
 
