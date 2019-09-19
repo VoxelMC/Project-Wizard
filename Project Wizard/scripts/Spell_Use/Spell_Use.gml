@@ -20,36 +20,23 @@ switch (spl) {
 	case spellid.heal:
 		switch (wtype) {
 			case weptype.wand:
-			if global.CurrentHP != global.MaxHP {
-				global.CurrentHP += 2;
-				splcooldown = 180; //3 seconds
-			}
-				
+				if global.CurrentHP != global.MaxHP {
+					global.CurrentHP += 2;
+					splcooldown = 600; //10 seconds
+				}
 			break;
 			case weptype.staff:
-			if global.CurrentHP != global.MaxHP {
-				global.CurrentHP += 5;
-				splcooldown = 600; //10 seconds
-			}
-				
+				//Health Drain Code here
 			break;
 			case weptype.tome:
-			/*if !instance_exists(o_healingaoe) && o_player.on_ground = true {
-				var bigaura = instance_create_layer(x,y,"Auras",o_healingaoe) 
-				with bigaura {
-					uptime = 360; //6 seconds
+				if !instance_exists(o_healingaoe) && o_player.on_ground = true {
+					var bigaura = instance_create_layer(x,y,"Auras",o_healingaoe) 
+					bigaura.uptime = 300 //5 seconds;
 				}
-			}*/
+				splcooldown = 600;
 			break;
 			case weptype.idol:
-			/*if !instance_exists(o_healingaoe) && o_player.on_ground = true {
-				var lilaura = instance_create_layer(x,y+20,"Auras",o_healingaoe) 
-				with lilaura {
-					image_xscale = 0.5;
-					image_yscale = 0.5;
-					uptime = 240; //4 seconds
-				}
-			}*/
+				//Health Tether Code here.
 			break;
 		}
 	break;
@@ -58,22 +45,16 @@ switch (spl) {
 	case spellid.lightning:
 		switch (wtype) {
 			case weptype.wand: 
-				/*if !instance_exists(o_LightningProj) && on_ground = true {
-					var proj = instance_create_layer(x,y,"Projectiles",o_LightningProj)
-					with proj {
-						direction = dir;
-						image_angle = direction;
-					}
-					if mouse_x > x {
-						flipped = 1;
-					} else {
-						flipped = -1;
-					}
-					movestop = true;
-				}*/
+				var proj = instance_create_layer(x,y,"Projectiles",o_LightningWandProj)
+				with proj {
+					direction = dir;
+					image_angle = direction;
+					speed = 25;
+				} //Add code for lightning chain attacking later
+			splcooldown = 300; //5 seconds
 			break;
 			case weptype.staff:
-				var proj = instance_create_layer(x,y,"Projectiles",o_SmolLightningProj)
+				var proj = instance_create_layer(x,y,"Projectiles",o_LightningStaffProj)
 				with proj {
 					direction = dir;
 					image_angle = direction;
@@ -84,7 +65,7 @@ switch (spl) {
 				} else {
 					flipped = -1;
 				}
-				//splcooldown = 300; //5 seconds
+				splcooldown = 300; //5 seconds
 			break;
 			case weptype.tome:
 				instance_create_layer(o_player.x+60,o_player.y,"Projectiles",o_LightningBalls);
@@ -100,8 +81,8 @@ switch (spl) {
 				}
 			break;
 		}
-		break;
-		#endregion
+	break;
+	#endregion
 	#region Basic Fire Spell
 	case spellid.fire:
 		switch (wtype) {
@@ -124,7 +105,7 @@ switch (spl) {
 				} else {
 					flipped = -1;
 				}
-				//splcooldown = 300; //5 seconds
+				splcooldown = 300; //5 seconds
 			break;
 			case weptype.tome:
 			if splcooldown = 0 {
@@ -135,18 +116,36 @@ switch (spl) {
 					t3 = 15;
 					t4 = 20;
 				}
-				splcooldown = 600; //10 seconds
+				splcooldown = 480; //8 seconds
 			}
 			break;
 			case weptype.idol: 
 				if !instance_exists(o_DragonFireball) && collision_rectangle(mouse_x-50,mouse_y-50,mouse_x+50,mouse_y+50,o_lasercolparent,false,true) = noone {
 					instance_create_layer(mouse_x,mouse_y,"Projectiles",o_DragonFireball);
 				}
-				splcooldown = 900; //15 seconds
+				splcooldown = 600; //10 seconds
 			break;
 		}
-		break;
-		#endregion
+	break;
+	#endregion
+	#region Basic Ice Spell
+	case spellid.ice:
+		switch (wtype) {
+			case weptype.wand:
+			
+			break;
+			case weptype.staff:
+			
+			break;
+			case weptype.tome:
+			
+			break;
+			case weptype.idol:
+			
+			break;
+		}
+	break;
+	#endregion
 }
 
 if cancelcooldown = false {

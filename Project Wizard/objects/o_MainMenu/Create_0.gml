@@ -1,14 +1,4 @@
-current_select = 0
-current_menu = 0;
 changelog = false;
-sscale = 2;
-oscale = 2;
-qscale = 2;
-rscale = 2;
-bscale = 2;
-pos = 480;
-go = false;
-go2 = false;
 a[0] = 0;
 a[1] = 0;
 a[2] = 0;
@@ -18,9 +8,8 @@ wepscale[2] = 1.5;
 wepscale[3] = 1.5;
 splscale[0] = 1.5;
 splscale[1] = 1.5;
-select = "none";
 
-/// @description
+//Inventory init
 globalvar pasinv;
 pasinv = ds_grid_create(6,0);
 globalvar spellinv;
@@ -46,29 +35,28 @@ weapon = ds_grid_create(10,10);
 item_init_passive(1,"Glowy",s_PGlowy,"Increases the maximum amount of jumps by 1.",1,pastype.relic)
 
 //SPELLS
-
 //Healing Spell
-item_init_spell(1,"Healing Aura",s_SHealing,"A basic healing spell.",
+item_init_spell(spellid.heal,"Healing Aura",s_SHealing,"A basic healing spell.",
 "Wand: Heals 2 HP instantly.",
 "Staff: Grants a life drain ability for a couple seconds.", 
 "Tome: Creates a healing aura that slowly heals the player while inside it.", 
 "Idol: Creates a healing mechanism that tethers to the player to heal them slowly."); 
 
 //Lightning Spell
-item_init_spell(2,"Thunderous Rage",s_SLightning,"A basic lightning attack.",
+item_init_spell(spellid.lightning,"Thunderous Rage",s_SLightning,"A basic lightning attack.",
 "Wand: Shoots a lightning quick lightning bolt that chain hits enemies.",
 "Staff: Shoots a small lightning bolt that stuns the enemy on impact.",
 "Tome: Creates 3 balls of lightning that circle around you, that can be directed towards the cursor.",
 "Idol: Summons a cloud of lightning that brings down 3 lightning bolts.");
 
 //Fire Spell
-item_init_spell(3,"Fire Blast",s_SFireBlast,"A basic fire attack.",
+item_init_spell(spellid.fire,"Fire Blast",s_SFireBlast,"A basic fire attack.",
 "Wand: Shoots a beam of fire.",
 "Staff: Shoots a simple fireball that sets the enemy on fire.",
 "Tome: Shoots a slew of homing fireballs directly towards the nearest enemy.",
 "Idol: Summons a fire dragon, which shoots fireballs towards the nearest enemies for a short time.",);
 
-item_init_spell(4,"Icy Blizzard",s_SIce,"A basic ice attack.",
+item_init_spell(spellid.ice,"Icy Blizzard",s_SIce,"A basic ice attack.",
 "Wand: Shoots piecering ice projectile that pierces and slows down enemies.",
 "Staff: Shoots an icicle projectile that encases the enemy in ice.",
 "Tome: Creates a gust of ice cold air that encases an enemy in ice if they stay in it for too long.",

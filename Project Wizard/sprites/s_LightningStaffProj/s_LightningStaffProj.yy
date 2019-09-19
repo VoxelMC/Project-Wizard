@@ -2,7 +2,7 @@
     "id": "cbdbed47-e168-4be7-8e37-17526f687812",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "s_SmolLightningProj",
+    "name": "s_LightningStaffProj",
     "For3D": false,
     "HTile": false,
     "VTile": false,

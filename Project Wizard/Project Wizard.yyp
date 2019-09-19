@@ -130,7 +130,7 @@
             "Key": "100ccd91-338d-4ec9-98f9-260bb29a6f42",
             "Value": {
                 "id": "f0f4af74-a4a7-4f4a-be86-18f6e1c56ce9",
-                "resourcePath": "objects\\o_SmolLightningProj\\o_SmolLightningProj.yy",
+                "resourcePath": "objects\\o_LightningStaffProj\\o_LightningStaffProj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1034,7 +1034,7 @@
             "Key": "abe2887a-109a-4ea1-9089-22dcf2d53061",
             "Value": {
                 "id": "d924f207-5939-4e70-9158-6647bd2e97ae",
-                "resourcePath": "objects\\o_LightningProj\\o_LightningProj.yy",
+                "resourcePath": "objects\\o_LightningWandProj\\o_LightningWandProj.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1178,7 +1178,7 @@
             "Key": "cbdbed47-e168-4be7-8e37-17526f687812",
             "Value": {
                 "id": "a1594c96-793e-4f52-a2bc-8cfe427dea4b",
-                "resourcePath": "sprites\\s_SmolLightningProj\\s_SmolLightningProj.yy",
+                "resourcePath": "sprites\\s_LightningStaffProj\\s_LightningStaffProj.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1332,6 +1332,14 @@
                 "id": "1276473a-8f92-4641-bb90-5b71979979b7",
                 "resourcePath": "datafiles_yy\\regexp.ndll.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "e712fc7e-fe79-4b1a-9bfb-f0a41cce3360",
+            "Value": {
+                "id": "6446b10d-ae7d-48c2-9347-90f189204461",
+                "resourcePath": "sprites\\s_LightningWandProj\\s_LightningWandProj.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

@@ -1,5 +1,4 @@
 /// @param damage
-
 var damage = argument0;
 if damage > 1 {
 var e_dmg = irandom_range(damage-1,damage+1);

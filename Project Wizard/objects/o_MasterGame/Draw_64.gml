@@ -24,7 +24,6 @@ draw_text(3,505,"Press F1 for Debug Mode");
 draw_text(3,490,"Press F11 for Fullscreen");
 draw_text(3,475,"Press 0 to Restart the Game.");
 
-
 //UI
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2-170,global.dguiheight);
 

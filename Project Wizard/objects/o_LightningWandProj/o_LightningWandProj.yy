@@ -1,8 +1,8 @@
 {
-    "id": "100ccd91-338d-4ec9-98f9-260bb29a6f42",
+    "id": "abe2887a-109a-4ea1-9089-22dcf2d53061",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_SmolLightningProj",
+    "name": "o_LightningWandProj",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "cbdbed47-e168-4be7-8e37-17526f687812",
+    "spriteId": "e712fc7e-fe79-4b1a-9bfb-f0a41cce3360",
     "visible": true
 }
