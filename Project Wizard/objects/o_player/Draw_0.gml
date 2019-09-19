@@ -27,6 +27,8 @@ if beam_active = true {
 //Draw the Player
 if global.stop = false {
 	draw_sprite_ext(sprite_index, image_index, x, y, flipped, 1, 0, image_blend, flicker)
+} else if global.indialogue = true {
+	draw_sprite_ext(s_player_idle, image_index, x, y, flipped, 1, 0, image_blend, flicker)
 }
 
 

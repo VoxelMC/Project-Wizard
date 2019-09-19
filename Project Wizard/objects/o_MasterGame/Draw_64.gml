@@ -22,6 +22,7 @@ draw_set_halign(fa_left);
 draw_text(3,520,"vPre-Alpha v1.1.1");
 draw_text(3,505,"Press F1 for Debug Mode");
 draw_text(3,490,"Press F11 for Fullscreen");
+draw_text(3,475,"Press 0 to Restart the Game.");
 
 
 //UI
@@ -35,9 +36,9 @@ draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2+90,global.dguiheight);
 
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2+170,global.dguiheight);
 
-draw_text(297,450,"Q")
-draw_text(377,450,"E")
-draw_text(565.,450,"R")
+draw_text(305,450,"Q")
+draw_text(385,450,"E")
+draw_text(565,450,"R")
 draw_text(646,450,"F")
 
 }

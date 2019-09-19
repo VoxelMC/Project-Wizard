@@ -14,6 +14,7 @@ if global.debug = true {
 	if keyboard_check_pressed(ord("5")) { item_add(spellid.heal,spell) }
 	if keyboard_check_pressed(ord("6")) { item_add(spellid.lightning,spell) }
 	if keyboard_check_pressed(ord("7")) { item_add(spellid.fire,spell) }
+	if keyboard_check_pressed(ord("8")) { item_add(spellid.ice,spell) }
 }
 
 

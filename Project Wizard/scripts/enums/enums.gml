@@ -26,7 +26,8 @@ enum spellid
 	none, 
 	heal,
 	lightning,
-	fire
+	fire,
+	ice
 	}
 #endregion
 

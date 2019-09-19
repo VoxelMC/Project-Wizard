@@ -10,10 +10,7 @@ if global.stop = false {
 	if global.wepequipped != "none" {
 		var wtype = ds_grid_get(wepinv,propwep.type,0);
 		if mouse_check_button_pressed(global.keybind[key.atk1]) {
-			Attack_Use(1,wtype);
-		}
-		if mouse_check_button_pressed(global.keybind[key.atk1]) {
-			Attack_Use(2,wtype);
+			Attack_Use(wtype);
 		}
 		if (keyboard_check_pressed(global.keybind[key.spl1]) && splist[0] != -1 && cooldown[1] <= 0 ) {
 	

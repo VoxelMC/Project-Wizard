@@ -49,14 +49,14 @@ item_init_passive(1,"Glowy",s_PGlowy,"Increases the maximum amount of jumps by 1
 
 //Healing Spell
 item_init_spell(1,"Healing Aura",s_SHealing,"A basic healing spell.",
-"Wand: Heals you 5 HP instantly.",
-"Staff: Heals you 10 HP instantly.", 
-"Tome: Creates a healing aura that lasts 5 seconds.", 
-"Idol: Creates a smaller healing aura for 5 seconds."); 
+"Wand: Heals 2 HP instantly.",
+"Staff: Grants a life drain ability for a couple seconds.", 
+"Tome: Creates a healing aura that slowly heals the player while inside it.", 
+"Idol: Creates a healing mechanism that tethers to the player to heal them slowly."); 
 
 //Lightning Spell
 item_init_spell(2,"Thunderous Rage",s_SLightning,"A basic lightning attack.",
-"Wand: Summon a bolt of lightning from your fingertips, which stops you in your tracks.",
+"Wand: Shoots a lightning quick lightning bolt that chain hits enemies.",
 "Staff: Shoots a small lightning bolt that stuns the enemy on impact.",
 "Tome: Creates 3 balls of lightning that circle around you, that can be directed towards the cursor.",
 "Idol: Summons a cloud of lightning that brings down 3 lightning bolts.");
@@ -67,6 +67,12 @@ item_init_spell(3,"Fire Blast",s_SFireBlast,"A basic fire attack.",
 "Staff: Shoots a simple fireball that sets the enemy on fire.",
 "Tome: Shoots a slew of homing fireballs directly towards the nearest enemy.",
 "Idol: Summons a fire dragon, which shoots fireballs towards the nearest enemies for a short time.",);
+
+item_init_spell(4,"Icy Blizzard",s_SIce,"A basic ice attack.",
+"Wand: Shoots piecering ice projectile that pierces and slows down enemies.",
+"Staff: Shoots an icicle projectile that encases the enemy in ice.",
+"Tome: Creates a gust of ice cold air that encases an enemy in ice if they stay in it for too long.",
+"Idol: Summons 3 'Ice Elementals' that float around and slow down/harm enemies.");
 
 //WEAPONS
 item_init_weapon(1,"Wand",s_BasicWand,"A basic wand.",weptype.wand,3)

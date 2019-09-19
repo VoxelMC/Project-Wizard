@@ -5,13 +5,12 @@ if global.debug = true {
 	draw_text(x-60,y+45,"X:" + string(round(o_player.x)))
 	draw_text(x-60,y+60,"Y:" + string(round(o_player.y)))
 	draw_text(x-60,y+75,"Animation State:" + string(o_player.anim_state))
-	draw_text(x-60,y+90,"Player State:" + string(o_player.state));
 	if o_player.fly = true {
-		draw_text(x-60,y+105,"Press Left Control for Fly Mode. (ON)");
+		draw_text(x-60,y+90,"Press Left Control for Fly Mode. (ON)");
 	} else {
-		draw_text(x-60,y+105,"Press Left Control for Fly Mode. (OFF)")
+		draw_text(x-60,y+90,"Press Left Control for Fly Mode. (OFF)")
 	}
-	draw_text(x-60,y+120,"To interact with NPCs (like the Training Dummy), press F.")
+	draw_text(x-60,y+105,"To interact with NPCs (like the Training Dummy), press G.")
 	draw_set_halign(fa_right)
 	draw_text(x+890,y+30,"1: Wand");
 	draw_text(x+890,y+45,"2: Staff");
@@ -20,5 +19,6 @@ if global.debug = true {
 	draw_text(x+890,y+90,"5: Heal");
 	draw_text(x+890,y+105,"6: Lightning");
 	draw_text(x+890,y+120,"7: Fire");
+	draw_text(x+890,y+135,"8: Ice");
 	draw_set_halign(fa_left);
 }

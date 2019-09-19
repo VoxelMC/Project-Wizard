@@ -11,7 +11,7 @@
         "1df8117e-8fa4-41be-9e1a-98fef0fd27cb"
     ],
     "filterType": "GMScript",
-    "folderName": "Item/Combat Scripts",
+    "folderName": "Item\/Combat Scripts",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
