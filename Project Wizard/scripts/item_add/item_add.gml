@@ -6,9 +6,7 @@ var itemtype = argument1;
 var item_name = ds_grid_get(itemtype,0,itemid)
 var item_sprite = ds_grid_get(itemtype,1,itemid)
 var item_desc = ds_grid_get(itemtype,2,itemid)
-show_debug_message(item_name)
-show_debug_message(item_sprite)
-show_debug_message(item_desc)
+show_debug_message(itemid);
 if itemtype = passive {
 var item_effect = ds_grid_get(itemtype,3,itemid)
 var item_pastype = ds_grid_get(itemtype,4,itemid)
@@ -17,17 +15,11 @@ var itemtypestr = "Passive"
 var item_weptype = ds_grid_get(itemtype,3,itemid)
 var item_damage = ds_grid_get(itemtype,4,itemid)
 var itemtypestr = "Weapon"
-show_debug_message(item_weptype)
-show_debug_message(item_damage)
 } else {
 var item_wdesc = ds_grid_get(itemtype,3,itemid)
 var item_sdesc = ds_grid_get(itemtype,4,itemid);
 var item_tdesc = ds_grid_get(itemtype,5,itemid);
 var item_idesc = ds_grid_get(itemtype,6,itemid);
-show_debug_message(item_wdesc)
-show_debug_message(item_sdesc)
-show_debug_message(item_tdesc)
-show_debug_message(item_idesc)
 var itemtypestr = "Spell"
 }
 
@@ -50,7 +42,7 @@ switch itemtypestr {
 	case "Spell": 
 		var spellamount = ds_grid_height(spellinv);
 		var spellgridwidth = ds_grid_width(spellinv);
-		var spelloverlap = ds_grid_value_exists(spellinv,0,0,spellgridwidth,spellamount,itemid)
+		var spelloverlap = ds_grid_value_exists(spellinv,0,0,0,spellamount,itemid)
 		if spelloverlap = false {
 			if spellamount != 4 {
 				ds_grid_resize(spellinv,spellgridwidth,spellamount + 1);
@@ -63,10 +55,11 @@ switch itemtypestr {
 				ds_grid_set(spellinv,propspl.sdesc,spellamount-1,item_sdesc)
 				ds_grid_set(spellinv,propspl.tdesc,spellamount-1,item_tdesc)
 				ds_grid_set(spellinv,propspl.idesc,spellamount-1,item_idesc)
+				show_debug_message("I've been added.")
 				o_player.spellequipamount += 1;
 				splist[o_player.spellequipamount] = itemid;
-			}
-		}
+			} else { show_debug_message("Too many spells!") }
+		} else { show_debug_message("Already equipped!") }
 	break;
 	
 	case "Weapon":

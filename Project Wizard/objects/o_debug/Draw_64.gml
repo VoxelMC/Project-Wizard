@@ -20,5 +20,6 @@ if global.debug = true {
 	draw_text(x+890,y+105,"6: Lightning");
 	draw_text(x+890,y+120,"7: Fire");
 	draw_text(x+890,y+135,"8: Ice");
+
 	draw_set_halign(fa_left);
 }

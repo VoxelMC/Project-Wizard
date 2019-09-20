@@ -23,11 +23,11 @@ enum passiveid
 #region Spell Item ID Name Enum
 enum spellid 
 	{
-	none, 
+	none,
 	heal,
 	lightning,
 	fire,
-	ice
+	ice,
 	}
 #endregion
 

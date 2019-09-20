@@ -1,4 +1,3 @@
-
 if hometimer = 0 {
 	homeamt += 0.02;
 }

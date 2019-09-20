@@ -1255,14 +1255,6 @@
             }
         },
         {
-            "Key": "db1f97c0-24ba-4354-8cdc-b88664dbd683",
-            "Value": {
-                "id": "b820d7d8-0ab1-4524-bc96-9a4e7cece66b",
-                "resourcePath": "datafiles_yy\\Easy Image Trail After Image arrays.yyz.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "dbe765d0-1b59-4894-a956-c4b6e2476e8a",
             "Value": {
                 "id": "11fdc532-65ee-4abe-a34b-3fb0c22f1118",

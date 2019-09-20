@@ -25,16 +25,8 @@ if timer3 = 0 {
 	instance_destroy();
 }
 
-if launchkey = global.keybind[key.spl1] or launchkey = global.keybind[key.spl2] {
-	if mouse_check_button_pressed(launchkey) && shoot = false && instance_number(o_LightningBalls) >= 3 {
-		shoot = true;
-		direction = point_direction(x,y,mouse_x,mouse_y);
-		speed = 7;
-	}
-} else if launchkey = global.keybind[key.spl3] or launchkey = global.keybind[key.spl4] {
-	if keyboard_check_pressed(launchkey) && shoot = false && instance_number(o_LightningBalls) >= 3 {
-		shoot = true;
-		direction = point_direction(x,y,mouse_x,mouse_y);
-		speed = 7;
-	}
+if keyboard_check_pressed(launchkey) && shoot = false && instance_number(o_LightningBalls) >= 3 {
+	shoot = true;
+	direction = point_direction(x,y,mouse_x,mouse_y);
+	speed = 7;
 }

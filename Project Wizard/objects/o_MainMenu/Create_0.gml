@@ -13,7 +13,7 @@ splscale[1] = 1.5;
 globalvar pasinv;
 pasinv = ds_grid_create(6,0);
 globalvar spellinv;
-spellinv = ds_grid_create(10,0);
+spellinv = ds_grid_create(8,0);
 globalvar wepinv;
 wepinv = ds_grid_create(7,5);
 global.wepequipped = "none";
@@ -26,7 +26,7 @@ globalvar passive;
 passive = ds_grid_create(10,10);
 
 globalvar spell;
-spell = ds_grid_create(10,10);
+spell = ds_grid_create(10,30);
 
 globalvar weapon;
 weapon = ds_grid_create(10,10);
