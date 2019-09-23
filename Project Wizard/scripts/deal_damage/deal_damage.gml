@@ -20,6 +20,8 @@ if hp <= 0 {
 	}
 }
 
+if other.piercing = true other.piercecount += 1;
+
 state = estate.knockback;
 kbdir = other.x;
 

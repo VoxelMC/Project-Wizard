@@ -359,6 +359,14 @@
             }
         },
         {
+            "Key": "30da5004-25bc-41de-bd31-06c70d323575",
+            "Value": {
+                "id": "308c0d0d-01ec-4eb4-b1e4-103091501584",
+                "resourcePath": "sprites\\s_IceProjectile\\s_IceProjectile.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3175348c-d249-401d-ab4e-7c7465ed4b7b",
             "Value": {
                 "id": "d6571417-298c-4d6e-b1d7-780d879368ef",
@@ -564,6 +572,14 @@
                 "id": "7b6b108b-ad35-439f-ab40-80c6703adc36",
                 "resourcePath": "objects\\o_Inventory\\o_Inventory.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "5bc6aa6e-98a1-4b8e-b8c6-628afc7e60d8",
+            "Value": {
+                "id": "5ff9acb7-3b93-4c5e-a534-1b3527ab71fe",
+                "resourcePath": "scripts\\alter_speed\\alter_speed.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1223,6 +1239,14 @@
             }
         },
         {
+            "Key": "d39b177e-0571-4ed3-b512-bf926ecfca95",
+            "Value": {
+                "id": "0fcb3fdf-9902-4eab-afca-03eb50210221",
+                "resourcePath": "objects\\o_IceProj\\o_IceProj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d440ce34-b05f-49d2-9b6e-42cf8a716346",
             "Value": {
                 "id": "946c7009-6d0a-45a9-95a4-09e6a1d80730",
@@ -1480,7 +1504,8 @@
         "d7b8121b-ed7d-4e2f-b6e7-0d5b77b13a9a",
         "b33c2641-b8de-48b8-9ed4-402eb24f9d26",
         "5e6ee59b-a371-4af4-aa2e-3c05ba3c1932",
-        "2f001b71-7989-4dc2-99c0-66d50ead3ed3"
+        "2f001b71-7989-4dc2-99c0-66d50ead3ed3",
+        "5bc6aa6e-98a1-4b8e-b8c6-628afc7e60d8"
     ],
     "tutorial": ""
 }

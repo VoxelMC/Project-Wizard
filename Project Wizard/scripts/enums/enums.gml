@@ -121,3 +121,12 @@ enum ai
 	bat
 	}
 #endregion
+
+#region Status Effect Enum
+enum debuff
+	{
+	none,
+	slow,	
+	onfire
+	}
+#endregion

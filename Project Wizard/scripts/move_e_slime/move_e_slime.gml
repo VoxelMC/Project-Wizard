@@ -1,5 +1,3 @@
-var spd = 3.5;
-
 if jump = false && state != estate.spattack && state != estate.idle && state != estate.charge {
 	anim_state = "moving";
 }
@@ -18,14 +16,14 @@ if state = estate.spattack or state = estate.charge or state = estate.knockback 
 //State speed management
 switch (state) {
 	case estate.move_right: hspd += 1;
-		maxhspd = spd; break;
+		break;
 	case estate.move_left: hspd -= 1;
-		maxhspd = spd; break;
+		break;
 	case estate.idle: hspd = 0;
-		maxhspd = spd;
+		maxhspd = 0;
 		anim_state = "idle"; break;
 	case estate.idle_move_left: hspd -= 0.2;
-		maxhspd = 1.4; break;
+		 break;
 	case estate.idle_move_right: hspd += 0.2;
 		maxhspd = 1.4; break;
 	case estate.knockback: hspd = 3*flipped;

@@ -132,7 +132,18 @@ switch (spl) {
 	case spellid.ice:
 		switch (wtype) {
 			case weptype.wand:
-			
+				var proj = instance_create_layer(x,y,"Projectiles",o_IceProj)
+				with proj {
+					direction = dir;
+					image_angle = direction;
+					speed = 9;
+				}
+				if mouse_x > x {
+					flipped = 1;
+				} else {
+					flipped = -1;
+				}
+				splcooldown = 300; //5 seconds
 			break;
 			case weptype.staff:
 			
