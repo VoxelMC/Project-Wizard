@@ -578,7 +578,7 @@
             "Key": "5bc6aa6e-98a1-4b8e-b8c6-628afc7e60d8",
             "Value": {
                 "id": "5ff9acb7-3b93-4c5e-a534-1b3527ab71fe",
-                "resourcePath": "scripts\\alter_speed\\alter_speed.yy",
+                "resourcePath": "scripts\\speed_check\\speed_check.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -812,6 +812,14 @@
                 "id": "8d3a2ac0-ac0b-4045-a9d7-6494b2136ee9",
                 "resourcePath": "objects\\o_DragonFireball\\o_DragonFireball.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7343f8d0-47c6-4b76-b61a-ee3167627ade",
+            "Value": {
+                "id": "33cd9eb6-0824-42f2-bcc0-b6a10112b901",
+                "resourcePath": "scripts\\add_status\\add_status.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1489,6 +1497,7 @@
         "99e72973-baea-4a7f-9939-246536861374",
         "d0cd514b-1d8a-4ec6-8f44-b2141d0221a4",
         "1df8117e-8fa4-41be-9e1a-98fef0fd27cb",
+        "7343f8d0-47c6-4b76-b61a-ee3167627ade",
         "ae3c6a42-b1bb-436e-8173-5c9adbf5f828",
         "9818a417-945f-45e3-aa02-f62aff8d029e",
         "c94d66a7-751e-4877-b6c9-2359340206a9",

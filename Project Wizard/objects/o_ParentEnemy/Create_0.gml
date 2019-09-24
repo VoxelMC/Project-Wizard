@@ -10,11 +10,12 @@ on_ground = true;
 invin = false; 
 invintimer = -1;
 hit = false;
-status = debuff.none;
-go_once = false;
-go_timer = -1;
 maxhspd = 0;
-maxhspdalt = 0;
-alttime = 0;
+hspdalt = 0;
+hspdaltgo = false;
+hspdaltdur = -1;
+status = debuff.none;
 attack_timer = irandom_range(60,80);
 kbdir = 0; //Knockback Direction
+
+c_lightblue = make_color_rgb(0, 247, 255)

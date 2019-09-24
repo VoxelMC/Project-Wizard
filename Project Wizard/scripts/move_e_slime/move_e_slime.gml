@@ -16,16 +16,19 @@ if state = estate.spattack or state = estate.charge or state = estate.knockback 
 //State speed management
 switch (state) {
 	case estate.move_right: hspd += 1;
+		maxhspd = 3.5+hspdalt;
 		break;
 	case estate.move_left: hspd -= 1;
+		maxhspd = 3.5+hspdalt;
 		break;
 	case estate.idle: hspd = 0;
 		maxhspd = 0;
 		anim_state = "idle"; break;
 	case estate.idle_move_left: hspd -= 0.2;
+		maxhspd = 1.4+hspdalt;
 		 break;
 	case estate.idle_move_right: hspd += 0.2;
-		maxhspd = 1.4; break;
+		maxhspd = 1.4+hspdalt; break;
 	case estate.knockback: hspd = 3*flipped;
 		if on_ground = true {
 			vspd = -4;
@@ -34,10 +37,9 @@ switch (state) {
 		maxhspd = 3
 	break;
 	case estate.spattack: hspd -= 15*flipped;
-		maxhspd = 15;
+		maxhspd = 15+hspdalt;
 		anim_state = "spattack"; break;
 	case estate.charge: hspd = 0;
-		maxhspd = 6;
 		anim_state = "charge"; break;
 }
 
@@ -49,7 +51,11 @@ if state = estate.charge {
 }
 
 hspd = clamp(hspd, -maxhspd, maxhspd); //this makes sure hspd doesn't exceed the max value
-
+if hspdalt > 0 {
+	maxhspd = clamp(maxhspd, maxhspd,maxhspd+hspdalt);
+} else {
+	maxhspd = clamp(maxhspd, maxhspd+hspdalt,maxhspd);
+}
 //Jumping
 if jump = true && on_ground = true { 
 	vspd = -8;
