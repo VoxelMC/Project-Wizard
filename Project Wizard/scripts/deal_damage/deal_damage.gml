@@ -13,7 +13,7 @@ hp -= e_dmg
 if hp <= 0 {
 	instance_destroy();
 } else {
-	var pos =  irandom_range(x+20,x-20);
+	var pos = irandom_range(x+20,x-20);
 	var hitnum = instance_create_depth(pos,y,-100,o_hitnumbers);
 	with hitnum {
 		num = e_dmg;	

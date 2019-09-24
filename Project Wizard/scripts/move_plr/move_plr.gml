@@ -34,9 +34,7 @@ if (!on_ground) && (!key_jump_held) {
 	vspd = max(vspd,-jump_speed/2);
 }
 
-vspd = vspd +  0.35 //Adds gravity to vspeed
-
-
+vspd = vspd + 0.35 //Adds gravity to vspeed
 
 ///Collison Code///
 
