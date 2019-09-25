@@ -14,6 +14,9 @@ var wtype = argument2; //Weapon Type
 var splcooldown = 0; 
 var cancelcooldown = false
 var dir = point_direction(x,y,mouse_x,mouse_y);
+var closestenemy = instance_nearest(x,y,o_ParentEnemy)
+var enemyx = closestenemy.x;
+var enemyy = closestenemy.y;
 
 switch (spl) {
 	#region Basic Healing Spell
@@ -60,11 +63,6 @@ switch (spl) {
 					image_angle = direction;
 					speed = 16;
 				}
-				if mouse_x > x {
-					flipped = 1;
-				} else {
-					flipped = -1;
-				}
 				splcooldown = 300; //5 seconds
 			break;
 			case weptype.tome:
@@ -100,11 +98,6 @@ switch (spl) {
 					image_angle = direction;
 					speed = 8;
 				}
-				if mouse_x > x {
-					flipped = 1;
-				} else {
-					flipped = -1;
-				}
 				splcooldown = 300; //5 seconds
 			break;
 			case weptype.tome:
@@ -138,15 +131,16 @@ switch (spl) {
 					image_angle = direction;
 					speed = 9;
 				}
-				if mouse_x > x {
-					flipped = 1;
-				} else {
-					flipped = -1;
-				}
 				splcooldown = 300; //5 seconds
 			break;
 			case weptype.staff:
-			
+				var proj = instance_create_layer(x,y,"Projectiles",o_IceStaffProj)
+				with proj {
+					direction = dir;
+					image_angle = direction;
+					speed = 9;
+				}
+				splcooldown = 360; //6 seconds
 			break;
 			case weptype.tome:
 			
@@ -161,4 +155,10 @@ switch (spl) {
 
 if cancelcooldown = false {
 	cooldown[splpos] = splcooldown
+}
+
+if mouse_x > x {
+	flipped = 1;
+} else {
+	flipped = -1;
 }

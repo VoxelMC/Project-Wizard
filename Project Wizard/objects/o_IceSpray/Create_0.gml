@@ -1,0 +1,1 @@
+timetillfreeze = 60;

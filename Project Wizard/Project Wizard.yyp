@@ -362,7 +362,7 @@
             "Key": "30da5004-25bc-41de-bd31-06c70d323575",
             "Value": {
                 "id": "308c0d0d-01ec-4eb4-b1e4-103091501584",
-                "resourcePath": "sprites\\s_IceProjectile\\s_IceProjectile.yy",
+                "resourcePath": "sprites\\s_IceProj\\s_IceProj.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "3d1427d2-d765-4375-a899-cf3249a5298b",
+            "Value": {
+                "id": "c2960d29-c186-4289-af12-910c6b834bea",
+                "resourcePath": "sprites\\s_IceSpray\\s_IceSpray.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "401813cc-c28f-4bd1-9231-ec0113bd262e",
             "Value": {
                 "id": "4a92583d-0f6b-469a-a0c4-6a777caeb089",
@@ -540,6 +548,14 @@
                 "id": "f21d8dbf-3406-4884-ac88-4566f0fb9951",
                 "resourcePath": "views\\5354ee67-2272-4d77-8183-159df6e380eb.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "552b7322-e430-4814-bad2-ae9447059552",
+            "Value": {
+                "id": "007c5624-e4fc-4a39-80ed-a6a9586926bd",
+                "resourcePath": "sprites\\s_IceStaffProj\\s_IceStaffProj.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -747,6 +763,14 @@
             "Value": {
                 "id": "62e8ed59-4801-4d4a-9f2f-487450701688",
                 "resourcePath": "sprites\\s_slime_idle\\s_slime_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6be0ec55-4ddb-4cae-928b-7ac4193c1a91",
+            "Value": {
+                "id": "448c72fa-b535-47e8-b4fb-a8eab969354a",
+                "resourcePath": "sprites\\s_Icicle\\s_Icicle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1183,6 +1207,14 @@
             }
         },
         {
+            "Key": "c932ecf7-69bf-4e3f-996c-44d870fd457d",
+            "Value": {
+                "id": "d66e0421-909d-4789-b6cd-eab6355d7034",
+                "resourcePath": "objects\\o_IceStaffProj\\o_IceStaffProj.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c94d66a7-751e-4877-b6c9-2359340206a9",
             "Value": {
                 "id": "d93a09c2-1e1a-437c-b4b2-de850daf737e",
@@ -1220,6 +1252,14 @@
                 "id": "e5beedc0-4697-4d3b-a54d-ee5e96594352",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cf3e88f8-e737-4f35-bf7d-841a6b8dd5b7",
+            "Value": {
+                "id": "a991bef6-2bad-45b6-b634-03e0c6c57181",
+                "resourcePath": "objects\\o_IceSpray\\o_IceSpray.yy",
+                "resourceType": "GMObject"
             }
         },
         {

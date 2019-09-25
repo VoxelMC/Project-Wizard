@@ -21,9 +21,13 @@ if hp <= 0 {
 }
 
 if other.piercing = true other.piercecount += 1;
+if other.object_index = o_IceProj add_status(debuff.slow,180,self);
+if other.object_index = o_IceStaffProj add_status(debuff.iced,240,self);
 
-state = estate.knockback;
-kbdir = other.x;
+if other.object_index != o_IceStaffProj and status != debuff.iced {
+	state = estate.knockback;
+	kbdir = other.x;
+}
 
 hit = true;
 invintimer = 30;

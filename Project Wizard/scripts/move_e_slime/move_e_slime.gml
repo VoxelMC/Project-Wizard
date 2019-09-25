@@ -91,7 +91,7 @@ if (place_meeting(x, y+vspd, o_wall)){
 y+=vspd;
 
 //Check to Jump
-if state != estate.knockback { //Knockback Check Begin
+if state != estate.knockback or status != debuff.iced { //Knockback Check Begin
 if (place_meeting(x+(hspd*8), y, o_wall) and on_ground = true) {
 	jump = true;
 } else if !(place_meeting(x+(hspd*6),y,o_wall)) and on_ground = true {
@@ -116,14 +116,15 @@ if collision_rectangle(x-450,y-225,x+450,y+225,o_player,false,true) {
 } //Knockback Check End
 
 
+if status != debuff.iced {
 if attack_timer > 0 {
 	attack_timer -= 1;
 } else {
 	attack_timer = irandom_range(60,80);
 }
+}
 
 if in_radius = true {
-
 
 if attack_timer = 0 {
 	if state != estate.spattack {

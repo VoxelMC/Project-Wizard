@@ -127,6 +127,7 @@ enum debuff
 	{
 	none,
 	slow,	
+	iced,
 	onfire
 	}
 #endregion

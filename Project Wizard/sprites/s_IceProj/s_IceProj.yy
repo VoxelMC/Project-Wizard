@@ -2,7 +2,7 @@
     "id": "30da5004-25bc-41de-bd31-06c70d323575",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "s_IceProjectile",
+    "name": "s_IceProj",
     "For3D": false,
     "HTile": false,
     "VTile": false,

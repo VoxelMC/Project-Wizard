@@ -10,7 +10,7 @@ if hit = true {
 		hit = false;
 		if status = debuff.none {
 			image_blend = c_white;
-		} else if status = debuff.slow {
+		} else if status = debuff.slow or status = debuff.iced {
 			image_blend = c_lightblue;	
 		}
 		invintimer = -1;

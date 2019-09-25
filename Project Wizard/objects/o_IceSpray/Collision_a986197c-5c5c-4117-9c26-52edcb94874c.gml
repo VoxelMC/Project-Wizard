@@ -1,0 +1,1 @@
+add_status(debuff.slow,"hold",other);

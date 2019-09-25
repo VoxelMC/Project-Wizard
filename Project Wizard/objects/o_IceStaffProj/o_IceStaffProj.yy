@@ -1,19 +1,10 @@
 {
-    "id": "d39b177e-0571-4ed3-b512-bf926ecfca95",
+    "id": "c932ecf7-69bf-4e3f-996c-44d870fd457d",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_IceProj",
+    "name": "o_IceStaffProj",
     "eventList": [
-        {
-            "id": "2e6609d3-814b-4eba-869c-ecabd7ab5421",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "d39b177e-0571-4ed3-b512-bf926ecfca95"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "30da5004-25bc-41de-bd31-06c70d323575",
+    "spriteId": "552b7322-e430-4814-bad2-ae9447059552",
     "visible": true
 }
