@@ -1,3 +1,9 @@
+/// @description Insert description here
+// You can write your code in this editor
+
+// Inherit the parent event
+event_inherited();
+
 if hometimer = 0 {
 	homeamt += 0.02;
 }
@@ -21,7 +27,7 @@ if t4 != -1 {
 	t4 -= 1;
 }
 if hometimer = 0 {
-	direction = angle_rotate(direction, point_direction(x, y,o_trainingdummy.x,o_trainingdummy.y), homeamt);
+	direction = angle_rotate(direction, point_direction(x, y, global.firetometarget.x, global.firetometarget.y), homeamt);
 } else {
 	hometimer -= 1;
 }

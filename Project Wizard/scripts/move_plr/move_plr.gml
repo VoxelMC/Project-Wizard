@@ -4,6 +4,7 @@ key_right = keyboard_check(global.keybind[key.right]);
 key_jump = keyboard_check_pressed(global.keybind[key.jump]);
 var key_jump_held = keyboard_check(global.keybind[key.jump]);
 
+
 //Check inputs, if pressed then move and flip character in direction of movement
 if (key_right) {
 	hspd += 1;

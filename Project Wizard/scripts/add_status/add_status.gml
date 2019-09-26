@@ -13,7 +13,7 @@ if dur != "hold" {
 			target.hspdaltgo = true;
 		break;
 		case debuff.iced:
-			target.hspdalt = -maxhspd;
+			target.hspdalt = -target.maxhspd;
 			target.hspdaltgo = true;
 		break;
 	}

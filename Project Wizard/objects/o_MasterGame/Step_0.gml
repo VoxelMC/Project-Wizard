@@ -28,5 +28,7 @@ if keyboard_check_pressed(vk_f1) global.debug = !global.debug;
 
 if keyboard_check_pressed(ord("0")) game_restart(); 
 
+if mouse_check_button_pressed(mb_right) instance_create_layer(mouse_x,mouse_y,"Projectiles",o_IceSpray);
+
 //Alarm Logic
 

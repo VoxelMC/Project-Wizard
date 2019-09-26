@@ -109,6 +109,7 @@ switch (spl) {
 					t3 = 15;
 					t4 = 20;
 				}
+				global.firetometarget = closestenemy;
 				splcooldown = 480; //8 seconds
 			}
 			break;
