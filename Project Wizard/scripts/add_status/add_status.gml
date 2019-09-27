@@ -13,8 +13,7 @@ if dur != "hold" {
 			target.hspdaltgo = true;
 		break;
 		case debuff.iced:
-			target.hspdalt = -target.maxhspd;
-			target.hspdaltgo = true;
+				target.state = estate.stop;
 		break;
 	}
 } else {
@@ -23,6 +22,7 @@ if dur != "hold" {
 			target.hspdalt = -1.5;
 			target.hspdaltdur = "hold";
 			target.hspdaltgo = true;
+			target.hspdaltstopkey = spellkey;
 	}
 }
 

@@ -1,11 +1,8 @@
-
 if shoottimer != 0 {
 	shoottimer -= 1;
 } else {
 	var dfireball = instance_create_layer(x,y,"Projectiles",o_Fireball);
-	with dfireball {
-		direction = point_direction(x,y,o_trainingdummy.x,o_trainingdummy.y);
-	}
+	dfireball.direction = point_direction(x,y,nearestenemy.x,nearestenemy.y);
 	shoottimer = irandom_range(30,60);
 }
 

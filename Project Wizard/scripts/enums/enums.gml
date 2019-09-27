@@ -1,6 +1,7 @@
 #region Enemy State Enum
 enum estate 
 	{
+	stop,
 	idle,
  	move_left,
  	move_right,
@@ -8,7 +9,7 @@ enum estate
 	idle_move_right,
 	knockback,
 	charge,
- 	spattack,
+ 	spattack
 	}
 #endregion
 

@@ -14,6 +14,7 @@ maxhspd = 0;
 hspdalt = 0;
 hspdaltgo = false;
 hspdaltdur = -1;
+hspdaltstopkey = vk_pageup
 status = debuff.none;
 attack_timer = irandom_range(60,80);
 kbdir = 0; //Knockback Direction

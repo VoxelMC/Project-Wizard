@@ -16,3 +16,15 @@ if hit = true {
 		invintimer = -1;
 	}
 }
+
+if hspdaltdur = "hold" {
+	if keyboard_check_released(hspdaltstopkey) or !instance_exists(o_IceSpray) {
+		maxhspd -= hspdalt;
+		hspdalt = 0;
+		hspdaltgo = false;
+		hspdaltdur = -1;
+		hspdaltstopkey = vk_pageup;
+		image_blend = c_white;
+		status = debuff.none	
+	}
+}

@@ -114,7 +114,7 @@ switch (spl) {
 			}
 			break;
 			case weptype.idol: 
-				if !instance_exists(o_DragonFireball) && collision_rectangle(mouse_x-50,mouse_y-50,mouse_x+50,mouse_y+50,o_lasercolparent,false,true) = noone {
+				if !instance_exists(o_DragonFireball) && collision_rectangle(mouse_x-50,mouse_y-50,mouse_x+50,mouse_y,o_lasercolparent,false,true) = noone {
 					instance_create_layer(mouse_x,mouse_y,"Projectiles",o_DragonFireball);
 				}
 				splcooldown = 600; //10 seconds
@@ -144,7 +144,8 @@ switch (spl) {
 				splcooldown = 360; //6 seconds
 			break;
 			case weptype.tome:
-			
+				var spray = instance_create_layer(x,y,"Projectiles",o_IceSpray);
+				spray.spellkey = bind;
 			break;
 			case weptype.idol:
 			
