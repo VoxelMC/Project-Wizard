@@ -1,5 +1,6 @@
 if keyboard_check_released(spellkey) {
 	instance_destroy();	
+	o_player.cooldown[spellpos] = spellcooldown;
 }
 
 x = o_player.x

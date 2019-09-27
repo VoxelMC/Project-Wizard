@@ -6,5 +6,6 @@ if timetillfreeze > 0 {
 if timetillfreeze = 0 {
 	add_status(debuff.iced,120,other);
 	instance_destroy();
+	o_player.cooldown[spellpos] = spellcooldown;
 	timetillfreeze = -1;
 }

@@ -1,18 +1,3 @@
-if jump = false && state != estate.spattack && state != estate.idle && state != estate.charge {
-	anim_state = "moving";
-}
-
-if state = estate.spattack or state = estate.charge or state = estate.knockback {
-	r = 5;
-	invin = true;
-} else if state = estate.move_right or state = estate.move_left {
-	r = 1.5;
-	invin = false;
-} else {
-	r = 1;
-	invin = false;
-}
-
 //State speed management
 switch (state) {
 	case estate.move_right: hspd += 1;
@@ -41,7 +26,25 @@ switch (state) {
 		anim_state = "spattack"; break;
 	case estate.charge: hspd = 0;
 		anim_state = "charge"; break;
+	case estate.stop: maxhspd = 0; break;
 }
+
+if jump = false && state != estate.spattack && state != estate.idle && state != estate.charge {
+	anim_state = "moving";
+}
+
+if state = estate.spattack or state = estate.charge or state = estate.knockback {
+	r = 5;
+	invin = true;
+} else if state = estate.move_right or state = estate.move_left {
+	r = 1.5;
+	invin = false;
+} else {
+	r = 1;
+	invin = false;
+}
+
+if state != estate.stop {
 
 //Attacks
 if state = estate.charge {
@@ -169,4 +172,5 @@ if state != estate.knockback {
 			state = choose(estate.idle_move_right,estate.idle_move_left,estate.idle,estate.idle);
 			idle_move_timer = irandom_range(60,100);
 		}
-	}
+}
+}

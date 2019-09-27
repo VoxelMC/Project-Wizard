@@ -146,6 +146,7 @@ switch (spl) {
 			case weptype.tome:
 				var spray = instance_create_layer(x,y,"Projectiles",o_IceSpray);
 				spray.spellkey = bind;
+				spray.spellpos = splpos;
 			break;
 			case weptype.idol:
 			

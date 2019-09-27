@@ -20,7 +20,6 @@ if dur != "hold" {
 	switch (effect) {
 		case debuff.slow:
 			target.hspdalt = -1.5;
-			target.hspdaltdur = "hold";
 			target.hspdaltgo = true;
 			target.hspdaltstopkey = spellkey;
 	}
