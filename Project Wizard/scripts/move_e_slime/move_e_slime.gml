@@ -106,7 +106,7 @@ if (place_meeting(x+(hspd*8), y, o_wall) and on_ground = true) {
 
 var p_dir = point_direction(x,y,o_player.x,o_player.y);
 
-if collision_rectangle(x-450,y-225,x+450,y+225,o_player,false,true) {
+if collision_rectangle(x-450*r,y-225*r,x+450*r,y+225*r,o_player,false,true) {
 	in_alert_radius = true;
 	if collision_rectangle(x-325*r,y-175*r,x+325*r,y+175*r,o_player,false,true) {
 		in_radius = true;	

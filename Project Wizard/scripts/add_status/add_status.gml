@@ -13,8 +13,10 @@ if dur != "hold" {
 			target.hspdaltgo = true;
 		break;
 		case debuff.iced:
-				target.state = estate.stop;
+			target.state = estate.stop;
 		break;
+		case buff.hpsteal:
+			target.status = effect
 	}
 } else {
 	switch (effect) {

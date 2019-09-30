@@ -129,6 +129,14 @@ enum debuff
 	none,
 	slow,	
 	iced,
-	onfire
+	onfire,
+	}
+#endregion
+
+#region Status Effect Enum
+enum buff
+	{
+	none,
+	hpsteal
 	}
 #endregion
