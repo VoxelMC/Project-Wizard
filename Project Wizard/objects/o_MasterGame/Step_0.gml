@@ -17,5 +17,10 @@ if keyboard_check_pressed(vk_f1) global.debug = !global.debug;
 
 if keyboard_check_pressed(ord("0")) game_restart(); 
 
+if global.respawn = true {
+	room_goto(testroom);
+	global.respawn = false;
+}
+
 //Alarm Logic
 

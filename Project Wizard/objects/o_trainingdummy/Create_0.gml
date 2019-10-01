@@ -6,3 +6,4 @@ event_inherited();
 hp = 9999
 maxhp = hp;
 behavior = ai.trainingdummy;
+dmg = 0;

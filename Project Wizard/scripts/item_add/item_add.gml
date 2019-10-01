@@ -56,8 +56,8 @@ switch itemtypestr {
 				ds_grid_set(spellinv,propspl.tdesc,spellamount-1,item_tdesc)
 				ds_grid_set(spellinv,propspl.idesc,spellamount-1,item_idesc)
 				show_debug_message("I've been added.")
-				o_player.spellequipamount += 1;
-				splist[o_player.spellequipamount] = itemid;
+				global.spellequipamount += 1;
+				splist[global.spellequipamount] = itemid;
 			} else { show_debug_message("Too many spells!") }
 		} else { show_debug_message("Already equipped!") }
 	break;

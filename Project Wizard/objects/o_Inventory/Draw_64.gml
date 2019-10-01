@@ -6,6 +6,7 @@ if global.inv_open = true {
 		instance_create_layer(0,205,"Inv_Instances",o_relictab);
 		instance_create_layer(0,275,"Inv_Instances",o_spelltab);
 		instance_create_layer(0,345,"Inv_Instances",o_weptab);
+		instance_create_layer(300,300,"Inv_Instances",o_savetab);
 		instance_create_layer(30,30,"Inv_Instances",o_settingsgear);
 		tab_fin = true;
 	}

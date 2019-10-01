@@ -1,5 +1,6 @@
 /// @param damage
 var damage = argument0;
+if object_index != o_player {
 if damage > 1 {
 var e_dmg = irandom_range(damage-1,damage+1);
 } else {
@@ -9,6 +10,8 @@ var e_dmg = irandom_range(damage,damage+1);
 image_blend = make_color_rgb(255,75,75)
 
 hp -= e_dmg 
+
+
 
 if hp <= 0 {
 	instance_destroy();
@@ -31,3 +34,14 @@ if other.object_index != o_IceStaffProj and status != debuff.iced {
 
 hit = true;
 invintimer = 30;
+
+} else {
+	global.CurrentHP -= damage;
+	global.invincible = true;
+	knockback = true;
+	kbdir = -other.flipped;
+	
+	if global.CurrentHP = 0 {
+		global.respawn = true;
+	}
+}

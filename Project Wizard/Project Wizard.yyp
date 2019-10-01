@@ -927,6 +927,14 @@
             }
         },
         {
+            "Key": "84dac82e-6a05-4925-acc9-0e319deb3d2b",
+            "Value": {
+                "id": "03b274ae-93f6-4464-a646-a64aa7701093",
+                "resourcePath": "objects\\o_savetab\\o_savetab.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "84fc7f94-63c2-46c1-a5ba-a6aede42f358",
             "Value": {
                 "id": "0b3b8598-85e4-4c66-be2e-2500a10d93e3",
@@ -1068,6 +1076,14 @@
                 "id": "338938b1-4d76-4009-84c9-a20a816d6820",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a9561478-2633-4840-88ea-5b729e586133",
+            "Value": {
+                "id": "9535f1c6-da61-46bf-b10b-ddd0abc098ec",
+                "resourcePath": "sprites\\s_savequitbutton\\s_savequitbutton.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1538,6 +1554,7 @@
         "d0cd514b-1d8a-4ec6-8f44-b2141d0221a4",
         "1df8117e-8fa4-41be-9e1a-98fef0fd27cb",
         "7343f8d0-47c6-4b76-b61a-ee3167627ade",
+        "2f001b71-7989-4dc2-99c0-66d50ead3ed3",
         "ae3c6a42-b1bb-436e-8173-5c9adbf5f828",
         "9818a417-945f-45e3-aa02-f62aff8d029e",
         "c94d66a7-751e-4877-b6c9-2359340206a9",
@@ -1553,7 +1570,6 @@
         "d7b8121b-ed7d-4e2f-b6e7-0d5b77b13a9a",
         "b33c2641-b8de-48b8-9ed4-402eb24f9d26",
         "5e6ee59b-a371-4af4-aa2e-3c05ba3c1932",
-        "2f001b71-7989-4dc2-99c0-66d50ead3ed3",
         "5bc6aa6e-98a1-4b8e-b8c6-628afc7e60d8"
     ],
     "tutorial": ""

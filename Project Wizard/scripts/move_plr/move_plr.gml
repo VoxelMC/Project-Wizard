@@ -4,6 +4,11 @@ key_right = keyboard_check(global.keybind[key.right]);
 key_jump = keyboard_check_pressed(global.keybind[key.jump]);
 var key_jump_held = keyboard_check(global.keybind[key.jump]);
 
+if knockback = true && on_ground = true {
+	hspd = maxhspd*kbdir;
+	vspd = -4;
+	on_ground = false;
+}
 
 //Check inputs, if pressed then move and flip character in direction of movement
 if (key_right) {
@@ -16,10 +21,12 @@ if (key_left) {
 }
 
 //Check if the both directions are pressed or none are pressed, and stop
+if (!knockback) {
 if (!keyboard_check(key_right) && !keyboard_check(key_left)) {
 	hspd-=sign(hspd)
 } else if (keyboard_check(key_right) && keyboard_check(key_left)) {
 	hspd-=sign(hspd)
+}
 }
 
 hspd = clamp(hspd, -maxhspd, maxhspd); //this makes sure hspd doesn't exceed the max value
@@ -31,7 +38,7 @@ if (place_meeting(x, y+1, o_wall) && (key_jump)) {
 }
 
 //Variable Jump (stopping a jump midair, for better air control
-if (!on_ground) && (!key_jump_held) {
+if (!on_ground) && (!key_jump_held) && (!knockback) {
 	vspd = max(vspd,-jump_speed/2);
 }
 
@@ -55,5 +62,8 @@ if (place_meeting(x, y+vspd, o_wall)){
     }
    vspd=0;
    on_ground = true;
+   if knockback = true {
+		knockback = false;   
+   }
 } 
 y+=vspd;
