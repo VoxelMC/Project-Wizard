@@ -14,6 +14,7 @@ if dur != "hold" {
 		break;
 		case debuff.iced:
 				target.state = estate.stop;
+				target.hspdaltgo = true;
 		break;
 	}
 } else {
