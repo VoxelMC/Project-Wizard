@@ -1039,6 +1039,14 @@
             }
         },
         {
+            "Key": "9e941184-19cf-4130-aeb7-bc5b9b60888c",
+            "Value": {
+                "id": "c04af393-2fe7-44b2-b4e6-b402370a3a3d",
+                "resourcePath": "notes\\variablestoadd.yy",
+                "resourceType": "GMNotes"
+            }
+        },
+        {
             "Key": "9fcd5c9b-0068-4465-be29-114a583bb772",
             "Value": {
                 "id": "6f3566ea-f05c-4b2e-bb9c-5322aed320ed",

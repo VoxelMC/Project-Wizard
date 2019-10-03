@@ -12,11 +12,162 @@ with (SaveMe)
 	
 	var _obj = object_get_name(object_index);
 	var _layer = asset_get_index(_obj).layer;
+	
+	//Save Built In Variables
 	ds_map_add(_map, "obj", _obj);
 	ds_map_add(_map, "layer", _layer);
 	ds_map_add(_map, "x", x);
 	ds_map_add(_map, "y", y);
 	ds_map_add(_map, "image_index", image_index);
+	ds_map_add(_map, "image_speed", image_speed);
+	ds_map_add(_map, "image_blend", image_blend);
+	ds_map_add(_map, "image_alpha", image_alpha);
+	ds_map_add(_map, "image_angle", image_angle);
+	ds_map_add(_map, "direction", direction);
+	ds_map_add(_map, "alarm[0]",alarm[0]);
+	ds_map_add(_map, "alarm[1]",alarm[1]);
+	ds_map_add(_map, "alarm[2]",alarm[2]);
+	ds_map_add(_map, "alarm[3]",alarm[3]);
+	ds_map_add(_map, "alarm[4]",alarm[4]);
+	ds_map_add(_map, "alarm[5]",alarm[5]);
+	ds_map_add(_map, "alarm[6]",alarm[6]);
+	ds_map_add(_map, "alarm[7]",alarm[7]);
+	ds_map_add(_map, "alarm[8]",alarm[8]);
+	ds_map_add(_map, "alarm[9]",alarm[9]);
+	ds_map_add(_map, "alarm[10]",alarm[10]);
+	
+	//Save Global Variables
+	ds_map_add(_map, "global.inv_open",global.inv_open);
+	ds_map_add(_map, "global.stop",global.stop);
+	ds_map_add(_map, "global.pause",global.pause);
+	ds_map_add(_map, "global.debug",global.debug);
+	ds_map_add(_map, "global.indialogue",global.indialogue);
+	ds_map_add(_map, "global.up_pos[0]",global.up_pos[0]);
+	ds_map_add(_map, "global.up_pos[1]",global.up_pos[1]);
+	ds_map_add(_map, "global.up_pos[2]",global.up_pos[2]);
+	ds_map_add(_map, "global.up_pos[3]",global.up_pos[3]);
+	ds_map_add(_map, "pasinv",pasinv);
+	ds_map_add(_map, "spellinv",spellinv);
+	ds_map_add(_map, "wepinv",wepinv);
+	ds_map_add(_map,"global.wepequipped",global.wepequipped);
+	ds_map_add(_map,"splist[0]",splist[0]);
+	ds_map_add(_map,"splist[1]",splist[1]);
+	ds_map_add(_map,"splist[2]",splist[2]);
+	ds_map_add(_map,"splist[3]",splist[3]);
+	ds_map_add(_map,"global.invincible",global.invincible);
+	ds_map_add(_map,"global.CurrentHP",global.CurrentHP);
+	ds_map_add(_map,"global.MaxHP",global.MaxHP);
+	
+	//Save Player Variables
+	if _obj = "o_player" {
+		ds_map_add(_map,"on_ground",on_ground);
+		ds_map_add(_map,"state",state);
+		ds_map_add(_map,"fly",fly);
+		ds_map_add(_map,"movestop",movestop);
+		ds_map_add(_map,"anim_state",anim_state);
+		ds_map_add(_map,"flipped",flipped);
+		ds_map_add(_map,"dmg_mod",dmg_mod);
+		ds_map_add(_map,"beam_active",beam_active);
+		ds_map_add(_map,"beam_surf",beam_surf);
+		ds_map_add(_map,"beam_timer",beam_timer);
+		ds_map_add(_map,"beam_dir",beam_dir);
+		ds_map_add(_map,"cooldown[1]",cooldown[1]);
+		ds_map_add(_map,"cooldown[2]",cooldown[2]);
+		ds_map_add(_map,"cooldown[3]",cooldown[3]);
+		ds_map_add(_map,"cooldown[4]",cooldown[4]);
+	}
+	
+	//Save Enemy Variables
+	if _obj = "o_ParentEnemy" or _obj = "o_slime" or _obj = "o_trainingdummy" {
+			ds_map_add(_map,"hp",hp);
+			ds_map_add(_map,"maxhp",maxhp);
+			ds_map_add(_map,"behavior",behavior);
+			ds_map_add(_map,"state",state);
+			ds_map_add(_map,"anim_state",anim_state);
+			ds_map_add(_map,"on_ground",on_ground);
+			ds_map_add(_map,"invin",invin);
+			ds_map_add(_map,"invintimer",invintimer);
+			ds_map_add(_map,"hit",hit);
+			ds_map_add(_map,"hspdalt",hspdalt);
+			ds_map_add(_map,"hspdaltdur",hspdaltdur);
+			ds_map_add(_map,"hspdaltgo",hspdaltgo);
+			ds_map_add(_map,"hspdaltstopkey",hspdaltstopkey);
+			ds_map_add(_map,"status",status);
+			ds_map_add(_map,"attack_timer",attack_timer);
+			
+		//Save Inventory Variables
+		if _obj = "o_Inventory" {
+			ds_map_add(_map,"current_tab",current_tab);
+			ds_map_add(_map,"tab_fin",tab_fin);
+			ds_map_add(_map,"itemspl[0]",itemspl[0]);
+			ds_map_add(_map,"itemspl[1]",itemspl[1]);
+			ds_map_add(_map,"itemspl[2]",itemspl[2]);
+			ds_map_add(_map,"itemspl[3]",itemspl[3]);
+		}
+		
+		//Save Dialogue Variables
+		if _obj = "o_dialogue" {
+			ds_map_add(_map,"message_current",message_current);
+			ds_map_add(_map,"timer",timer);
+			ds_map_add(_map,"cutoff",cutoff);
+			ds_map_add(_map,"picture",picture);
+			ds_map_add(_map,"name",name);
+			ds_map_add(_map,"modifier",modifier);
+			ds_map_add(_map,"convo",convo);
+			ds_map_add(_map,"focus",focus);
+			ds_map_add(_map,"t",t);
+			ds_map_add(_map,"amplitude",amplitude);
+			ds_map_add(_map,"freq",freq);
+			ds_map_add(_map,"increment",increment);
+			ds_map_add(_map,"done",done);
+			ds_map_add(_map,"alarmdone",alarmdone);
+		}
+		
+		//Save Hit Numbers Variables
+		if _obj = "o_hitnumbers" {
+			ds_map_add(_map,"num",num);
+		}
+		
+		//Save Lightning Cloud Variables
+		if _obj = "o_LightningClouds" {
+			ds_map_add(_map,"timer",timer);
+			ds_map_add(_map,"timer2",timer2);
+		}
+		
+		//Save Dragon Fireball Variables
+		if _obj = "o_DragonFireball" {
+			ds_map_add(_map,"alivetimer",alivetimer);
+			ds_map_add(_map,"shoottimer",shoottimer);
+			ds_map_add(_map,"nearestenemy",nearestenemy);
+		}
+		
+		//Save Fireball Variables
+		if _obj = "o_Fireball" {
+			ds_map_add(_map,"hometimer",hometimer);
+			ds_map_add(_map,"t1",t1);
+			ds_map_add(_map,"t2",t2);
+			ds_map_add(_map,"t3",t3);
+			ds_map_add(_map,"t4",t4);
+			ds_map_add(_map,"alivetime",alivetime);
+			ds_map_add(_map,"homeamt",homeamt);
+		}
+		
+		//Save Tutorial Trigger Variables
+		if _obj = "o_tuttrigger" {
+			ds_map_add(_map,"triggercount",triggercount);
+		}
+		
+		//Save Ice Spray Variables
+		if _obj = "o_IceSpray" {
+			ds_map_add(_map,"timetillfreeze",timetillfreeze);
+			ds_map_add(_map,"spellkey",spellkey);
+			ds_map_add(_map,"spellpos",spellpos);
+			ds_map_add(_map,"spellcooldown",spellcooldown);
+		}
+			
+		show_debug_message("Saved " + _obj);
+		
+	}
 
 }
 

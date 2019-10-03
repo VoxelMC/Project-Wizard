@@ -1,6 +1,6 @@
 //Enemy Stat Variable Inits
 hp = 10;
-maxhp = hp;
+maxhp = 10;
 dmg = 1;
 behavior = ai.trainingdummy;
 state = estate.idle;

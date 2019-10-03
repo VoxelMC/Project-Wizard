@@ -5,9 +5,7 @@ hspd = 0;
 maxhspd = 5; //Horizonal Maximum Speed
 vspd = 0; //Vertical Speed
 jump_speed = 5; //Speed we jump up before going down, similar to jump height
-sprinting = false; 
 on_ground = true;
-global.focus = self;
 state = "none";
 fly = false
 key_left = -1;
@@ -16,6 +14,7 @@ key_jump = -1;
 knockback = false;
 kbdir = -1;
 movestop = false;
+global.focus = self;
 
 //Animation Variables
 anim_state = "idle";
@@ -24,7 +23,6 @@ image_speed = 0.8
 flicker = 1;
 
 //Combat Variables
-do_reload = true;
 dmg_mod = 0
 beam_active = false;
 beam_surf = 0;
