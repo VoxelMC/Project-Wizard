@@ -11,7 +11,7 @@ splscale[1] = 1.5;
 
 //Inventory init
 globalvar pasinv;
-pasinv = ds_grid_create(6,0);
+pasinv = ds_grid_create(6,1);
 globalvar spellinv;
 spellinv = ds_grid_create(8,0);
 globalvar wepinv;

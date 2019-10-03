@@ -24,6 +24,7 @@ with (SaveMe)
 	ds_map_add(_map, "image_alpha", image_alpha);
 	ds_map_add(_map, "image_angle", image_angle);
 	ds_map_add(_map, "direction", direction);
+	ds_map_add(_map, "speed", speed);
 	ds_map_add(_map, "alarm[0]",alarm[0]);
 	ds_map_add(_map, "alarm[1]",alarm[1]);
 	ds_map_add(_map, "alarm[2]",alarm[2]);
@@ -35,6 +36,7 @@ with (SaveMe)
 	ds_map_add(_map, "alarm[8]",alarm[8]);
 	ds_map_add(_map, "alarm[9]",alarm[9]);
 	ds_map_add(_map, "alarm[10]",alarm[10]);
+	ds_map_add(_map, "alarm[11]",alarm[11]);
 	
 	//Save Global Variables
 	ds_map_add(_map, "global.inv_open",global.inv_open);
@@ -46,10 +48,14 @@ with (SaveMe)
 	ds_map_add(_map, "global.up_pos[1]",global.up_pos[1]);
 	ds_map_add(_map, "global.up_pos[2]",global.up_pos[2]);
 	ds_map_add(_map, "global.up_pos[3]",global.up_pos[3]);
-	ds_map_add(_map, "pasinv",pasinv);
-	ds_map_add(_map, "spellinv",spellinv);
-	ds_map_add(_map, "wepinv",wepinv);
+	ds_map_add(_map, "passive",ds_grid_write(passive));
+	ds_map_add(_map, "spell",ds_grid_write(spell));
+	ds_map_add(_map, "weapon",ds_grid_write(weapon));
+	ds_map_add(_map, "pasinv",ds_grid_write(pasinv));
+	ds_map_add(_map, "spellinv",ds_grid_write(spellinv));
+	ds_map_add(_map, "wepinv",ds_grid_write(wepinv));
 	ds_map_add(_map,"global.wepequipped",global.wepequipped);
+	ds_map_add(_map,"global.spellequipamount",global.spellequipamount);
 	ds_map_add(_map,"splist[0]",splist[0]);
 	ds_map_add(_map,"splist[1]",splist[1]);
 	ds_map_add(_map,"splist[2]",splist[2]);
@@ -57,6 +63,7 @@ with (SaveMe)
 	ds_map_add(_map,"global.invincible",global.invincible);
 	ds_map_add(_map,"global.CurrentHP",global.CurrentHP);
 	ds_map_add(_map,"global.MaxHP",global.MaxHP);
+	ds_map_add(_map,"global.firetometarget",global.firetometarget);
 	
 	//Save Player Variables
 	if _obj = "o_player" {
@@ -94,6 +101,8 @@ with (SaveMe)
 			ds_map_add(_map,"hspdaltstopkey",hspdaltstopkey);
 			ds_map_add(_map,"status",status);
 			ds_map_add(_map,"attack_timer",attack_timer);
+			
+	}
 			
 		//Save Inventory Variables
 		if _obj = "o_Inventory" {
@@ -167,8 +176,6 @@ with (SaveMe)
 			
 		show_debug_message("Saved " + _obj);
 		
-	}
-
 }
 
 //Wrap the root LIST up in a MAP!
