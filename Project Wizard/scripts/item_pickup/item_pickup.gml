@@ -50,8 +50,8 @@ switch othertype {
 			ds_grid_set(spellinv,propspl.sdesc,spellamount-1,othersdesc)
 			ds_grid_set(spellinv,propspl.tdesc,spellamount-1,othertdesc)
 			ds_grid_set(spellinv,propspl.idesc,spellamount-1,otheridesc)
-			spellequipamount += 1;
-			splist[spellequipamount] = otherid;
+			global.spellequipamount += 1;
+			splist[global.spellequipamount] = otherid;
 			instance_destroy(other);
 		}
 		} break;

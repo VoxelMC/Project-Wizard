@@ -13,6 +13,8 @@ fly = false
 key_left = -1;
 key_right = -1;
 key_jump = -1;
+knockback = false;
+kbdir = -1;
 movestop = false;
 
 //Animation Variables
@@ -35,15 +37,7 @@ global.invincible = false;
 global.CurrentHP = 10;
 global.MaxHP = 10;
 
-//Inventory Variables
-globalvar splist;
-splist[0] = -1; //LMB
-splist[1] = -1; //RMB
-splist[2] = -1; //Q
-splist[3] = -1; //E
-
 cooldown[1] = 1;
 cooldown[2] = 1;
 cooldown[3] = 1;
 cooldown[4] = 1;
-spellequipamount = -1;

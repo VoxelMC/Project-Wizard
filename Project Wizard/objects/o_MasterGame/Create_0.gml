@@ -18,6 +18,7 @@ for (var i=0;i<4;i++) {
 	global.up_pos[i] = 0;
 }
 global.firetometarget = o_trainingdummy;
+global.respawn = false;
 
 //Keyboard Binding Variables
 ini_open("settings.ini");

@@ -9,7 +9,8 @@
         "99e72973-baea-4a7f-9939-246536861374",
         "d0cd514b-1d8a-4ec6-8f44-b2141d0221a4",
         "1df8117e-8fa4-41be-9e1a-98fef0fd27cb",
-        "7343f8d0-47c6-4b76-b61a-ee3167627ade"
+        "7343f8d0-47c6-4b76-b61a-ee3167627ade",
+        "2f001b71-7989-4dc2-99c0-66d50ead3ed3"
     ],
     "filterType": "GMScript",
     "folderName": "Item\/Combat Scripts",

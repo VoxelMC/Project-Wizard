@@ -5,7 +5,7 @@ if flicker = 0.3 {
 	flicker = 0.3
 }
 if alarm[10] != -1 {
-alarm[9] = 5;
+alarm[9] = 6;
 } else {
 	flicker = 1;
 }
