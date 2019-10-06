@@ -31,6 +31,8 @@ if aspect_ratio = 1.6 {
 	ideal_width = 960
 	ideal_height = 540
 }
+
+
 	
 	
 

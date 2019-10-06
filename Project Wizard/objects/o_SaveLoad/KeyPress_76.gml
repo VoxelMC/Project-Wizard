@@ -1,5 +1,4 @@
 /// @desc Load Game
-if (live_call()) return live_result;
 with (SaveMe) instance_destroy();
 
 if (file_exists("savedgame.sav"))
