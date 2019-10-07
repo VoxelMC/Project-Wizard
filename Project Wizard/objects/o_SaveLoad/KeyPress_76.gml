@@ -1,5 +1,6 @@
 /// @desc Load Game
-with (SaveMe) instance_destroy();
+loading = true;
+with (SaveMe) instance_destroy()
 
 if (file_exists("savedgame.sav"))
 {
@@ -9,6 +10,8 @@ if (file_exists("savedgame.sav"))
 	for (var i = 0; i < ds_list_size(_list); i++) 
 	{
 		var _map = _list[| i];	
+		
+		//global.firetometarget = _map[? "global.firetometarget"]
 		
 		var _obj = _map[? "obj"];
 		with (instance_create_layer(0,0,layer,asset_get_index(_obj))) 
@@ -37,7 +40,6 @@ if (file_exists("savedgame.sav"))
 				global.up_pos[3] = _map[? "global.up_pos[3]"]
 				global.wepequipped = _map[? "global.wepequipped"]
 				global.spellequipamount = _map[? "global.spellequipamount"]
-				global.firetometarget = _map[? "global.firetometarget"]
 				ds_grid_read(passive,_map[? "passive"],false);
 				ds_grid_read(spell,_map[? "spell"],false);
 				ds_grid_read(weapon,_map[? "weapon"],false);
@@ -148,6 +150,7 @@ if (file_exists("savedgame.sav"))
 					t4 = _map[? "t4"];
 					alivetime = _map[? "alivetime"];
 					homeamt = _map[? "homeamt"];
+					target = _map[? "target"];
 				}
 				
 				if _obj = "o_tuttrigger" {
@@ -168,6 +171,7 @@ if (file_exists("savedgame.sav"))
 	
 	ds_map_destroy(_wrapper);
 	show_debug_message("Game Loaded!");
+	loading = false;
 } else {
 	show_debug_message("Failed to Load.");	
 }

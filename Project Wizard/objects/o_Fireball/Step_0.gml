@@ -9,6 +9,7 @@ if hometimer = 0 {
 }
 
 if alivetime < 610 {
+	
 	alivetime += 1;
 	
 }
@@ -27,7 +28,7 @@ if t4 != -1 {
 	t4 -= 1;
 }
 if hometimer = 0 {
-	direction = angle_rotate(direction, point_direction(x, y, global.firetometarget.x, global.firetometarget.y), homeamt);
+	direction = angle_rotate(direction, point_direction(x, y, target.x, target.y), homeamt);
 } else {
 	hometimer -= 1;
 }

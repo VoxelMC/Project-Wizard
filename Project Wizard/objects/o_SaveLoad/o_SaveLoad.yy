@@ -5,6 +5,16 @@
     "name": "o_SaveLoad",
     "eventList": [
         {
+            "id": "0321e0f8-8337-64cf-fdfd-98e8ba9335b7",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "eventtype": 0,
+            "enumb": 0,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "m_owner": "ab26df5b-b165-4dab-b1cf-e2b573362baf"
+        },
+        {
             "id": "510a3d7d-a43c-4a22-9aeb-f0e469037da8",
             "modelName": "GMEvent",
             "mvc": "1.0",

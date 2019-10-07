@@ -14,3 +14,4 @@ t4 = -1;
 alivetime = -1;
 homeamt = 9;
 piercing = false;
+target = o_trainingdummy;

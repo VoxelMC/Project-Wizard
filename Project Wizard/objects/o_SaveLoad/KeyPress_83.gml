@@ -63,7 +63,6 @@ with (SaveMe)
 	ds_map_add(_map,"global.invincible",global.invincible);
 	ds_map_add(_map,"global.CurrentHP",global.CurrentHP);
 	ds_map_add(_map,"global.MaxHP",global.MaxHP);
-	ds_map_add(_map,"global.firetometarget",global.firetometarget);
 	
 	//Save Player Variables
 	if _obj = "o_player" {
@@ -159,6 +158,7 @@ with (SaveMe)
 			ds_map_add(_map,"t4",t4);
 			ds_map_add(_map,"alivetime",alivetime);
 			ds_map_add(_map,"homeamt",homeamt);
+			ds_map_add(_map,"target",target);
 		}
 		
 		//Save Tutorial Trigger Variables
