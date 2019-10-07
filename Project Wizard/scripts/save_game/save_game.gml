@@ -1,6 +1,6 @@
-/// @desc Save Game
-
+with(o_SaveLoad) {
 //Create a root list
+saving = true;
 var _root_list = ds_list_create();
 
 //for every instance, create a map
@@ -190,3 +190,5 @@ SaveStringToFile("savedgame.sav", _string);
 ds_map_destroy(_wrapper);
 
 show_debug_message("Game Saved!");
+saving = false;
+}

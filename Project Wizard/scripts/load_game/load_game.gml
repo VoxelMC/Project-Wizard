@@ -1,9 +1,13 @@
-/// @desc Load Game
-loading = true;
+if object_index != o_fade {
+	instance_create_layer(x,y,"Fade",o_fade)
+} else {
+
+with o_SaveLoad {
 with (SaveMe) instance_destroy()
 
 if (file_exists("savedgame.sav"))
 {
+	loading = true;
 	var _wrapper = LoadJSONFromFile("savedgame.sav")	
 	var _list = _wrapper[? "ROOT"];
 	
@@ -174,4 +178,7 @@ if (file_exists("savedgame.sav"))
 	loading = false;
 } else {
 	show_debug_message("Failed to Load.");	
+}
+}
+
 }

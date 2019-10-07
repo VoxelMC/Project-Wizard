@@ -8,6 +8,7 @@ if (keyboard_check_pressed(global.keybind[key.pause]) && !instance_exists(o_dial
 		instance_activate_object(o_Inventory)
 		instance_activate_object(o_player)
 		instance_activate_object(o_wall)
+		instance_activate_object(o_SaveLoad)
 	} else {
 		instance_activate_all();
 	}
@@ -22,5 +23,20 @@ if global.respawn = true {
 	global.respawn = false;
 }
 
-//Alarm Logic
+// (Debug) Saving and Loading the Game Savefile
+if keyboard_check_pressed(ord("S")) {
+	save_game();
+}
 
+if keyboard_check_pressed(ord("L")) {
+	load_game();
+}
+
+if savetimergo = true {
+	savetimer -= 1;
+	if savetimer = 0 {
+		global.stop = false;
+		save_game();
+		game_end()
+	}
+}
