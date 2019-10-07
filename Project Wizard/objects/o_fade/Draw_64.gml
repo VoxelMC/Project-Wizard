@@ -1,13 +1,22 @@
 a = clamp(a + (fade * 0.05),0,1.4);
 
+if dead = true {
+	color = c_red;
+}
+	
+
 if (a == 1) {
-	if room_selection != "N/A" {
-		room_goto(room_selection)
-	} else {
+	if global.respawn = false {
+		if room_selection != "N/A" {
+			room_goto(room_selection)
+		}
 		if done_loading = false {
 			load_game();
 			done_loading = true;
 		}
+	} else {
+		room_goto(room);
+		global.respawn = false;
 	}
 } 
 
@@ -19,7 +28,7 @@ if (a == 0) && (fade == -1) {
 	instance_destroy();
 }
 
-draw_set_color(c_black);
+draw_set_color(color);
 draw_set_alpha(a);
 draw_rectangle(
 	camera_get_view_x(0),

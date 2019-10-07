@@ -11,8 +11,6 @@ image_blend = make_color_rgb(255,75,75)
 
 hp -= e_dmg 
 
-
-
 if hp <= 0 {
 	instance_destroy();
 } else {
@@ -43,5 +41,7 @@ invintimer = 30;
 	
 	if global.CurrentHP = 0 {
 		global.respawn = true;
+		instance_create_layer(x,y,"Fade",o_fade);
+		o_fade.color = c_red;
 	}
 }

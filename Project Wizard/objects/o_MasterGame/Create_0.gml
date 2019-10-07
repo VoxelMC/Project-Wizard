@@ -17,7 +17,6 @@ global.currentconvo = "N/A";
 for (var i=0;i<4;i++) {
 	global.up_pos[i] = 0;
 }
-global.firetometarget = o_trainingdummy;
 global.respawn = false;
 savetimer = 1;
 savetimergo = false;

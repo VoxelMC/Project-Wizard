@@ -15,8 +15,6 @@ var splcooldown = 0;
 var cancelcooldown = false
 var dir = point_direction(x,y,mouse_x,mouse_y);
 var closestenemy = instance_nearest(x,y,o_ParentEnemy)
-var enemyx = closestenemy.x;
-var enemyy = closestenemy.y;
 
 switch (spl) {
 	#region Basic Healing Spell
