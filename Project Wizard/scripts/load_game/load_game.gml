@@ -1,8 +1,11 @@
 if object_index != o_fade {
 	instance_create_layer(x,y,"Fade",o_fade)
+	show_debug_message("I'm in load, but its out of Fade.")
 } else {
+show_debug_message("I'm in load in fade!")
 
 with o_SaveLoad {
+show_debug_message("I reached this point at least")
 with (SaveMe) instance_destroy()
 
 if (file_exists("savedgame.sav"))
@@ -13,6 +16,7 @@ if (file_exists("savedgame.sav"))
 	
 	for (var i = 0; i < ds_list_size(_list); i++) 
 	{
+		
 		var _map = _list[| i];	
 		
 		//global.firetometarget = _map[? "global.firetometarget"]

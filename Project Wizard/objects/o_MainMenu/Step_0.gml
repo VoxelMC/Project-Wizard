@@ -3,7 +3,6 @@ if (live_call()) return live_result;
 if mouse_check_button_pressed(mb_left) {
 //Play Check
 if point_in_rectangle(mouse_x,mouse_y,420,200,540,250) {
-	room_goto(testroom);
 	load_game();
 }
 

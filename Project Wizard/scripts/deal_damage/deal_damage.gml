@@ -42,6 +42,7 @@ invintimer = 30;
 	if global.CurrentHP = 0 {
 		global.respawn = true;
 		instance_create_layer(x,y,"Fade",o_fade);
+		o_fade.dead = true;
 		o_fade.color = c_red;
 	}
 }

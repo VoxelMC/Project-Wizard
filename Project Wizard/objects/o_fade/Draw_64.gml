@@ -7,18 +7,29 @@ if dead = true {
 
 if (a == 1) {
 	if global.respawn = false {
-		if room_selection != "N/A" {
+		if room_selection != testroom2 {
 			room_goto(room_selection)
 		}
-		if done_loading = false {
-			load_game();
-			done_loading = true;
+		if done_loading = false && dead = false {
+			if room != rm_mainmenu {
+				load_game();
+				done_loading = true;
+			} else {
+				room_goto(testroom)
+			}
 		}
 	} else {
 		room_goto(room);
 		global.respawn = false;
 	}
 } 
+
+if (a == 1.1) && current_room = rm_mainmenu {
+	if done_loading = false {
+		load_game();
+		done_loading = true;
+	}
+}
 
 if (a == 1.4) {
 	fade = -1;

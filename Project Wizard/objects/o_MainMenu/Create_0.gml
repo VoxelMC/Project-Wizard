@@ -28,6 +28,8 @@ splist[3] = -1; //E
 
 global.spellequipamount = -1;
 
+global.respawn = false;
+
 /* ITEM INITIALIZING */
 
 //GRID INIT
