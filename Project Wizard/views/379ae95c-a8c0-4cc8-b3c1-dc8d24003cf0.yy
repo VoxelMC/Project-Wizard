@@ -12,7 +12,9 @@
         "f518c21c-6848-4045-9897-97768b6f7bb1",
         "f4e235c3-5481-4f32-baca-fe284f793d75",
         "c2494fe0-06b3-4013-939b-a4c1e4482cff",
-        "9a9c249f-d9e5-400e-8b42-2663b389d4d8"
+        "9a9c249f-d9e5-400e-8b42-2663b389d4d8",
+        "4e4970d3-4136-c17d-632b-60f1195e0ffe",
+        "fb99f721-8b62-440d-9d6e-b4f833f95922"
     ],
     "filterType": "GMScript",
     "folderName": "General Use Scripts",

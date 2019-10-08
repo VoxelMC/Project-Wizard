@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 changelog = false;
 a[0] = 0;
 a[1] = 0;
@@ -77,4 +78,4 @@ item_init_weapon(3,"Tome",s_BasicTome,"A basic tome.",weptype.tome,3)
 item_init_weapon(4,"Idol",s_BasicIdol,"A basic idol.",weptype.idol,3)
 
 //audio_play_sound(mus_menu,1000,true);
-room_goto(testroom);
+//room_goto(testroom);
