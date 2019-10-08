@@ -1,7 +1,7 @@
 {
     "id": "34ebc914-3fea-42f7-a6b9-db18b75cd055",
     "modelName": "GMExtension",
-    "mvc": "1.0",
+    "mvc": "1.2",
     "name": "GMLive",
     "IncludedResources": [
         
@@ -20,6 +20,7 @@
     "copyToTargets": 598172980216046,
     "date": "2017-56-26 04:07:06",
     "description": "",
+    "exportToGame": true,
     "extensionName": "",
     "files": [
         {
@@ -37374,9 +37375,12 @@
     "maccompilerflags": "",
     "maclinkerflags": "",
     "macsourcedir": "",
+    "options": null,
+    "optionsFile": "options.json",
     "packageID": "",
     "productID": "ACBD3CFF4E539AD869A0E8E3B4B022DD",
     "sourcedir": "",
+    "supportedTargets": 598172980216046,
     "tvosProps": false,
     "tvosSystemFrameworkEntries": [
         

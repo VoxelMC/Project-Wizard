@@ -1,6 +1,7 @@
 /// @description Initialization
 randomize();
 draw_set_font(fnt_main)
+load_game();
 
 ///Initialize variables\\\
 

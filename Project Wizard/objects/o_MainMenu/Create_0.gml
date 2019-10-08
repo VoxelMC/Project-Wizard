@@ -1,14 +1,8 @@
 if (live_call()) return live_result;
 changelog = false;
-a[0] = 0;
-a[1] = 0;
-a[2] = 0;
-wepscale[0] = 1.5;
-wepscale[1] = 1.5;
-wepscale[2] = 1.5;
-wepscale[3] = 1.5;
-splscale[0] = 1.5;
-splscale[1] = 1.5;
+scale[0] = 1;
+scale[1] = 1;
+scale[2] = 1;
 
 //Inventory init
 globalvar pasinv;
