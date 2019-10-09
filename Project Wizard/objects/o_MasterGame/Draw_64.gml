@@ -35,7 +35,7 @@ draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2+90,global.dguiheight);
 
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2+170,global.dguiheight);
 
-if global.inv_open = false {
+if global.inv_open = false && instance_exists(o_player) {
 var cd1 = o_player.cooldown[1]/room_speed;
 var cd2 = o_player.cooldown[2]/room_speed;
 var cd3 = o_player.cooldown[3]/room_speed;

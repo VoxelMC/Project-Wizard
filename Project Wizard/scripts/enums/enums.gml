@@ -13,6 +13,21 @@ enum estate
 	}
 #endregion
 
+#region Menu Pos Enum
+enum menupos 
+	{
+	play,
+	settings,
+	quit,
+	logo,
+	back,
+	load,
+	load1,
+	load2,
+	load3,
+	}
+#endregion
+
 #region Passive Item ID Name Enum
 enum passiveid 
 	{

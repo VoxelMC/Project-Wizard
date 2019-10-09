@@ -42,7 +42,7 @@
             "name": "Game_Logo",
             "id": "459374e7-0d34-42e4-9a0c-b08630680b6b",
             "assets": [
-{"__type": "GMRSpriteGraphic_Model:#YoYoStudio.MVCFormat","name": "graphic_2CD6DC78","id": "51673fc3-dfe8-4200-ab40-4252ff155fc8","animationFPS": 15,"animationSpeedType": "0","colour": { "Value": 4294967295 },"frameIndex": 0,"ignore": false,"inheritItemSettings": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRSpriteGraphic","rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","spriteId": "e933f418-dd80-44ed-81a9-aeacb6c91ccc","userdefined_animFPS": false,"x": 480,"y": 96}
+
             ],
             "depth": 100,
             "grid_x": 16,

@@ -1,4 +1,4 @@
- //State Check
+//State Check
 switch anim_state {
 	case "Idle": sprite_index = s_player_idle; break;
 	case "Walking": sprite_index = s_player_walk; break;

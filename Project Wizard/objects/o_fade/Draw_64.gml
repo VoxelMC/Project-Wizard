@@ -10,7 +10,7 @@ if (a == 1) {
 		if room_selection != testroom2 {
 			room_goto(room_selection)
 		}
-		if done_loading = false && dead = false {
+		if done_loading = false && dead = false && current_room != rm_mainmenu {
 				load_game();
 				done_loading = true;
 		}
@@ -39,5 +39,3 @@ draw_rectangle(
 )
 draw_set_alpha(1);
 draw_set_color(c_white)
-
-show_debug_message(a)

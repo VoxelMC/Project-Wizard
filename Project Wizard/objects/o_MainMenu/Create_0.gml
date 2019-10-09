@@ -3,6 +3,35 @@ changelog = false;
 scale[0] = 1;
 scale[1] = 1;
 scale[2] = 1;
+scale[3] = 1;
+scale[4] = 1;
+scale[5] = 0.5;
+scale[6] = 1;
+scale[7] = 1;
+ypos[menupos.play] = 220;
+ypos[menupos.settings] = 290;
+ypos[menupos.quit] = 360;
+ypos[menupos.logo] = 96;
+ypos[menupos.back] = 700;
+ypos[menupos.load] = -296;
+xpos[menupos.load1] = -380;
+xpos[menupos.load2] = 1180;
+menu_phase = "start"
+
+//Keyboard Binding Variables
+ini_open("settings.ini");
+global.keybind[key.left] = ini_read_real("Keybinds","Left",ord("A"))
+global.keybind[key.right] = ini_read_real("Keybinds","Right",ord("D"))
+global.keybind[key.jump] = ini_read_real("Keybinds","Space",vk_space)
+global.keybind[key.interact] = ini_read_real("Keybinds","Interact",ord("G"))
+global.keybind[key.atk1] = ini_read_real("Keybinds","Attack 1",mb_left)
+global.keybind[key.atk2] = ini_read_real("Keybinds","Attack 2",mb_right)
+global.keybind[key.spl1] = ini_read_real("Keybinds","Spell 1",ord("Q"))
+global.keybind[key.spl2] = ini_read_real("Keybinds","Spell 2",ord("E"))
+global.keybind[key.spl3] = ini_read_real("Keybinds","Spell 3",ord("R"))
+global.keybind[key.spl4] = ini_read_real("Keybinds","Spell 4",ord("F"))
+global.keybind[key.pause] = ini_read_real("Keybinds","Pause",vk_escape)
+ini_close();
 
 //Inventory init
 globalvar pasinv;

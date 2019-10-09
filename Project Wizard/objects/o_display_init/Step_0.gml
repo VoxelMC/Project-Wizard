@@ -26,7 +26,7 @@ if keyboard_check_pressed(vk_f11) {
 }*/
 	
 //Follow Player
-if global.stop = false {
+if global.stop = false && instance_exists(o_player) {
 view_x = lerp(view_x,global.focus.x - view_w/2,.3);
 view_y = lerp(view_y,global.focus.y - view_h/2,.3);
 

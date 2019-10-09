@@ -13,6 +13,8 @@ with (SaveMe)
 	var _obj = object_get_name(object_index);
 	var _layer = asset_get_index(_obj).layer;
 	
+	ds_map_add(_map,"screenshot","save1.png")
+	
 	//Save Built In Variables
 	ds_map_add(_map, "obj", _obj);
 	ds_map_add(_map, "layer", _layer);
@@ -166,14 +168,6 @@ with (SaveMe)
 			ds_map_add(_map,"triggercount",triggercount);
 		}
 		
-		//Save Ice Spray Variables
-		if _obj = "o_IceSpray" {
-			ds_map_add(_map,"timetillfreeze",timetillfreeze);
-			ds_map_add(_map,"spellkey",spellkey);
-			ds_map_add(_map,"spellpos",spellpos);
-			ds_map_add(_map,"spellcooldown",spellcooldown);
-		}
-			
 		show_debug_message("Saved " + _obj);
 		
 }

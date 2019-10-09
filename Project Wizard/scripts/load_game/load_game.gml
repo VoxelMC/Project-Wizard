@@ -5,7 +5,6 @@ if object_index != o_fade {
 show_debug_message("I'm in load in fade!")
 
 with o_SaveLoad {
-show_debug_message("I reached this point at least")
 with (SaveMe) instance_destroy()
 
 if (file_exists("savedgame.sav"))
@@ -22,7 +21,7 @@ if (file_exists("savedgame.sav"))
 		//global.firetometarget = _map[? "global.firetometarget"]
 		
 		var _obj = _map[? "obj"];
-		with (instance_create_layer(0,0,layer,asset_get_index(_obj))) 
+		with (instance_create_layer(0,0,"Instances",asset_get_index(_obj))) 
 		{
 				//Load in Global Variables and Alarms
 				alarm[0] = _map[? "alarm[0]"]
@@ -164,14 +163,7 @@ if (file_exists("savedgame.sav"))
 				if _obj = "o_tuttrigger" {
 					triggercount = _map[? "triggercount"];	
 				}
-				
-				if _obj = "o_IceSpray" {
-					timetillfreeze = _map[? "timetillfreeze"];	
-					spellkey = _map[? "spellkey"];
-					spellpos = _map[? "spellpos"];
-					spellcooldown = _map[? "spellcooldown"];
-				}
-				
+			
 				show_debug_message("Loaded " + _obj);
 			}
 					
