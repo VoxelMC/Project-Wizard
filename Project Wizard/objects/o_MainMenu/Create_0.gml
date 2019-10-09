@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 changelog = false;
 scale[0] = 1;
 scale[1] = 1;

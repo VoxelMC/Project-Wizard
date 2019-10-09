@@ -35,3 +35,7 @@ if savetimergo = true {
 		game_end()
 	}
 }
+
+if global.CurrentHP >= global.MaxHP {
+	global.CurrentHP = global.MaxHP	
+}

@@ -1,5 +1,3 @@
-if (live_call()) return live_result;
-
 var color = make_color_rgb(195,163,138)
 if file_exists("savedgame.sav") {
 	var savecolor1 = c_lime;

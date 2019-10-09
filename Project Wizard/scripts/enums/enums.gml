@@ -28,6 +28,18 @@ enum menupos
 	}
 #endregion
 
+#region Options Pos Enum
+enum optpos 
+	{
+	title,
+	key,
+	volume,
+	general,
+	back,
+	}
+#endregion
+
+
 #region Passive Item ID Name Enum
 enum passiveid 
 	{

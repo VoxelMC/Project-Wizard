@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 //Play Check
 if menu_phase = "start" {
 if point_in_rectangle(mouse_x,mouse_y,420,200,540,250) {
@@ -14,6 +13,8 @@ if point_in_rectangle(mouse_x,mouse_y,420,200,540,250) {
 if point_in_rectangle(mouse_x,mouse_y,380,270,580,320) {
 	scale[1] = lerp(scale[1],1.3,0.4);
 	if mouse_check_button_pressed(mb_left) {
+		menu_phase = "settings";
+		o_OptionsMenu.menu_phase = "start";
 		show_debug_message("Clicked Options!");
 	}
 } else {
@@ -29,8 +30,8 @@ if point_in_rectangle(mouse_x,mouse_y,420,340,540,390) {
 } else {
 	scale[2] = lerp(scale[2],1,0.4);	
 }
-} else {
-	if point_in_rectangle(mouse_x,mouse_y,380,380,580,430) { //Back Button
+} else if menu_phase = "load_check" {
+	if point_in_rectangle(mouse_x,mouse_y,380,400,580,450) { //Back Button
 		scale[3] = lerp(scale[3],1.3,0.4);
 		if mouse_check_button_pressed(mb_left) {
 			menu_phase = "start";	
@@ -74,9 +75,15 @@ switch (menu_phase) {
 	ypos[menupos.settings] = lerp(ypos[menupos.settings],690,0.3);
 	ypos[menupos.quit] = lerp(ypos[menupos.quit],760,0.3);
 	ypos[menupos.logo] = lerp(ypos[menupos.logo],-296,0.3);
-	ypos[menupos.back] = lerp(ypos[menupos.back],400,0.3);
+	ypos[menupos.back] = lerp(ypos[menupos.back],420,0.3);
 	ypos[menupos.load] = lerp(ypos[menupos.load],96,0.3);
 	xpos[menupos.load1] = lerp(xpos[menupos.load1],360,0.3);
 	xpos[menupos.load2] = lerp(xpos[menupos.load2],600,0.3);
+	break;
+	case "settings":
+	ypos[menupos.play] = lerp(ypos[menupos.play],620,0.3);
+	ypos[menupos.settings] = lerp(ypos[menupos.settings],690,0.3);
+	ypos[menupos.quit] = lerp(ypos[menupos.quit],760,0.3);
+	ypos[menupos.logo] = lerp(ypos[menupos.logo],-296,0.3);
 	break;
 }

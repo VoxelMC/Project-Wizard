@@ -911,6 +911,14 @@
             }
         },
         {
+            "Key": "75013509-6fc2-40db-8a45-4e58b97753b7",
+            "Value": {
+                "id": "684be7d7-05fa-4059-99db-6d05a8345c35",
+                "resourcePath": "objects\\o_OptionsMenu\\o_OptionsMenu.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "7572b974-f94b-47ed-8602-66bcc32e601e",
             "Value": {
                 "id": "12bb89c0-561b-4ef4-9a2a-b3f2546b5109",
