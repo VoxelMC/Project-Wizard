@@ -36,6 +36,7 @@ enum optpos
 	volume,
 	general,
 	back,
+	line
 	}
 #endregion
 
