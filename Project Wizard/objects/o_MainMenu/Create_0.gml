@@ -30,6 +30,7 @@ global.keybind[key.spl2] = ini_read_real("Keybinds","Spell 2",ord("E"))
 global.keybind[key.spl3] = ini_read_real("Keybinds","Spell 3",ord("R"))
 global.keybind[key.spl4] = ini_read_real("Keybinds","Spell 4",ord("F"))
 global.keybind[key.pause] = ini_read_real("Keybinds","Pause",vk_escape)
+global.genopt[0] = ini_read_real("General","MenuSkip",false);
 ini_close();
 
 //Inventory init

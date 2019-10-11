@@ -1,4 +1,5 @@
 //Play Check
+
 if menu_phase = "start" {
 if point_in_rectangle(mouse_x,mouse_y,420,200,540,250) {
 	scale[0] = lerp(scale[0],1.3,0.4);

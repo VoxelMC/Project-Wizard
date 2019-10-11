@@ -9,5 +9,5 @@ xpos[optpos.key] = -200; //100;
 xpos[optpos.volume] = -200; //100
 xpos[optpos.general] = -200; //100
 xpos[optpos.line] = -200;
-global.genopt[0] = false;
 menu_phase = "end"
+opt_phase = "general";
