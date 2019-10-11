@@ -1127,6 +1127,14 @@
             }
         },
         {
+            "Key": "a6e30e24-8039-4513-8064-fae6331fb2b1",
+            "Value": {
+                "id": "9bf93663-47fc-4f14-911a-d5fb6f55eab4",
+                "resourcePath": "sprites\\s_checkmark\\s_checkmark.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a7feb5bc-6f21-49db-967d-a014c5cd4374",
             "Value": {
                 "id": "96bd130c-fdd7-4c4a-b97e-bfda67a933ed",

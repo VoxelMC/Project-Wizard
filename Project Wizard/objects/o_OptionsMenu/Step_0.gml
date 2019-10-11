@@ -40,19 +40,26 @@ if point_in_rectangle(mouse_x,mouse_y,xpos[optpos.key]-85,290,xpos[optpos.key]+8
 
 switch (menu_phase) {
 	case "start": 
-	ypos[optpos.title] = lerp(ypos[optpos.title],50,0.3);
-	xpos[optpos.key] = lerp(xpos[optpos.key],105,0.3);
-	xpos[optpos.volume] = lerp(xpos[optpos.volume],105,0.3);
-	xpos[optpos.general] = lerp(xpos[optpos.general],105,0.3);
-	xpos[optpos.line] = lerp(xpos[optpos.line],205,0.3);
-	xpos[optpos.back] = lerp(xpos[optpos.back],105,0.3);
+		ypos[optpos.title] = lerp(ypos[optpos.title],50,0.3);
+		xpos[optpos.key] = lerp(xpos[optpos.key],105,0.3);
+		xpos[optpos.volume] = lerp(xpos[optpos.volume],105,0.3);
+		xpos[optpos.general] = lerp(xpos[optpos.general],105,0.3);
+		xpos[optpos.line] = lerp(xpos[optpos.line],205,0.3);
+		xpos[optpos.back] = lerp(xpos[optpos.back],105,0.3);
 	break;
 	case "end":
-	ypos[optpos.title] = lerp(ypos[optpos.title],-296,0.3);
-	xpos[optpos.key] = lerp(xpos[optpos.key],-200,0.3); 
-	xpos[optpos.volume] = lerp(xpos[optpos.volume],-200,0.3); 
-	xpos[optpos.general] = lerp(xpos[optpos.general],-200,0.3); 
-	xpos[optpos.line] = lerp(xpos[optpos.line],-200,0.3);
-	xpos[optpos.back] = lerp(xpos[optpos.back],-200,0.3); 
+		ypos[optpos.title] = lerp(ypos[optpos.title],-296,0.3);
+		xpos[optpos.key] = lerp(xpos[optpos.key],-200,0.3); 
+		xpos[optpos.volume] = lerp(xpos[optpos.volume],-200,0.3); 
+		xpos[optpos.general] = lerp(xpos[optpos.general],-200,0.3); 
+		xpos[optpos.line] = lerp(xpos[optpos.line],-200,0.3);
+		xpos[optpos.back] = lerp(xpos[optpos.back],-200,0.3); 
+	break;
+	case "general":
+		if mouse_check_button_pressed(mb_left) {
+			if point_in_rectangle(mouse_x,mouse_y,225,100,425,130) {
+				global.genopt[0] = !global.genopt[0];
+			}
+		}
 	break;
 }

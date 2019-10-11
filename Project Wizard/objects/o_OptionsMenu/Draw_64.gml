@@ -4,25 +4,29 @@ var color = make_color_rgb(195,163,138)
 draw_set_halign(fa_center);
 draw_set_valign(fa_middle);
 switch (menu_phase) {
-		case "general": draw_text_transformed_1color(300,115,"General",2,2,image_angle,color,1);
-		var gencolor = c_lime;
-		var volcolor = color;
-		var concolor = color;
-		break;
-		case "volume": draw_text_transformed_1color(300,115,"Volume",2,2,image_angle,color,1);
-		var gencolor = color;
-		var volcolor = c_lime;
-		var concolor = color;
-		break;
-		case "controls": draw_text_transformed_1color(300,115,"Controls",2,2,image_angle,color,1);
-		var gencolor = color;
-		var volcolor = color;
-		var concolor = c_lime;
-		break;
-		default:
-		var gencolor = color;
-		var volcolor = color;
-		var concolor = color;
+	case "general": draw_text_transformed_1color(310,115,"Skip Menu",2,2,image_angle,color,1);
+	draw_rectangle_color(405,105,425,125,color,color,color,color,true)
+	if global.genopt[0] = true {
+		draw_sprite(s_checkmark,0,415,115);
+	}
+	var gencolor = c_lime;
+	var volcolor = color;
+	var concolor = color;
+	break;
+	case "volume": draw_text_transformed_1color(300,115,"Volume",2,2,image_angle,color,1);
+	var gencolor = color;
+	var volcolor = c_lime;
+	var concolor = color;
+	break;
+	case "controls": draw_text_transformed_1color(300,115,"Controls",2,2,image_angle,color,1);
+	var gencolor = color;
+	var volcolor = color;
+	var concolor = c_lime;
+	break;
+	default:
+	var gencolor = color;
+	var volcolor = color;
+	var concolor = color;
 }
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
