@@ -11,3 +11,4 @@ xpos[optpos.general] = -200; //100
 xpos[optpos.line] = -200;
 menu_phase = "end"
 opt_phase = "general";
+offset = 1;
