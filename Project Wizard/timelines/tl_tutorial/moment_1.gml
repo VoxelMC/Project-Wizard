@@ -1,4 +1,6 @@
-var m;
-m[0] = "*0Welcome to *2Project W!"
-m[1] = "I will be teaching you how to play. Please go into the door to your right."
-newChat(m,"none","???",true,o_player);
+instance_destroy(o_dialogue)
+global.stop = false;
+global.currentconvo = "N/A";
+global.focus = o_player;
+global.indialogue = false;
+show_debug_message("2nd timeline");

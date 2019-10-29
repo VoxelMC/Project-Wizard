@@ -22,23 +22,6 @@
             "moment": 0
         },
         {
-            "id": "ec02c4c3-d82a-46af-bf24-a49a913b8f39",
-            "modelName": "GMMoment",
-            "mvc": "1.0",
-            "name": "",
-            "evnt": {
-                "id": "0e1f28b4-e626-4253-ae15-47669c927df7",
-                "modelName": "GMEvent",
-                "mvc": "1.0",
-                "IsDnD": false,
-                "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-                "enumb": 1,
-                "eventtype": 0,
-                "m_owner": "774b6b4f-49c7-4e06-9b6b-45293a14d78f"
-            },
-            "moment": 1
-        },
-        {
             "id": "97d8fa83-fd70-4fdb-a83d-2d4be31e5712",
             "modelName": "GMMoment",
             "mvc": "1.0",
@@ -49,11 +32,11 @@
                 "mvc": "1.0",
                 "IsDnD": false,
                 "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-                "enumb": 2,
+                "enumb": 1,
                 "eventtype": 0,
                 "m_owner": "774b6b4f-49c7-4e06-9b6b-45293a14d78f"
             },
-            "moment": 2
+            "moment": 1
         },
         {
             "id": "72ecff77-d1fc-4d75-9746-76b5a6b1c8c2",

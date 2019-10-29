@@ -39,3 +39,5 @@ cooldown[1] = 1;
 cooldown[2] = 1;
 cooldown[3] = 1;
 cooldown[4] = 1;
+
+cutsceneStart(tl_tutorial,false);

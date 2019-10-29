@@ -22,7 +22,10 @@ draw_set_halign(fa_left);
 draw_text(3,520,"vPre-Alpha v1.1.1");
 draw_text(3,505,"Press F1 for Debug Mode");
 draw_text(3,490,"Press F11 for Fullscreen");
-draw_text(3,475,"Press 0 to Restart the Game.");
+draw_text(3,475,global.focus);
+draw_text(3,460,global.currentconvo);
+draw_text(3,445,global.stop);
+draw_text(3,430,global.indialogue);
 
 //UI
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2-170,global.dguiheight);

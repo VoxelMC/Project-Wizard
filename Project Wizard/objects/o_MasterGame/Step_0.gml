@@ -39,3 +39,5 @@ if savetimergo = true {
 if global.CurrentHP >= global.MaxHP {
 	global.CurrentHP = global.MaxHP	
 }
+
+show_debug_message(timeline_position);

@@ -15,3 +15,7 @@ increment = 1;
 
 done = false;
 alarmdone = false;
+
+global.indialogue = true;
+
+show_debug_message("o_dialogue created!");
