@@ -23,3 +23,5 @@ for (var i=0;i<4;i++) {
 global.respawn = false;
 savetimer = 1;
 savetimergo = false;
+
+cutsceneStart(tl_tutorial,false);

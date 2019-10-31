@@ -6,5 +6,3 @@ m[1] = "*0In this tutorial, I'll teach you the ropes of combat, movement, and ho
 m[2] = "*1It's gonna be great!";
 m[3] = "*0To continue, keep going to the right."
 newChat(m,"none","???",true,o_player);
-
-show_debug_message("is it twice");

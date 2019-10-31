@@ -1,4 +1,3 @@
-
  //How many messages are in the array
 t++;
 message_end = array_length_1d(message);
@@ -48,6 +47,7 @@ if (message_end > 0) {
 			} else {
 				o_MasterGame.timeline_position += 1;
 				instance_destroy();
+				show_debug_message("Onward");
 			}
 		}
 	}

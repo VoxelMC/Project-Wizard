@@ -25,7 +25,7 @@ draw_text(3,490,"Press F11 for Fullscreen");
 draw_text(3,475,global.focus);
 draw_text(3,460,global.currentconvo);
 draw_text(3,445,global.stop);
-draw_text(3,430,global.indialogue);
+draw_text(3,430,"global.indialogue " + string(global.indialogue));
 
 //UI
 draw_sprite(s_NewSpellSlot,image_index,global.dguiwidth/2-170,global.dguiheight);

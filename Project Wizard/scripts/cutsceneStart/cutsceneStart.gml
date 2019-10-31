@@ -6,7 +6,7 @@ var auto = argument1;
 
 timeline_index = tl;
 timeline_running = true;
-timeline_position = 2;
+timeline_position = 1;
 if auto = false {
 	timeline_speed = 0;
 } else {
