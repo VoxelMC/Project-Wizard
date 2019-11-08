@@ -25,3 +25,14 @@ savetimer = 1;
 savetimergo = false;
 
 cutsceneStart(tl_tutorial,false);
+
+
+
+while(!global.inv_open) {
+	for (var i=0;i<25;i++) {
+		show_debug_message("Inventory not open!" + string(i));
+	}
+}
+
+
+
