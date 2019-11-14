@@ -45,7 +45,7 @@ if (message_end > 0) {
 			if convo = false {
 				done = true;
 			} else {
-				o_MasterGame.timeline_position += 1;
+				o_trainingdummy.timeline_position += 1;
 				instance_destroy();
 				show_debug_message("Onward");
 			}
@@ -132,13 +132,13 @@ if (message_end > 0) {
 	global.focus = focus;
 
 }
-/* Debug
+//Debug
 	draw_text(10,10,i);
 	draw_text(10,30,space);
 	draw_text(10,50,lineEnd);
 	draw_text(10,70,message_current);
 	draw_text(10,90,message_end);
-*/
+
 if done = true {
 	instance_destroy();
 	global.stop = false;

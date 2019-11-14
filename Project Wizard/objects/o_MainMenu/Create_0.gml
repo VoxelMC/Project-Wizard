@@ -1,4 +1,3 @@
-changelog = false;
 scale[0] = 1;
 scale[1] = 1;
 scale[2] = 1;
@@ -16,6 +15,8 @@ ypos[menupos.load] = -296;
 xpos[menupos.load1] = -380;
 xpos[menupos.load2] = 1180;
 menu_phase = "start"
+
+///GLOBAL VARIABLES\\\
 
 //Keyboard Binding Variables
 ini_open("settings.ini");
@@ -50,8 +51,20 @@ splist[2] = -1; //Q
 splist[3] = -1; //E
 
 global.spellequipamount = -1;
-
 global.respawn = false;
+
+//o_MasterGame menu variables
+global.inv_open = false;
+global.stop = false;
+global.pause = false;
+global.debug = false;
+global.indialogue = false;
+global.currentconvo = "N/A";
+for (var i=0;i<4;i++) {
+	global.up_pos[i] = 0;
+}
+global.respawn = false;
+
 
 /* ITEM INITIALIZING */
 
