@@ -15,3 +15,4 @@ if auto = false {
 timeline_loop = false;
 
 show_debug_message("Cutscene Begun.");
+show_debug_message(timeline_position);

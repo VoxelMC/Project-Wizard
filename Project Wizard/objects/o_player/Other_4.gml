@@ -1,0 +1,1 @@
+cutsceneStart(tl_tutorial,false);

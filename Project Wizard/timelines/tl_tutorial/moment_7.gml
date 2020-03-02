@@ -1,4 +1,7 @@
-var m;
-m[0] = "Please pick all of them up, and move on to the next room."
-m[1] = "*0I will then explain *4COMBAT."
-newChat(m,"none","???",true,o_player);
+///@description Give control back.
+instance_destroy(o_dialogue)
+global.stop = false;
+global.currentconvo = "N/A";
+global.focus = o_player;
+global.indialogue = false;
+show_debug_message("Finished.");

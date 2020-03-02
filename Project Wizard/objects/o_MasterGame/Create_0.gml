@@ -9,5 +9,3 @@ if file_exists("savedgame.sav") {
 savetimer = 1;
 savetimergo = false;
 
-//cutsceneStart(tl_tutorial,false);
-

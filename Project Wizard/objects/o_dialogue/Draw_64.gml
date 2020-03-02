@@ -45,7 +45,7 @@ if (message_end > 0) {
 			if convo = false {
 				done = true;
 			} else {
-				o_trainingdummy.timeline_position += 1;
+				o_player.timeline_position += 1;
 				instance_destroy();
 				show_debug_message("Onward");
 			}
