@@ -5,12 +5,13 @@ if global.debug = true {
 	draw_text(x-30,y+45,"X:" + string(round(o_player.x)))
 	draw_text(x-30,y+60,"Y:" + string(round(o_player.y)))
 	draw_text(x-30,y+75,"Animation State:" + string(o_player.anim_state))
+	draw_text(x-30,y+90,"Camera Focus: " + string(object_get_name(global.focus)));
 	if o_player.fly = true {
-		draw_text(x-30,y+90,"Press Left Control for Fly Mode. (ON)");
+		draw_text(x-30,y+105,"Press Left Control for Fly Mode. (ON)");
 	} else {
-		draw_text(x-30,y+90,"Press Left Control for Fly Mode. (OFF)")
+		draw_text(x-30,y+105,"Press Left Control for Fly Mode. (OFF)")
 	}
-	draw_text(x-30,y+105,"To interact with NPCs (like the Training Dummy), press G.")
+	draw_text(x-30,y+120,"To interact with NPCs (like the Training Dummy), press G.")
 	draw_set_halign(fa_right)
 	draw_text(x+925,y+30,"1: Wand");
 	draw_text(x+925,y+45,"2: Staff");

@@ -22,7 +22,7 @@ text.portrait = portrait;
 text.name = name;
 text.alarm[1] = 2;
 text.convo = convo;
-text.focus = focus;
+global.focus = focus;
 
 for (i=0; i < array_length_1d(sent); i++)
 {

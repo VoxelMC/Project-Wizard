@@ -6,7 +6,6 @@ name = "Cooldude";
 image_speed = 0.05;
 modifier = 0;
 convo = false;
-focus = global.focus;
 
 t = 0;
 amplitude = 3;

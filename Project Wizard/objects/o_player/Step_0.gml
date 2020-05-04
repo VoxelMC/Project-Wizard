@@ -6,6 +6,7 @@ switch anim_state {
 
 //Use Spells if any are equipped and also use basic attacks.
 if global.stop = false {
+	maxhspd = 5;
 	image_alpha = 1;
 	if global.wepequipped != "none" {
 		var wtype = ds_grid_get(wepinv,propwep.type,0);
@@ -81,6 +82,6 @@ if fly = false {
 	}
 }
 } else {
-	hspd = 0;
-	vspd = 0;
+	move_plr();
+	maxhspd = 1;
 }

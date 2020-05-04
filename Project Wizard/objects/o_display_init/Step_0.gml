@@ -27,12 +27,13 @@ if keyboard_check_pressed(vk_f11) {
 }*/
 	
 //Follow Player
-if global.stop = false && instance_exists(o_player) {
-view_x = lerp(view_x,global.focus.x - view_w/2,.3);
-view_y = lerp(view_y,global.focus.y - view_h/1.5,.3);
+if instance_exists(o_player) {
+	
+	view_x = lerp(view_x,global.focus.x - view_w/2,.15);
+	view_y = lerp(view_y,global.focus.y - view_h/1.5,.15);
 
-view_x = clamp(view_x,0,room_width-view_w);
-view_y = clamp(view_y,0,room_height-view_h);
+	view_x = clamp(view_x,0,room_width-view_w);
+	view_y = clamp(view_y,0,room_height-view_h);
 
 //Dynamically adjust camera
 if global.screenshake = true {

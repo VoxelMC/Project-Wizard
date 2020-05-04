@@ -128,8 +128,6 @@ if (message_end > 0) {
 	if blinker = true {
 		draw_sprite(s_blinker,image_index,pX+925,pY+85);
 	}
-	
-	global.focus = focus;
 
 }
 //Debug
