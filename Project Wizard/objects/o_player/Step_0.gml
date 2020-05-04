@@ -82,6 +82,5 @@ if fly = false {
 	}
 }
 } else {
-	move_plr();
-	maxhspd = 1;
+	hspd = 0;
 }
