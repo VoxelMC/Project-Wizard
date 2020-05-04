@@ -6,21 +6,14 @@
 
 
 var ItemID = argument0
-var Item_Type = argument1
-var Item_Type_Grid;
-switch Item_Type {
-	case "Passive": Item_Type_Grid = passive break;
-	case "Spell": Item_Type_Grid = spell break;
-	case "Weapon": Item_Type_Grid = weapon break;
-}
+var Item_Type_Grid = argument1
  
 var ItemCreate = instance_create_layer(argument2,argument3,"Items",o_MasterItem)
 ItemCreate.my_id = ItemID
-ItemCreate.my_id_type = Item_Type //Item Type, Passive/Spell/Weapon
 ItemCreate.my_grid = Item_Type_Grid //Item Type but the Grid can read it (TEMPORARY)
 ItemCreate.my_description = "Error, no description!"
 
-switch Item_Type_Grid {
+/*switch Item_Type_Grid {
 	case passive:
 		with ItemCreate {
 			my_name = ds_grid_get(my_grid,0,my_id)
@@ -51,6 +44,6 @@ switch Item_Type_Grid {
 			sprite_index = my_sprite
 		} 
 		break;
-}
+}*/
 
 return ItemCreate;

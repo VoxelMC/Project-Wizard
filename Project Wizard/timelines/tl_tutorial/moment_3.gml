@@ -1,4 +1,7 @@
-global.currentconvo = tl_tutorial;
-var m;
-m[0] = "To your right, you will spot some items. These include..."
-newChat(m,"none","???",true,o_player);
+///@description Give control back.
+instance_destroy(o_dialogue)
+global.stop = false;
+global.currentconvo = "N/A";
+global.focus = o_player;
+global.indialogue = false;
+show_debug_message("Finished.");

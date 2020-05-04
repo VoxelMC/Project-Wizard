@@ -943,14 +943,6 @@
             }
         },
         {
-            "Key": "774b6b4f-49c7-4e06-9b6b-45293a14d78f",
-            "Value": {
-                "id": "53bc20ad-3f34-4e30-bcaf-7cf620cace0f",
-                "resourcePath": "timelines\\tl_tutorial\\tl_tutorial.yy",
-                "resourceType": "GMTimeline"
-            }
-        },
-        {
             "Key": "7bdc6cc3-7139-4626-98c2-f6ecb916b5ce",
             "Value": {
                 "id": "6accefee-d6e0-4182-8ffd-3a4b2168e03e",
@@ -1684,6 +1676,14 @@
                 "id": "5f20c7b1-67ad-4754-9606-725c38500c63",
                 "resourcePath": "views\\ff6d4d74-3642-4b21-b798-cbd17baa89c4.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "ffc2ca1c-4c4f-4e0f-b6a6-0022038ac98c",
+            "Value": {
+                "id": "eb72869f-4658-4306-a89d-31023a6592ed",
+                "resourcePath": "timelines\\tl_tutorial\\tl_tutorial.yy",
+                "resourceType": "GMTimeline"
             }
         }
     ],

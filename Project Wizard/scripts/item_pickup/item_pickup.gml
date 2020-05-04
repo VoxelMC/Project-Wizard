@@ -66,7 +66,7 @@ switch othertype {
 			ds_grid_set(wepinv,propwep.damage,0,otherdamage)
 			global.wepequipped = ds_grid_get(wepinv,prop.ID,0);
 		} else {
-			MasterItem_Create(global.wepequipped,"Weapon",x,y)
+			MasterItem_Create(global.wepequipped,weapon,x,y)
 			ds_grid_set(wepinv,prop.ID,0,otherid)
 			ds_grid_set(wepinv,prop.sprite,0,otherspr)
 			ds_grid_set(wepinv,prop.name,0,othername)
