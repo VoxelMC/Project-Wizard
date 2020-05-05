@@ -1,5 +1,4 @@
 /// @param damage
-if live_call(argument0) return live_result;
 var damage = argument0;
 if object_index != o_player {
 if damage > 1 {

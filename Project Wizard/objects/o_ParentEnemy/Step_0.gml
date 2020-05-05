@@ -35,5 +35,3 @@ if object_index = o_trainingdummy {
 		wobbletimer -= 1;	
 	}
 }
-
-show_debug_message(wobbletimer);

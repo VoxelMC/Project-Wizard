@@ -1,4 +1,4 @@
- //How many messages are in the array
+//How many messages are in the array
 t++;
 message_end = array_length_1d(message);
 
@@ -11,6 +11,13 @@ if (message_end > 0) {
 	var i = 1;
 	var delay = 1;
 	var blinker = false;
+	
+	//Speed up if interact key is held
+	if keyboard_check(global.keybind[key.interact]) {
+		delay = 0;
+	} else {
+		delay = 1;
+	}
 	
 	//Typewriter
 	if (cutoff < string_length(message[message_current])) {
@@ -30,7 +37,7 @@ if (message_end > 0) {
 	
 	//Next Message
 	if alarmdone = true {
-	if (keyboard_check_pressed(global.keybind[key.interact])) {
+	if (keyboard_check_pressed(global.keybind[key.interact])) && blinker == true {
 		//If we still have some more messages, go to the next one
 		if (message_current < message_end-1)
 		{
@@ -47,7 +54,6 @@ if (message_end > 0) {
 			} else {
 				o_player.timeline_position += 1;
 				instance_destroy();
-				show_debug_message("Onward");
 			}
 		}
 	}
@@ -135,7 +141,7 @@ if (message_end > 0) {
 	draw_text(10,30,space);
 	draw_text(10,50,lineEnd);
 	draw_text(10,70,message_current);
-	draw_text(10,90,message_end);
+	draw_text(10,90,string_length(message[message_current]));
 
 if done = true {
 	instance_destroy();
