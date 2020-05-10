@@ -1,3 +1,4 @@
+if (live_call()) return live_result;
 //activating the shader
 shader_set(shdBktGlitch);
 
@@ -11,12 +12,12 @@ BktGlitch_set_time(current_time * 0.06);
 BktGlitch_config_preset(BktGlitchPreset.C);
 
 //additional tweaking
-BktGlitch_set_jumbleness(0.5);
-BktGlitch_set_jumble_speed(.25);
+BktGlitch_set_jumbleness(1);
+BktGlitch_set_jumble_speed(0.2);
 BktGlitch_set_jumble_resolution(random_range(0.2, 0.4));
 BktGlitch_set_jumble_shift(random_range(0.2, 0.4));
-BktGlitch_set_channel_shift(0.01);
-BktGlitch_set_channel_dispersion(.1);
+BktGlitch_set_channel_shift(0.001);
+BktGlitch_set_channel_dispersion(0.025);
 BktGlitch_set_rng_seed(global.seed);
 
 BktGlitch_set_intensity(intensity);

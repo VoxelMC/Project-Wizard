@@ -69,16 +69,16 @@ if fly = false {
 
 } else if fly = true {
 	if keyboard_check(ord("A")) {
-		x -= 5;
+		x -= 15;
 	}
 	if keyboard_check(ord("D")) {
-		x += 5;
+		x += 15;
 	}
 	if keyboard_check(ord("W")) {
-		y -= 5;
+		y -= 15;
 	}
 	if keyboard_check(ord("S")) {
-		y += 5;
+		y += 15;
 	}
 }
 } else {

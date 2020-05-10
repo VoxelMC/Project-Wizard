@@ -10,8 +10,7 @@
 //                              //
 //////////////////////////////////
 
-BktGlitch_init(); //getting uniform pointers
 application_surface_draw_enable(false); //disabling automatic redrawing of the application surface
 intensity = 0;
 global.seed = random(1); //we'll also change the RNG seed every time
-
+starttimer = -1;
