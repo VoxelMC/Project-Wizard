@@ -1,9 +1,9 @@
-if (live_call()) return live_result;
-dist = distance_to_object(o_player);
+//if (live_call()) return live_result;
+//dist = distance_to_object(o_player);
 
 //show_debug_message(dist);
 
-if starttimer = -1 {
+/*if starttimer = -1 {
 	if dist > 700 && dist < 800 {
 		objSimpleExample.intensity = 0.1;
 	} else if dist > 600 && dist < 700 {
@@ -34,4 +34,4 @@ if starttimer = -1 {
 	}
 }
 
-show_debug_message(starttimer);
+show_debug_message(starttimer);*/
