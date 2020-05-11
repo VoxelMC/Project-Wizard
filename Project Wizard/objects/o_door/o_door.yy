@@ -1,8 +1,8 @@
 {
-    "id": "d595d888-495b-404b-a0b2-542915abb852",
+    "id": "ca6fcbdb-b217-481b-ba6f-1cb09761e7f8",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "o_wall",
+    "name": "o_door",
     "eventList": [
         
     ],
@@ -24,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "917af7af-4477-46e4-9363-79d4c7a0a4b3",
-    "visible": false
+    "spriteId": "338b9eec-f319-4205-9bfd-c49cb6e2ca01",
+    "visible": true
 }

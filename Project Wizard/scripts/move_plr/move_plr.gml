@@ -47,8 +47,8 @@ vspd = vspd + 0.35 //Adds gravity to vspeed
 ///Collison Code///
 
 //Horizontal
-if (place_meeting(x+hspd, y, o_wall)){
-    while (!place_meeting(x+sign(hspd), y, o_wall)){ 
+if (place_meeting(x+hspd, y, o_CollisionParent)){
+    while (!place_meeting(x+sign(hspd), y, o_CollisionParent)){ 
         x+=sign(hspd);
     }
     hspd=0;
@@ -56,8 +56,8 @@ if (place_meeting(x+hspd, y, o_wall)){
 x+=hspd;
 
 //Vertical
-if (place_meeting(x, y+vspd, o_wall)){
-    while (!place_meeting(x, y+sign(vspd), o_wall)){
+if (place_meeting(x, y+vspd, o_CollisionParent)){
+    while (!place_meeting(x, y+sign(vspd), o_CollisionParent)){
         y+=sign(vspd);
     }
    vspd=0;

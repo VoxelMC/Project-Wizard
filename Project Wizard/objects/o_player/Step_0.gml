@@ -84,3 +84,13 @@ if fly = false {
 } else {
 	hspd = 0;
 }
+
+//Door if statement
+if place_meeting(x+(16*flipped),y,o_door) {
+	if keyboard_check_pressed(global.keybind[key.interact]) {
+		with o_door {
+			image_index = 1;
+			mask_index = empty;
+		}
+	}
+}
