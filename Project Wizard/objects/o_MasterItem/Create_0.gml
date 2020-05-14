@@ -1,5 +1,5 @@
-my_id = weaponid.wand;
-my_grid = weapon;
+//my_id = weaponid.wand
+//my_grid = weapon
 
 my_name = ds_grid_get(my_grid,0,my_id)
 my_sprite = ds_grid_get(my_grid,1,my_id)

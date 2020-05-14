@@ -32,12 +32,11 @@ if savetimergo = true {
 	if savetimer = 0 {
 		global.stop = false;
 		save_game();
-		game_end()
+		instance_destroy(o_MasterGame);
+		room_goto(rm_mainmenu);
 	}
 }
 
 if global.CurrentHP >= global.MaxHP {
 	global.CurrentHP = global.MaxHP	
 }
-
-//show_debug_message(timeline_position);

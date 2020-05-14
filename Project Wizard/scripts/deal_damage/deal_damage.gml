@@ -7,7 +7,7 @@ var e_dmg = irandom_range(damage-1,damage+1);
 var e_dmg = irandom_range(damage,damage+1);
 }
 
-image_blend = make_color_rgb(255,75,75)
+//image_blend = make_color_rgb(255,75,75)
 
 hp -= e_dmg 
 
@@ -31,7 +31,17 @@ if other.object_index != o_IceStaffProj and status != debuff.iced {
 }
 
 hit = true;
-invintimer = 30;
+invintimer = 1;
+if object_index = o_trainingdummy {
+	if wobbletimer = 0 {
+		if o_player.x > x {
+			image_index = 60; 
+		} else {
+			image_index = 0;	
+		}
+		wobbletimer = 24;	
+	}
+}
 
 } else {
 	global.CurrentHP -= damage;

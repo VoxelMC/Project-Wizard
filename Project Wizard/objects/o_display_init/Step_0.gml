@@ -22,9 +22,12 @@ if keyboard_check_pressed(vk_f11) {
 		draw_blackbars = false;
 	}
 }
-/*if zoom != 1.5 {
-	zoom += 0.01
-}*/
+
+zoom = clamp(zoom,0.46,2.41);
+
+if keyboard_check(vk_subtract) && view_w < 2400 && view_h < 1300 zoom+= 0.02; //MAXIMUM ZOOM VALUE IS 2.41
+if keyboard_check(vk_add) && view_w > 450 && view_h > 250 { zoom -= 0.02; } //MINIMUM ZOOM VALUE IS 0.46
+if keyboard_check(ord("P")) zoom = 1;
 	
 //Follow Player
 if instance_exists(o_player) {
@@ -45,6 +48,11 @@ if global.screenshake = true {
 	}
 } else {
 	view_w = ideal_width*zoom
-	view_h = ideal_height*zoom 
+	view_h = ideal_height*zoom
 }
 }
+
+
+//print(view_w);
+//print(view_h);
+print(zoom);

@@ -14,7 +14,8 @@
         "aa507e78-8116-4177-9706-ae1d87395c7f",
         "5ba3e5f6-a4a5-4850-b31c-ba223dc81bb1",
         "0f125939-c2ee-459d-a0d6-d7496901b888",
-        "529a664e-35cd-4551-bf47-75bbc42a3d45"
+        "529a664e-35cd-4551-bf47-75bbc42a3d45",
+        "074811e9-2455-41fe-a89d-0283e063a4a3"
     ],
     "filterType": "GMObject",
     "folderName": "Non-Sprite Objects",

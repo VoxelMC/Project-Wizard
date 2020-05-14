@@ -43,7 +43,7 @@
     "physicsStartAwake": true,
     "properties": [
         {
-            "id": "9ef58b16-8d2b-4c53-832f-45162d8cd067",
+            "id": "82ad8150-8de1-4c3e-9331-a4cd96f0e6b3",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -52,12 +52,12 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
+            "value": "weaponid.wand",
             "varName": "my_id",
             "varType": 0
         },
         {
-            "id": "2e5df609-7dd5-482d-a193-19ba5c1c7981",
+            "id": "a8034b96-330e-4873-a37e-c44ad1dedbb0",
             "modelName": "GMObjectProperty",
             "mvc": "1.0",
             "listItems": null,
@@ -66,9 +66,23 @@
             "rangeMax": 10,
             "rangeMin": 0,
             "resourceFilter": 1023,
-            "value": "0",
-            "varName": "variable_name",
+            "value": "global.weapon",
+            "varName": "my_grid",
             "varType": 0
+        },
+        {
+            "id": "52df0160-057d-42a5-bd61-8aa90a5d8323",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Weapon",
+            "varName": "my_id_type",
+            "varType": 2
         }
     ],
     "solid": false,

@@ -69,19 +69,28 @@ if fly = false {
 
 } else if fly = true {
 	if keyboard_check(ord("A")) {
-		x -= 5;
+		x -= 15;
 	}
 	if keyboard_check(ord("D")) {
-		x += 5;
+		x += 15;
 	}
 	if keyboard_check(ord("W")) {
-		y -= 5;
+		y -= 15;
 	}
 	if keyboard_check(ord("S")) {
-		y += 5;
+		y += 15;
 	}
 }
 } else {
-	move_plr();
-	maxhspd = 1;
+	hspd = 0;
+}
+
+//Door if statement
+if place_meeting(x+(16*flipped),y,o_door) {
+	if keyboard_check_pressed(global.keybind[key.interact]) {
+		with o_door {
+			image_index = 1;
+			mask_index = empty;
+		}
+	}
 }

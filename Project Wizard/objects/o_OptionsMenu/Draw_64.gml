@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 var color = make_color_rgb(195,163,138)
 nine_slice_box_stretch(s_9slicebox,xpos[optpos.line],85,xpos[optpos.line]+725,450)
 

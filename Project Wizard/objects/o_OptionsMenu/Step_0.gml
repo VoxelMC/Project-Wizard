@@ -1,4 +1,3 @@
-if (live_call()) return live_result;
 if menu_phase != "end" {
 if point_in_rectangle(mouse_x,mouse_y,45,400,165,440) { //Back Button
 	scale[optpos.back] = lerp(scale[optpos.back],1.3,0.4);

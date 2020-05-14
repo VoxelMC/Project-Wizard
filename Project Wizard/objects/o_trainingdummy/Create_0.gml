@@ -7,3 +7,5 @@ hp = 9999
 maxhp = 9999
 behavior = ai.trainingdummy;
 dmg = 0;
+wobbletimer = 0;
+image_speed = 0;

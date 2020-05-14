@@ -28,3 +28,10 @@ if hspdaltdur = "hold" {
 		status = debuff.none	
 	}
 }
+
+//Wobble Timer check (for Training Dummy)
+if object_index = o_trainingdummy {
+	if wobbletimer != 0 {
+		wobbletimer -= 1;	
+	}
+}
