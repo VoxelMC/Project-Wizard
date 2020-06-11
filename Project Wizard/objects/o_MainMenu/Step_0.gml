@@ -44,7 +44,7 @@ if point_in_rectangle(mouse_x,mouse_y,420,340,540,390) {
 	if point_in_rectangle(mouse_x,mouse_y,280,170,440,230) { //Save 1 Button
 		scale[4] = lerp(scale[4],1.3,0.4);
 		if mouse_check_button_pressed(mb_left) {
-			fade_to_room(rm_barracks);
+			fade_to_room(rm_intro);
 		}
 	} else {
 		scale[4] = lerp(scale[4],1,0.4);
