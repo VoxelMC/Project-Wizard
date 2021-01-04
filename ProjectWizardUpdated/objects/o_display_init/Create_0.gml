@@ -1,5 +1,4 @@
 ///Display Properties
-BktGlitch_init()
 global.focus = o_display_init;
 ideal_width=0;
 ideal_height=540;
