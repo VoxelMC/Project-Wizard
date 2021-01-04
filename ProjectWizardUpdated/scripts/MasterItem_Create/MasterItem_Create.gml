@@ -1,0 +1,54 @@
+///@param Item_ID
+///@param Item_Type
+///@param Item_X_Position
+///@param Item_Y_Position
+function MasterItem_Create(argument0, argument1, argument2, argument3) {
+	//Example: MasterItem_Create(1,"Passive",100,100)
+
+
+	var ItemID = argument0
+	var Item_Type_Grid = argument1
+ 
+	var ItemCreate = instance_create_layer(argument2,argument3,"Items",o_MasterItem)
+	ItemCreate.my_id = ItemID
+	ItemCreate.my_grid = Item_Type_Grid //Item Type but the Grid can read it (TEMPORARY)
+	ItemCreate.my_description = "Error, no description!"
+
+	/*switch Item_Type_Grid {
+		case passive:
+			with ItemCreate {
+				my_name = ds_grid_get(my_grid,0,my_id)
+				my_sprite = ds_grid_get(my_grid,1,my_id)
+				my_description = ds_grid_get(my_grid,2,my_id)
+				my_effect = ds_grid_get(my_grid,3,my_id)
+				my_pastype = ds_grid_get(my_grid,4,my_id)
+				sprite_index = my_sprite
+			} break;
+		case spell:
+			with ItemCreate {
+				my_name = ds_grid_get(my_grid,0,my_id)
+				my_sprite = ds_grid_get(my_grid,1,my_id)
+				my_description = ds_grid_get(my_grid,2,my_id)
+				my_wdescription = ds_grid_get(my_grid,3,my_id)
+				my_sdescription = ds_grid_get(my_grid,4,my_id)
+				my_tdescription = ds_grid_get(my_grid,5,my_id)
+				my_idescription = ds_grid_get(my_grid,6,my_id)
+				sprite_index = my_sprite
+			} break;
+		case weapon:
+			with ItemCreate {
+				my_name = ds_grid_get(my_grid,0,my_id)
+				my_sprite = ds_grid_get(my_grid,1,my_id)
+				my_description = ds_grid_get(my_grid,2,my_id)
+				my_weptype = ds_grid_get(my_grid,3,my_id)
+				my_damage = ds_grid_get(my_grid,4,my_id)
+				sprite_index = my_sprite
+			} 
+			break;
+	}*/
+
+	return ItemCreate;
+
+
+
+}

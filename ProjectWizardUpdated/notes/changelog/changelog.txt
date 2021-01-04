@@ -1,0 +1,29 @@
+CHANGELOG:
+
+[New Stuff]:
+-Readded the Main Menu, with a whole new look! (Settings still WIP, so that's unusable.)
+-Added the ability to save the game, and load your save file! You can save through the pause menu.
+-You can now kill enemies, and they now feature hurt states, knockback, all that fun enemy stuff.
+-Alongside that, you can also now take damage and die/respawn.
+-The amount of damage you deal is displayed next to enemies you hurt as well.
+-Every weapon now has a "basic attack", just a simple white projectile. 
+-Reimplemented the Heal Spell for all weapon types, complete with brand new uses!
+-Added in the Ice Spell for all weapon types.
+-HP is now displayed in the debug menu above an enemies head.
+-A restart tooltip is now displayed on the bottom left of the screen.
+
+[Adjustments]:
+-Changed the spell keys from LMB, RMB, Q, and E to Q, E, R, and F.
+-Changed the interact key from F to G.
+-Changed the restart key from R to 0.
+-Increased the size of the alert radius box after the slime has detected you, to make it harder to escape it.
+-Removed the "Player State" text in Debug Mode.
+
+
+[Bug Fixes]:
+-Fixed a bug where the heal spell could not equipped if any other spells were equipped.
+-Fixed a bug where the player would disappear when talking to the Training Dummy.
+-Fixed some other bugs.
+
+
+[KNOWN ISSUES]:

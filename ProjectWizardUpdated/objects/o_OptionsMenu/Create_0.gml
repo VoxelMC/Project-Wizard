@@ -1,0 +1,14 @@
+scale[optpos.title] = 1;
+scale[optpos.key] = 0.8;
+scale[optpos.back] = 1;
+scale[optpos.volume] = 0.8;
+scale[optpos.general] = 0.8;
+ypos[optpos.title] = -296; //96;
+xpos[optpos.back] = -200; //400;
+xpos[optpos.key] = -200; //100;
+xpos[optpos.volume] = -200; //100
+xpos[optpos.general] = -200; //100
+xpos[optpos.line] = 1000;
+menu_phase = "end"
+opt_phase = "general";
+offset = 1;
